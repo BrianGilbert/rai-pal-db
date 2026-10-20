@@ -1,6 +1,5 @@
 import { bepinexMod } from "../bepinex-mod.ts";
 
-// deno-lint-ignore require-await
 export async function getConfigManagerMods() {
 	return [
 		bepinexMod({

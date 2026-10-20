@@ -1,5 +1,5 @@
 import { getLatestFromGitHub } from "../github.ts";
-import { ModBase } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { uevrBase } from "./uevr-base.ts";
 

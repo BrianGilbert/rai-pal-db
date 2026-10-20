@@ -1,4 +1,6 @@
-import { join } from "jsr:@std/path";
+import { mkdir, writeFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
@@ -72,14 +74,14 @@ const minimumRetainedGameRatio = 0.5;
 
 // Set ALLOW_PARTIAL_GAME_DB=1 to still write the database when a source fails.
 // Not recommended, since it publishes a database missing that source's data.
-const allowPartialDatabase = Deno.env.get("ALLOW_PARTIAL_GAME_DB") === "1";
+const allowPartialDatabase = process.env.ALLOW_PARTIAL_GAME_DB === "1";
 
 function getExistingGameCount(path: string): number | undefined {
 	try {
-		const existing = JSON.parse(Deno.readTextFileSync(path)) as unknown[];
+		const existing = JSON.parse(readFileSync(path, "utf8")) as unknown[];
 		return existing.length;
 	} catch (error) {
-		if (error instanceof Deno.errors.NotFound) return undefined;
+		if ((error as NodeJS.ErrnoException).code === "ENOENT") return undefined;
 		console.warn(`Could not read existing database at ${path}: ${error}`);
 		return undefined;
 	}
@@ -87,7 +89,7 @@ function getExistingGameCount(path: string): number | undefined {
 
 async function main(pretty: boolean) {
 	const folder = join("..", "game-db", `${GAME_DATABASE_VERSION}`);
-	await Deno.mkdir(folder, { recursive: true });
+	await mkdir(folder, { recursive: true });
 
 	const outputPath = join(folder, "games.json");
 
@@ -97,27 +99,26 @@ async function main(pretty: boolean) {
 
 	const failedSources: string[] = [];
 
-	const games = results
-		.flatMap((result, index) => {
-			const { name } = gameSources[index];
-			if (result.status === "fulfilled") {
-				console.log(`Fetched ${result.value.length} games from ${name}.`);
-				if (result.value.length === 0) {
-					failedSources.push(name);
-					console.warn(
-						`Source ${name} returned 0 games. If this is unexpected, the database will be missing data for it.`,
-					);
-				}
-				return result.value;
+	const games = results.flatMap((result, index) => {
+		const { name } = gameSources[index];
+		if (result.status === "fulfilled") {
+			console.log(`Fetched ${result.value.length} games from ${name}.`);
+			if (result.value.length === 0) {
+				failedSources.push(name);
+				console.warn(
+					`Source ${name} returned 0 games. If this is unexpected, the database will be missing data for it.`,
+				);
 			}
+			return result.value;
+		}
 
-			failedSources.push(name);
-			const reason = result.reason as Error | undefined;
-			console.error(
-				`Failed to fetch games from ${name}: ${reason} ${reason?.stack ?? ""}`,
-			);
-			return [];
-		});
+		failedSources.push(name);
+		const reason = result.reason as Error | undefined;
+		console.error(
+			`Failed to fetch games from ${name}: ${reason} ${reason?.stack ?? ""}`,
+		);
+		return [];
+	});
 
 	if (games.length === 0) {
 		throw new Error("Every game source failed or returned nothing. Aborting.");
@@ -125,9 +126,9 @@ async function main(pretty: boolean) {
 
 	if (failedSources.length > 0 && !allowPartialDatabase) {
 		throw new Error(
-			`These game sources failed or returned no games: ${
-				failedSources.join(", ")
-			}. ` +
+			`These game sources failed or returned no games: ${failedSources.join(
+				", ",
+			)}. ` +
 				`Refusing to overwrite the database with partial data, because that silently drops ` +
 				`everything those sources contribute (e.g. titles and non-Steam store entries). ` +
 				`Fix the sources above and run again, or set ALLOW_PARTIAL_GAME_DB=1 to write anyway.`,
@@ -148,15 +149,15 @@ async function main(pretty: boolean) {
 	if (existingGameCount !== undefined) {
 		const ratio = gamesWithEngines.length / existingGameCount;
 		console.log(
-			`Existing database has ${existingGameCount} games; new database would have ${gamesWithEngines.length} (${
-				(ratio * 100).toFixed(1)
-			}%).`,
+			`Existing database has ${existingGameCount} games; new database would have ${gamesWithEngines.length} (${(
+				ratio * 100
+			).toFixed(1)}%).`,
 		);
 		if (ratio < minimumRetainedGameRatio) {
 			throw new Error(
-				`Refusing to overwrite ${outputPath}: the new database would only keep ${
-					(ratio * 100).toFixed(1)
-				}% of the existing games. ` +
+				`Refusing to overwrite ${outputPath}: the new database would only keep ${(
+					ratio * 100
+				).toFixed(1)}% of the existing games. ` +
 					`This usually means one or more sources above failed or returned incomplete data. ` +
 					`Fix the source, then run again. (To force the update anyway, delete ${outputPath} or lower minimumRetainedGameRatio.)`,
 			);
@@ -165,7 +166,7 @@ async function main(pretty: boolean) {
 
 	createDatabase(join(folder, "games.db"), gamesWithEngines);
 
-	await Deno.writeTextFile(
+	await writeFile(
 		outputPath,
 		JSON.stringify(gamesWithEngines, jsonReplacer, pretty ? 2 : undefined),
 	);
@@ -173,5 +174,5 @@ async function main(pretty: boolean) {
 
 main(false).catch((error) => {
 	console.error(error);
-	Deno.exit(1);
+	process.exit(1);
 });

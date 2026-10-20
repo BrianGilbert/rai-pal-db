@@ -1,4 +1,4 @@
-import { ModBase } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { getGepInExConfigs } from "./bepinex-config.ts";
 import { getBepInExIl2cppLoaders } from "./bepinex-il2cpp.ts";
 import { getBepInExMonoLoaders } from "./bepinex-mono.ts";

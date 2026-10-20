@@ -1,4 +1,4 @@
-import { FamilyId } from "./families.ts";
+import type { FamilyId } from "./families.ts";
 
 export interface ModBase {
 	/**

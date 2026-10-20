@@ -1,4 +1,10 @@
-import { Engine, Game, GameSubscription, IdMap, ProviderId } from "./main.ts";
+import type {
+	Engine,
+	Game,
+	GameSubscription,
+	IdMap,
+	ProviderId,
+} from "./main.ts";
 import { addNormalizedTitles } from "./normalized-title.ts";
 
 function findConnectedComponents(games: Game[]): Game[][] {
@@ -48,12 +54,10 @@ function findConnectedComponents(games: Game[]): Game[][] {
 
 function mergeIds(idsA: IdMap, idsB: IdMap): IdMap {
 	const mergedIds: IdMap = {};
-	for (
-		const idKind of new Set([
-			...Object.keys(idsA),
-			...Object.keys(idsB),
-		] as ProviderId[])
-	) {
+	for (const idKind of new Set([
+		...Object.keys(idsA),
+		...Object.keys(idsB),
+	] as ProviderId[])) {
 		const idSetA = idsA[idKind] || new Set();
 		const idSetB = idsB[idKind] || new Set();
 		mergedIds[idKind] = new Set([...idSetA, ...idSetB]);

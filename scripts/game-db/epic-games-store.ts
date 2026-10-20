@@ -1,4 +1,4 @@
-import { Game } from "./main.ts";
+import type { Game } from "./main.ts";
 
 // Someone was nice enough to do all the work for mapping Epic Games Store item IDs to game titles.
 const epicGamesStoreItemsUrl =
@@ -17,12 +17,10 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
 		(item) => item !== null,
 	) as EpicGamesStoreItem[];
 
-	return nonNullItems.map(
-		(item): Game => ({
-			title: item.title!,
-			ids: {
-				Epic: new Set([item.id!]),
-			},
-		}),
-	);
+	return nonNullItems.map((item): Game => ({
+		title: item.title!,
+		ids: {
+			Epic: new Set([item.id!]),
+		},
+	}));
 }

@@ -1,4 +1,4 @@
-import { Game, GameSubscription } from "./main.ts";
+import type { Game, GameSubscription } from "./main.ts";
 import { normalizeReleaseDate } from "./helpers.ts";
 
 const APIIds = {
@@ -294,14 +294,14 @@ async function fetchGameIDs(
 			APIIds[passType]
 		}&language=en-us&market=${market}`,
 	)
-		.then((response) => response.json())
-		.then((data: IdsResponse) =>
+		.then((response) => response.json() as Promise<IdsResponse>)
+		.then((data) =>
 			data
 				.filter(
 					(entry) =>
 						entry != null && typeof entry === "object" && "id" in entry,
 				)
-				.map((entry) => entry.id)
+				.map((entry) => entry.id),
 		);
 }
 
@@ -316,8 +316,8 @@ async function fetchGameProperties(
 	return await fetch(
 		`https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds=${gameIds}&market=${market}&languages=en-us`,
 	)
-		.then((response) => response.json())
-		.then((data: PropertiesResponse) => {
+		.then((response) => response.json() as Promise<PropertiesResponse>)
+		.then((data) => {
 			return data.Products;
 		});
 }
@@ -328,18 +328,16 @@ async function fetchGames(
 ): Promise<Game[]> {
 	const ids = await fetchGameIDs(passType, "US");
 	const properties = await fetchGameProperties(ids, passType, "US");
-	return properties.map(
-		(product): Game => ({
-			title: product.LocalizedProperties[0].ProductTitle,
-			ids: {
-				Xbox: new Set([product.ProductId]),
-			},
-			subscriptions: [subscription],
-			releaseDate: normalizeReleaseDate(
-				product.MarketProperties[0]?.OriginalReleaseDate,
-			),
-		}),
-	);
+	return properties.map((product): Game => ({
+		title: product.LocalizedProperties[0].ProductTitle,
+		ids: {
+			Xbox: new Set([product.ProductId]),
+		},
+		subscriptions: [subscription],
+		releaseDate: normalizeReleaseDate(
+			product.MarketProperties[0]?.OriginalReleaseDate,
+		),
+	}));
 }
 
 export async function fetchPCGamePassGames(): Promise<Game[]> {

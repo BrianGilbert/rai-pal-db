@@ -1,5 +1,5 @@
-import { EngineBrand, IdMap } from "./main.ts";
-import { Engine, engineBrands, type Game } from "./main.ts";
+import { engineBrands } from "./main.ts";
+import type { Engine, EngineBrand, Game, IdMap } from "./main.ts";
 import { normalizeReleaseDate } from "./helpers.ts";
 
 type PCGamingWikiGame = {
@@ -47,8 +47,8 @@ const userAgent = "rai-pal-db/1.0 (+https://github.com/Raicuparta/rai-pal-db)";
 // account, then set PCGAMINGWIKI_USERNAME (e.g. "Account@Bot") and
 // PCGAMINGWIKI_PASSWORD. Without them we still try anonymously, which their API
 // currently rejects.
-const username = Deno.env.get("PCGAMINGWIKI_USERNAME");
-const password = Deno.env.get("PCGAMINGWIKI_PASSWORD");
+const username = process.env.PCGAMINGWIKI_USERNAME;
+const password = process.env.PCGAMINGWIKI_PASSWORD;
 
 // Cookie jar for the MediaWiki session. Login tokens are bound to the session,
 // so the cookies from the token request must be reused for the login request
@@ -69,9 +69,7 @@ function storeCookies(response: Response): void {
 
 function getCookieHeader(): string | undefined {
 	if (cookies.size === 0) return undefined;
-	return [...cookies]
-		.map(([name, value]) => `${name}=${value}`)
-		.join("; ");
+	return [...cookies].map(([name, value]) => `${name}=${value}`).join("; ");
 }
 
 async function request<T>(
@@ -84,9 +82,10 @@ async function request<T>(
 		headers["Cookie"] = cookieHeader;
 	}
 
-	const response = method === "POST"
-		? await fetch(apiUrl, { method, headers, body: params })
-		: await fetch(`${apiUrl}?${params.toString()}`, { headers });
+	const response =
+		method === "POST"
+			? await fetch(apiUrl, { method, headers, body: params })
+			: await fetch(`${apiUrl}?${params.toString()}`, { headers });
 
 	storeCookies(response);
 
@@ -108,10 +107,11 @@ function describeApiError(
 ): string {
 	const code = error?.code ?? "unknown";
 	const info = error?.info ?? "no details";
-	const hint = code === "permissiondenied"
-		? ` Cargo queries require a logged-in account with the "runcargoqueries" permission; ` +
-			`set PCGAMINGWIKI_USERNAME and PCGAMINGWIKI_PASSWORD.`
-		: "";
+	const hint =
+		code === "permissiondenied"
+			? ` Cargo queries require a logged-in account with the "runcargoqueries" permission; ` +
+				`set PCGAMINGWIKI_USERNAME and PCGAMINGWIKI_PASSWORD.`
+			: "";
 	return `${code} - ${info}.${hint}`;
 }
 
@@ -139,9 +139,9 @@ async function login(): Promise<void> {
 
 	if (tokenData.error) {
 		throw new Error(
-			`PCGamingWiki login token request failed: ${
-				describeApiError(tokenData.error)
-			}`,
+			`PCGamingWiki login token request failed: ${describeApiError(
+				tokenData.error,
+			)}`,
 		);
 	}
 
@@ -291,9 +291,9 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 		// all non-Steam games (see the `gamesWithEngines` filter in main.ts).
 		if (data.error) {
 			throw new Error(
-				`PCGamingWiki API error for engine ${engineName}: ${
-					describeApiError(data.error)
-				}`,
+				`PCGamingWiki API error for engine ${engineName}: ${describeApiError(
+					data.error,
+				)}`,
 			);
 		}
 

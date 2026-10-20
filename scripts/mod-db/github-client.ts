@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 
 export function createOctokit(): Octokit {
-	const token = Deno.env.get("GITHUB_TOKEN") ?? Deno.env.get("GH_TOKEN");
+	const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
 	return new Octokit(token ? { auth: token } : {});
 }

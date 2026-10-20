@@ -1,6 +1,6 @@
 import { bepinexMod } from "./bepinex/bepinex-mod.ts";
 import { getLatestFromGitHub } from "./github.ts";
-import { ModBase, ModDownload } from "./mod.ts";
+import type { ModBase, ModDownload } from "./mod.ts";
 import { token } from "./replacement-tokens.ts";
 
 const repo = { owner: "raicuparta", repo: "everyone-client" } as const;

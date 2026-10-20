@@ -1,7 +1,7 @@
-import { DOMParser } from "@b-fuze/deno-dom";
-import {
+import { DOMParser } from "linkedom";
+import { isArchitecture } from "../mod.ts";
+import type {
 	Architecture,
-	isArchitecture,
 	ModBase,
 	ModDownload,
 	OperatingSystem,

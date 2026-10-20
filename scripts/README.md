@@ -1,14 +1,16 @@
 # Rai Pal DB Scripts
 
-Requires [Deno](https://deno.com/).
+Requires [Node.js](https://nodejs.org/) 26 or newer. Scripts run TypeScript
+directly — no build step.
 
-Run `deno task generate-types` for development, otherwise you'll get type
-errors.
+```sh
+npm install
+```
 
 ## Environment variables
 
-Copy `.env.example` to `.env` and fill in what you need. The `update-game-db`
-and `update-mod-db` tasks load it automatically.
+Copy `.env.example` to `.env` and fill in what you need. The update tasks load
+it automatically via Node's `--env-file-if-exists`.
 
 - `GITHUB_TOKEN` — used by the mod DB to avoid GitHub API rate limits.
 - `PCGAMINGWIKI_USERNAME` / `PCGAMINGWIKI_PASSWORD` — PCGamingWiki credentials
@@ -19,3 +21,11 @@ and `update-mod-db` tasks load it automatically.
   the game DB update aborts instead of silently dropping all non-Steam data.
 - `ALLOW_PARTIAL_GAME_DB=1` — write the game DB even when a source fails. Only
   use this if you understand the data loss it causes.
+
+## Tasks
+
+```sh
+npm run update-game-db
+npm run update-mod-db
+npm run typecheck
+```

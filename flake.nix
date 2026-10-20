@@ -9,7 +9,7 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
-          deno
+          nodejs_26
           jq
         ];
       };

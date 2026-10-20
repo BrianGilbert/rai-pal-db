@@ -1,4 +1,4 @@
-import { ModBase, ModDownload } from "../mod.ts";
+import type { ModBase, ModDownload } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "../github-client.ts";
 

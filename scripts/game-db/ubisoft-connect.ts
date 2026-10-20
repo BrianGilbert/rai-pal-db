@@ -1,5 +1,5 @@
-import { DOMParser } from "jsr:@b-fuze/deno-dom";
-import { Game, GameSubscription } from "./main.ts";
+import { DOMParser } from "linkedom";
+import type { Game, GameSubscription } from "./main.ts";
 import { filterFalsy, normalizeReleaseDate } from "./helpers.ts";
 
 type AlgoliaResponse = {
@@ -78,16 +78,14 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
 		throw new Error(`Could not fetch Ubisoft games: ${response.statusText}`);
 	}
 	const data = (await response.json()) as AlgoliaResponse;
-	return data.hits.map(
-		(hit): Game => ({
-			title: hit.title,
-			ids: {
-				Ubisoft: new Set([hit.id]),
-			},
-			subscriptions: filterFalsy(
-				hit.partofSubscriptionOffer.map(getSubscription),
-			),
-			releaseDate: normalizeReleaseDate(hit.release_date),
-		}),
-	);
+	return data.hits.map((hit): Game => ({
+		title: hit.title,
+		ids: {
+			Ubisoft: new Set([hit.id]),
+		},
+		subscriptions: filterFalsy(
+			hit.partofSubscriptionOffer.map(getSubscription),
+		),
+		releaseDate: normalizeReleaseDate(hit.release_date),
+	}));
 }
