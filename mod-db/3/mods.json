@@ -615,13 +615,17 @@
       },
       "engine": "Unity",
       "family": "unity-config-manager",
-      "hash": "cde81b52070a6eaa2b1acb20c8bd00bf08bc848cab547c41e5c553a931763cd7",
+      "hash": "6f8e96c7db9af4c17269f91ba2c9ce2d70bd08429bee01929790c7f310594d9f",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-il2cpp",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
@@ -645,13 +649,17 @@
       },
       "engine": "Unity",
       "family": "unity-config-manager",
-      "hash": "291ed6f134addb44070fa491f3292f1603daf9df0e5daa316669b79cfde9879c",
+      "hash": "53ff2d246c06a5869641574f13714d4233a9473923dc5e512ea62ff93c108b6b",
       "id": "config-manager-mono",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-mono",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",

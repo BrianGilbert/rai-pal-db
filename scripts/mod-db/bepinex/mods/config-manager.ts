@@ -16,7 +16,7 @@ export async function getConfigManagerMods() {
 				url:
 					"https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
 			},
-		}),
+		}, { withPatchers: true }),
 		bepinexMod({
 			id: "config-manager-mono",
 			unityBackend: "Mono",
@@ -31,6 +31,6 @@ export async function getConfigManagerMods() {
 				url:
 					"https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",
 			},
-		}),
+		}, { withPatchers: true }),
 	];
 }
