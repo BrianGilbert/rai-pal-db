@@ -1,4 +1,4 @@
-import { ModBase, ModRun } from "../mod.ts";
+import type { ModBase, ModRun } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 export function uevrBase(

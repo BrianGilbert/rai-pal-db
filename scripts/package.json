@@ -1,0 +1,22 @@
+{
+	"name": "rai-pal-db-scripts",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=26"
+	},
+	"scripts": {
+		"update-game-db": "node --env-file-if-exists=.env game-db/main.ts",
+		"update-mod-db": "node --env-file-if-exists=.env mod-db/main.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"canonical-json": "^0.4.0",
+		"linkedom": "^0.18.13",
+		"octokit": "^5.0.5"
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.5",
+		"typescript": "^7.0.2"
+	}
+}

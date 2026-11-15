@@ -1,4 +1,4 @@
-import { ModBase } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 const sourceCode = "https://github.com/Raicuparta/gdscript-loader";
@@ -50,7 +50,6 @@ ModLoaderStore="${token.MaybeWineRoot}${scriptLoaderGdPath}"
 	};
 }
 
-// deno-lint-ignore require-await
 export async function getGodotLoaderMods() {
 	return [godotLoader(3), godotLoader(4)];
 }

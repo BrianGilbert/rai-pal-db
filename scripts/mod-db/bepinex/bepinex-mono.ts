@@ -1,6 +1,6 @@
-import {
+import { isArchitecture } from "../mod.ts";
+import type {
 	Architecture,
-	isArchitecture,
 	ModBase,
 	ModDownload,
 	OperatingSystem,

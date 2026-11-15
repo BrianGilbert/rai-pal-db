@@ -1,4 +1,4 @@
-import { ModBase, UnityBackend } from "../mod.ts";
+import type { ModBase, UnityBackend } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 /**

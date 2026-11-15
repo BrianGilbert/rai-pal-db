@@ -1,4 +1,4 @@
-import { ModBase } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { getGodotLoaderMods } from "./godot-loader.ts";
 
 export async function getGodotMods(): Promise<ModBase[]> {

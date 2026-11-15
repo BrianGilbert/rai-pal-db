@@ -1,5 +1,5 @@
 import { getLatestFromGitHub } from "../../github.ts";
-import { ModBase } from "../../mod.ts";
+import type { ModBase } from "../../mod.ts";
 import { bepinexMod } from "../bepinex-mod.ts";
 
 const author = "Raicuparta";
@@ -21,7 +21,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				id: "uuvr-il2cpp-legacy",
 				family: "uuvr",
 				unityBackend: "Il2Cpp",
-				title: "UUVR Il2Cpp Legacy",
+				title: "UUVR",
 				author,
 				sourceCode,
 				description:
@@ -43,7 +43,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				id: "uuvr-mono-legacy",
 				family: "uuvr",
 				unityBackend: "Mono",
-				title: "UUVR Mono Legacy",
+				title: "UUVR",
 				author,
 				sourceCode,
 				description:
@@ -65,7 +65,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				id: "uuvr-mono-modern",
 				family: "uuvr",
 				unityBackend: "Mono",
-				title: "UUVR Mono Modern",
+				title: "UUVR",
 				author,
 				sourceCode,
 				description:

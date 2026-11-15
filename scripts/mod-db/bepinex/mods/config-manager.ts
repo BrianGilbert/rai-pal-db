@@ -1,12 +1,12 @@
 import { bepinexMod } from "../bepinex-mod.ts";
 
-// deno-lint-ignore require-await
 export async function getConfigManagerMods() {
 	return [
 		bepinexMod({
 			id: "config-manager-il2cpp",
 			unityBackend: "Il2Cpp",
 			title: "Config Manager",
+			family: "unity-config-manager",
 			author: "sinai",
 			sourceCode: "https://github.com/Vapok/BepInExConfigManager",
 			description:
@@ -16,11 +16,12 @@ export async function getConfigManagerMods() {
 				url:
 					"https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
 			},
-		}),
+		}, { withPatchers: true }),
 		bepinexMod({
 			id: "config-manager-mono",
 			unityBackend: "Mono",
 			title: "Config Manager",
+			family: "unity-config-manager",
 			author: "sinai",
 			sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
 			description:
@@ -30,6 +31,6 @@ export async function getConfigManagerMods() {
 				url:
 					"https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",
 			},
-		}),
+		}, { withPatchers: true }),
 	];
 }

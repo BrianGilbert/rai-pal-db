@@ -1,4 +1,4 @@
-import { ModBase } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 // These are exposed as mods instead of configs since they're not game-specific,
@@ -49,6 +49,7 @@ function bepInExConfig(
 	return {
 		...mod,
 		author: "BepInEx",
+		family: "bepinex-config",
 		hideFromGameModsList: true,
 		description: "Default BepInEx config",
 		sourceCode: "https://github.com/BepInEx/BepInEx",

@@ -1,4 +1,4 @@
-import { ModDownload } from "./mod.ts";
+import type { ModDownload } from "./mod.ts";
 import { createOctokit } from "./github-client.ts";
 
 type ReleaseParams = {

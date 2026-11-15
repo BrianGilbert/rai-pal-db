@@ -4,6 +4,10 @@
       "description": "Mod loader for Unity mods.",
       "title": "BepInEx"
     },
+    "bepinex-config": {
+      "description": "Default BepInEx config.",
+      "title": "BepInEx Config"
+    },
     "everyone": {
       "description": "Adds multiplayerish features.",
       "title": "Everyone"
@@ -12,6 +16,10 @@
       "description": "Basic mod loader for Godot games.",
       "title": "Godot Mod Loader"
     },
+    "runtime-unity-editor": {
+      "description": "In-game inspector and debugging tools.",
+      "title": "Runtime Unity Editor"
+    },
     "ue4ss": {
       "description": "Scripting and modding framework for Unreal Engine games.",
       "title": "UE4SS"
@@ -19,6 +27,10 @@
     "uevr": {
       "description": "Universal VR mod for Unreal Engine games",
       "title": "UEVR"
+    },
+    "unity-config-manager": {
+      "description": "In-game UI for changing BepInEx mod settings.",
+      "title": "Unity Config Manager"
     },
     "unity-explorer": {
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
@@ -39,14 +51,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.793",
-        "releaseDate": "2026-11-05T18:52:04.282Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/793/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.793%2Bdbc82f0.zip"
+        "id": "6.0.0-be.789",
+        "releaseDate": "2026-10-16T10:43:07.118Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/789/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.789%2B6cea286.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "ac36c20c59b11bf6865833952cdb5e95283ea002d5a8169f60fd4e32299c797d",
+      "hash": "70f6b65e4c67e653d7040ff09b23c75eaf3657d89a344644fe2ab20065acb0e8",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -96,14 +108,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.793",
-        "releaseDate": "2026-11-05T18:52:04.282Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/793/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.793%2Bdbc82f0.zip"
+        "id": "6.0.0-be.789",
+        "releaseDate": "2026-10-16T10:43:07.118Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/789/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.789%2B6cea286.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "fc87dd8acb6917ffac8772668a96cfb0c4e188d6fc75ba274c471688cb3f5b68",
+      "hash": "d755433e06f76f00f82bfb9a06f95bb4e3ece2355d56d2dad827b82167227ea5",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -153,9 +165,9 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.793",
-        "releaseDate": "2026-11-05T18:52:04.282Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/793/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.793%2Bdbc82f0.zip"
+        "id": "6.0.0-be.789",
+        "releaseDate": "2026-10-16T10:43:07.118Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/789/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.789%2B6cea286.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -169,7 +181,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "00bad8a54b6000e360042a0b1caf1c553641ac433040f45c9459331b02cbc171",
+      "hash": "7b9abd385c1687739073ee6507285c86a6f4370c7fb0bd8519749b0a33c79f1e",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -419,7 +431,8 @@
           "minor": 5
         }
       },
-      "hash": "ef903816f3d7beac6fa7dceac35c285bb9dbe7f24cbb3e08474729c6bc2fcb21",
+      "family": "bepinex-config",
+      "hash": "a3716d5fa112bc95be4887d00c76b25963bc8f41130801f8362561fe79ea4833",
       "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
@@ -444,7 +457,8 @@
           "minor": 4
         }
       },
-      "hash": "d5718443270002521ea6cba7ba0c52044f3d91616765a8dac29fdab9be00f5df",
+      "family": "bepinex-config",
+      "hash": "a70ed5f99774af9f360c042f56b23f88a66acf76bd10020d37300c88b95b3ad9",
       "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
@@ -478,7 +492,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "91ab7ddcb37f4b390d57309233219524d85e1812265b4c8efcae821aa9620f9d",
+      "hash": "01a730f6146abc311af73bf22bdbe226687579a4e5ba455c3e271b5de56536f8",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -500,7 +514,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Il2Cpp Legacy",
+      "title": "UUVR",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -522,7 +536,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "eab6d0dc1167909810bc1f7c8938f7147cdaf6e8fccaa4a2301edb60227f9288",
+      "hash": "7b8267112f0e850fe15a13c784d8f469a6b797b6692453e1e84d81115f3e3b97",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -544,7 +558,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Legacy",
+      "title": "UUVR",
       "unityBackend": "Mono"
     },
     {
@@ -567,7 +581,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "81701dfd2738ce8f5003b74618746371990efccfabc80544e99f491a4bf95eee",
+      "hash": "3b25246c3094844984a51e3af5668716e2c7419f0bcb3fa6bc671b32d1104ebd",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -589,7 +603,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Modern",
+      "title": "UUVR",
       "unityBackend": "Mono"
     },
     {
@@ -600,13 +614,18 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "28717c64f95f20a90be35f147389f267badc05cc4cadd0541bbe7ac30f8527b4",
+      "family": "unity-config-manager",
+      "hash": "6f8e96c7db9af4c17269f91ba2c9ce2d70bd08429bee01929790c7f310594d9f",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-il2cpp",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
@@ -629,13 +648,18 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "c7ec98701c574e99ffe1391a3ff36a8d0fa73c01c88a53d51975a537569da003",
+      "family": "unity-config-manager",
+      "hash": "53ff2d246c06a5869641574f13714d4233a9473923dc5e512ea62ff93c108b6b",
       "id": "config-manager-mono",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-mono",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
@@ -721,7 +745,8 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin5_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "2a43d42bea43359343835d283d7bc20ca273ae6eb987e23432be4df11740db13",
+      "family": "runtime-unity-editor",
+      "hash": "a1047c125cebab82ea86aef8754989eec102f9034dd626e43a2dc791e852f050",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -751,7 +776,8 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "938ed2395724a661b27fdf89e38489baeaf9aa37a47fb484e98c3a57fd37dc70",
+      "family": "runtime-unity-editor",
+      "hash": "2635ea5267e1083c643034d5a6669a86e1097cb4af96b941ba4e779fec059d56",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -1136,14 +1162,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "111426XRAsyncXRWaitFrameOptions",
-        "releaseDate": "2026-11-13T15:31:32Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/111426XRAsyncXRWaitFrameOptions/uevr.zip"
+        "id": "102226SWGRNoBarsJustCarsp4",
+        "releaseDate": "2026-10-19T18:03:44Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102226SWGRNoBarsJustCarsp4/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "55385965e73622d4139e15c3730f327586ec04824fdb50c131ffdfe5eed4ac9d",
+      "hash": "7efa248a98d8df0f8a34b8060cefe95e58c98d43a0321dc014b219b1d2d2d550",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1214,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "111426XRAsyncXRWaitFrameOptions",
-        "releaseDate": "2026-11-13T15:33:31Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/111426XRAsyncXRWaitFrameOptions/DIBRMONOuevr.zip"
+        "id": "102226SWGRNoBarsJustCarsp4",
+        "releaseDate": "2026-10-19T18:07:17Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102226SWGRNoBarsJustCarsp4/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "eac644427d1bbc86c6e1e703342d19c5c02caf5b2ef550887d04c57b3ea7f398",
+      "hash": "2ebf96182d25da069d42ffae8fae48bb67b858d2609ee1f8855a3343eb7d540c",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -1409,12 +1435,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1208",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1208-g6f8dc3cc.zip"
+        "id": "v3.0.1-1181",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1181-g83330635.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "b84de36578ee1496ba68afce961aacff79308689e1dfe3b2d8a6c60102fffed6",
+      "hash": "454b69bb31f10d2ea4d6db39b6e2cd1b015528964c9348416fb672afeba04702",
       "id": "ue4ss",
       "install": {
         "extract": [
