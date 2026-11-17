@@ -1162,14 +1162,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "111426XRAsyncXRWaitFrameOptions",
-        "releaseDate": "2026-11-13T15:31:32Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/111426XRAsyncXRWaitFrameOptions/uevr.zip"
+        "id": "111726DecadeofUnreal",
+        "releaseDate": "2026-11-16T18:14:07Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/111726DecadeofUnreal/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "55385965e73622d4139e15c3730f327586ec04824fdb50c131ffdfe5eed4ac9d",
+      "hash": "0bb5604a8c96eba193508b2f2823cd98f3f31d0fd299e0b5527510c2b3c6a7c3",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1214,14 +1214,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "111426XRAsyncXRWaitFrameOptions",
-        "releaseDate": "2026-11-13T15:33:31Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/111426XRAsyncXRWaitFrameOptions/DIBRMONOuevr.zip"
+        "id": "111726DecadeofUnreal",
+        "releaseDate": "2026-11-16T18:16:05Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/111726DecadeofUnreal/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "eac644427d1bbc86c6e1e703342d19c5c02caf5b2ef550887d04c57b3ea7f398",
+      "hash": "4992863c39ade1e4583eb25154cf21ce7b50f9cde4933eeab5ec5bebdaf162dd",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
