@@ -1,8 +1,6 @@
-import type { ModBase } from "./mod.ts";
-import { bepinexModHelper } from "./bepinex/bepinex-mod.ts";
-import { token } from "./replacement-tokens.ts";
+import type { ModBase } from "../mod.ts";
 
-const pcvrHubMods: ModBase[] = [
+export const linkOnlyMods: ModBase[] = [
 	{
 		id: "mafia-ii-classic-vr",
 		gameIds: { Steam: ["50130"], NormalizedTitle: ["mafiaii"] },
@@ -23,7 +21,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "tiny-tinas-wonderlands-vr",
-		gameIds: { Steam: ["1286680"], Epic: ["4742cc98b91541499570c72f3825b893"], NormalizedTitle: ["tinytinaswonderlands"] },
+		gameIds: {
+			Steam: ["1286680"],
+			Epic: ["4742cc98b91541499570c72f3825b893"],
+			NormalizedTitle: ["tinytinaswonderlands"],
+		},
 		family: "game-specific",
 		title: "Tiny Tina's Wonderlands",
 		author: "Trilex",
@@ -32,7 +34,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "gothic-3-vr",
-		gameIds: { Steam: ["39500"], Gog: ["1207658986"], NormalizedTitle: ["gothic3"] },
+		gameIds: {
+			Steam: ["39500"],
+			Gog: ["1207658986"],
+			NormalizedTitle: ["gothic3"],
+		},
 		family: "game-specific",
 		title: "Gothic 3 VR",
 		author: "PeCOS2k5",
@@ -45,7 +51,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "7 Days to Die VR",
 		author: "7DaysVR Team",
-		website: "https://docs.google.com/document/d/1gI9_EpF7ACiZu3bndAj1A5uGy0TKVUnfVfvTbHtWsPM/view?tab=t.0",
+		website:
+			"https://docs.google.com/document/d/1gI9_EpF7ACiZu3bndAj1A5uGy0TKVUnfVfvTbHtWsPM/view?tab=t.0",
 		description: "7 Days to Die VR mod with full motion controls.",
 	},
 	{
@@ -54,7 +61,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Agent 64: Spies Never Die VR",
 		author: "King-EJ",
-		website: "https://discord.com/channels/747967102895390741/1553985703858143332",
+		website:
+			"https://discord.com/channels/747967102895390741/1553985703858143332",
 		description: "Agent 64: Spies Never Die VR mod with full motion controls.",
 	},
 	{
@@ -77,7 +85,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "aliens-versus-predator-vr",
-		gameIds: { Steam: ["3730"], Gog: ["1207665883"], NormalizedTitle: ["aliensversuspredatorclassic2000"] },
+		gameIds: {
+			Steam: ["3730"],
+			Gog: ["1207665883"],
+			NormalizedTitle: ["aliensversuspredatorclassic2000"],
+		},
 		family: "game-specific",
 		title: "Aliens versus Predator VR",
 		author: "Bassquake",
@@ -86,7 +98,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "amnesia-vr",
-		gameIds: { Steam: ["57300"], Gog: ["1207659259"], NormalizedTitle: ["amnesiathedarkdescent"] },
+		gameIds: {
+			Steam: ["57300"],
+			Gog: ["1207659259"],
+			NormalizedTitle: ["amnesiathedarkdescent"],
+		},
 		family: "game-specific",
 		title: "Amnesia VR",
 		author: "CreaTeam",
@@ -95,7 +111,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "among-the-sleep-vr",
-		gameIds: { Steam: ["250620", "332210"], Gog: ["1207664603"], NormalizedTitle: ["amongthesleep"] },
+		gameIds: {
+			Steam: ["250620", "332210"],
+			Gog: ["1207664603"],
+			NormalizedTitle: ["amongthesleep"],
+		},
 		family: "game-specific",
 		title: "Among the Sleep VR",
 		author: "King-EJ",
@@ -122,7 +142,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "away-vr",
-		gameIds: { Steam: ["573110"], Gog: ["2049669635"], NormalizedTitle: ["awayjourneytotheunexpected"] },
+		gameIds: {
+			Steam: ["573110"],
+			Gog: ["2049669635"],
+			NormalizedTitle: ["awayjourneytotheunexpected"],
+		},
 		family: "game-specific",
 		title: "AWAY VR",
 		author: "Pk-c",
@@ -149,7 +173,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "bendy-vr",
-		gameIds: { Steam: ["622650", "622661", "622660", "730000"], Gog: ["1351324631"], NormalizedTitle: ["bendyandtheinkmachine"] },
+		gameIds: {
+			Steam: ["622650", "622661", "622660", "730000"],
+			Gog: ["1351324631"],
+			NormalizedTitle: ["bendyandtheinkmachine"],
+		},
 		family: "game-specific",
 		title: "Bendy VR",
 		author: "StrikeZoneVR / Team Beef",
@@ -158,7 +186,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "big-walk-vr",
-		gameIds: { Steam: ["1478500"], Epic: ["aa9356eed764415d8dfec0b28ba59843"], NormalizedTitle: ["bigwalk"] },
+		gameIds: {
+			Steam: ["1478500"],
+			Epic: ["aa9356eed764415d8dfec0b28ba59843"],
+			NormalizedTitle: ["bigwalk"],
+		},
 		family: "game-specific",
 		title: "Big Walk VR",
 		author: "CircuitLord",
@@ -167,7 +199,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "bioshock-remastered",
-		gameIds: { Steam: ["409710", "7670", "7710"], Gog: ["1269268081"], NormalizedTitle: ["bioshock", "bioshockremastered"] },
+		gameIds: {
+			Steam: ["409710", "7670", "7710"],
+			Gog: ["1269268081"],
+			NormalizedTitle: ["bioshock", "bioshockremastered"],
+		},
 		family: "game-specific",
 		title: "BioShock Remastered",
 		author: "balouza / BioVRDev",
@@ -176,7 +212,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "bioshock-2-remastered",
-		gameIds: { Steam: ["409720", "8850", "244610", "525720"], Gog: ["1111208428"], NormalizedTitle: ["bioshock2", "bioshock2remastered"] },
+		gameIds: {
+			Steam: ["409720", "8850", "244610", "525720"],
+			Gog: ["1111208428"],
+			NormalizedTitle: ["bioshock2", "bioshock2remastered"],
+		},
 		family: "game-specific",
 		title: "BioShock 2 Remastered",
 		author: "balouza",
@@ -185,7 +225,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "bioshock-infinite-vr",
-		gameIds: { Steam: ["8870", "214930", "214931", "214932", "214933"], Gog: ["1752654506"], NormalizedTitle: ["bioshockinfinite"] },
+		gameIds: {
+			Steam: ["8870", "214930", "214931", "214932", "214933"],
+			Gog: ["1752654506"],
+			NormalizedTitle: ["bioshockinfinite"],
+		},
 		family: "game-specific",
 		title: "BioShock Infinite VR",
 		author: "balouza",
@@ -221,7 +265,15 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "blood-west-vr",
-		gameIds: { Steam: ["1587130", "3158590"], Gog: ["1901494026", "1732956308", "1556560608"], Epic: ["8122ff0d6f8244eda9ea0e90c464cd38"], NormalizedTitle: ["bloodwest", "bloodwestofficialsoundtrack_digitalextraaudience"] },
+		gameIds: {
+			Steam: ["1587130", "3158590"],
+			Gog: ["1901494026", "1732956308", "1556560608"],
+			Epic: ["8122ff0d6f8244eda9ea0e90c464cd38"],
+			NormalizedTitle: [
+				"bloodwest",
+				"bloodwestofficialsoundtrack_digitalextraaudience",
+			],
+		},
 		family: "game-specific",
 		title: "Blood West VR",
 		author: "King-EJ",
@@ -230,7 +282,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "borderlands-goty-enhanced",
-		gameIds: { Steam: ["729040"], NormalizedTitle: ["borderlandsgameoftheyearenhanced"] },
+		gameIds: {
+			Steam: ["729040"],
+			NormalizedTitle: ["borderlandsgameoftheyearenhanced"],
+		},
 		family: "game-specific",
 		title: "Borderlands GOTY Enhanced",
 		author: "Mastersellz",
@@ -248,7 +303,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "c-c-generals-zero-hour",
-		gameIds: { Steam: ["2732960"], NormalizedTitle: ["commandconquergeneralszerohour"] },
+		gameIds: {
+			Steam: ["2732960"],
+			NormalizedTitle: ["commandconquergeneralszerohour"],
+		},
 		family: "game-specific",
 		title: "C&C Generals: Zero Hour",
 		author: "Gonzorro",
@@ -284,12 +342,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "call-of-duty-united-offensive-vr",
-		gameIds: { Steam: ["2640"], NormalizedTitle: ["callofdutyunitedoffensive"] },
+		gameIds: {
+			Steam: ["2640"],
+			NormalizedTitle: ["callofdutyunitedoffensive"],
+		},
 		family: "game-specific",
 		title: "Call of Duty: United Offensive VR",
 		author: "lambda-gab",
 		website: "https://github.com/lambda-gab/cod1-vr",
-		description: "Call of Duty: United Offensive VR mod with full motion controls.",
+		description:
+			"Call of Duty: United Offensive VR mod with full motion controls.",
 	},
 	{
 		id: "call-of-duty-world-at-war-vr",
@@ -329,7 +391,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "cyberpunk-2077",
-		gameIds: { Steam: ["1091500"], Gog: ["1423049311", "2093619782"], NormalizedTitle: ["cyberpunk2077"] },
+		gameIds: {
+			Steam: ["1091500"],
+			Gog: ["1423049311", "2093619782"],
+			NormalizedTitle: ["cyberpunk2077"],
+		},
 		family: "game-specific",
 		title: "Cyberpunk 2077",
 		author: "dariulone",
@@ -338,7 +404,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "daggerfall-vr",
-		gameIds: { Steam: ["1812390"], NormalizedTitle: ["theelderscrollsdaggerfall"] },
+		gameIds: {
+			Steam: ["1812390"],
+			NormalizedTitle: ["theelderscrollsdaggerfall"],
+		},
 		family: "game-specific",
 		title: "Daggerfall VR",
 		author: "LokiusV",
@@ -392,7 +461,23 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "deep-rock-galactic-vr",
-		gameIds: { Steam: ["548430", "2934390", "2416900", "2291670", "2165590", "1946960", "1797340", "801860", "1283090", "1283091", "1430610", "1530640"], NormalizedTitle: ["deeprockgalactic"] },
+		gameIds: {
+			Steam: [
+				"548430",
+				"2934390",
+				"2416900",
+				"2291670",
+				"2165590",
+				"1946960",
+				"1797340",
+				"801860",
+				"1283090",
+				"1283091",
+				"1430610",
+				"1530640",
+			],
+			NormalizedTitle: ["deeprockgalactic"],
+		},
 		family: "game-specific",
 		title: "Deep Rock Galactic VR",
 		author: "Kosro, HerrFristi, Alch3m1st",
@@ -401,12 +486,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "deus-ex-human-revolution-directors-cut-vr",
-		gameIds: { Steam: ["238010"], NormalizedTitle: ["deusexhumanrevolutiondirectorscut"] },
+		gameIds: {
+			Steam: ["238010"],
+			NormalizedTitle: ["deusexhumanrevolutiondirectorscut"],
+		},
 		family: "game-specific",
 		title: "Deus Ex: Human Revolution - DC",
 		author: "farmerarmor",
 		website: "https://github.com/farmerarmor/DeusExHRVR",
-		description: "Deus Ex: Human Revolution - DC VR mod with full motion controls.",
+		description:
+			"Deus Ex: Human Revolution - DC VR mod with full motion controls.",
 	},
 	{
 		id: "diablo-ii-resurrected-vr",
@@ -419,7 +508,26 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "dishonored-vr",
-		gameIds: { Steam: ["205100", "208570", "212894", "208575", "212893", "217980", "218786", "218785", "218784"], Gog: ["1701063787", "1521801184"], Xbox: ["9P1N07XDL1D4"], NormalizedTitle: ["dishonored", "dishonoreddefinitiveeditionpc", "dishonoreddefinitiveedition"] },
+		gameIds: {
+			Steam: [
+				"205100",
+				"208570",
+				"212894",
+				"208575",
+				"212893",
+				"217980",
+				"218786",
+				"218785",
+				"218784",
+			],
+			Gog: ["1701063787", "1521801184"],
+			Xbox: ["9P1N07XDL1D4"],
+			NormalizedTitle: [
+				"dishonored",
+				"dishonoreddefinitiveeditionpc",
+				"dishonoreddefinitiveedition",
+			],
+		},
 		family: "game-specific",
 		title: "Dishonored VR",
 		author: "VR-Stereo-Hub / BioVRDev and VOID",
@@ -464,7 +572,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "doom-vr",
-		gameIds: { Steam: ["2280"], Gog: ["2015545325"], NormalizedTitle: ["doomienhanced"] },
+		gameIds: {
+			Steam: ["2280"],
+			Gog: ["2015545325"],
+			NormalizedTitle: ["doomienhanced"],
+		},
 		family: "game-specific",
 		title: "Doom VR",
 		author: "hh79",
@@ -473,7 +585,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "doom-2-vr",
-		gameIds: { Steam: ["2300"], Gog: ["1426071866"], NormalizedTitle: ["doomiienhanced"] },
+		gameIds: {
+			Steam: ["2300"],
+			Gog: ["1426071866"],
+			NormalizedTitle: ["doomiienhanced"],
+		},
 		family: "game-specific",
 		title: "Doom 2 VR",
 		author: "hh79",
@@ -491,7 +607,23 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "dredge-vr",
-		gameIds: { Steam: ["1562430", "2104240", "2198600", "2198610", "2561440", "2561450"], Gog: ["1744110647", "1487969767", "1322967649", "1707774748", "1154366605", "1436182852", "1302420295"], Epic: ["fb396afeff004f4c9fdf628ee004ac4b"], NormalizedTitle: ["dredge", "dredgecompleteeditionupgradebundle_seasonpassaudience"] },
+		gameIds: {
+			Steam: ["1562430", "2104240", "2198600", "2198610", "2561440", "2561450"],
+			Gog: [
+				"1744110647",
+				"1487969767",
+				"1322967649",
+				"1707774748",
+				"1154366605",
+				"1436182852",
+				"1302420295",
+			],
+			Epic: ["fb396afeff004f4c9fdf628ee004ac4b"],
+			NormalizedTitle: [
+				"dredge",
+				"dredgecompleteeditionupgradebundle_seasonpassaudience",
+			],
+		},
 		family: "game-specific",
 		title: "Dredge VR",
 		author: "xen-42",
@@ -509,11 +641,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "dusk-hd-dlc-vr",
-		gameIds: { Steam: ["519860", "994820", "994821", "1846130", "2717300"], Gog: ["1150392214", "1985013742"], NormalizedTitle: ["dusk"] },
+		gameIds: {
+			Steam: ["519860", "994820", "994821", "1846130", "2717300"],
+			Gog: ["1150392214", "1985013742"],
+			NormalizedTitle: ["dusk"],
+		},
 		family: "game-specific",
 		title: "Dusk HD (DLC) VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1449484957671227555/1449484957671227555",
+		website:
+			"https://discord.com/channels/1001138422972432597/1449484957671227555/1449484957671227555",
 		description: "Dusk HD (DLC) VR mod with full motion controls.",
 	},
 	{
@@ -536,11 +673,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "elderborn-vr",
-		gameIds: { Steam: ["727850", "1176120", "1176121"], Gog: ["1732383191", "1987694488"], NormalizedTitle: ["elderborn"] },
+		gameIds: {
+			Steam: ["727850", "1176120", "1176121"],
+			Gog: ["1732383191", "1987694488"],
+			NormalizedTitle: ["elderborn"],
+		},
 		family: "game-specific",
 		title: "ELDERBORN VR",
 		author: "Jean-Francois",
-		website: "https://discord.com/channels/747967102895390741/1542935421649027152",
+		website:
+			"https://discord.com/channels/747967102895390741/1542935421649027152",
 		description: "ELDERBORN VR mod with full motion controls.",
 	},
 	{
@@ -563,7 +705,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "f-e-a-r-vr",
-		gameIds: { Steam: ["21090"], Gog: ["1423058413"], NormalizedTitle: ["fearultimateshooteredition"] },
+		gameIds: {
+			Steam: ["21090"],
+			Gog: ["1423058413"],
+			NormalizedTitle: ["fearultimateshooteredition"],
+		},
 		family: "game-specific",
 		title: "F.E.A.R. VR",
 		author: "thefreemike / DR-89",
@@ -590,7 +736,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "fallout-new-vegas-vr",
-		gameIds: { Steam: ["22380"], Gog: ["1454587428", "1312824873"], NormalizedTitle: ["falloutnewvegas"] },
+		gameIds: {
+			Steam: ["22380"],
+			Gog: ["1454587428", "1312824873"],
+			NormalizedTitle: ["falloutnewvegas"],
+		},
 		family: "game-specific",
 		title: "Fallout: New Vegas VR",
 		author: "df4l / KUPOkinz",
@@ -603,7 +753,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "A Tale of Two Realities",
 		author: "KUPOkinz",
-		website: "https://discord.com/channels/1570233209462194208/1570243276932653086",
+		website:
+			"https://discord.com/channels/1570233209462194208/1570243276932653086",
 		description: "A Tale of Two Realities VR mod with full motion controls.",
 	},
 	{
@@ -626,16 +777,25 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "gears-of-war-e-day-vr",
-		gameIds: { Steam: ["3010850", "4632450", "4637140", "4637200", "5028560"], Xbox: ["9N4PT8HGCDHQ"], NormalizedTitle: ["gearsofwareday"] },
+		gameIds: {
+			Steam: ["3010850", "4632450", "4637140", "4637200", "5028560"],
+			Xbox: ["9N4PT8HGCDHQ"],
+			NormalizedTitle: ["gearsofwareday"],
+		},
 		family: "game-specific",
 		title: "Gears of War: E-Day VR",
 		author: "paultaran00",
-		website: "https://discord.com/channels/747967102895390741/1566108844201873458",
+		website:
+			"https://discord.com/channels/747967102895390741/1566108844201873458",
 		description: "Gears of War: E-Day VR mod with full motion controls.",
 	},
 	{
 		id: "hitman-contracts-vr",
-		gameIds: { Steam: ["247430"], Gog: ["1207660853"], NormalizedTitle: ["hitman3contracts"] },
+		gameIds: {
+			Steam: ["247430"],
+			Gog: ["1207660853"],
+			NormalizedTitle: ["hitman3contracts"],
+		},
 		family: "game-specific",
 		title: "Hitman: Contracts VR",
 		author: "andreystashev",
@@ -644,11 +804,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "i-hate-this-place-vr",
-		gameIds: { Steam: ["2604490", "4332390", "4354700"], Gog: ["1552308959", "1208784581", "1845203179", "1227565313"], Epic: ["1c2bb93b179f45f7b9a9f149f9142494"], NormalizedTitle: ["ihatethisplace"] },
+		gameIds: {
+			Steam: ["2604490", "4332390", "4354700"],
+			Gog: ["1552308959", "1208784581", "1845203179", "1227565313"],
+			Epic: ["1c2bb93b179f45f7b9a9f149f9142494"],
+			NormalizedTitle: ["ihatethisplace"],
+		},
 		family: "game-specific",
 		title: "I Hate This Place VR",
 		author: "King-EJ",
-		website: "https://discord.com/channels/747967102895390741/1555744269807915109",
+		website:
+			"https://discord.com/channels/747967102895390741/1555744269807915109",
 		description: "I Hate This Place VR mod with full motion controls.",
 	},
 	{
@@ -662,7 +828,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "forsaken-vr",
-		gameIds: { Steam: ["668980"], Gog: ["1624591191"], NormalizedTitle: ["forsakenremastered"] },
+		gameIds: {
+			Steam: ["668980"],
+			Gog: ["1624591191"],
+			NormalizedTitle: ["forsakenremastered"],
+		},
 		family: "game-specific",
 		title: "Forsaken VR",
 		author: "GameOrDie007",
@@ -675,12 +845,18 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Garry's Mod VR",
 		author: "Abyss-c0re / Doom Slayer",
-		website: "https://steamcommunity.com/sharedfiles/filedetails/?id=3442302711",
+		website:
+			"https://steamcommunity.com/sharedfiles/filedetails/?id=3442302711",
 		description: "Garry's Mod VR mod with full motion controls.",
 	},
 	{
 		id: "gloomhaven-vr",
-		gameIds: { Steam: ["780290", "1809490"], Gog: ["2102122491", "1938055224"], Epic: ["92b43293e6e04a049fda8b797ea3eda9"], NormalizedTitle: ["gloomhaven"] },
+		gameIds: {
+			Steam: ["780290", "1809490"],
+			Gog: ["2102122491", "1938055224"],
+			Epic: ["92b43293e6e04a049fda8b797ea3eda9"],
+			NormalizedTitle: ["gloomhaven"],
+		},
 		family: "game-specific",
 		title: "Gloomhaven VR",
 		author: "McFredward",
@@ -689,11 +865,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "gothic-ii-vr",
-		gameIds: { Steam: ["39510"], Gog: ["1207658718"], NormalizedTitle: ["gothicii"] },
+		gameIds: {
+			Steam: ["39510"],
+			Gog: ["1207658718"],
+			NormalizedTitle: ["gothicii"],
+		},
 		family: "game-specific",
 		title: "Gothic II VR",
 		author: "dubrovskiy-yevhen-stakelogic",
-		website: "https://discord.com/channels/747967102895390741/1549536264657576046",
+		website:
+			"https://discord.com/channels/747967102895390741/1549536264657576046",
 		description: "Gothic II VR mod with full motion controls.",
 	},
 	{
@@ -702,7 +883,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Grand Theft Auto V VR",
 		author: "DeployAbi / Luke Ross",
-		website: "https://discord.com/channels/747967102895390741/1545350924237668453",
+		website:
+			"https://discord.com/channels/747967102895390741/1545350924237668453",
 		description: "Grand Theft Auto V VR mod.",
 	},
 	{
@@ -738,17 +920,23 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Gunfire Reborn",
 		author: "PureDark + Astienth",
-		website: "https://github.com/Astienth/gunfire-reborn-bhaptics/releases/tag/1.0.0",
+		website:
+			"https://github.com/Astienth/gunfire-reborn-bhaptics/releases/tag/1.0.0",
 		description: "Gunfire Reborn VR mod with full motion controls.",
 	},
 	{
 		id: "halo-3-mcc-vr",
-		gameIds: { Steam: ["976730"], Xbox: ["9NTM9HXNLSZX"], NormalizedTitle: ["halothemasterchiefcollection"] },
+		gameIds: {
+			Steam: ["976730"],
+			Xbox: ["9NTM9HXNLSZX"],
+			NormalizedTitle: ["halothemasterchiefcollection"],
+		},
 		family: "game-specific",
 		title: "Halo Master Chief Collection VR",
 		author: "moistman42069",
 		website: "https://github.com/moistman42069/MCCVR-Halo-Build",
-		description: "Halo Master Chief Collection VR mod with full motion controls.",
+		description:
+			"Halo Master Chief Collection VR mod with full motion controls.",
 	},
 	{
 		id: "heretic-vr",
@@ -797,11 +985,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "mass-effect-1-le-vr",
-		gameIds: { Steam: ["1328670", "1393160"], Xbox: ["9PKWHT7G60WQ"], NormalizedTitle: ["masseffectlegendaryedition"] },
+		gameIds: {
+			Steam: ["1328670", "1393160"],
+			Xbox: ["9PKWHT7G60WQ"],
+			NormalizedTitle: ["masseffectlegendaryedition"],
+		},
 		family: "game-specific",
 		title: "Mass Effect 1 LE VR",
 		author: "dnehring / dhalcyon",
-		website: "https://discord.com/channels/747967102895390741/1568594747591884841",
+		website:
+			"https://discord.com/channels/747967102895390741/1568594747591884841",
 		description: "Mass Effect 1 LE VR mod.",
 	},
 	{
@@ -815,20 +1008,30 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "house-of-the-dead-remake-vr",
-		gameIds: { Steam: ["1694600"], Gog: ["1195723193"], NormalizedTitle: ["thehouseofthedeadremake"] },
+		gameIds: {
+			Steam: ["1694600"],
+			Gog: ["1195723193"],
+			NormalizedTitle: ["thehouseofthedeadremake"],
+		},
 		family: "game-specific",
 		title: "House of the Dead Remake VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1391730397418881067/1391730397418881067",
+		website:
+			"https://discord.com/channels/1001138422972432597/1391730397418881067/1391730397418881067",
 		description: "House of the Dead Remake VR mod with full motion controls.",
 	},
 	{
 		id: "house-of-the-dead-2-remake-vr",
-		gameIds: { Steam: ["3376690"], Gog: ["1372785870"], NormalizedTitle: ["thehouseofthedead2remake"] },
+		gameIds: {
+			Steam: ["3376690"],
+			Gog: ["1372785870"],
+			NormalizedTitle: ["thehouseofthedead2remake"],
+		},
 		family: "game-specific",
 		title: "House of the Dead 2 Remake VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1504155922572775554/1504155922572775554",
+		website:
+			"https://discord.com/channels/1001138422972432597/1504155922572775554/1504155922572775554",
 		description: "House of the Dead 2 Remake VR mod with full motion controls.",
 	},
 	{
@@ -837,7 +1040,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Resident Evil 5 VR",
 		author: "SpreadTheBirb",
-		website: "https://discord.com/channels/747967102895390741/1548196654442614905",
+		website:
+			"https://discord.com/channels/747967102895390741/1548196654442614905",
 		description: "Resident Evil 5 VR mod.",
 	},
 	{
@@ -851,7 +1055,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "iron-lung-vr",
-		gameIds: { Steam: ["1846170", "1877810"], Gog: ["1310178756"], NormalizedTitle: ["ironlung"] },
+		gameIds: {
+			Steam: ["1846170", "1877810"],
+			Gog: ["1310178756"],
+			NormalizedTitle: ["ironlung"],
+		},
 		family: "game-specific",
 		title: "Iron Lung VR",
 		author: "Jack Randolph",
@@ -869,16 +1077,26 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "kerbal-space-program",
-		gameIds: { Steam: ["220200", "283740"], Gog: ["1429864849", "2092205632", "1506581192"], Epic: ["84686da593b24598803ffbe7f9b1bb5e"], NormalizedTitle: ["kerbalspaceprogram"] },
+		gameIds: {
+			Steam: ["220200", "283740"],
+			Gog: ["1429864849", "2092205632", "1506581192"],
+			Epic: ["84686da593b24598803ffbe7f9b1bb5e"],
+			NormalizedTitle: ["kerbalspaceprogram"],
+		},
 		family: "game-specific",
 		title: "Kerbal Space Program",
 		author: "JonnyOThan / FirstPersonKSP",
-		website: "https://github.com/FirstPersonKSP/Kerbal-VR/wiki/Installation-Guide",
+		website:
+			"https://github.com/FirstPersonKSP/Kerbal-VR/wiki/Installation-Guide",
 		description: "Kerbal Space Program VR mod with full motion controls.",
 	},
 	{
 		id: "killing-floor-2-vr",
-		gameIds: { Steam: ["232090"], Epic: ["b51279fe75d841dd9a0dcb1a1b85bf4b"], NormalizedTitle: ["killingfloor2"] },
+		gameIds: {
+			Steam: ["232090"],
+			Epic: ["b51279fe75d841dd9a0dcb1a1b85bf4b"],
+			NormalizedTitle: ["killingfloor2"],
+		},
 		family: "game-specific",
 		title: "Killing Floor 2 VR",
 		author: "Kvasir94",
@@ -900,12 +1118,17 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Lethal Company VR",
 		author: "DaXcess",
-		website: "https://thunderstore.io/c/lethal-company/p/DaXcess/LethalCompanyVR/",
+		website:
+			"https://thunderstore.io/c/lethal-company/p/DaXcess/LethalCompanyVR/",
 		description: "Lethal Company VR mod with full motion controls.",
 	},
 	{
 		id: "life-is-strange-bts",
-		gameIds: { Steam: ["554620", "1265930"], Gog: ["2131041921", "1109523731", "2135294930"], NormalizedTitle: ["lifeisstrangebeforethestorm"] },
+		gameIds: {
+			Steam: ["554620", "1265930"],
+			Gog: ["2131041921", "1109523731", "2135294930"],
+			NormalizedTitle: ["lifeisstrangebeforethestorm"],
+		},
 		family: "game-specific",
 		title: "Life is Strange: BtS",
 		author: "TrevTV",
@@ -918,7 +1141,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Little Witch Nobeta VR",
 		author: "Pk-c",
-		website: "https://discord.com/channels/747967102895390741/1553053055975690260",
+		website:
+			"https://discord.com/channels/747967102895390741/1553053055975690260",
 		description: "Little Witch Nobeta VR mod with full motion controls.",
 	},
 	{
@@ -955,11 +1179,22 @@ const pcvrHubMods: ModBase[] = [
 		title: "Metal Gear Solid V: The Phantom Pain VR",
 		author: "nikamigaming-create",
 		website: "https://github.com/nikamigaming-create/MGS5VR",
-		description: "Metal Gear Solid V: The Phantom Pain VR mod with full motion controls.",
+		description:
+			"Metal Gear Solid V: The Phantom Pain VR mod with full motion controls.",
 	},
 	{
 		id: "metal-hellsinger-vr",
-		gameIds: { Steam: ["1061910", "2252490", "2392613", "2386360"], Gog: ["2040522527", "1347852284", "2099900144", "1141915110", "1079168140"], NormalizedTitle: ["metalhellsinger"] },
+		gameIds: {
+			Steam: ["1061910", "2252490", "2392613", "2386360"],
+			Gog: [
+				"2040522527",
+				"1347852284",
+				"2099900144",
+				"1141915110",
+				"1079168140",
+			],
+			NormalizedTitle: ["metalhellsinger"],
+		},
 		family: "game-specific",
 		title: "Metal: Hellsinger VR",
 		author: "LivingFray",
@@ -968,7 +1203,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "mirrors-edge-vr",
-		gameIds: { Steam: ["17410"], Gog: ["1893001152"], Epic: ["e942018b506d4cfc98c10d92bc9f9a53"], NormalizedTitle: ["mirrorsedge"] },
+		gameIds: {
+			Steam: ["17410"],
+			Gog: ["1893001152"],
+			Epic: ["e942018b506d4cfc98c10d92bc9f9a53"],
+			NormalizedTitle: ["mirrorsedge"],
+		},
 		family: "game-specific",
 		title: "Mirror's Edge VR",
 		author: "LetsGoSportsTeam",
@@ -977,7 +1217,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "miside-vr",
-		gameIds: { Steam: ["2527500", "3404450", "2527520"], NormalizedTitle: ["miside"] },
+		gameIds: {
+			Steam: ["2527500", "3404450", "2527520"],
+			NormalizedTitle: ["miside"],
+		},
 		family: "game-specific",
 		title: "MiSide VR",
 		author: "Glitchtest51",
@@ -991,29 +1234,44 @@ const pcvrHubMods: ModBase[] = [
 		title: "Mount & Blade II: Bannerlord VR",
 		author: "NotLooky",
 		website: "https://github.com/NotLooky/BannerlordVR",
-		description: "Mount & Blade II: Bannerlord VR mod with full motion controls.",
+		description:
+			"Mount & Blade II: Bannerlord VR mod with full motion controls.",
 	},
 	{
 		id: "moros-protocol-vr",
-		gameIds: { Steam: ["1605250"], Gog: ["1999729393"], NormalizedTitle: ["morosprotocol"] },
+		gameIds: {
+			Steam: ["1605250"],
+			Gog: ["1999729393"],
+			NormalizedTitle: ["morosprotocol"],
+		},
 		family: "game-specific",
 		title: "Moros Protocol VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1456423903177211925/1456423903177211925",
+		website:
+			"https://discord.com/channels/1001138422972432597/1456423903177211925/1456423903177211925",
 		description: "Moros Protocol VR mod with full motion controls.",
 	},
 	{
 		id: "mouse-p-i-for-hire-vr",
-		gameIds: { Steam: ["2416450", "3879460", "3879490", "3912890"], Gog: ["1567378928", "2077295668"], NormalizedTitle: ["mousepiforhire"] },
+		gameIds: {
+			Steam: ["2416450", "3879460", "3879490", "3912890"],
+			Gog: ["1567378928", "2077295668"],
+			NormalizedTitle: ["mousepiforhire"],
+		},
 		family: "game-specific",
 		title: "Mouse P.I. For Hire VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1523984295633490031/1523984342077014069",
+		website:
+			"https://discord.com/channels/1001138422972432597/1523984295633490031/1523984342077014069",
 		description: "Mouse P.I. For Hire VR mod with full motion controls.",
 	},
 	{
 		id: "my-friendly-neighborhood-vr",
-		gameIds: { Steam: ["1574260"], Epic: ["d84808f282b84dcbabf5a2600933ff60"], NormalizedTitle: ["myfriendlyneighborhood"] },
+		gameIds: {
+			Steam: ["1574260"],
+			Epic: ["d84808f282b84dcbabf5a2600933ff60"],
+			NormalizedTitle: ["myfriendlyneighborhood"],
+		},
 		family: "game-specific",
 		title: "My Friendly Neighborhood VR",
 		author: "LeviGaming1248",
@@ -1031,16 +1289,32 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "outer-wilds-vr",
-		gameIds: { Steam: ["753640", "1622100"], Epic: ["c1c2d06bb0b24b7cb820e8e03ae5c3d2"], NormalizedTitle: ["outerwilds", "outerwildsechoesoftheeye"] },
+		gameIds: {
+			Steam: ["753640", "1622100"],
+			Epic: ["c1c2d06bb0b24b7cb820e8e03ae5c3d2"],
+			NormalizedTitle: ["outerwilds", "outerwildsechoesoftheeye"],
+		},
 		family: "game-specific",
-		title: "Outer Wilds VR",
+		title: "NomaiVR",
 		author: "Raicuparta & Artum",
 		website: "https://outerwildsmods.com/mods/nomaivr/",
 		description: "Outer Wilds VR mod with full motion controls.",
 	},
 	{
 		id: "outward-de-vr",
-		gameIds: { Steam: ["794260", "983420"], Gog: ["1091409855", "2147483078", "1077792303", "1821002034", "1181883665", "1427038628"], Epic: ["b9fcb93638bc4ff4baa77cc0a71ded42"], NormalizedTitle: ["outward"] },
+		gameIds: {
+			Steam: ["794260", "983420"],
+			Gog: [
+				"1091409855",
+				"2147483078",
+				"1077792303",
+				"1821002034",
+				"1181883665",
+				"1427038628",
+			],
+			Epic: ["b9fcb93638bc4ff4baa77cc0a71ded42"],
+			NormalizedTitle: ["outward"],
+		},
 		family: "game-specific",
 		title: "Outward DE VR",
 		author: "CompoundVR / cybensis",
@@ -1067,16 +1341,48 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "panzer-dragoon-remake",
-		gameIds: { Steam: ["1178880"], Gog: ["1248489555"], NormalizedTitle: ["panzerdragoonremake"] },
+		gameIds: {
+			Steam: ["1178880"],
+			Gog: ["1248489555"],
+			NormalizedTitle: ["panzerdragoonremake"],
+		},
 		family: "game-specific",
 		title: "Panzer Dragoon Remake",
 		author: "Astienth",
-		website: "https://github.com/Astienth/Panzer_Dragoon_Remake_VR_bHaptics_Provolver",
+		website:
+			"https://github.com/Astienth/Panzer_Dragoon_Remake_VR_bHaptics_Provolver",
 		description: "Panzer Dragoon Remake VR mod with full motion controls.",
 	},
 	{
 		id: "pathfinder-kingmaker",
-		gameIds: { Steam: ["640820", "1041820", "965950", "951520", "947090", "945272", "945271", "945270", "937800", "900448", "900447", "900446", "900445", "900444", "900443", "900442", "900441", "900440"], Gog: ["1127581981", "1229613329", "2113123723", "1432782902"], Epic: ["9f6257d9cfa04686917b7a3980703219"], NormalizedTitle: ["pathfinderkingmaker", "pathfinderkingmakerenhancedplusedition"] },
+		gameIds: {
+			Steam: [
+				"640820",
+				"1041820",
+				"965950",
+				"951520",
+				"947090",
+				"945272",
+				"945271",
+				"945270",
+				"937800",
+				"900448",
+				"900447",
+				"900446",
+				"900445",
+				"900444",
+				"900443",
+				"900442",
+				"900441",
+				"900440",
+			],
+			Gog: ["1127581981", "1229613329", "2113123723", "1432782902"],
+			Epic: ["9f6257d9cfa04686917b7a3980703219"],
+			NormalizedTitle: [
+				"pathfinderkingmaker",
+				"pathfinderkingmakerenhancedplusedition",
+			],
+		},
 		family: "game-specific",
 		title: "Pathfinder: Kingmaker",
 		author: "PinkMilkProductions",
@@ -1130,7 +1436,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "powerslave-exhumed-vr",
-		gameIds: { Steam: ["1260020"], NormalizedTitle: ["powerslavedosclassicedition"] },
+		gameIds: {
+			Steam: ["1260020"],
+			NormalizedTitle: ["powerslavedosclassicedition"],
+		},
 		family: "game-specific",
 		title: "PowerSlave / Exhumed VR",
 		author: "Game Or Die",
@@ -1139,7 +1448,29 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "powerwash-simulator-vr",
-		gameIds: { Steam: ["1290000", "2088510", "2088511", "2182380", "2236950", "2464650", "2562180", "2593910", "2593920", "2593930", "2736310", "2736320", "2736330", "2983890", "2983900", "3077590", "3202500", "3202510"], NormalizedTitle: ["powerwashsimulator"] },
+		gameIds: {
+			Steam: [
+				"1290000",
+				"2088510",
+				"2088511",
+				"2182380",
+				"2236950",
+				"2464650",
+				"2562180",
+				"2593910",
+				"2593920",
+				"2593930",
+				"2736310",
+				"2736320",
+				"2736330",
+				"2983890",
+				"2983900",
+				"3077590",
+				"3202500",
+				"3202510",
+			],
+			NormalizedTitle: ["powerwashsimulator"],
+		},
 		family: "game-specific",
 		title: "PowerWash Simulator VR",
 		author: "onetin84",
@@ -1148,7 +1479,14 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "powerwash-simulator-2-vr",
-		gameIds: { Steam: ["2968420", "4043170", "4173830", "4229450", "4556380"], Epic: ["f6bd3733c95b47f78c7442b52d692b7a"], NormalizedTitle: ["powerwashsimulator2", "powerwashsimulator2adventuretimepack"] },
+		gameIds: {
+			Steam: ["2968420", "4043170", "4173830", "4229450", "4556380"],
+			Epic: ["f6bd3733c95b47f78c7442b52d692b7a"],
+			NormalizedTitle: [
+				"powerwashsimulator2",
+				"powerwashsimulator2adventuretimepack",
+			],
+		},
 		family: "game-specific",
 		title: "PowerWash Simulator 2 VR",
 		author: "onetin84",
@@ -1170,7 +1508,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Project Zomboid VR",
 		author: "axizt / GingasVR",
-		website: "https://steamcommunity.com/sharedfiles/filedetails/?id=3816830877",
+		website:
+			"https://steamcommunity.com/sharedfiles/filedetails/?id=3816830877",
 		description: "Project Zomboid VR mod with full motion controls.",
 	},
 	{
@@ -1220,7 +1559,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ready-or-not-vr",
-		gameIds: { Steam: ["1144200", "840820", "888330", "3015760"], Epic: ["cb63ceaaf1614190956f92ad8f3c2b63"], NormalizedTitle: ["readyornot"] },
+		gameIds: {
+			Steam: ["1144200", "840820", "888330", "3015760"],
+			Epic: ["cb63ceaaf1614190956f92ad8f3c2b63"],
+			NormalizedTitle: ["readyornot"],
+		},
 		family: "game-specific",
 		title: "Ready Or Not VR",
 		author: "VR Oasis & KITT",
@@ -1256,7 +1599,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "redneck-rampage-vr",
-		gameIds: { Steam: ["565550", "580940"], NormalizedTitle: ["redneckrampage"] },
+		gameIds: {
+			Steam: ["565550", "580940"],
+			NormalizedTitle: ["redneckrampage"],
+		},
 		family: "game-specific",
 		title: "Redneck Rampage VR",
 		author: "Game Or Die",
@@ -1265,25 +1611,37 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "return-to-castle-wolfenstein-vr",
-		gameIds: { Steam: ["9010"], NormalizedTitle: ["returntocastlewolfenstein"] },
+		gameIds: {
+			Steam: ["9010"],
+			NormalizedTitle: ["returntocastlewolfenstein"],
+		},
 		family: "game-specific",
 		title: "Return to Castle Wolfenstein VR",
 		author: "Team Beef Studios",
 		website: "https://github.com/Team-Beef-Studios/RealRTCWXR",
-		description: "Return to Castle Wolfenstein VR mod with full motion controls.",
+		description:
+			"Return to Castle Wolfenstein VR mod with full motion controls.",
 	},
 	{
 		id: "risk-of-rain-2",
-		gameIds: { Steam: ["632360", "1236890", "1607890", "1905390"], Epic: ["9a8a170855694da7a868190aaae9f8f9"], NormalizedTitle: ["riskofrain2"] },
+		gameIds: {
+			Steam: ["632360", "1236890", "1607890", "1905390"],
+			Epic: ["9a8a170855694da7a868190aaae9f8f9"],
+			NormalizedTitle: ["riskofrain2"],
+		},
 		family: "game-specific",
 		title: "Risk of Rain 2",
 		author: "Blowntobytes",
-		website: "https://thunderstore.io/c/riskofrain2/p/Blowntobytes/Resurrected_VRMod/",
+		website:
+			"https://thunderstore.io/c/riskofrain2/p/Blowntobytes/Resurrected_VRMod/",
 		description: "Risk of Rain 2 VR mod with full motion controls.",
 	},
 	{
 		id: "road-to-vostok-vr",
-		gameIds: { Steam: ["1963610", "2141300"], NormalizedTitle: ["roadtovostok"] },
+		gameIds: {
+			Steam: ["1963610", "2141300"],
+			NormalizedTitle: ["roadtovostok"],
+		},
 		family: "game-specific",
 		title: "Road to Vostok VR",
 		author: "Blah64",
@@ -1292,7 +1650,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "rustler-vr",
-		gameIds: { Steam: ["844260"], Gog: ["2058719826"], NormalizedTitle: ["rustler"] },
+		gameIds: {
+			Steam: ["844260"],
+			Gog: ["2058719826"],
+			NormalizedTitle: ["rustler"],
+		},
 		family: "game-specific",
 		title: "Rustler VR",
 		author: "King-EJ",
@@ -1328,7 +1690,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "shadow-warrior-vr",
-		gameIds: { Steam: ["225160", "238070"], NormalizedTitle: ["shadowwarriororiginal"] },
+		gameIds: {
+			Steam: ["225160", "238070"],
+			NormalizedTitle: ["shadowwarriororiginal"],
+		},
 		family: "game-specific",
 		title: "Shadow Warrior VR",
 		author: "Game Or Die",
@@ -1346,7 +1711,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "singularity-vr",
-		gameIds: { Steam: ["42670"], Gog: ["1207659239"], Epic: ["e42a0921fcba428b9bff87e8c2d015a8"], NormalizedTitle: ["singularity"] },
+		gameIds: {
+			Steam: ["42670"],
+			Gog: ["1207659239"],
+			Epic: ["e42a0921fcba428b9bff87e8c2d015a8"],
+			NormalizedTitle: ["singularity"],
+		},
 		family: "game-specific",
 		title: "Singularity VR",
 		author: "letsgosportsteam / Trilex",
@@ -1355,7 +1725,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "slime-rancher-vr",
-		gameIds: { Steam: ["433340"], Gog: ["1459259227"], Epic: ["1e38b618d106430db94b474abbfecc16"], NormalizedTitle: ["slimerancher"] },
+		gameIds: {
+			Steam: ["433340"],
+			Gog: ["1459259227"],
+			Epic: ["1e38b618d106430db94b474abbfecc16"],
+			NormalizedTitle: ["slimerancher"],
+		},
 		family: "game-specific",
 		title: "Slime Rancher VR",
 		author: "Atmudia",
@@ -1368,7 +1743,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Slyders VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1486098905622904852/1486098978297614587",
+		website:
+			"https://discord.com/channels/1001138422972432597/1486098905622904852/1486098978297614587",
 		description: "Slyders VR mod with full motion controls.",
 	},
 	{
@@ -1391,7 +1767,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "spec-ops-the-line-vr",
-		gameIds: { Steam: ["50300", "204980"], Gog: ["1710761915"], NormalizedTitle: ["specopstheline"] },
+		gameIds: {
+			Steam: ["50300", "204980"],
+			Gog: ["1710761915"],
+			NormalizedTitle: ["specopstheline"],
+		},
 		family: "game-specific",
 		title: "Spec Ops: The Line VR",
 		author: "Mavic-Pro",
@@ -1400,7 +1780,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "spiderman-remastered-spidy-vr",
-		gameIds: { Steam: ["1817070"], NormalizedTitle: ["marvelsspidermanremastered"] },
+		gameIds: {
+			Steam: ["1817070"],
+			NormalizedTitle: ["marvelsspidermanremastered"],
+		},
 		family: "game-specific",
 		title: "Spider-Man Remastered VR",
 		author: "Ilya Mezerowsky",
@@ -1436,7 +1819,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "subnautica-vr",
-		gameIds: { Steam: ["264710", "1619300"], Epic: ["3257e06c28764231acd93049f3774ed6"], NormalizedTitle: ["subnautica"] },
+		gameIds: {
+			Steam: ["264710", "1619300"],
+			Epic: ["3257e06c28764231acd93049f3774ed6"],
+			NormalizedTitle: ["subnautica"],
+		},
 		family: "game-specific",
 		title: "Subnautica VR",
 		author: "Okabintaro",
@@ -1445,7 +1832,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "subnautica-below-zero",
-		gameIds: { Steam: ["848450"], Epic: ["a5d79a34555b4d55ac4e09b4dde35897"], NormalizedTitle: ["subnauticabelowzero"] },
+		gameIds: {
+			Steam: ["848450"],
+			Epic: ["a5d79a34555b4d55ac4e09b4dde35897"],
+			NormalizedTitle: ["subnauticabelowzero"],
+		},
 		family: "game-specific",
 		title: "Subnautica: Below Zero",
 		author: "jbusfield",
@@ -1458,7 +1849,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Teardown VR",
 		author: "VR Games For All / markos12900-beep",
-		website: "https://www.patreon.com/VRGamesForAll/posts/teardown-vr-v1-1-172191906",
+		website:
+			"https://www.patreon.com/VRGamesForAll/posts/teardown-vr-v1-1-172191906",
 		description: "Teardown VR mod with full motion controls.",
 	},
 	{
@@ -1476,7 +1868,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "The Witness",
 		author: "Flat2VR community",
-		website: "https://discord.com/channels/747967102895390741/1532163496899248198",
+		website:
+			"https://discord.com/channels/747967102895390741/1532163496899248198",
 		description: "The Witness VR mod with full motion controls.",
 	},
 	{
@@ -1490,7 +1883,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "tomb-raider-1-vr",
-		gameIds: { Steam: ["224960", "2478970"], NormalizedTitle: ["tombraideriiiiremastered"] },
+		gameIds: {
+			Steam: ["224960", "2478970"],
+			NormalizedTitle: ["tombraideriiiiremastered"],
+		},
 		family: "game-specific",
 		title: "Tomb Raider 1 VR",
 		author: "Team Beef Studios",
@@ -1508,7 +1904,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "tormented-souls-vr",
-		gameIds: { Steam: ["1367590", "1782240"], Gog: ["1243021945"], NormalizedTitle: ["tormentedsouls"] },
+		gameIds: {
+			Steam: ["1367590", "1782240"],
+			Gog: ["1243021945"],
+			NormalizedTitle: ["tormentedsouls"],
+		},
 		family: "game-specific",
 		title: "Tormented Souls VR",
 		author: "cybensis",
@@ -1521,12 +1921,17 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Turok VR",
 		author: "VinceCrusty",
-		website: "https://discord.com/channels/747967102895390741/1103720023379410974/threads/1552423429104345108",
+		website:
+			"https://discord.com/channels/747967102895390741/1103720023379410974/threads/1552423429104345108",
 		description: "Turok VR mod with full motion controls.",
 	},
 	{
 		id: "ultrakill-vr",
-		gameIds: { Steam: ["1229490", "1230260"], Gog: ["1476171749", "1096258712"], NormalizedTitle: ["ultrakill"] },
+		gameIds: {
+			Steam: ["1229490", "1230260"],
+			Gog: ["1476171749", "1096258712"],
+			NormalizedTitle: ["ultrakill"],
+		},
 		family: "game-specific",
 		title: "ULTRAKILL VR",
 		author: "Squaresweets",
@@ -1544,12 +1949,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "vampire-bloodlines-vr",
-		gameIds: { Steam: ["2600"], NormalizedTitle: ["vampirethemasqueradebloodlines"] },
+		gameIds: {
+			Steam: ["2600"],
+			NormalizedTitle: ["vampirethemasqueradebloodlines"],
+		},
 		family: "game-specific",
 		title: "Vampire: The Masquerade - Bloodlines VR",
 		author: "atrblizzard",
 		website: "https://vtmbvr.atrblizzard.com/",
-		description: "Vampire: The Masquerade - Bloodlines VR mod with full motion controls.",
+		description:
+			"Vampire: The Masquerade - Bloodlines VR mod with full motion controls.",
 	},
 	{
 		id: "vampire-hunters-vr",
@@ -1562,7 +1971,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "warhammer-40k-darktide-vr",
-		gameIds: { Steam: ["1361210"], NormalizedTitle: ["warhammer40000darktide"] },
+		gameIds: {
+			Steam: ["1361210"],
+			NormalizedTitle: ["warhammer40000darktide"],
+		},
 		family: "game-specific",
 		title: "Warhammer 40K: Darktide VR",
 		author: "Brobert-in-aus",
@@ -1571,7 +1983,39 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "warhammer-40k-rogue-trader-vr",
-		gameIds: { Steam: ["2186680", "2682660", "2682670", "2687230", "2696650", "2700400", "2951990", "3672730", "3650060", "3650800"], Gog: ["1799198959", "1347700224", "1147780184", "1803233427", "1482617618", "1182509409", "1343855847", "1311030206", "1150901814", "1174929612", "1930444364", "1120013101"], Epic: ["ebedfdea4f5f4540b07e48958ceec88f"], NormalizedTitle: ["warhammer40000roguetrader", "warhammer40000roguetraderappearancepack_addonaudience"] },
+		gameIds: {
+			Steam: [
+				"2186680",
+				"2682660",
+				"2682670",
+				"2687230",
+				"2696650",
+				"2700400",
+				"2951990",
+				"3672730",
+				"3650060",
+				"3650800",
+			],
+			Gog: [
+				"1799198959",
+				"1347700224",
+				"1147780184",
+				"1803233427",
+				"1482617618",
+				"1182509409",
+				"1343855847",
+				"1311030206",
+				"1150901814",
+				"1174929612",
+				"1930444364",
+				"1120013101",
+			],
+			Epic: ["ebedfdea4f5f4540b07e48958ceec88f"],
+			NormalizedTitle: [
+				"warhammer40000roguetrader",
+				"warhammer40000roguetraderappearancepack_addonaudience",
+			],
+		},
 		family: "game-specific",
 		title: "Warhammer 40K: Rogue Trader VR",
 		author: "Beren5556 / SolemnScribe",
@@ -1607,7 +2051,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "xiii-remake-vr",
-		gameIds: { Steam: ["1154790"], Gog: ["1169744036"], Epic: ["1b42555cd38f4ec1b5e890f4017fc13f"], NormalizedTitle: ["xiii2020"] },
+		gameIds: {
+			Steam: ["1154790"],
+			Gog: ["1169744036"],
+			Epic: ["1b42555cd38f4ec1b5e890f4017fc13f"],
+			NormalizedTitle: ["xiii2020"],
+		},
 		family: "game-specific",
 		title: "XIII Remake VR",
 		author: "CastleTroy28",
@@ -1616,7 +2065,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "alba-vr",
-		gameIds: { Steam: ["1337010"], Gog: ["1892014768"], Epic: ["3297b71137cf46e0ac5ad35683787eb6"], NormalizedTitle: ["albaawildlifeadventure", "alba"] },
+		gameIds: {
+			Steam: ["1337010"],
+			Gog: ["1892014768"],
+			Epic: ["3297b71137cf46e0ac5ad35683787eb6"],
+			NormalizedTitle: ["albaawildlifeadventure", "alba"],
+		},
 		family: "game-specific",
 		title: "Alba VR",
 		author: "wouterpleizier",
@@ -1625,11 +2079,15 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "another-crab-s-treasure",
-		gameIds: { Steam: ["1887840", "2944800"], NormalizedTitle: ["anothercrabstreasure"] },
+		gameIds: {
+			Steam: ["1887840", "2944800"],
+			NormalizedTitle: ["anothercrabstreasure"],
+		},
 		family: "game-specific",
 		title: "Another Crab's Treasure",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1262749418981949483/1262749418981949483",
+		website:
+			"https://discord.com/channels/1001138422972432597/1262749418981949483/1262749418981949483",
 		description: "Another Crab's Treasure VR mod.",
 	},
 	{
@@ -1643,11 +2101,23 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "art-of-rally-vr",
-		gameIds: { Steam: ["550320", "1297600", "1297610", "1421640", "2250420"], Gog: ["1192126527", "1371826936", "1811863520", "1417806275", "1218736487", "1683179155"], NormalizedTitle: ["artofrally"] },
+		gameIds: {
+			Steam: ["550320", "1297600", "1297610", "1421640", "2250420"],
+			Gog: [
+				"1192126527",
+				"1371826936",
+				"1811863520",
+				"1417806275",
+				"1218736487",
+				"1683179155",
+			],
+			NormalizedTitle: ["artofrally"],
+		},
 		family: "game-specific",
 		title: "Art of Rally VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1306503565698662462/1306503565698662462",
+		website:
+			"https://discord.com/channels/1001138422972432597/1306503565698662462/1306503565698662462",
 		description: "Art of Rally VR mod.",
 	},
 	{
@@ -1670,7 +2140,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "assassin-s-creed-valhalla-vr",
-		gameIds: { Steam: ["2208920"], NormalizedTitle: ["assassinscreedvalhalla"] },
+		gameIds: {
+			Steam: ["2208920"],
+			NormalizedTitle: ["assassinscreedvalhalla"],
+		},
 		family: "game-specific",
 		title: "Assassin's Creed Valhalla VR",
 		author: "mutars",
@@ -1679,16 +2152,34 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "astrodogs-vr",
-		gameIds: { Steam: ["1301230", "1324930"], Gog: ["1846677136", "1430469922"], NormalizedTitle: ["astrodogs"] },
+		gameIds: {
+			Steam: ["1301230", "1324930"],
+			Gog: ["1846677136", "1430469922"],
+			NormalizedTitle: ["astrodogs"],
+		},
 		family: "game-specific",
 		title: "Astrodogs VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1424110040935043132/1424110255121367213",
+		website:
+			"https://discord.com/channels/1001138422972432597/1424110040935043132/1424110255121367213",
 		description: "Astrodogs VR mod.",
 	},
 	{
 		id: "atomic-heart-vr",
-		gameIds: { Steam: ["668580", "2214820", "2214821", "2214822", "2214823", "2214825", "2214826", "2214830", "2214824"], NormalizedTitle: ["atomicheart"] },
+		gameIds: {
+			Steam: [
+				"668580",
+				"2214820",
+				"2214821",
+				"2214822",
+				"2214823",
+				"2214825",
+				"2214826",
+				"2214830",
+				"2214824",
+			],
+			NormalizedTitle: ["atomicheart"],
+		},
 		family: "game-specific",
 		title: "Atomic Heart VR",
 		author: "Luke Ross",
@@ -1724,7 +2215,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "bomb-rush-cyberfunk",
-		gameIds: { Steam: ["1353230", "2518220", "2537200"], Gog: ["2113415415", "1587333905"], NormalizedTitle: ["bombrushcyberfunk"] },
+		gameIds: {
+			Steam: ["1353230", "2518220", "2537200"],
+			Gog: ["2113415415", "1587333905"],
+			NormalizedTitle: ["bombrushcyberfunk"],
+		},
 		family: "game-specific",
 		title: "Bomb Rush Cyberfunk",
 		author: "Astienth",
@@ -1742,7 +2237,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "cloudpunk-vr",
-		gameIds: { Steam: ["746850", "1291400", "1536370", "1643930"], Gog: ["2048907635", "1278776338", "1875880403", "1897092010", "1940486602"], NormalizedTitle: ["cloudpunk"] },
+		gameIds: {
+			Steam: ["746850", "1291400", "1536370", "1643930"],
+			Gog: [
+				"2048907635",
+				"1278776338",
+				"1875880403",
+				"1897092010",
+				"1940486602",
+			],
+			NormalizedTitle: ["cloudpunk"],
+		},
 		family: "game-specific",
 		title: "Cloudpunk VR",
 		author: "Astienth",
@@ -1751,7 +2256,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "cloudpunk-city-of-ghosts-vr",
-		gameIds: { Steam: ["1536370", "746850", "1291400", "1643930"], Gog: ["2048907635", "1278776338", "1875880403", "1897092010", "1940486602"], NormalizedTitle: ["cloudpunk"] },
+		gameIds: {
+			Steam: ["1536370", "746850", "1291400", "1643930"],
+			Gog: [
+				"2048907635",
+				"1278776338",
+				"1875880403",
+				"1897092010",
+				"1940486602",
+			],
+			NormalizedTitle: ["cloudpunk"],
+		},
 		family: "game-specific",
 		title: "Cloudpunk: City of Ghosts VR",
 		author: "Astienth",
@@ -1787,7 +2302,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "days-gone-vr",
-		gameIds: { Steam: ["1259420", "3238470"], Gog: ["1127395101", "1183726056"], Epic: ["45aac344cbfe40a5acb856999117d5fe"], NormalizedTitle: ["daysgone"] },
+		gameIds: {
+			Steam: ["1259420", "3238470"],
+			Gog: ["1127395101", "1183726056"],
+			Epic: ["45aac344cbfe40a5acb856999117d5fe"],
+			NormalizedTitle: ["daysgone"],
+		},
 		family: "game-specific",
 		title: "Days Gone VR",
 		author: "Luke Ross",
@@ -1809,12 +2329,17 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Decimate Drive VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1442488939050176583/1442488939050176583",
+		website:
+			"https://discord.com/channels/1001138422972432597/1442488939050176583/1442488939050176583",
 		description: "Decimate Drive VR mod.",
 	},
 	{
 		id: "descenders-vr",
-		gameIds: { Steam: ["681280"], Xbox: ["C37XBX7DCBZ0"], NormalizedTitle: ["descenders"] },
+		gameIds: {
+			Steam: ["681280"],
+			Xbox: ["C37XBX7DCBZ0"],
+			NormalizedTitle: ["descenders"],
+		},
 		family: "game-specific",
 		title: "Descenders VR",
 		author: "Holydh / kyanite-rock",
@@ -1845,7 +2370,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Dino Trauma VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1362075882042167377/1362075882042167377",
+		website:
+			"https://discord.com/channels/1001138422972432597/1362075882042167377/1362075882042167377",
 		description: "Dino Trauma VR mod.",
 	},
 	{
@@ -1881,7 +2407,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Echo Generation 2 VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1521547069804908565/1521547128973955296",
+		website:
+			"https://discord.com/channels/1001138422972432597/1521547069804908565/1521547128973955296",
 		description: "Echo Generation 2 VR mod.",
 	},
 	{
@@ -1940,7 +2467,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ff-vii-rebirth-vr",
-		gameIds: { Steam: ["2909400", "1186130", "1186125", "1186112"], NormalizedTitle: ["finalfantasyviirebirth"] },
+		gameIds: {
+			Steam: ["2909400", "1186130", "1186125", "1186112"],
+			NormalizedTitle: ["finalfantasyviirebirth"],
+		},
 		family: "game-specific",
 		title: "FF VII Rebirth VR",
 		author: "Luke Ross",
@@ -1949,7 +2479,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ff-vii-remake-vr",
-		gameIds: { Steam: ["1462040"], Xbox: ["9NRQVQ7ZRM7Z"], NormalizedTitle: ["finalfantasyviiremakeintergrade"] },
+		gameIds: {
+			Steam: ["1462040"],
+			Xbox: ["9NRQVQ7ZRM7Z"],
+			NormalizedTitle: ["finalfantasyviiremakeintergrade"],
+		},
 		family: "game-specific",
 		title: "FF VII Remake VR",
 		author: "Luke Ross",
@@ -1958,7 +2492,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ff7-remake-intergrade-vr",
-		gameIds: { Steam: ["1462040"], Xbox: ["9NRQVQ7ZRM7Z"], NormalizedTitle: ["finalfantasyviiremakeintergrade"] },
+		gameIds: {
+			Steam: ["1462040"],
+			Xbox: ["9NRQVQ7ZRM7Z"],
+			NormalizedTitle: ["finalfantasyviiremakeintergrade"],
+		},
 		family: "game-specific",
 		title: "Final Fantasy VII Remake Intergrade VR",
 		author: "Gilleece",
@@ -2039,7 +2577,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ghost-of-tsushima-vr",
-		gameIds: { Steam: ["2215430"], NormalizedTitle: ["ghostoftsushimadirectorscut"] },
+		gameIds: {
+			Steam: ["2215430"],
+			NormalizedTitle: ["ghostoftsushimadirectorscut"],
+		},
 		family: "game-specific",
 		title: "Ghost of Tsushima VR",
 		author: "Luke Ross",
@@ -2057,7 +2598,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ghosts-n-goblins-resurrection-vr",
-		gameIds: { Steam: ["1375400"], NormalizedTitle: ["ghostsngoblinsresurrection"] },
+		gameIds: {
+			Steam: ["1375400"],
+			NormalizedTitle: ["ghostsngoblinsresurrection"],
+		},
 		family: "game-specific",
 		title: "Ghosts n Goblins Resurrection VR",
 		author: "praydog",
@@ -2066,7 +2610,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "ghostwire-tokyo-vr",
-		gameIds: { Steam: ["1475810", "1702820", "1702821", "1944840", "2650130"], Gog: ["1180670910", "1772404570", "1486490536", "1203320424", "1383417467"], NormalizedTitle: ["ghostwiretokyo"] },
+		gameIds: {
+			Steam: ["1475810", "1702820", "1702821", "1944840", "2650130"],
+			Gog: [
+				"1180670910",
+				"1772404570",
+				"1486490536",
+				"1203320424",
+				"1383417467",
+			],
+			NormalizedTitle: ["ghostwiretokyo"],
+		},
 		family: "game-specific",
 		title: "Ghostwire: Tokyo VR",
 		author: "Luke Ross",
@@ -2075,7 +2629,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "grounded-vr",
-		gameIds: { Steam: ["962130", "2161390"], Xbox: ["9PJTHRNVH62H"], NormalizedTitle: ["grounded"] },
+		gameIds: {
+			Steam: ["962130", "2161390"],
+			Xbox: ["9PJTHRNVH62H"],
+			NormalizedTitle: ["grounded"],
+		},
 		family: "game-specific",
 		title: "Grounded VR",
 		author: "Luke Ross",
@@ -2084,7 +2642,12 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "high-on-life-vr",
-		gameIds: { Steam: ["1583230", "2447000"], Gog: ["2040120327"], Epic: ["e90781f75b4649068644af2be394708d"], NormalizedTitle: ["highonlife"] },
+		gameIds: {
+			Steam: ["1583230", "2447000"],
+			Gog: ["2040120327"],
+			Epic: ["e90781f75b4649068644af2be394708d"],
+			NormalizedTitle: ["highonlife"],
+		},
 		family: "game-specific",
 		title: "High on Life VR",
 		author: "Luke Ross",
@@ -2093,7 +2656,20 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "hogwarts-legacy-vr",
-		gameIds: { Steam: ["990080", "1377040", "1386970", "1880830", "1880831", "1880832", "1880833", "1880837"], Epic: ["864c7bc2c2394f7dbd1b534aa068ff56"], NormalizedTitle: ["hogwartslegacy"] },
+		gameIds: {
+			Steam: [
+				"990080",
+				"1377040",
+				"1386970",
+				"1880830",
+				"1880831",
+				"1880832",
+				"1880833",
+				"1880837",
+			],
+			Epic: ["864c7bc2c2394f7dbd1b534aa068ff56"],
+			NormalizedTitle: ["hogwartslegacy"],
+		},
 		family: "game-specific",
 		title: "Hogwarts Legacy VR",
 		author: "Luke Ross",
@@ -2102,34 +2678,53 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "hollow-knight-silksong",
-		gameIds: { Steam: ["1030300"], Gog: ["1558393671"], Xbox: ["9N116V0599HB"], NormalizedTitle: ["hollowknightsilksong"] },
+		gameIds: {
+			Steam: ["1030300"],
+			Gog: ["1558393671"],
+			Xbox: ["9N116V0599HB"],
+			NormalizedTitle: ["hollowknightsilksong"],
+		},
 		family: "game-specific",
 		title: "Hollow Knight Silksong",
 		author: "Astienth / SadMonsterParty",
-		website: "https://discord.com/channels/1001138422972432597/1414940597579419679/1414940597579419679",
+		website:
+			"https://discord.com/channels/1001138422972432597/1414940597579419679/1414940597579419679",
 		description: "Hollow Knight Silksong VR mod.",
 	},
 	{
 		id: "hollow-knight-vr",
-		gameIds: { Steam: ["367520", "598190", "916000"], Gog: ["1308320804", "1984697392", "2031197911"], NormalizedTitle: ["hollowknight"] },
+		gameIds: {
+			Steam: ["367520", "598190", "916000"],
+			Gog: ["1308320804", "1984697392", "2031197911"],
+			NormalizedTitle: ["hollowknight"],
+		},
 		family: "game-specific",
 		title: "Hollow Knight VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1254790696502693888/1254790696502693888",
+		website:
+			"https://discord.com/channels/1001138422972432597/1254790696502693888/1254790696502693888",
 		description: "Hollow Knight VR mod.",
 	},
 	{
 		id: "horizon-chase-turbo",
-		gameIds: { Steam: ["389140"], Epic: ["832d22a0192a4c4691e23c19dfa7d075"], NormalizedTitle: ["horizonchaseturbo", "horizonchaseturbosummervibes"] },
+		gameIds: {
+			Steam: ["389140"],
+			Epic: ["832d22a0192a4c4691e23c19dfa7d075"],
+			NormalizedTitle: ["horizonchaseturbo", "horizonchaseturbosummervibes"],
+		},
 		family: "game-specific",
 		title: "Horizon Chase Turbo",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1362072336827814020/1362072336827814020",
+		website:
+			"https://discord.com/channels/1001138422972432597/1362072336827814020/1362072336827814020",
 		description: "Horizon Chase Turbo VR mod.",
 	},
 	{
 		id: "horizon-forbidden-west-vr",
-		gameIds: { Steam: ["2420110"], NormalizedTitle: ["horizonforbiddenwestcompleteedition"] },
+		gameIds: {
+			Steam: ["2420110"],
+			NormalizedTitle: ["horizonforbiddenwestcompleteedition"],
+		},
 		family: "game-specific",
 		title: "Horizon Forbidden West VR",
 		author: "Luke Ross",
@@ -2147,7 +2742,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "horizon-zero-dawn-remastered-vr",
-		gameIds: { Steam: ["2561580"], NormalizedTitle: ["horizonzerodawnremastered"] },
+		gameIds: {
+			Steam: ["2561580"],
+			NormalizedTitle: ["horizonzerodawnremastered"],
+		},
 		family: "game-specific",
 		title: "Horizon Zero Dawn Remastered VR",
 		author: "Luke Ross",
@@ -2160,7 +2758,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Hypogea VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1465600243939672115/1465600264210878691",
+		website:
+			"https://discord.com/channels/1001138422972432597/1465600243939672115/1465600264210878691",
 		description: "Hypogea VR mod.",
 	},
 	{
@@ -2183,7 +2782,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "kingdom-come-deliverance-ii-vr",
-		gameIds: { Steam: ["1771300"], NormalizedTitle: ["kingdomcomedeliverance2"] },
+		gameIds: {
+			Steam: ["1771300"],
+			NormalizedTitle: ["kingdomcomedeliverance2"],
+		},
 		family: "game-specific",
 		title: "Kingdom Come: Deliverance II VR",
 		author: "Luke Ross",
@@ -2201,16 +2803,25 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "lunistice-vr",
-		gameIds: { Steam: ["1701800", "1327120", "1740060", "2208660"], Gog: ["1499721915"], NormalizedTitle: ["lunistice"] },
+		gameIds: {
+			Steam: ["1701800", "1327120", "1740060", "2208660"],
+			Gog: ["1499721915"],
+			NormalizedTitle: ["lunistice"],
+		},
 		family: "game-specific",
 		title: "Lunistice VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1465598630382669916/1465598630382669916",
+		website:
+			"https://discord.com/channels/1001138422972432597/1465598630382669916/1465598630382669916",
 		description: "Lunistice VR mod.",
 	},
 	{
 		id: "mass-effect-2-le-vr",
-		gameIds: { Steam: ["1328670", "1393160"], Xbox: ["9PKWHT7G60WQ"], NormalizedTitle: ["masseffectlegendaryedition"] },
+		gameIds: {
+			Steam: ["1328670", "1393160"],
+			Xbox: ["9PKWHT7G60WQ"],
+			NormalizedTitle: ["masseffectlegendaryedition"],
+		},
 		family: "game-specific",
 		title: "Mass Effect 2 LE VR",
 		author: "dhalcyon",
@@ -2219,7 +2830,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "mass-effect-3-le-vr",
-		gameIds: { Steam: ["1328670", "1393160"], Xbox: ["9PKWHT7G60WQ"], NormalizedTitle: ["masseffectlegendaryedition"] },
+		gameIds: {
+			Steam: ["1328670", "1393160"],
+			Xbox: ["9PKWHT7G60WQ"],
+			NormalizedTitle: ["masseffectlegendaryedition"],
+		},
 		family: "game-specific",
 		title: "Mass Effect 3 LE VR",
 		author: "dhalcyon",
@@ -2241,7 +2856,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Mirage Feathers VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1325853693530079232/1325853693530079232",
+		website:
+			"https://discord.com/channels/1001138422972432597/1325853693530079232/1325853693530079232",
 		description: "Mirage Feathers VR mod.",
 	},
 	{
@@ -2286,7 +2902,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Moto Rush Reborn VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1490989987708014672/1490990041382518785",
+		website:
+			"https://discord.com/channels/1001138422972432597/1490989987708014672/1490990041382518785",
 		description: "Moto Rush Reborn VR mod.",
 	},
 	{
@@ -2304,12 +2921,16 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "New Star GP VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1522836877101629490/1522836922676940812",
+		website:
+			"https://discord.com/channels/1001138422972432597/1522836877101629490/1522836922676940812",
 		description: "New Star GP VR mod.",
 	},
 	{
 		id: "nuclear-option-vr",
-		gameIds: { Steam: ["2168680", "3067700"], NormalizedTitle: ["nuclearoption"] },
+		gameIds: {
+			Steam: ["2168680", "3067700"],
+			NormalizedTitle: ["nuclearoption"],
+		},
 		family: "game-specific",
 		title: "Nuclear Option VR",
 		author: "InfernoSuperNova",
@@ -2336,7 +2957,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "outbound-vr",
-		gameIds: { Steam: ["2681030"], Xbox: ["9PFWZMT737GG"], NormalizedTitle: ["outbound"] },
+		gameIds: {
+			Steam: ["2681030"],
+			Xbox: ["9PFWZMT737GG"],
+			NormalizedTitle: ["outbound"],
+		},
 		family: "game-specific",
 		title: "Outbound VR",
 		author: "Destroyjevski",
@@ -2345,7 +2970,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "outlast-vr",
-		gameIds: { Steam: ["238320"], Gog: ["1207660064", "1207664463"], NormalizedTitle: ["outlast"] },
+		gameIds: {
+			Steam: ["238320"],
+			Gog: ["1207660064", "1207664463"],
+			NormalizedTitle: ["outlast"],
+		},
 		family: "game-specific",
 		title: "Outlast VR",
 		author: "Halcyon / T-Diamond / StrikeZoneVR",
@@ -2354,11 +2983,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "outlast-2-vr",
-		gameIds: { Steam: ["414700"], Gog: ["1453301453"], NormalizedTitle: ["outlast2"] },
+		gameIds: {
+			Steam: ["414700"],
+			Gog: ["1453301453"],
+			NormalizedTitle: ["outlast2"],
+		},
 		family: "game-specific",
 		title: "Outlast 2 VR",
 		author: "StrikeZoneVR",
-		website: "https://discord.com/channels/747967102895390741/1537851737728221284",
+		website:
+			"https://discord.com/channels/747967102895390741/1537851737728221284",
 		description: "Outlast 2 VR mod with full motion controls.",
 	},
 	{
@@ -2367,7 +3001,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Paperklay VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1380447945215836261/1380447945215836261",
+		website:
+			"https://discord.com/channels/1001138422972432597/1380447945215836261/1380447945215836261",
 		description: "Paperklay VR mod.",
 	},
 	{
@@ -2376,7 +3011,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Paranoia Place VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1391728936039485450/1391728936039485450",
+		website:
+			"https://discord.com/channels/1001138422972432597/1391728936039485450/1391728936039485450",
 		description: "Paranoia Place VR mod.",
 	},
 	{
@@ -2408,7 +3044,28 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "road-redemption-vr",
-		gameIds: { Steam: ["300380", "524890", "625500", "725880", "727050", "727440", "1180010"], Gog: ["1293472819", "1099740426", "1900293362", "2069506895", "2081693308", "1580530983", "1875799615"], Epic: ["230d479147064e2bb1199685c8bda03a"], NormalizedTitle: ["roadredemption", "roadredemptionfullgame"] },
+		gameIds: {
+			Steam: [
+				"300380",
+				"524890",
+				"625500",
+				"725880",
+				"727050",
+				"727440",
+				"1180010",
+			],
+			Gog: [
+				"1293472819",
+				"1099740426",
+				"1900293362",
+				"2069506895",
+				"2081693308",
+				"1580530983",
+				"1875799615",
+			],
+			Epic: ["230d479147064e2bb1199685c8bda03a"],
+			NormalizedTitle: ["roadredemption", "roadredemptionfullgame"],
+		},
 		family: "game-specific",
 		title: "Road Redemption VR",
 		author: "Astienth",
@@ -2421,16 +3078,21 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Rogue Flight VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1443945389454528634/1443945389454528634",
+		website:
+			"https://discord.com/channels/1001138422972432597/1443945389454528634/1443945389454528634",
 		description: "Rogue Flight VR mod.",
 	},
 	{
 		id: "sayonara-wild-hearts",
-		gameIds: { Steam: ["1122720", "1202460"], NormalizedTitle: ["sayonarawildhearts"] },
+		gameIds: {
+			Steam: ["1122720", "1202460"],
+			NormalizedTitle: ["sayonarawildhearts"],
+		},
 		family: "game-specific",
 		title: "Sayonara Wild Hearts",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1253317358735327354/1253317358735327354",
+		website:
+			"https://discord.com/channels/1001138422972432597/1253317358735327354/1253317358735327354",
 		description: "Sayonara Wild Hearts VR mod.",
 	},
 	{
@@ -2444,11 +3106,16 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "skate-story-vr",
-		gameIds: { Steam: ["1263240", "4213570"], Gog: ["1322527974", "1264697411"], NormalizedTitle: ["skatestory"] },
+		gameIds: {
+			Steam: ["1263240", "4213570"],
+			Gog: ["1322527974", "1264697411"],
+			NormalizedTitle: ["skatestory"],
+		},
 		family: "game-specific",
 		title: "Skate Story VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1454427736327065655/1454427809203359774",
+		website:
+			"https://discord.com/channels/1001138422972432597/1454427736327065655/1454427809203359774",
 		description: "Skate Story VR mod.",
 	},
 	{
@@ -2471,7 +3138,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "spiderman-miles-morales-vr",
-		gameIds: { Steam: ["1817190"], NormalizedTitle: ["marvelsspidermanmilesmorales"] },
+		gameIds: {
+			Steam: ["1817190"],
+			NormalizedTitle: ["marvelsspidermanmilesmorales"],
+		},
 		family: "game-specific",
 		title: "Spiderman Miles Morales VR",
 		author: "Luke Ross",
@@ -2480,7 +3150,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "spiderman-remastered",
-		gameIds: { Steam: ["1817070"], NormalizedTitle: ["marvelsspidermanremastered"] },
+		gameIds: {
+			Steam: ["1817070"],
+			NormalizedTitle: ["marvelsspidermanremastered"],
+		},
 		family: "game-specific",
 		title: "Spiderman Remastered",
 		author: "Luke Ross",
@@ -2493,12 +3166,26 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Star Racer VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1424109526621360240/1424109638558679142",
+		website:
+			"https://discord.com/channels/1001138422972432597/1424109526621360240/1424109638558679142",
 		description: "Star Racer VR mod.",
 	},
 	{
 		id: "star-trucker-vr",
-		gameIds: { Steam: ["2380050", "2738410", "2873570", "3218640", "3285520", "3088950"], Gog: ["1179639449", "1607462097", "1604133055", "1709975468", "1321054807", "1140914202", "1655619245"], Xbox: ["9MT19Q3CRMQZ"], NormalizedTitle: ["startrucker"] },
+		gameIds: {
+			Steam: ["2380050", "2738410", "2873570", "3218640", "3285520", "3088950"],
+			Gog: [
+				"1179639449",
+				"1607462097",
+				"1604133055",
+				"1709975468",
+				"1321054807",
+				"1140914202",
+				"1655619245",
+			],
+			Xbox: ["9MT19Q3CRMQZ"],
+			NormalizedTitle: ["startrucker"],
+		},
 		family: "game-specific",
 		title: "Star Trucker VR",
 		author: "Destroyjevski",
@@ -2547,7 +3234,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "StreetDog BMX VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1481693413479944417/1481693511601357072",
+		website:
+			"https://discord.com/channels/1001138422972432597/1481693413479944417/1481693511601357072",
 		description: "StreetDog BMX VR mod.",
 	},
 	{
@@ -2556,7 +3244,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Sunrise GP VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1362074365952528494/1362074365952528494",
+		website:
+			"https://discord.com/channels/1001138422972432597/1362074365952528494/1362074365952528494",
 		description: "Sunrise GP VR mod.",
 	},
 	{
@@ -2570,7 +3259,20 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "thief-2014-vr",
-		gameIds: { Steam: ["239160", "259900", "265190", "265191", "265192", "265193", "306190"], Gog: ["1446830366"], Epic: ["2bc4445cab514d02a6cd0cc1ebfa5a4c"], NormalizedTitle: ["thief"] },
+		gameIds: {
+			Steam: [
+				"239160",
+				"259900",
+				"265190",
+				"265191",
+				"265192",
+				"265193",
+				"306190",
+			],
+			Gog: ["1446830366"],
+			Epic: ["2bc4445cab514d02a6cd0cc1ebfa5a4c"],
+			NormalizedTitle: ["thief"],
+		},
 		family: "game-specific",
 		title: "Thief (2014) VR",
 		author: "farmerarmor",
@@ -2579,11 +3281,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "tinykin-vr",
-		gameIds: { Steam: ["1599020", "2110960", "2110850"], Gog: ["1129992472"], Epic: ["426fbf6c99624636a5c54adc713dc30e"], NormalizedTitle: ["tinykin"] },
+		gameIds: {
+			Steam: ["1599020", "2110960", "2110850"],
+			Gog: ["1129992472"],
+			Epic: ["426fbf6c99624636a5c54adc713dc30e"],
+			NormalizedTitle: ["tinykin"],
+		},
 		family: "game-specific",
 		title: "Tinykin VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1276919154678693908/1276919154678693908",
+		website:
+			"https://discord.com/channels/1001138422972432597/1276919154678693908/1276919154678693908",
 		description: "Tinykin VR mod.",
 	},
 	{
@@ -2606,7 +3314,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "trackmania-nations-forever",
-		gameIds: { Steam: ["11020"], NormalizedTitle: ["trackmanianationsforever"] },
+		gameIds: {
+			Steam: ["11020"],
+			NormalizedTitle: ["trackmanianationsforever"],
+		},
 		family: "game-specific",
 		title: "TrackMania Nations Forever",
 		author: "jiink",
@@ -2624,7 +3335,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "uncharted-legacy-of-thieves-vr",
-		gameIds: { Steam: ["1659420"], NormalizedTitle: ["unchartedlegacyofthievescollection"] },
+		gameIds: {
+			Steam: ["1659420"],
+			NormalizedTitle: ["unchartedlegacyofthievescollection"],
+		},
 		family: "game-specific",
 		title: "Uncharted: Legacy of Thieves VR",
 		author: "Luke Ross",
@@ -2637,7 +3351,8 @@ const pcvrHubMods: ModBase[] = [
 		family: "game-specific",
 		title: "Unmourned VR",
 		author: "Astienth",
-		website: "https://discord.com/channels/1001138422972432597/1462781954570059990/1462781954570059990",
+		website:
+			"https://discord.com/channels/1001138422972432597/1462781954570059990/1462781954570059990",
 		description: "Unmourned VR mod.",
 	},
 	{
@@ -2669,7 +3384,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "witcher-3-vr",
-		gameIds: { Steam: ["292030"], NormalizedTitle: ["thewitcher3gameoftheyearedition"] },
+		gameIds: {
+			Steam: ["292030"],
+			NormalizedTitle: ["thewitcher3gameoftheyearedition"],
+		},
 		family: "game-specific",
 		title: "Witcher 3 VR",
 		author: "tig3rmast3r",
@@ -2705,7 +3423,11 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "yooka-laylee-vr",
-		gameIds: { Steam: ["360830", "426750"], Gog: ["1445853962", "1354053863"], NormalizedTitle: ["yookalaylee"] },
+		gameIds: {
+			Steam: ["360830", "426750"],
+			Gog: ["1445853962", "1354053863"],
+			NormalizedTitle: ["yookalaylee"],
+		},
 		family: "game-specific",
 		title: "Yooka-Laylee VR",
 		author: "Eusth",
@@ -2795,7 +3517,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "jedi-knight-jedi-academy-vr",
-		gameIds: { Steam: ["6020"], NormalizedTitle: ["starwarsjediknightjediacademy"] },
+		gameIds: {
+			Steam: ["6020"],
+			NormalizedTitle: ["starwarsjediknightjediacademy"],
+		},
 		family: "game-specific",
 		title: "Jedi Knight: Jedi Academy VR",
 		author: "Team Beef Studios",
@@ -2804,7 +3529,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "jedi-knight-jedi-outcast-vr",
-		gameIds: { Steam: ["6030"], NormalizedTitle: ["starwarsjediknightiijedioutcast"] },
+		gameIds: {
+			Steam: ["6030"],
+			NormalizedTitle: ["starwarsjediknightiijedioutcast"],
+		},
 		family: "game-specific",
 		title: "Jedi Knight: Jedi Outcast VR",
 		author: "Team Beef Studios",
@@ -2813,7 +3541,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "morrowind-vr",
-		gameIds: { Steam: ["22320"], NormalizedTitle: ["theelderscrollsiiimorrowindgoty"] },
+		gameIds: {
+			Steam: ["22320"],
+			NormalizedTitle: ["theelderscrollsiiimorrowindgoty"],
+		},
 		family: "game-specific",
 		title: "Morrowind VR",
 		author: "madsbuvi",
@@ -2822,12 +3553,17 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "portal-2-community-edition-vr",
-		gameIds: { Steam: ["440000"], NormalizedTitle: ["portal2communityedition"] },
+		gameIds: {
+			Steam: ["440000"],
+			NormalizedTitle: ["portal2communityedition"],
+		},
 		family: "game-specific",
 		title: "Portal 2: Community Edition VR",
 		author: "StrataSource",
-		website: "https://store.steampowered.com/app/440000/Portal_2_Community_Edition/",
-		description: "Portal 2: Community Edition VR mod with full motion controls.",
+		website:
+			"https://store.steampowered.com/app/440000/Portal_2_Community_Edition/",
+		description:
+			"Portal 2: Community Edition VR mod with full motion controls.",
 	},
 	{
 		id: "receiver-2-vr",
@@ -2867,7 +3603,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "resident-evil-7-vr",
-		gameIds: { Steam: ["418370"], NormalizedTitle: ["residentevil7biohazard", "residentevil7"] },
+		gameIds: {
+			Steam: ["418370"],
+			NormalizedTitle: ["residentevil7biohazard", "residentevil7"],
+		},
 		family: "game-specific",
 		title: "Resident Evil 7 VR",
 		author: "praydog",
@@ -2885,7 +3624,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "re-requiem-vr",
-		gameIds: { Steam: ["3764200"], NormalizedTitle: ["residentevilrequiembiohazardrequiem"] },
+		gameIds: {
+			Steam: ["3764200"],
+			NormalizedTitle: ["residentevilrequiembiohazardrequiem"],
+		},
 		family: "game-specific",
 		title: "RE Requiem VR",
 		author: "praydog + Talemann",
@@ -2903,7 +3645,10 @@ const pcvrHubMods: ModBase[] = [
 	},
 	{
 		id: "star-wars-x-wing-vr",
-		gameIds: { Steam: ["354430"], NormalizedTitle: ["starwarsxwing1998", "starwarsxwing"] },
+		gameIds: {
+			Steam: ["354430"],
+			NormalizedTitle: ["starwarsxwing1998", "starwarsxwing"],
+		},
 		family: "game-specific",
 		title: "Star Wars: X-Wing VR",
 		author: "XWVM Team",
@@ -2912,73 +3657,3 @@ const pcvrHubMods: ModBase[] = [
 	},
 ];
 
-export async function getGameSpecificMods(): Promise<ModBase[]> {
-	const heavenVr = bepinexModHelper("heaven-vr");
-	const twoForksVr = bepinexModHelper("two-forks-vr");
-
-	return [
-		{
-			id: heavenVr.id,
-			...heavenVr.base,
-			gameIds: {
-				Steam: ["1533420"],
-				NormalizedTitle: ["neonwhite"],
-			},
-			family: "game-specific",
-			unityBackend: "Mono",
-			architecture: "X64",
-			title: "HeavenVR",
-			author: "Raicuparta",
-			website: "https://github.com/Raicuparta/heaven-vr",
-			description: "VR mod for Neon White, with full motion control support.",
-			download: {
-				id: "1.0.0",
-				url: "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip",
-			},
-			install: {
-				manifestPath: heavenVr.manifestPath(),
-				extract: [
-					heavenVr.extract.plugin(),
-					{
-						source: "CopyToGame",
-						destination: token.GameExecutableFolderPath,
-					},
-				],
-				mainInstalledFolderPath: heavenVr.pluginFolder(),
-			},
-		},
-		{
-			id: twoForksVr.id,
-			...twoForksVr.base,
-			gameIds: {
-				Steam: ["383870"],
-				Gog: ["1459256379"],
-				NormalizedTitle: ["firewatch"],
-			},
-			family: "game-specific",
-			unityBackend: "Mono",
-			architecture: "X64",
-			title: "Two Forks VR",
-			author: "Raicuparta",
-			website: "https://github.com/Raicuparta/two-forks-vr",
-			description: "VR mod for Firewatch.",
-			download: {
-				id: "2.1.0",
-				url: "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip",
-			},
-			install: {
-				manifestPath: twoForksVr.manifestPath(),
-				extract: [
-					twoForksVr.extract.plugin(),
-					twoForksVr.extract.patch(),
-					{
-						source: "CopyToGame",
-						destination: token.GameExecutableFolderPath,
-					},
-				],
-				mainInstalledFolderPath: twoForksVr.pluginFolder(),
-			},
-		},
-		...pcvrHubMods,
-	];
-}

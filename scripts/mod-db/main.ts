@@ -9,7 +9,7 @@ import { getEveryoneMods } from "./everyone.ts";
 import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
-import { getGameSpecificMods } from "./game-specific.ts";
+import { getGameSpecificMods } from "./game-specific/game-specific.ts";
 import { families } from "./families.ts";
 
 type ModGetter = () => Promise<ModBase[]>;
