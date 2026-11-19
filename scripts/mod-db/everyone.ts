@@ -1,4 +1,4 @@
-import { bepinexMod } from "./bepinex/bepinex-mod.ts";
+import { bepinexModHelper } from "./bepinex/bepinex-mod.ts";
 import { getLatestFromGitHub } from "./github.ts";
 import type { ModBase, ModDownload } from "./mod.ts";
 import { token } from "./replacement-tokens.ts";
@@ -34,12 +34,10 @@ function unrealEveryone(download: ModDownload): ModBase {
 			write: [
 				{
 					content: "",
-					destination:
-						`${token.GameInstalledModsPath}/ue4ss/Mods/${id}/enabled.txt`,
+					destination: `${token.GameInstalledModsPath}/ue4ss/Mods/${id}/enabled.txt`,
 				},
 			],
-			mainInstalledFolderPath:
-				`${token.GameInstalledModsPath}/ue4ss/Mods/${id}`,
+			mainInstalledFolderPath: `${token.GameInstalledModsPath}/ue4ss/Mods/${id}`,
 		},
 	};
 }
@@ -66,12 +64,10 @@ function godotEveryone(major: 3 | 4, download: ModDownload): ModBase {
 			extract: [
 				{
 					source: ".",
-					destination:
-						`${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
+					destination: `${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
 				},
 			],
-			mainInstalledFolderPath:
-				`${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
+			mainInstalledFolderPath: `${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
 		},
 	};
 }
@@ -88,37 +84,44 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 		},
 	);
 
+	const bepinexMono = bepinexModHelper("everyone-mono");
+	const bepinexIl2cpp = bepinexModHelper("everyone-il2cpp");
+
 	return [
-		bepinexMod(
-			{
-				id: "everyone-mono",
-				unityBackend: "Mono",
-				download: mono,
-				title,
-				family,
-				description,
-				author,
-				sourceCode,
+		{
+			id: bepinexMono.id,
+			...bepinexMono.base,
+			unityBackend: "Mono",
+			download: mono,
+			title,
+			family,
+			description,
+			author,
+			sourceCode,
+			install: {
+				manifestPath: bepinexMono.manifestPath(),
+				extract: [bepinexMono.extract.plugin()],
+				mainInstalledFolderPath: bepinexMono.pluginFolder(),
 			},
-			{
-				configFileName: "raicuparta.everyone.json",
+			config: bepinexMono.config("raicuparta.everyone.json"),
+		},
+		{
+			id: bepinexIl2cpp.id,
+			...bepinexIl2cpp.base,
+			unityBackend: "Il2Cpp",
+			download: il2cpp,
+			family,
+			title,
+			description,
+			author,
+			sourceCode,
+			install: {
+				manifestPath: bepinexIl2cpp.manifestPath(),
+				extract: [bepinexIl2cpp.extract.plugin()],
+				mainInstalledFolderPath: bepinexIl2cpp.pluginFolder(),
 			},
-		),
-		bepinexMod(
-			{
-				id: "everyone-il2cpp",
-				unityBackend: "Il2Cpp",
-				download: il2cpp,
-				family,
-				title,
-				description,
-				author,
-				sourceCode,
-			},
-			{
-				configFileName: "raicuparta.everyone.json",
-			},
-		),
+			config: bepinexIl2cpp.config("raicuparta.everyone.json"),
+		},
 		godotEveryone(3, godot3),
 		godotEveryone(4, godot4),
 		unrealEveryone(unreal),

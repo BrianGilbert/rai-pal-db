@@ -1,7 +1,8 @@
 import { getLatestFromGitHub } from "../../github.ts";
-import { bepinexMod } from "../bepinex-mod.ts";
+import type { ModBase } from "../../mod.ts";
+import { bepinexModHelper } from "../bepinex-mod.ts";
 
-export async function getRuntimeUnityEditorMods() {
+export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 	const { mono, il2cpp } = await getLatestFromGitHub(
 		{ owner: "ManlyMarco", repo: "RuntimeUnityEditor" },
 		{
@@ -14,9 +15,21 @@ export async function getRuntimeUnityEditorMods() {
 		},
 	);
 
+	const monoHelper = bepinexModHelper("runtime-unity-editor-mono");
+	const il2cppHelper = bepinexModHelper("runtime-unity-editor-il2cpp");
+	const monoPlugin = {
+		source: "BepInEx/plugins",
+		destination: monoHelper.pluginFolder(),
+	};
+	const il2cppPlugin = {
+		source: "BepInEx/plugins",
+		destination: il2cppHelper.pluginFolder(),
+	};
+
 	return [
-		bepinexMod({
-			id: "runtime-unity-editor-mono",
+		{
+			id: monoHelper.id,
+			...monoHelper.base,
 			family: "runtime-unity-editor",
 			unityBackend: "Mono",
 			title: "Runtime Unity Editor",
@@ -25,11 +38,15 @@ export async function getRuntimeUnityEditorMods() {
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 			download: mono,
-		}, {
-			zipRoot: "BepInEx",
-		}),
-		bepinexMod({
-			id: "runtime-unity-editor-il2cpp",
+			install: {
+				manifestPath: monoHelper.manifestPath(),
+				extract: [monoPlugin],
+				mainInstalledFolderPath: monoHelper.pluginFolder(),
+			},
+		},
+		{
+			id: il2cppHelper.id,
+			...il2cppHelper.base,
 			family: "runtime-unity-editor",
 			unityBackend: "Il2Cpp",
 			title: "Runtime Unity Editor",
@@ -38,8 +55,11 @@ export async function getRuntimeUnityEditorMods() {
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 			download: il2cpp,
-		}, {
-			zipRoot: "BepInEx",
-		}),
+			install: {
+				manifestPath: il2cppHelper.manifestPath(),
+				extract: [il2cppPlugin],
+				mainInstalledFolderPath: il2cppHelper.pluginFolder(),
+			},
+		},
 	];
 }

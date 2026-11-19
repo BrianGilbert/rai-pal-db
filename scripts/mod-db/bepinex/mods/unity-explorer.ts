@@ -1,7 +1,8 @@
 import { getLatestFromGitHub } from "../../github.ts";
-import { bepinexMod } from "../bepinex-mod.ts";
+import type { ModBase } from "../../mod.ts";
+import { bepinexModHelper } from "../bepinex-mod.ts";
 
-export async function getUnityExplorerMods() {
+export async function getUnityExplorerMods(): Promise<ModBase[]> {
 	const { il2cpp, mono } = await getLatestFromGitHub(
 		{ owner: "yukieiji", repo: "UnityExplorer" },
 		{
@@ -11,9 +12,13 @@ export async function getUnityExplorerMods() {
 		},
 	);
 
+	const il2cppHelper = bepinexModHelper("unity-explorer-il2cpp");
+	const monoHelper = bepinexModHelper("unity-explorer-mono");
+
 	return [
-		bepinexMod({
-			id: "unity-explorer-il2cpp",
+		{
+			id: il2cppHelper.id,
+			...il2cppHelper.base,
 			family: "unity-explorer",
 			unityBackend: "Il2Cpp",
 			title: "UnityExplorer",
@@ -22,9 +27,15 @@ export async function getUnityExplorerMods() {
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
 			download: il2cpp,
-		}),
-		bepinexMod({
-			id: "unity-explorer-mono",
+			install: {
+				manifestPath: il2cppHelper.manifestPath(),
+				extract: [il2cppHelper.extract.plugin()],
+				mainInstalledFolderPath: il2cppHelper.pluginFolder(),
+			},
+		},
+		{
+			id: monoHelper.id,
+			...monoHelper.base,
 			family: "unity-explorer",
 			unityBackend: "Mono",
 			title: "UnityExplorer",
@@ -33,6 +44,11 @@ export async function getUnityExplorerMods() {
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games.",
 			download: mono,
-		}),
+			install: {
+				manifestPath: monoHelper.manifestPath(),
+				extract: [monoHelper.extract.plugin()],
+				mainInstalledFolderPath: monoHelper.pluginFolder(),
+			},
+		},
 	];
 }
