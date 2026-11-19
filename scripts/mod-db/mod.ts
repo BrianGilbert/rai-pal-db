@@ -1,3 +1,4 @@
+import type { ProviderId } from "../common/game-provider.ts";
 import type { FamilyId } from "./families.ts";
 
 export interface ModBase {
@@ -10,6 +11,12 @@ export interface ModBase {
 	 * Non-unique family ID. Mods in the same family provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given family.
 	 */
 	family?: FamilyId;
+
+	/**
+	 * Game IDs that this mod is made for. If omitted, the mod is not specific to any game and can be compatible with many games.
+	 * Use the same provider IDs and game IDs as the games database. Include every ID for the game, across all providers, and every duplicate ID within a provider.
+	 */
+	gameIds?: GameIds;
 
 	/**
 	 * If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement.
@@ -185,6 +192,12 @@ export interface Mod extends ModBase {
 	 */
 	hash: string;
 }
+
+/**
+ * Game IDs that a mod is made for, keyed by game provider ID.
+ * Mirrors the `ids` format of a game in the games database.
+ */
+export type GameIds = Partial<Record<ProviderId, string[]>>;
 
 /**
  * We can defined dependencies via unique mod IDs, or via the non-unique family IDs

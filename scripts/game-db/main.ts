@@ -10,21 +10,12 @@ import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
 import { createDatabase } from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
+import { providerIds, type ProviderId } from "../common/game-provider.ts";
+
+export { providerIds, type ProviderId };
 
 // These are all the engines that exist in the universe.
 export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
-
-export const providerIds = [
-	"Amazon",
-	"Ea",
-	"Epic",
-	"Gog",
-	"Itch",
-	"Manual",
-	"Steam",
-	"Ubisoft",
-	"Xbox",
-] as const;
 
 export const gameSubscriptions = [
 	"XboxGamePass",
@@ -33,7 +24,6 @@ export const gameSubscriptions = [
 	"UbisoftPremium",
 ] as const;
 
-export type ProviderId = (typeof providerIds)[number];
 export type EngineBrand = (typeof engineBrands)[number];
 export type GameSubscription = (typeof gameSubscriptions)[number];
 
