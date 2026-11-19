@@ -10,10 +10,12 @@
     },
     "everyone": {
       "description": "Adds multiplayerish features.",
+      "filterable": true,
       "title": "Everyone"
     },
     "game-specific": {
       "description": "Mods made for specific games",
+      "filterable": true,
       "title": "Game-specific"
     },
     "godot-loader": {
@@ -30,6 +32,7 @@
     },
     "uevr": {
       "description": "Universal VR mod for Unreal Engine games",
+      "filterable": true,
       "title": "UEVR"
     },
     "unity-config-manager": {
@@ -42,6 +45,7 @@
     },
     "uuvr": {
       "description": "Universal VR mod for Unity games",
+      "filterable": true,
       "title": "UUVR"
     }
   },

@@ -1,20 +1,24 @@
 interface Family {
 	title: string;
 	description: string;
+	filterable?: boolean;
 }
 
 export const families = {
 	uuvr: {
 		title: "UUVR",
 		description: "Universal VR mod for Unity games",
+		filterable: true,
 	},
 	uevr: {
 		title: "UEVR",
 		description: "Universal VR mod for Unreal Engine games",
+		filterable: true,
 	},
 	everyone: {
 		title: "Everyone",
 		description: "Adds multiplayerish features.",
+		filterable: true,
 	},
 	bepinex: {
 		title: "BepInEx",
@@ -48,6 +52,7 @@ export const families = {
 	"game-specific": {
 		title: "Game-specific",
 		description: "Mods made for specific games",
+		filterable: true,
 	},
 } as const satisfies Record<string, Family>;
 
