@@ -3,12 +3,13 @@ import { bepinexModHelper } from "./bepinex/bepinex-mod.ts";
 import { token } from "./replacement-tokens.ts";
 
 export async function getGameSpecificMods(): Promise<ModBase[]> {
-	const bepinex = bepinexModHelper("heaven-vr");
+	const heavenVr = bepinexModHelper("heaven-vr");
+	const twoForksVr = bepinexModHelper("two-forks-vr");
 
 	return [
 		{
-			id: bepinex.id,
-			...bepinex.base,
+			id: heavenVr.id,
+			...heavenVr.base,
 			gameIds: {
 				Steam: ["1533420"],
 				NormalizedTitle: ["neonwhite"],
@@ -16,7 +17,6 @@ export async function getGameSpecificMods(): Promise<ModBase[]> {
 			family: "game-specific",
 			unityBackend: "Mono",
 			architecture: "X64",
-			gameOs: "Windows",
 			title: "HeavenVR",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/heaven-vr",
@@ -26,15 +26,47 @@ export async function getGameSpecificMods(): Promise<ModBase[]> {
 				url: "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip",
 			},
 			install: {
-				manifestPath: bepinex.manifestPath(),
+				manifestPath: heavenVr.manifestPath(),
 				extract: [
-					bepinex.extract.plugin(),
+					heavenVr.extract.plugin(),
 					{
 						source: "CopyToGame",
 						destination: token.GameExecutableFolderPath,
 					},
 				],
-				mainInstalledFolderPath: bepinex.pluginFolder(),
+				mainInstalledFolderPath: heavenVr.pluginFolder(),
+			},
+		},
+		{
+			id: twoForksVr.id,
+			...twoForksVr.base,
+			gameIds: {
+				Steam: ["383870"],
+				Gog: ["1459256379"],
+				NormalizedTitle: ["firewatch"],
+			},
+			family: "game-specific",
+			unityBackend: "Mono",
+			architecture: "X64",
+			title: "Two Forks VR",
+			author: "Raicuparta",
+			sourceCode: "https://github.com/Raicuparta/two-forks-vr",
+			description: "VR mod for Firewatch.",
+			download: {
+				id: "2.1.0",
+				url: "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip",
+			},
+			install: {
+				manifestPath: twoForksVr.manifestPath(),
+				extract: [
+					twoForksVr.extract.plugin(),
+					twoForksVr.extract.patch(),
+					{
+						source: "CopyToGame",
+						destination: token.GameExecutableFolderPath,
+					},
+				],
+				mainInstalledFolderPath: twoForksVr.pluginFolder(),
 			},
 		},
 	];

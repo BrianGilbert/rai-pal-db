@@ -1003,8 +1003,7 @@
           "1533420"
         ]
       },
-      "gameOs": "Windows",
-      "hash": "f6ef8a474e2d6e73dd5eca8900ddc12ee71858e50e7ae78d1666fc75f4d7843f",
+      "hash": "ca9b802ee8240b24dbbccee5364cda95bdce8475521214ee35cd976aacc1c2d8",
       "id": "heaven-vr",
       "install": {
         "extract": [
@@ -1027,6 +1026,56 @@
       ],
       "sourceCode": "https://github.com/Raicuparta/heaven-vr",
       "title": "HeavenVR",
+      "unityBackend": "Mono"
+    },
+    {
+      "architecture": "X64",
+      "author": "Raicuparta",
+      "description": "VR mod for Firewatch.",
+      "download": {
+        "id": "2.1.0",
+        "url": "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip"
+      },
+      "engine": "Unity",
+      "family": "game-specific",
+      "gameIds": {
+        "Gog": [
+          "1459256379"
+        ],
+        "NormalizedTitle": [
+          "firewatch"
+        ],
+        "Steam": [
+          "383870"
+        ]
+      },
+      "hash": "6b3d77ef4caf624864e133e5ef416a8a9d26c8a9887b03cce9692d345045f8c9",
+      "id": "two-forks-vr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/two-forks-vr",
+            "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/two-forks-vr",
+            "source": "patchers"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}",
+            "source": "CopyToGame"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/two-forks-vr",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/two-forks-vr.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "bepinex"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/two-forks-vr",
+      "title": "Two Forks VR",
       "unityBackend": "Mono"
     },
     {
