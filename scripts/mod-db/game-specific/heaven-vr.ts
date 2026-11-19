@@ -11,7 +11,7 @@ export const heavenVrMod: ModBase = {
 		Steam: ["1533420"],
 		NormalizedTitle: ["neonwhite"],
 	},
-	family: "game-specific",
+	family: "game-specific-vr",
 	unityBackend: "Mono",
 	architecture: "X64",
 	title: "HeavenVR",

@@ -49,8 +49,8 @@ export const families = {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",
 	},
-	"game-specific": {
-		title: "Game-specific",
+	"game-specific-vr": {
+		title: "Game-Specific VR",
 		description: "Mods made for specific games",
 		filterable: true,
 	},
