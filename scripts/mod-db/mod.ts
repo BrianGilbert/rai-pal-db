@@ -71,9 +71,9 @@ export interface ModBase {
 	author: string;
 
 	/**
-	 * URL of a repository with the mod's source code.
+	 * URL for the mod, can be source code or just some website.
 	 */
-	sourceCode: string;
+	website: string;
 
 	/**
 	 * Short description that explains what the mod does.
@@ -202,19 +202,21 @@ export type GameIds = Partial<Record<IdProvider, string[]>>;
 /**
  * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
  */
-type ModDependency = {
-	modId: string;
-	family?: never;
-} | {
-	family: FamilyId;
-	modId?: never;
-};
+type ModDependency =
+	| {
+			modId: string;
+			family?: never;
+	  }
+	| {
+			family: FamilyId;
+			modId?: never;
+	  };
 
 export type UnityBackend = "Il2Cpp" | "Mono";
 
 const ARCHITECTURES = ["X64", "X86"] as const;
 
-export type Architecture = typeof ARCHITECTURES[number];
+export type Architecture = (typeof ARCHITECTURES)[number];
 
 export function isArchitecture(value: string): value is Architecture {
 	return ARCHITECTURES.includes(value as Architecture);

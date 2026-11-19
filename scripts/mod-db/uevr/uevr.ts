@@ -72,7 +72,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			title: "UEVR JoeyHodge",
 			author: "praydog + joeyhodge",
 			description: "UEVR with joehhodge's enhancements.",
-			sourceCode: "https://github.com/joeyhodge/UEVR",
+			website: "https://github.com/joeyhodge/UEVR",
 			download: joeyhodge,
 		},
 		{
@@ -81,7 +81,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + joeyhodge",
 			description:
 				"UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
-			sourceCode: "https://github.com/joeyhodge/UEVR",
+			website: "https://github.com/joeyhodge/UEVR",
 			download: joeyhodgeDibr,
 		},
 		{
@@ -90,7 +90,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + PureDark + joeyhodge",
 			description:
 				"UEVR with joehhodge's enhancements + Alternate Frame Warping.",
-			sourceCode: "https://github.com/PureDark/UEVR",
+			website: "https://github.com/PureDark/UEVR",
 			download: joeyhodgeAfw,
 		},
 		{
@@ -98,7 +98,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			title: "UEVR Nightly AFW",
 			author: "praydog + PureDark",
 			description: "UEVR nightly + Alternate Frame Warping.",
-			sourceCode: "https://github.com/PureDark/UEVR",
+			website: "https://github.com/PureDark/UEVR",
 			download: nightlyAfw,
 		},
 		{
@@ -108,7 +108,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			engine: "Unreal",
 			author: "bill gates himself",
 			description: "Required for running UEVR via Wine",
-			sourceCode: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
+			website: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
 			download: {
 				id: "6.0.36",
 				url:
@@ -136,7 +136,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			engine: "Unreal",
 			gameOs: "Windows",
 			description: "Simple injector/game launcher for UEVR",
-			sourceCode: "https://github.com/keton/chihuahua",
+			website: "https://github.com/keton/chihuahua",
 			download: chihuahua,
 			install: {
 				manifestPath:

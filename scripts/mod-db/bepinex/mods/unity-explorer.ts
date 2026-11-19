@@ -23,7 +23,7 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 			unityBackend: "Il2Cpp",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
-			sourceCode: "https://github.com/yukieiji/UnityExplorer",
+			website: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
 			download: il2cpp,
@@ -40,7 +40,7 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 			unityBackend: "Mono",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
-			sourceCode: "https://github.com/yukieiji/UnityExplorer",
+			website: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games.",
 			download: mono,

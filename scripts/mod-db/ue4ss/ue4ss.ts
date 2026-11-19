@@ -12,7 +12,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 			engine: "Unreal",
 			title: "UE4SS",
 			author: "UE4SS-RE",
-			sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
+			website: "https://github.com/UE4SS-RE/RE-UE4SS",
 			description: "Scripting and modding framework for Unreal Engine games.",
 			download: await getLatestUe4ss(),
 			install: {

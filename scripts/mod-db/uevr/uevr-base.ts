@@ -19,7 +19,7 @@ export function uevrBase(
 		author: "praydog",
 		engine: "Unreal",
 		gameOs: "Windows",
-		sourceCode: "https://github.com/praydog/UEVR",
+		website: "https://github.com/praydog/UEVR",
 		optionalDependencies: [
 			{
 				modId: "dotnet-desktop-runtime-win-x64",

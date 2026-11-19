@@ -28,7 +28,7 @@ function bepinexMonoLoaderBase(
 		unityBackend: "Mono",
 		gameOs: os,
 		author: "BepInEx",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		install: bepinexMonoInstall(modId, os),
 		...(gameEnvironment ? { gameEnvironment } : {}),
 		config: {

@@ -17,6 +17,7 @@
 					"Gog",
 					"Itch",
 					"Manual",
+					"NormalizedTitle",
 					"Steam",
 					"Ubisoft",
 					"Xbox"
@@ -57,10 +58,10 @@
 			"type": "string",
 			"description": "Mod author."
 		},
-		"sourceCode": {
+		"website": {
 			"type": "string",
 			"format": "uri",
-			"description": "URL of a repository with the mod's source code."
+			"description": "URL for the mod, can be source code or just some website."
 		},
 		"description": {
 			"type": "string",
@@ -110,5 +111,5 @@
 		}
 	},
 	"additionalProperties": false,
-	"required": ["id", "title", "author", "sourceCode", "description"]
+	"required": ["id", "title", "author", "website", "description"]
 }

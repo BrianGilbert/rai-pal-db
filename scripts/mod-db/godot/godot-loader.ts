@@ -1,7 +1,7 @@
 import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-const sourceCode = "https://github.com/Raicuparta/gdscript-loader";
+const website = "https://github.com/Raicuparta/gdscript-loader";
 
 // Each zip contains a single `script-loader.gd`, built and published by the
 // gdscript-loader release workflow.
@@ -23,7 +23,7 @@ function godotLoader(major: 3 | 4): ModBase {
 		},
 		title: `Godot ${major} Mod Loader`,
 		author: "Raicuparta",
-		sourceCode,
+		website,
 		description: "Basic mod loader for Godot games.",
 		download: {
 			id: "0.1.0",

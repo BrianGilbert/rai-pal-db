@@ -34,7 +34,7 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 			unityBackend: "Mono",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",
-			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
+			website: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 			download: mono,
@@ -51,7 +51,7 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 			unityBackend: "Il2Cpp",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",
-			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
+			website: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 			download: il2cpp,

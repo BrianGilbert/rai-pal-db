@@ -52,7 +52,7 @@ function bepInExConfig(
 		family: "bepinex-config",
 		hideFromGameModsList: true,
 		description: "Default BepInEx config",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		engine: "Unity",
 		install: {
 			manifestPath: `${token.GameInstalledModsPath}/manifests/${mod.id}.json`,

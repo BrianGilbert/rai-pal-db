@@ -3,7 +3,7 @@ import type { ModBase } from "../../mod.ts";
 import { bepinexModHelper } from "../bepinex-mod.ts";
 
 const author = "Raicuparta";
-const sourceCode = "https://github.com/Raicuparta/uuvr";
+const website = "https://github.com/Raicuparta/uuvr";
 
 export async function getUuvrMods(): Promise<ModBase[]> {
 	const { il2cppLegacyDownload, monoLegacyDownload, monoModernDownload } =
@@ -29,7 +29,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			unityBackend: "Il2Cpp",
 			title: "UUVR",
 			author,
-			sourceCode,
+			website,
 			description:
 				"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
 			engineVersionRange: {
@@ -52,7 +52,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			unityBackend: "Mono",
 			title: "UUVR",
 			author,
-			sourceCode,
+			website,
 			description:
 				"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
 			engineVersionRange: {
@@ -75,7 +75,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			unityBackend: "Mono",
 			title: "UUVR",
 			author,
-			sourceCode,
+			website,
 			description:
 				"Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
 			engineVersionRange: {

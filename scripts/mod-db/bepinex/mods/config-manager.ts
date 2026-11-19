@@ -13,7 +13,7 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			title: "Config Manager",
 			family: "unity-config-manager",
 			author: "sinai",
-			sourceCode: "https://github.com/Vapok/BepInExConfigManager",
+			website: "https://github.com/Vapok/BepInExConfigManager",
 			description:
 				"Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
 			download: {
@@ -33,7 +33,7 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			title: "Config Manager",
 			family: "unity-config-manager",
 			author: "sinai",
-			sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
+			website: "https://github.com/sinai-dev/BepInExConfigManager",
 			description:
 				"Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
 			download: {

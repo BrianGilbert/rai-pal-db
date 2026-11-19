@@ -28,7 +28,7 @@ function bepinexIl2cppLoaderBase(
 		gameOs: os,
 		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		install: bepinexIl2cppInstall(modId, os),
 		...(gameEnvironment ? { gameEnvironment } : {}),
 		config: {

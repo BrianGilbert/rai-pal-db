@@ -8,7 +8,7 @@ const description =
 	"Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.";
 const title = "Everyone";
 const author = "Raicuparta";
-const sourceCode = "https://github.com/Raicuparta/everyone-client";
+const website = "https://github.com/Raicuparta/everyone-client";
 const family = "everyone";
 
 function unrealEveryone(download: ModDownload): ModBase {
@@ -19,7 +19,7 @@ function unrealEveryone(download: ModDownload): ModBase {
 		family,
 		title,
 		author,
-		sourceCode,
+		website,
 		description: description,
 		download,
 		requiredDependencies: [{ modId: "ue4ss" }],
@@ -55,7 +55,7 @@ function godotEveryone(major: 3 | 4, download: ModDownload): ModBase {
 		family,
 		title,
 		author,
-		sourceCode,
+		website,
 		description,
 		download,
 		requiredDependencies: [{ family: "godot-loader" }],
@@ -97,7 +97,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			family,
 			description,
 			author,
-			sourceCode,
+			website,
 			install: {
 				manifestPath: bepinexMono.manifestPath(),
 				extract: [bepinexMono.extract.plugin()],
@@ -114,7 +114,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			title,
 			description,
 			author,
-			sourceCode,
+			website,
 			install: {
 				manifestPath: bepinexIl2cpp.manifestPath(),
 				extract: [bepinexIl2cpp.extract.plugin()],
