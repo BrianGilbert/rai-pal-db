@@ -10,9 +10,14 @@ import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
 import { createDatabase } from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
-import { providerIds, type ProviderId } from "../common/game-provider.ts";
+import {
+	idProviders,
+	providerIds,
+	type IdProvider,
+	type ProviderId,
+} from "../common/game-provider.ts";
 
-export { providerIds, type ProviderId };
+export { idProviders, providerIds, type IdProvider, type ProviderId };
 
 // These are all the engines that exist in the universe.
 export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
@@ -28,7 +33,7 @@ export type EngineBrand = (typeof engineBrands)[number];
 export type GameSubscription = (typeof gameSubscriptions)[number];
 
 export type Engine = { brand: EngineBrand; version?: string };
-export type IdMap = Partial<Record<ProviderId, Set<string>>>;
+export type IdMap = Partial<Record<IdProvider, Set<string>>>;
 
 export type Game = {
 	title?: string;
@@ -43,7 +48,7 @@ interface GameWithUniqueIndex extends Game {
 }
 
 type GamesByIds = Partial<
-	Record<ProviderId, Record<string, GameWithUniqueIndex>>
+	Record<IdProvider, Record<string, GameWithUniqueIndex>>
 >;
 
 // Each game source we fetch from. These are named so we can log exactly which

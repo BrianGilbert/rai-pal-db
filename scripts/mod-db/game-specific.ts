@@ -11,7 +11,7 @@ export async function getGameSpecificMods(): Promise<ModBase[]> {
 			...bepinex.base,
 			gameIds: {
 				Steam: ["1533420"],
-				Manual: ["neonwhite"],
+				NormalizedTitle: ["neonwhite"],
 			},
 			unityBackend: "Mono",
 			architecture: "X64",

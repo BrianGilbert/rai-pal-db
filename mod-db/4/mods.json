@@ -992,7 +992,7 @@
       },
       "engine": "Unity",
       "gameIds": {
-        "Manual": [
+        "NormalizedTitle": [
           "neonwhite"
         ],
         "Steam": [
@@ -1000,7 +1000,7 @@
         ]
       },
       "gameOs": "Windows",
-      "hash": "bf2edbe6a6eea477890a287dd4fa9678eb84264a571a2ffeed3f9b74067beaf5",
+      "hash": "618742e8ca48f99237df0574425c25ba767fc88b61f89e37146b8044c0391bd3",
       "id": "heaven-vr",
       "install": {
         "extract": [

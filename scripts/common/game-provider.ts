@@ -5,10 +5,12 @@ export const providerIds = [
 	"Epic",
 	"Gog",
 	"Itch",
-	"Manual",
 	"Steam",
 	"Ubisoft",
 	"Xbox",
 ] as const;
 
+export const idProviders = [...providerIds, "NormalizedTitle"] as const;
+
 export type ProviderId = (typeof providerIds)[number];
+export type IdProvider = (typeof idProviders)[number];
