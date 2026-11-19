@@ -12,6 +12,10 @@
       "description": "Adds multiplayerish features.",
       "title": "Everyone"
     },
+    "game-specific": {
+      "description": "Mods made for specific games",
+      "title": "Game-specific"
+    },
     "godot-loader": {
       "description": "Basic mod loader for Godot games.",
       "title": "Godot Mod Loader"
@@ -980,17 +984,13 @@
     {
       "architecture": "X64",
       "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/com.raicuparta.heaven-vr.cfg",
-        "destinationType": "File"
-      },
       "description": "VR mod for Neon White, with full motion control support.",
       "download": {
         "id": "1.0.0",
-        "releaseDate": "2026-11-19T09:05:02Z",
         "url": "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip"
       },
       "engine": "Unity",
+      "family": "game-specific",
       "gameIds": {
         "NormalizedTitle": [
           "neonwhite"
@@ -1000,20 +1000,20 @@
         ]
       },
       "gameOs": "Windows",
-      "hash": "618742e8ca48f99237df0574425c25ba767fc88b61f89e37146b8044c0391bd3",
+      "hash": "f6ef8a474e2d6e73dd5eca8900ddc12ee71858e50e7ae78d1666fc75f4d7843f",
       "id": "heaven-vr",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
-            "source": "plugins/HeavenVr"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/heaven-vr",
+            "source": "plugins"
           },
           {
             "destination": "{{GameExecutableFolderPath}}",
             "source": "CopyToGame"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/heaven-vr",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/heaven-vr.json"
       },
       "requiredDependencies": [

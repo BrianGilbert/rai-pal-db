@@ -13,6 +13,7 @@ export async function getGameSpecificMods(): Promise<ModBase[]> {
 				Steam: ["1533420"],
 				NormalizedTitle: ["neonwhite"],
 			},
+			family: "game-specific",
 			unityBackend: "Mono",
 			architecture: "X64",
 			gameOs: "Windows",

@@ -45,6 +45,10 @@ export const families = {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",
 	},
+	"game-specific": {
+		title: "Game-specific",
+		description: "Mods made for specific games",
+	},
 } as const satisfies Record<string, Family>;
 
-export type FamilyId = keyof (typeof families);
+export type FamilyId = keyof typeof families;
