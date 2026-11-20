@@ -3,7 +3,7 @@ import { token } from "../replacement-tokens.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
-type ModConfig = NonNullable<ModBase["config"]>;
+type ModPath = NonNullable<ModBase["paths"]>[number];
 
 export function bepinexModHelper(modId: string) {
 	const pluginFolder = `${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${modId}`;
@@ -35,9 +35,25 @@ export function bepinexModHelper(modId: string) {
 			}),
 		},
 
-		config: (fileName: string): ModConfig => ({
-			destinationPath: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/${fileName}`,
-			destinationType: "File",
-		}),
+		paths: {
+			plugin: (): ModPath => ({
+				id: "plugin",
+				title: "Plugin",
+				type: "Folder",
+				path: pluginFolder,
+			}),
+			patcher: (): ModPath => ({
+				id: "patcher",
+				title: "Patcher",
+				type: "Folder",
+				path: patcherFolder,
+			}),
+			config: (fileName: string): ModPath => ({
+				id: "config",
+				title: "Config",
+				type: "File",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/${fileName}`,
+			}),
+		},
 	};
 }

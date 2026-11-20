@@ -31,6 +31,6 @@ export const heavenVrMod: ModBase = {
 				destination: token.GameExecutableFolderPath,
 			},
 		],
-		mainInstalledFolderPath: heavenVr.pluginFolder(),
 	},
+	paths: [heavenVr.paths.plugin()],
 };

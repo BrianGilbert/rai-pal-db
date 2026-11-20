@@ -30,8 +30,8 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: il2cppHelper.manifestPath(),
 				extract: [il2cppHelper.extract.plugin()],
-				mainInstalledFolderPath: il2cppHelper.pluginFolder(),
 			},
+			paths: [il2cppHelper.paths.plugin()],
 		},
 		{
 			id: monoHelper.id,
@@ -47,8 +47,8 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: monoHelper.manifestPath(),
 				extract: [monoHelper.extract.plugin()],
-				mainInstalledFolderPath: monoHelper.pluginFolder(),
 			},
+			paths: [monoHelper.paths.plugin()],
 		},
 	];
 }

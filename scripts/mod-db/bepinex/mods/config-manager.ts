@@ -23,8 +23,8 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: il2cpp.manifestPath(),
 				extract: [il2cpp.extract.plugin(), il2cpp.extract.patch()],
-				mainInstalledFolderPath: il2cpp.pluginFolder(),
 			},
+			paths: [il2cpp.paths.plugin(), il2cpp.paths.patcher()],
 		},
 		{
 			id: mono.id,
@@ -43,8 +43,8 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: mono.manifestPath(),
 				extract: [mono.extract.plugin(), mono.extract.patch()],
-				mainInstalledFolderPath: mono.pluginFolder(),
 			},
+			paths: [mono.paths.plugin(), mono.paths.patcher()],
 		},
 	];
 }

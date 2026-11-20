@@ -42,9 +42,12 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: il2cppLegacy.manifestPath(),
 				extract: [il2cppLegacy.extract.plugin(), il2cppLegacy.extract.patch()],
-				mainInstalledFolderPath: il2cppLegacy.pluginFolder(),
 			},
-			config: il2cppLegacy.config("raicuparta.uuvr-legacy.cfg"),
+			paths: [
+				il2cppLegacy.paths.plugin(),
+				il2cppLegacy.paths.patcher(),
+				il2cppLegacy.paths.config("raicuparta.uuvr-legacy.cfg"),
+			],
 		},
 		{
 			id: monoLegacy.id,
@@ -66,9 +69,12 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: monoLegacy.manifestPath(),
 				extract: [monoLegacy.extract.plugin(), monoLegacy.extract.patch()],
-				mainInstalledFolderPath: monoLegacy.pluginFolder(),
 			},
-			config: monoLegacy.config("raicuparta.uuvr-legacy.cfg"),
+			paths: [
+				monoLegacy.paths.plugin(),
+				monoLegacy.paths.patcher(),
+				monoLegacy.paths.config("raicuparta.uuvr-legacy.cfg"),
+			],
 		},
 		{
 			id: monoModern.id,
@@ -91,9 +97,12 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: monoModern.manifestPath(),
 				extract: [monoModern.extract.plugin(), monoModern.extract.patch()],
-				mainInstalledFolderPath: monoModern.pluginFolder(),
 			},
-			config: monoModern.config("raicuparta.uuvr-modern.cfg"),
+			paths: [
+				monoModern.paths.plugin(),
+				monoModern.paths.patcher(),
+				monoModern.paths.config("raicuparta.uuvr-modern.cfg"),
+			],
 		},
 	];
 }

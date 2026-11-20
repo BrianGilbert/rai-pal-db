@@ -33,6 +33,6 @@ export const twoForksVrMod: ModBase = {
 				destination: token.GameExecutableFolderPath,
 			},
 		],
-		mainInstalledFolderPath: twoForksVr.pluginFolder(),
 	},
+	paths: [twoForksVr.paths.plugin(), twoForksVr.paths.patcher()],
 };

@@ -181,11 +181,13 @@ export async function getConfigMods(mods: ModBase[]): Promise<ModBase[]> {
 						);
 					}
 
-					const baseConfig = gameMod.config;
+					const configTarget = gameMod.paths?.find(
+						(path) => path.id === "config",
+					);
 
-					if (!baseConfig) {
+					if (!configTarget) {
 						throw new Error(
-							`Config in \`${folder}\` references mod \`${config.modId}\`, which has no config destination.`,
+							`Config in \`${folder}\` references mod \`${config.modId}\`, which has no \`config\` path.`,
 						);
 					}
 
@@ -203,7 +205,7 @@ export async function getConfigMods(mods: ModBase[]): Promise<ModBase[]> {
 						config,
 						gameMod,
 						configTag,
-						baseConfig,
+						configTarget,
 						contentHash,
 					};
 				}),
@@ -222,7 +224,7 @@ export async function getConfigMods(mods: ModBase[]): Promise<ModBase[]> {
 	const seenCounts = new Map<string, number>();
 
 	return entries.map((entry) => {
-		const { folder, config, gameMod, configTag, baseConfig, contentHash } =
+		const { folder, config, gameMod, configTag, configTarget, contentHash } =
 			entry;
 		const { gameIds, gameTitle } = getGameIdsForFolder(folder, gameIndexes);
 		const tagBase = configTag.replace(/-config$/, "");
@@ -235,19 +237,19 @@ export async function getConfigMods(mods: ModBase[]): Promise<ModBase[]> {
 			folder,
 		)}/configs/${encodeURIComponent(config.file)}?v=${config.version}-${contentHash}`;
 		const install =
-			baseConfig.destinationType === "File"
+			configTarget.type === "Folder"
 				? {
-						manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
-						copy: [{ destination: baseConfig.destinationPath }],
-					}
-				: {
 						manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
 						extract: [
 							{
 								source: ".",
-								destination: baseConfig.destinationPath,
+								destination: configTarget.path,
 							},
 						],
+					}
+				: {
+						manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+						copy: [{ destination: configTarget.path }],
 					};
 
 		return {
@@ -264,6 +266,14 @@ export async function getConfigMods(mods: ModBase[]): Promise<ModBase[]> {
 				url: configUrl,
 			},
 			install,
+			paths: [
+				{
+					id: "config",
+					title: configTarget.title,
+					type: configTarget.type,
+					path: configTarget.path,
+				},
+			],
 		} satisfies ModBase;
 	});
 }

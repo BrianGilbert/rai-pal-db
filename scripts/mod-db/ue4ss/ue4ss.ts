@@ -29,14 +29,20 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 				],
 				write: [
 					{
-						content:
-							`${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
+						content: `${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
 						destination: `${token.GameExecutableFolderPath}/override.txt`,
 					},
 				],
 				wineDllOverrides: ["dwmapi"],
-				mainInstalledFolderPath: `${token.GameInstalledModsPath}/ue4ss`,
 			},
+			paths: [
+				{
+					id: "ue4ss",
+					title: "UE4SS",
+					type: "Folder",
+					path: `${token.GameInstalledModsPath}/ue4ss`,
+				},
+			],
 		},
 	];
 }

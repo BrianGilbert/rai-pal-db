@@ -1,6 +1,28 @@
 import type { IdProvider } from "../common/game-provider.ts";
 import type { TagId } from "./tags.ts";
 
+export interface ModPath {
+	/**
+	 * Unique identifier for this path within the mod.
+	 */
+	id: string;
+
+	/**
+	 * Display name for this path.
+	 */
+	title: string;
+
+	/**
+	 * Supports replacement tokens. Path to a file or folder that Rai Pal can open.
+	 */
+	path: string;
+
+	/**
+	 * Whether the path points to a file or a folder.
+	 */
+	type: "File" | "Folder";
+}
+
 export interface ModBase {
 	/**
 	 * Unique identifier for this mod. Must be globally unique within all mods from all loaders.
@@ -151,11 +173,6 @@ export interface ModBase {
 		 * Dll file names without extension, that will get the Wine DLL override flags set to "native,builtin".
 		 */
 		wineDllOverrides?: string[];
-
-		/**
-		 * Supports replacement tokens. Folder that opens when pressing the 'Open Mod Folder' button for a mod installed in a game.
-		 */
-		mainInstalledFolderPath?: string;
 	};
 
 	/**
@@ -177,19 +194,9 @@ export interface ModBase {
 	};
 
 	/**
-	 * Information used to find the local config file or folder for this mod.
+	 * Paths to files or folders that Rai Pal can open from this mod's actions menu.
 	 */
-	config?: {
-		/**
-		 * Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader.
-		 */
-		destinationPath: string;
-
-		/**
-		 * If file, the config is a single file placed directly at destinationPath. If folder, the config is multiple files in the destinationPath folder.
-		 */
-		destinationType: "File" | "Folder";
-	};
+	paths?: ModPath[];
 }
 
 export interface Mod extends ModBase {

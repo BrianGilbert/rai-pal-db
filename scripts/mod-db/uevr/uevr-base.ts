@@ -41,11 +41,20 @@ export function uevrBase(
 					destination: `${token.SharedModsPath}/${id}`,
 				},
 			],
-			mainInstalledFolderPath: `${token.SharedModsPath}/${id}`,
 		},
-		config: {
-			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
-			destinationType: "Folder",
-		},
+		paths: [
+			{
+				id: "mod",
+				title: "Mod",
+				type: "Folder",
+				path: `${token.SharedModsPath}/${id}`,
+			},
+			{
+				id: "config",
+				title: "Config",
+				type: "Folder",
+				path: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
+			},
+		],
 	};
 }

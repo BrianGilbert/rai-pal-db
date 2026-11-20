@@ -41,8 +41,8 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: monoHelper.manifestPath(),
 				extract: [monoPlugin],
-				mainInstalledFolderPath: monoHelper.pluginFolder(),
 			},
+			paths: [monoHelper.paths.plugin()],
 		},
 		{
 			id: il2cppHelper.id,
@@ -58,8 +58,8 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 			install: {
 				manifestPath: il2cppHelper.manifestPath(),
 				extract: [il2cppPlugin],
-				mainInstalledFolderPath: il2cppHelper.pluginFolder(),
 			},
+			paths: [il2cppHelper.paths.plugin()],
 		},
 	];
 }

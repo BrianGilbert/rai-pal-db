@@ -43,8 +43,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				assetName.startsWith("UEVR-joeyhodge_AFW_") &&
 				assetName.endsWith(".zip"),
 			nightlyAfw: (assetName) =>
-				assetName.startsWith("UEVR-nightly_AFW_") &&
-				assetName.endsWith(".zip"),
+				assetName.startsWith("UEVR-nightly_AFW_") && assetName.endsWith(".zip"),
 		},
 	);
 
@@ -111,20 +110,25 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			website: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
 			download: {
 				id: "6.0.36",
-				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
+				url: "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
 			},
 			install: {
-				manifestPath:
-					`${token.SharedModsPath}/${dotnetId}/rai-pal-manifest.json`,
+				manifestPath: `${token.SharedModsPath}/${dotnetId}/rai-pal-manifest.json`,
 				extract: [
 					{
 						source: ".",
 						destination: `${token.SharedModsPath}/${dotnetId}`,
 					},
 				],
-				mainInstalledFolderPath: `${token.SharedModsPath}/${dotnetId}`,
 			},
+			paths: [
+				{
+					id: "runtime",
+					title: "Runtime",
+					type: "Folder",
+					path: `${token.SharedModsPath}/${dotnetId}`,
+				},
+			],
 			gameOs: "Windows",
 			hostOs: "Linux",
 		},
@@ -139,16 +143,22 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			website: "https://github.com/keton/chihuahua",
 			download: chihuahua,
 			install: {
-				manifestPath:
-					`${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
+				manifestPath: `${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
 				extract: [
 					{
 						source: ".",
 						destination: `${token.SharedModsPath}/${chihuahuaId}`,
 					},
 				],
-				mainInstalledFolderPath: `${token.SharedModsPath}/${chihuahuaId}`,
 			},
+			paths: [
+				{
+					id: "mod",
+					title: "Mod",
+					type: "Folder",
+					path: `${token.SharedModsPath}/${chihuahuaId}`,
+				},
+			],
 			runForGame: {
 				path: `${token.SharedModsPath}/${chihuahuaId}/chihuahua.exe`,
 				args: [

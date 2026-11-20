@@ -10,8 +10,7 @@ const downloadBase =
 
 function godotLoader(major: 3 | 4): ModBase {
 	const id = `godot-loader-${major}`;
-	const scriptLoaderGdPath =
-		`${token.GameInstalledModsPath}/${id}/script-loader.gd`;
+	const scriptLoaderGdPath = `${token.GameInstalledModsPath}/${id}/script-loader.gd`;
 
 	return {
 		id,
@@ -45,8 +44,15 @@ ModLoaderStore="${token.MaybeWineRoot}${scriptLoaderGdPath}"
 					destination: `${token.GameExecutableFolderPath}/override.cfg`,
 				},
 			],
-			mainInstalledFolderPath: token.GameInstalledModsPath,
 		},
+		paths: [
+			{
+				id: "loader",
+				title: "Loader",
+				type: "Folder",
+				path: `${token.GameInstalledModsPath}/${id}`,
+			},
+		],
 	};
 }
 
