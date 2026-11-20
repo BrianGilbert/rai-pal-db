@@ -1,10 +1,10 @@
-interface Family {
+interface Tag {
 	title: string;
 	description: string;
 	filterable?: boolean;
 }
 
-export const families = {
+export const tags = {
 	uuvr: {
 		title: "UUVR",
 		description: "Universal VR mod for Unity games",
@@ -54,6 +54,6 @@ export const families = {
 		description: "Mods made for specific games",
 		filterable: true,
 	},
-} as const satisfies Record<string, Family>;
+} as const satisfies Record<string, Tag>;
 
-export type FamilyId = keyof typeof families;
+export type TagId = keyof typeof tags;

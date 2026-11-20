@@ -25,7 +25,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		{
 			id: il2cppLegacy.id,
 			...il2cppLegacy.base,
-			family: "uuvr",
+			tags: ["uuvr"],
 			unityBackend: "Il2Cpp",
 			title: "UUVR",
 			author,
@@ -48,7 +48,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		{
 			id: monoLegacy.id,
 			...monoLegacy.base,
-			family: "uuvr",
+			tags: ["uuvr"],
 			unityBackend: "Mono",
 			title: "UUVR",
 			author,
@@ -71,7 +71,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		{
 			id: monoModern.id,
 			...monoModern.base,
-			family: "uuvr",
+			tags: ["uuvr"],
 			unityBackend: "Mono",
 			title: "UUVR",
 			author,

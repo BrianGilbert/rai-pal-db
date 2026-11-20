@@ -19,7 +19,7 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 		{
 			id: il2cppHelper.id,
 			...il2cppHelper.base,
-			family: "unity-explorer",
+			tags: ["unity-explorer"],
 			unityBackend: "Il2Cpp",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
@@ -36,7 +36,7 @@ export async function getUnityExplorerMods(): Promise<ModBase[]> {
 		{
 			id: monoHelper.id,
 			...monoHelper.base,
-			family: "unity-explorer",
+			tags: ["unity-explorer"],
 			unityBackend: "Mono",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",

@@ -9,14 +9,14 @@ const description =
 const title = "Everyone";
 const author = "Raicuparta";
 const website = "https://github.com/Raicuparta/everyone-client";
-const family = "everyone";
+const tags = ["everyone"] as const;
 
 function unrealEveryone(download: ModDownload): ModBase {
 	const id = "everyone-ue";
 	return {
 		id,
 		engine: "Unreal",
-		family,
+		tags,
 		title,
 		author,
 		website,
@@ -52,13 +52,13 @@ function godotEveryone(major: 3 | 4, download: ModDownload): ModBase {
 			minimum: { major },
 			...(major === 3 ? { maximum: { major } } : {}),
 		},
-		family,
+		tags,
 		title,
 		author,
 		website,
 		description,
 		download,
-		requiredDependencies: [{ family: "godot-loader" }],
+		requiredDependencies: [{ tag: "godot-loader" }],
 		install: {
 			manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
 			extract: [
@@ -94,7 +94,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			unityBackend: "Mono",
 			download: mono,
 			title,
-			family,
+			tags,
 			description,
 			author,
 			website,
@@ -110,7 +110,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			...bepinexIl2cpp.base,
 			unityBackend: "Il2Cpp",
 			download: il2cpp,
-			family,
+			tags,
 			title,
 			description,
 			author,

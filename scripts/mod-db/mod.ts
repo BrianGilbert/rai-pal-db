@@ -1,5 +1,5 @@
 import type { IdProvider } from "../common/game-provider.ts";
-import type { FamilyId } from "./families.ts";
+import type { TagId } from "./tags.ts";
 
 export interface ModBase {
 	/**
@@ -8,9 +8,9 @@ export interface ModBase {
 	id: string;
 
 	/**
-	 * Non-unique family ID. Mods in the same family provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given family.
+	 * Non-unique tag IDs. Mods with the same tag provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given tag.
 	 */
-	family?: FamilyId;
+	tags?: readonly TagId[];
 
 	/**
 	 * Game IDs that this mod is made for. If omitted, the mod is not specific to any game and can be compatible with many games.
@@ -200,15 +200,15 @@ export interface Mod extends ModBase {
 export type GameIds = Partial<Record<IdProvider, string[]>>;
 
 /**
- * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
+ * We can defined dependencies via unique mod IDs, or via the non-unique tag IDs
  */
 type ModDependency =
 	| {
 			modId: string;
-			family?: never;
+			tag?: never;
 	  }
 	| {
-			family: FamilyId;
+			tag: TagId;
 			modId?: never;
 	  };
 

@@ -22,7 +22,7 @@ function bepinexIl2cppLoaderBase(
 	const gameEnvironment = bepinexIl2cppGameEnvironment(os);
 	return {
 		id: modId,
-		family: "bepinex",
+		tags: ["bepinex"],
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
 		gameOs: os,

@@ -15,7 +15,7 @@ function godotLoader(major: 3 | 4): ModBase {
 
 	return {
 		id,
-		family: "godot-loader",
+		tags: ["godot-loader"],
 		engine: "Godot",
 		engineVersionRange: {
 			minimum: { major },

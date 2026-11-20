@@ -131,7 +131,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 		{
 			id: chihuahuaId,
 			title: "Chihuahua",
-			family: "uevr",
+			tags: ["uevr"],
 			author: "Keton",
 			engine: "Unreal",
 			gameOs: "Windows",

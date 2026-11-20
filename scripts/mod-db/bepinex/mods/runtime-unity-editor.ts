@@ -30,7 +30,7 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 		{
 			id: monoHelper.id,
 			...monoHelper.base,
-			family: "runtime-unity-editor",
+			tags: ["runtime-unity-editor"],
 			unityBackend: "Mono",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",
@@ -47,7 +47,7 @@ export async function getRuntimeUnityEditorMods(): Promise<ModBase[]> {
 		{
 			id: il2cppHelper.id,
 			...il2cppHelper.base,
-			family: "runtime-unity-editor",
+			tags: ["runtime-unity-editor"],
 			unityBackend: "Il2Cpp",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",

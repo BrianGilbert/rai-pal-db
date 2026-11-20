@@ -11,7 +11,7 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			...il2cpp.base,
 			unityBackend: "Il2Cpp",
 			title: "Config Manager",
-			family: "unity-config-manager",
+			tags: ["unity-config-manager"],
 			author: "sinai",
 			website: "https://github.com/Vapok/BepInExConfigManager",
 			description:
@@ -31,7 +31,7 @@ export async function getConfigManagerMods(): Promise<ModBase[]> {
 			...mono.base,
 			unityBackend: "Mono",
 			title: "Config Manager",
-			family: "unity-config-manager",
+			tags: ["unity-config-manager"],
 			author: "sinai",
 			website: "https://github.com/sinai-dev/BepInExConfigManager",
 			description:

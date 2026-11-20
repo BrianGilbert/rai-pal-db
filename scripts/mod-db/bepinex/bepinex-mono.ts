@@ -22,7 +22,7 @@ function bepinexMonoLoaderBase(
 	const gameEnvironment = bepinexMonoGameEnvironment(os);
 	return {
 		id: modId,
-		family: "bepinex",
+		tags: ["bepinex"],
 		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",

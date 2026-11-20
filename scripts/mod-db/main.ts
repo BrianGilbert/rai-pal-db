@@ -10,7 +10,7 @@ import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
 import { getGameSpecificMods } from "./game-specific/game-specific.ts";
-import { families } from "./families.ts";
+import { tags } from "./tags.ts";
 
 type ModGetter = () => Promise<ModBase[]>;
 
@@ -29,7 +29,7 @@ const mods: Mod[] = (await Promise.all(modGetters.map((getter) => getter())))
 
 const json = stringify(
 	{
-		families,
+		tags,
 		mods,
 	},
 	undefined,

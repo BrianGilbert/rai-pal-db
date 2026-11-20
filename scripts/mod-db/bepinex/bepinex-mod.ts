@@ -14,7 +14,7 @@ export function bepinexModHelper(modId: string) {
 
 		base: {
 			engine: "Unity",
-			requiredDependencies: [{ family: "bepinex" }],
+			requiredDependencies: [{ tag: "bepinex" }],
 		} satisfies Pick<ModBase, "engine" | "requiredDependencies">,
 
 		manifestPath: () =>

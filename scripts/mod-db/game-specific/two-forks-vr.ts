@@ -12,7 +12,7 @@ export const twoForksVrMod: ModBase = {
 		Gog: ["1459256379"],
 		NormalizedTitle: ["firewatch"],
 	},
-	family: "game-specific-vr",
+	tags: ["game-specific-vr"],
 	unityBackend: "Mono",
 	architecture: "X64",
 	title: "Two Forks VR",

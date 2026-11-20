@@ -49,7 +49,7 @@ function bepInExConfig(
 	return {
 		...mod,
 		author: "BepInEx",
-		family: "bepinex-config",
+		tags: ["bepinex-config"],
 		hideFromGameModsList: true,
 		description: "Default BepInEx config",
 		website: "https://github.com/BepInEx/BepInEx",
