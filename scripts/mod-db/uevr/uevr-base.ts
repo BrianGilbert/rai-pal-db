@@ -24,6 +24,9 @@ export function uevrBase(
 			{
 				modId: "dotnet-desktop-runtime-win-x64",
 			},
+			{
+				tag: "uevr-config",
+			},
 		],
 		runForGame: {
 			...runBase,
@@ -41,8 +44,7 @@ export function uevrBase(
 			mainInstalledFolderPath: `${token.SharedModsPath}/${id}`,
 		},
 		config: {
-			destinationPath:
-				`${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
+			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
 			destinationType: "Folder",
 		},
 	};

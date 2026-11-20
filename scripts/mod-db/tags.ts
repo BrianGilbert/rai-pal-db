@@ -45,6 +45,18 @@ export const tags = {
 		title: "BepInEx Config",
 		description: "Default BepInEx config.",
 	},
+	"everyone-config": {
+		title: "Everyone Config",
+		description: "Recommended Everyone config for a specific game.",
+	},
+	"uuvr-config": {
+		title: "UUVR Config",
+		description: "Recommended UUVR config for a specific game.",
+	},
+	"uevr-config": {
+		title: "UEVR Config",
+		description: "Recommended UEVR config for a specific game.",
+	},
 	"unity-config-manager": {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",

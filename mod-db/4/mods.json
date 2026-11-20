@@ -467,7 +467,7 @@
           "major": 2019
         }
       },
-      "hash": "2e5db1f575fa89cd4b323dc1f52c72f246abd2a1a4a949e52886e93ac3646357",
+      "hash": "b32b2e6544f54268c055ac7dae3c0bb3cb1cde0b26796f1b16c721839e8ebf0a",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -483,6 +483,11 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-il2cpp-legacy.json"
       },
+      "optionalDependencies": [
+        {
+          "tag": "uuvr-config"
+        }
+      ],
       "requiredDependencies": [
         {
           "tag": "bepinex"
@@ -513,7 +518,7 @@
           "major": 2019
         }
       },
-      "hash": "9f6b9a7641944cf870e72dd8c0379b67d5826265299cc4a9a7a39ae62b8cbc30",
+      "hash": "7274e0769d244005b7d34a896d081cc537b05bb112a825c55b52b7c82588e12a",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -529,6 +534,11 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-legacy.json"
       },
+      "optionalDependencies": [
+        {
+          "tag": "uuvr-config"
+        }
+      ],
       "requiredDependencies": [
         {
           "tag": "bepinex"
@@ -560,7 +570,7 @@
           "minor": 4
         }
       },
-      "hash": "abe104b58fb0298ddbc8cac02c233b162980e6101471021aa022e46c3efc7605",
+      "hash": "372a980af0ff44ef0b3c1d69d53cac01afd5efa8b095db4475be43c93807da01",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -576,6 +586,11 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-modern.json"
       },
+      "optionalDependencies": [
+        {
+          "tag": "uuvr-config"
+        }
+      ],
       "requiredDependencies": [
         {
           "tag": "bepinex"
@@ -805,7 +820,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
-      "hash": "b1f5378882be06c3ac9204f072bddb5365b7bea261d8d176838b8688afdd72ef",
+      "hash": "8440968183fb28ee0af891b57a6319e70d65994d58dd641773de38f6fc93faa0",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -817,6 +832,11 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
       },
+      "optionalDependencies": [
+        {
+          "tag": "everyone-config"
+        }
+      ],
       "requiredDependencies": [
         {
           "tag": "bepinex"
@@ -842,7 +862,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
-      "hash": "435821fefb5871b59d947e128021bd16b0361bd0891b8a33a982df2733957b80",
+      "hash": "aec0dd522ff541d7bdb57c7b274480e80ab5e39c742ee35a43051a660d13d2af",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -854,6 +874,11 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
       },
+      "optionalDependencies": [
+        {
+          "tag": "everyone-config"
+        }
+      ],
       "requiredDependencies": [
         {
           "tag": "bepinex"
@@ -7912,7 +7937,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "3ccb6d18e038dadc0480727d86020c52314b8187964655de756a662be5d30549",
+      "hash": "b8dd2dca0883168e8c8bd36e50936c278ac3fc2515ade0d5495f20504fa27b02",
       "id": "uevr",
       "install": {
         "extract": [
@@ -7927,6 +7952,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -7966,7 +7994,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "ddfeb5670337f14987dc325105c6db2a4c1fae27b7b5c5392b25907ed6d074c8",
+      "hash": "3fd984ed0d3f8e289e12b90b3ffba99cc3de327a4230689069fe578767714b53",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -7981,6 +8009,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -8020,7 +8051,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "9fe1e6db35e57bbfcc1bf95176ea2c7d9d3595caeda19a87a417f8aa8950cb6d",
+      "hash": "a42e072e4f3e1492cc3ec80775ffcbd8ff5a577abfe2fef8eb176b6b0596381c",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -8035,6 +8066,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -8074,7 +8108,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "5e63114c26de2344aeca63933918e81ab8904d420989b5bc8053b7640d0fa708",
+      "hash": "026409321e1f113be2da17e91158a4e3e2a5b0ca5be5e65acdb889901e6074b1",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -8089,6 +8123,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -8128,7 +8165,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "3f9131b9f924505746eedfd159706e012ae43cef4599cb1240acb35e92cb5124",
+      "hash": "7b17071682e6b89693dfcd614b6fac3792aaa0ecc3363df2a1bb275e031be642",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -8143,6 +8180,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -8182,7 +8222,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "d99eb564e9642c52dfb65593a4273c325d0569e1a76ecc89b9ca0bca8d9a1dd2",
+      "hash": "bf463c1d66edebc223040461a1f4af1e116bcd12956cc1f49ff30bae323a8411",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -8197,6 +8237,9 @@
       "optionalDependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
+        },
+        {
+          "tag": "uevr-config"
         }
       ],
       "runForGame": {
@@ -8331,6 +8374,1271 @@
       ],
       "title": "UE4SS",
       "website": "https://github.com/UE4SS-RE/RE-UE4SS"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for 140.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/140/configs/raicuparta.everyone.json?v=0-433ec5d7c834"
+      },
+      "gameIds": {
+        "Gog": [
+          "1096313866",
+          "1087788668"
+        ],
+        "NormalizedTitle": [
+          "140"
+        ],
+        "Steam": [
+          "242820"
+        ]
+      },
+      "hash": "1a7412b400568fac852bc9a4e7d669acd3435bf66da27850967c2703b4f147df",
+      "hideFromGameModsList": true,
+      "id": "config-140-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-140-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for 140",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "praydog",
+      "description": "Recommended UEVR config for Abzû.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/abzugame-win64-shipping/configs/uevr.zip?v=0-58dea3909a6b"
+      },
+      "gameIds": {
+        "Gog": [
+          "1622602219"
+        ],
+        "NormalizedTitle": [
+          "abz",
+          "abzugamewin64shipping"
+        ],
+        "Steam": [
+          "384190",
+          "577450"
+        ]
+      },
+      "hash": "98a9c86656d2154d075aed6882bad5acc8510be717aa65debc0c2616effdeaa3",
+      "hideFromGameModsList": true,
+      "id": "config-abzugame-win64-shipping-uevr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+            "source": "."
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-abzugame-win64-shipping-uevr.json"
+      },
+      "tags": [
+        "uevr-config"
+      ],
+      "title": "UEVR Config for Abzû",
+      "website": "https://github.com/praydog/UEVR"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for A Short Hike.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/ashorthike/configs/raicuparta.everyone.json?v=0-87d4e6e08282"
+      },
+      "gameIds": {
+        "Epic": [
+          "018230f620e34503926e5c76525a8fd1"
+        ],
+        "Gog": [
+          "2044653500"
+        ],
+        "NormalizedTitle": [
+          "ashorthike"
+        ],
+        "Steam": [
+          "1055540"
+        ]
+      },
+      "hash": "461584352324989418787f507e041a6333c4446cd919ef59ba69e19a0c46a468",
+      "hideFromGameModsList": true,
+      "id": "config-ashorthike-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-ashorthike-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for A Short Hike",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Cuphead.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/cuphead/configs/raicuparta.everyone.json?v=0-56518c4b1e5b"
+      },
+      "gameIds": {
+        "Gog": [
+          "1963513391",
+          "1828931756",
+          "2048763853",
+          "1999621840"
+        ],
+        "NormalizedTitle": [
+          "cuphead"
+        ],
+        "Steam": [
+          "268910",
+          "1117850",
+          "704710",
+          "2072990"
+        ]
+      },
+      "hash": "8dfea65ada6e0e57722a45737fae74539a8173b204bb28abec60a9587a0c7f9f",
+      "hideFromGameModsList": true,
+      "id": "config-cuphead-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-cuphead-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Cuphead",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Ittle Dew.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/dew/configs/raicuparta.everyone.json?v=0-5453b1193ead"
+      },
+      "gameIds": {
+        "Gog": [
+          "1207659258"
+        ],
+        "NormalizedTitle": [
+          "ittledew",
+          "dew"
+        ],
+        "Steam": [
+          "241320"
+        ]
+      },
+      "hash": "5ecf10dd804dfe5c912680414f14263c29003c2b3cdfad77626c949f95fdc225",
+      "hideFromGameModsList": true,
+      "id": "config-dew-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-dew-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Ittle Dew",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Disco Elysium.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/disco/configs/raicuparta.everyone.json?v=0-b9e9e18c981e"
+      },
+      "gameIds": {
+        "Gog": [
+          "1771589310",
+          "1497779763",
+          "1820315840",
+          "1618612563",
+          "1370620137",
+          "1377256194"
+        ],
+        "NormalizedTitle": [
+          "discoelysium",
+          "discoelysiumthefinalcut",
+          "disco"
+        ],
+        "Steam": [
+          "632470",
+          "1173140"
+        ],
+        "Xbox": [
+          "9NTRS771L8HL"
+        ]
+      },
+      "hash": "980273c88d860428ecef558cd289c509f617191096c81b59edeef4d2317e98b6",
+      "hideFromGameModsList": true,
+      "id": "config-disco-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-disco-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Disco Elysium",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Else Heart.Break().",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/elseheartbreak/configs/raicuparta.everyone.json?v=0-b9a4c80db93c"
+      },
+      "gameIds": {
+        "Gog": [
+          "1442485613"
+        ],
+        "NormalizedTitle": [
+          "elseheartbreak"
+        ],
+        "Steam": [
+          "400110"
+        ]
+      },
+      "hash": "c5238ca4fe65b6ea01c3e65a6f682f13838ab1ac765133aa75e879c5b30f934f",
+      "hideFromGameModsList": true,
+      "id": "config-elseheartbreak-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-elseheartbreak-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Else Heart.Break()",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Gris.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/gris/configs/raicuparta.everyone.json?v=0-0af12feb3c2a"
+      },
+      "gameIds": {
+        "Gog": [
+          "2078272297",
+          "1322407652"
+        ],
+        "NormalizedTitle": [
+          "gris"
+        ],
+        "Steam": [
+          "683320"
+        ]
+      },
+      "hash": "adaccd1fb2466bd0923df79542c1c1e6d9ccd34d7be9331a32ce9ecbdcb82cf3",
+      "hideFromGameModsList": true,
+      "id": "config-gris-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-gris-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Gris",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Grow Home.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/growhome/configs/raicuparta.everyone.json?v=0-db59771cca18"
+      },
+      "gameIds": {
+        "Gog": [
+          "1533865045"
+        ],
+        "NormalizedTitle": [
+          "growhome"
+        ],
+        "Steam": [
+          "323320"
+        ]
+      },
+      "hash": "7d4f4547e734199f9525b7ea2ddadfcc9e070b46ec3909d4dbd1bca8a5393d0f",
+      "hideFromGameModsList": true,
+      "id": "config-growhome-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-growhome-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Grow Home",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Grow Up.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/growup/configs/raicuparta.everyone.json?v=0-bca909bb31bc"
+      },
+      "gameIds": {
+        "Gog": [
+          "2032258750"
+        ],
+        "NormalizedTitle": [
+          "growup"
+        ],
+        "Steam": [
+          "426790"
+        ]
+      },
+      "hash": "f799c651141aab41bf8dc3fc5ec015450a3f118e868047fd76a2132f03133762",
+      "hideFromGameModsList": true,
+      "id": "config-growup-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-growup-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Grow Up",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Here Comes Niko!.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/here%20comes%20niko!/configs/raicuparta.everyone.json?v=0-3b5057c6d242"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "herecomesniko"
+        ],
+        "Steam": [
+          "925950"
+        ]
+      },
+      "hash": "e52a9be19a7b1cb4360c15cd5ff926d1f81085f42b319d36cc8b6aecfcb473b0",
+      "hideFromGameModsList": true,
+      "id": "config-here-comes-niko-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-here-comes-niko-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Here Comes Niko!",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Hollow Knight.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/hollow%20knight/configs/raicuparta.everyone.json?v=0-b5c8178a8ce7"
+      },
+      "gameIds": {
+        "Gog": [
+          "1308320804",
+          "1984697392",
+          "2031197911"
+        ],
+        "NormalizedTitle": [
+          "hollowknight"
+        ],
+        "Steam": [
+          "367520",
+          "598190",
+          "916000"
+        ]
+      },
+      "hash": "bd0029b947cb17f02162d8255e3d185bbceb2ef918aec6776cd203e36ceb6dc5",
+      "hideFromGameModsList": true,
+      "id": "config-hollow-knight-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-hollow-knight-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Hollow Knight",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Ittle Dew 2.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/id2/configs/raicuparta.everyone.json?v=0-d89c773ac2b4"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "ittledew2",
+          "id2"
+        ],
+        "Steam": [
+          "395620"
+        ]
+      },
+      "hash": "d12974246d23717c1f8122b6e0328d307e01e527004680228a3a7cbe8248a041",
+      "hideFromGameModsList": true,
+      "id": "config-id2-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-id2-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Ittle Dew 2",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for In Sound Mind.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/in%20sound%20mind/configs/raicuparta.everyone.json?v=0-a2ba62ddbb88"
+      },
+      "gameIds": {
+        "Epic": [
+          "929a84bff8a34d80b490f71550ec782f"
+        ],
+        "Gog": [
+          "1989561048",
+          "2095232159",
+          "1463130328",
+          "1503102848"
+        ],
+        "NormalizedTitle": [
+          "insoundmind"
+        ],
+        "Steam": [
+          "1119980",
+          "1309180",
+          "1749910",
+          "1756610",
+          "1474320"
+        ]
+      },
+      "hash": "b25040c959a2bab0eac8eaa47234183b437d302737c6df036f86acd1572898b6",
+      "hideFromGameModsList": true,
+      "id": "config-in-sound-mind-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-in-sound-mind-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for In Sound Mind",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Inside.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/inside/configs/raicuparta.everyone.json?v=0-586224ace4d0"
+      },
+      "gameIds": {
+        "Epic": [
+          "6fdb5feba66846cd8623a6d15ca68080"
+        ],
+        "Gog": [
+          "1916896012"
+        ],
+        "NormalizedTitle": [
+          "inside"
+        ],
+        "Steam": [
+          "304430"
+        ]
+      },
+      "hash": "8003b790c0dd96047c6897d4a4dfb875a8ed28448c257c60988cbeea78dcdbc3",
+      "hideFromGameModsList": true,
+      "id": "config-inside-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-inside-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Inside",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Kentucky Route Zero.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/kentuckyroutezero/configs/raicuparta.everyone.json?v=0-e70a73bff9ee"
+      },
+      "gameIds": {
+        "Gog": [
+          "1207660653"
+        ],
+        "NormalizedTitle": [
+          "kentuckyroutezero"
+        ],
+        "Steam": [
+          "231200"
+        ]
+      },
+      "hash": "2d5b4ce6c60d2cadb87ff47481870b31b78b34a501237b99f1ce4b58dc1cca21",
+      "hideFromGameModsList": true,
+      "id": "config-kentuckyroutezero-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-kentuckyroutezero-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Kentucky Route Zero",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Kerbal Space Program.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/ksp_x64/configs/raicuparta.everyone.json?v=0-b60705c6fcc9"
+      },
+      "gameIds": {
+        "Epic": [
+          "84686da593b24598803ffbe7f9b1bb5e"
+        ],
+        "Gog": [
+          "1429864849",
+          "2092205632",
+          "1506581192"
+        ],
+        "NormalizedTitle": [
+          "kerbalspaceprogram",
+          "ksp_x64"
+        ],
+        "Steam": [
+          "220200",
+          "283740"
+        ]
+      },
+      "hash": "63be4c9d7824a3cb3842bc9971e968917bcf4dce73477629b5ce349ff045b48c",
+      "hideFromGameModsList": true,
+      "id": "config-ksp-x64-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-ksp-x64-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Kerbal Space Program",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Lake Haven - Chrysalis.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/lake%20haven%20-%20chrysalis/configs/raicuparta.everyone.json?v=0-e7151072f873"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "lakehavenchrysalis"
+        ],
+        "Steam": [
+          "1696960"
+        ]
+      },
+      "hash": "5cebbb1b8b76febeefbee28f7bea272e1f5d2ed6e39be21bc4ce2724f35eb7a0",
+      "hideFromGameModsList": true,
+      "id": "config-lake-haven-chrysalis-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-lake-haven-chrysalis-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Lake Haven - Chrysalis",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Lil Gator Game.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/lil%20gator%20game/configs/raicuparta.everyone.json?v=0-9b909031d751"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "lilgatorgame"
+        ],
+        "Steam": [
+          "1586800"
+        ]
+      },
+      "hash": "d71aef6f62a3adf48a306fd36447fc1652e79e6da5ea07b6d7dc11669f16afaa",
+      "hideFromGameModsList": true,
+      "id": "config-lil-gator-game-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-lil-gator-game-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Lil Gator Game",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Mouthwashing.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/mouthwashing/configs/raicuparta.everyone.json?v=0-9059062fa758"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "mouthwashing"
+        ],
+        "Steam": [
+          "2475490",
+          "3276830",
+          "4014000"
+        ],
+        "Xbox": [
+          "9MVNCSJ14754"
+        ]
+      },
+      "hash": "5969652bff529949855040dbf500c8ce0be51d7b22575d29303ea9c7a0c0e44b",
+      "hideFromGameModsList": true,
+      "id": "config-mouthwashing-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-mouthwashing-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Mouthwashing",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Neon White.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/neon%20white/configs/raicuparta.everyone.json?v=0-be76bd2595c4"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "neonwhite"
+        ],
+        "Steam": [
+          "1533420"
+        ]
+      },
+      "hash": "fe49ce0faa1c7fe198e8b7dca2fe23720f552078fc9876646b0ad7b38aa333a4",
+      "hideFromGameModsList": true,
+      "id": "config-neon-white-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-neon-white-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Neon White",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Outer Wilds.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/outerwilds/configs/raicuparta.everyone.json?v=0-2f4ffc50c10a"
+      },
+      "gameIds": {
+        "Epic": [
+          "c1c2d06bb0b24b7cb820e8e03ae5c3d2"
+        ],
+        "NormalizedTitle": [
+          "outerwilds",
+          "outerwildsechoesoftheeye"
+        ],
+        "Steam": [
+          "753640",
+          "1622100"
+        ]
+      },
+      "hash": "933aeb20fa7e374b7a79bec48c5f3b81cc7d5deaa7179285fd062e5baf79116b",
+      "hideFromGameModsList": true,
+      "id": "config-outerwilds-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-outerwilds-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Outer Wilds",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Oxenfree.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/oxenfree/configs/raicuparta.everyone.json?v=0-52f584787780"
+      },
+      "gameIds": {
+        "Epic": [
+          "a32b4fc85e2440bd9dae0dace76f5c86"
+        ],
+        "Gog": [
+          "1457519353"
+        ],
+        "NormalizedTitle": [
+          "oxenfree"
+        ],
+        "Steam": [
+          "388880",
+          "433430"
+        ]
+      },
+      "hash": "55aacd702e910904488de25eb5a06a17916b249cf2136888107c27dabda7b046",
+      "hideFromGameModsList": true,
+      "id": "config-oxenfree-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-oxenfree-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Oxenfree",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended UUVR config for Peak.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/peak/configs/raicuparta.uuvr-modern.cfg?v=0-47bef102e0f2"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "peak"
+        ],
+        "Steam": [
+          "3527290"
+        ]
+      },
+      "hash": "bb2c6c48ad39becad89e0d0495717c61e0ed474cb6e8f8a7496c5f40d3c6c655",
+      "hideFromGameModsList": true,
+      "id": "config-peak-uuvr",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-peak-uuvr.json"
+      },
+      "tags": [
+        "uuvr-config"
+      ],
+      "title": "UUVR Config for Peak",
+      "website": "https://github.com/Raicuparta/uuvr"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Risk of Rain.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/riskofrain/configs/raicuparta.everyone.json?v=0-02e8d9ddd5f0"
+      },
+      "gameIds": {
+        "Gog": [
+          "1207660563"
+        ],
+        "NormalizedTitle": [
+          "riskofrain"
+        ],
+        "Steam": [
+          "248820"
+        ]
+      },
+      "hash": "e1c7d7d1dd11f524ccfd8f63fb2a9ade1159147549cb9c555acfb8e73d19a4d0",
+      "hideFromGameModsList": true,
+      "id": "config-riskofrain-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-riskofrain-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Risk of Rain",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Saturnalia.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/saturnalia/configs/raicuparta.everyone.json?v=0-0d9a9e6b7143"
+      },
+      "gameIds": {
+        "Epic": [
+          "1dd2d2d4d38e4964a2ebcb3e3a9d10e5"
+        ],
+        "Gog": [
+          "2041744633",
+          "1824726869"
+        ],
+        "NormalizedTitle": [
+          "saturnalia"
+        ],
+        "Steam": [
+          "916350"
+        ]
+      },
+      "hash": "fbcb17cf0a38e7acbbf5e14629ad3f7c5c6099c7a7c9e1e7f87b5cfa85de4b53",
+      "hideFromGameModsList": true,
+      "id": "config-saturnalia-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-saturnalia-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Saturnalia",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for The Stanley Parable: Ultra Deluxe.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/the%20stanley%20parable%20ultra%20deluxe/configs/raicuparta.everyone.json?v=0-a60cba066f0d"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "thestanleyparableultradeluxe"
+        ],
+        "Steam": [
+          "1703340"
+        ]
+      },
+      "hash": "67014f0961245694a740dc70e9ea6bb268c774131bc4cb44792481d03206bf7c",
+      "hideFromGameModsList": true,
+      "id": "config-the-stanley-parable-ultra-deluxe-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-the-stanley-parable-ultra-deluxe-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for The Stanley Parable: Ultra Deluxe",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for The Lab.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/thelab/configs/raicuparta.everyone.json?v=0-cd995f181c9c"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "thelab"
+        ],
+        "Steam": [
+          "450390"
+        ]
+      },
+      "hash": "5ed50f38ccd86b59a26de13347fcdfb9ed454aaf60b8d13308a60fc7564fa6b3",
+      "hideFromGameModsList": true,
+      "id": "config-thelab-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-thelab-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for The Lab",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Thomas Was Alone.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/thomaswasalone/configs/raicuparta.everyone.json?v=0-9a283630f187"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "thomaswasalone"
+        ],
+        "Steam": [
+          "220780"
+        ]
+      },
+      "hash": "3b8cca52b90ac6a921ab61c8f76df78cfbf8222a038ab995ba24dd1729f2fe90",
+      "hideFromGameModsList": true,
+      "id": "config-thomaswasalone-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-thomaswasalone-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Thomas Was Alone",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for TOEM.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/toem/configs/raicuparta.everyone.json?v=0-529ed60e0215"
+      },
+      "gameIds": {
+        "Gog": [
+          "1436499377"
+        ],
+        "NormalizedTitle": [
+          "toem"
+        ],
+        "Steam": [
+          "1307580",
+          "1655680"
+        ]
+      },
+      "hash": "11d7189d966bf0eafe5b7e4bc0aa12738ec7a9ffdecf9ba4854d52127eeff705",
+      "hideFromGameModsList": true,
+      "id": "config-toem-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-toem-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for TOEM",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Untitled Goose Game.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/untitled/configs/raicuparta.everyone.json?v=0-60c5d4f9b13f"
+      },
+      "gameIds": {
+        "Epic": [
+          "a53bee4f52cc46a583d8a40217b8ab27"
+        ],
+        "NormalizedTitle": [
+          "untitledgoosegame",
+          "untitled"
+        ],
+        "Steam": [
+          "837470"
+        ]
+      },
+      "hash": "8ae69a03571bb0f238e7090a91cbfa97d44891b70d611a6efee13e933a7c4ff6",
+      "hideFromGameModsList": true,
+      "id": "config-untitled-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-untitled-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Untitled Goose Game",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Wizard of Legend.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/wizardoflegend/configs/raicuparta.everyone.json?v=0-bda76903078d"
+      },
+      "gameIds": {
+        "Epic": [
+          "24cb36289be34527b528cda87cdc925c"
+        ],
+        "Gog": [
+          "2061814323",
+          "1855397386"
+        ],
+        "NormalizedTitle": [
+          "wizardoflegend"
+        ],
+        "Steam": [
+          "445980",
+          "813840"
+        ]
+      },
+      "hash": "e4526770b1eac308940a1191aa3612f419d3245481e8645a7dae025b7a4016f4",
+      "hideFromGameModsList": true,
+      "id": "config-wizardoflegend-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-wizardoflegend-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Wizard of Legend",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Ynglet.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/ynglet/configs/raicuparta.everyone.json?v=0-ca3918565f70"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "ynglet"
+        ],
+        "Steam": [
+          "1015920"
+        ]
+      },
+      "hash": "bb3a34560dfefdd2e05e7c46ed7949dc6c506cdf9003f93bd88a5f7fb6780c50",
+      "hideFromGameModsList": true,
+      "id": "config-ynglet-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-ynglet-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Ynglet",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended Everyone config for Yooka-Laylee.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/yookalaylee64/configs/raicuparta.everyone.json?v=0-c355611b1f8f"
+      },
+      "gameIds": {
+        "Gog": [
+          "1445853962",
+          "1354053863"
+        ],
+        "NormalizedTitle": [
+          "yookalaylee",
+          "yookalaylee64"
+        ],
+        "Steam": [
+          "360830",
+          "426750"
+        ]
+      },
+      "hash": "3e8cfeb2e5d4a171d2fec8c8e91a4fd1d48609412de591a08e9c44db5b23ae19",
+      "hideFromGameModsList": true,
+      "id": "config-yookalaylee64-everyone",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-yookalaylee64-everyone.json"
+      },
+      "tags": [
+        "everyone-config"
+      ],
+      "title": "Everyone Config for Yooka-Laylee",
+      "website": "https://github.com/Raicuparta/everyone-client"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Recommended UUVR config for Zerograve.",
+      "download": {
+        "id": "0",
+        "url": "https://dev.rai-pal.pages.dev/config-db/0/zerograve/configs/raicuparta.uuvr-modern.cfg?v=0-94bb12a9da59"
+      },
+      "gameIds": {
+        "NormalizedTitle": [
+          "zerograve"
+        ],
+        "Steam": [
+          "1218580"
+        ]
+      },
+      "hash": "76b10ec32676dc5ef8b01727f121ba4139efbd46fc0aded0f48bef7469bdcfd7",
+      "hideFromGameModsList": true,
+      "id": "config-zerograve-uuvr",
+      "install": {
+        "copy": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-zerograve-uuvr.json"
+      },
+      "tags": [
+        "uuvr-config"
+      ],
+      "title": "UUVR Config for Zerograve",
+      "website": "https://github.com/Raicuparta/uuvr"
     }
   ],
   "tags": {
@@ -8346,6 +9654,10 @@
       "description": "Adds multiplayerish features.",
       "filterable": true,
       "title": "Everyone"
+    },
+    "everyone-config": {
+      "description": "Recommended Everyone config for a specific game.",
+      "title": "Everyone Config"
     },
     "game-specific-vr": {
       "description": "Mods made for specific games",
@@ -8369,6 +9681,10 @@
       "filterable": true,
       "title": "UEVR"
     },
+    "uevr-config": {
+      "description": "Recommended UEVR config for a specific game.",
+      "title": "UEVR Config"
+    },
     "unity-config-manager": {
       "description": "In-game UI for changing BepInEx mod settings.",
       "title": "Unity Config Manager"
@@ -8381,6 +9697,10 @@
       "description": "Universal VR mod for Unity games",
       "filterable": true,
       "title": "UUVR"
+    },
+    "uuvr-config": {
+      "description": "Recommended UUVR config for a specific game.",
+      "title": "UUVR Config"
     }
   }
 }

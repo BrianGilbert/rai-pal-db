@@ -98,6 +98,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			description,
 			author,
 			website,
+			optionalDependencies: [{ tag: "everyone-config" }],
 			install: {
 				manifestPath: bepinexMono.manifestPath(),
 				extract: [bepinexMono.extract.plugin()],
@@ -115,6 +116,7 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 			description,
 			author,
 			website,
+			optionalDependencies: [{ tag: "everyone-config" }],
 			install: {
 				manifestPath: bepinexIl2cpp.manifestPath(),
 				extract: [bepinexIl2cpp.extract.plugin()],

@@ -32,6 +32,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			website,
 			description:
 				"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+			optionalDependencies: [{ tag: "uuvr-config" }],
 			engineVersionRange: {
 				maximum: {
 					major: 2019,
@@ -55,6 +56,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			website,
 			description:
 				"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+			optionalDependencies: [{ tag: "uuvr-config" }],
 			engineVersionRange: {
 				maximum: {
 					major: 2019,
@@ -78,6 +80,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 			website,
 			description:
 				"Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
+			optionalDependencies: [{ tag: "uuvr-config" }],
 			engineVersionRange: {
 				minimum: {
 					major: 2018,

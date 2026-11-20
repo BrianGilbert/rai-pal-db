@@ -122,6 +122,17 @@ export interface ModBase {
 		}[];
 
 		/**
+		 * Copies the downloaded file, without extracting it, to the destination paths.
+		 * Use this for mods whose download is a single file instead of a zip.
+		 */
+		copy?: {
+			/**
+			 * Supports replacement tokens. Destination path to copy the downloaded file to.
+			 */
+			destination: string;
+		}[];
+
+		/**
 		 * Text files to write when installing the mod.
 		 */
 		write?: {
@@ -166,7 +177,7 @@ export interface ModBase {
 	};
 
 	/**
-	 * Information used to find local mod configs, and also for downloading configs from the database.
+	 * Information used to find the local config file or folder for this mod.
 	 */
 	config?: {
 		/**
@@ -175,14 +186,9 @@ export interface ModBase {
 		destinationPath: string;
 
 		/**
-		 * If file, the downloaded config will be placed directly in destinationPath. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.
+		 * If file, the config is a single file placed directly at destinationPath. If folder, the config is multiple files in the destinationPath folder.
 		 */
 		destinationType: "File" | "Folder";
-
-		/**
-		 * If set, overrides the mod ID used for finding config files. Useful when multiple mods use the same configs.
-		 */
-		modIdOverride?: string;
 	};
 }
 
@@ -233,7 +239,7 @@ export interface ModDownload {
 	id: string;
 
 	/**
-	 * Direct download url for the release zip.
+	 * Direct download url for the release archive or file.
 	 */
 	url: string;
 
