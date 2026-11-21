@@ -25,10 +25,26 @@ export const heavenVrMod: ModBase = {
 	install: {
 		manifestPath: heavenVr.manifestPath(),
 		extract: [
-			heavenVr.extract.plugin(),
 			{
-				source: "CopyToGame",
-				destination: token.GameExecutableFolderPath,
+				source: "plugins/HeavenVr",
+				destination: heavenVr.pluginFolder(),
+			},
+			{
+				source: "CopyToGame/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
+				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll`,
+			},
+			{
+				source: "CopyToGame/Neon White_Data/Plugins/x86_64/openxr_loader.dll",
+				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/openxr_loader.dll`,
+			},
+			{
+				source: "CopyToGame/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
+				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll`,
+			},
+			{
+				source:
+					"CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
+				destination: `${token.GameExecutableFolderPath}/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json`,
 			},
 		],
 	},

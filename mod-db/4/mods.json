@@ -1240,17 +1240,29 @@
           "1533420"
         ]
       },
-      "hash": "f72685f93d7c9ead547e05d4154723fe7e1a85b289bb3532c3ac12da2232a2a9",
+      "hash": "84090bd0ce95a660c12fd2120f04f7f3186367855067af6ef3feb9d0768e9211",
       "id": "heaven-vr",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/heaven-vr",
-            "source": "plugins"
+            "source": "plugins/HeavenVr"
           },
           {
-            "destination": "{{GameExecutableFolderPath}}",
-            "source": "CopyToGame"
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/openxr_loader.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/openxr_loader.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
+            "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
           }
         ],
         "manifestPath": "{{GameInstalledModsPath}}/manifests/heaven-vr.json"
