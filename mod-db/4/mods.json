@@ -1240,12 +1240,12 @@
           "1533420"
         ]
       },
-      "hash": "8ae1dea0136b95287898b8c08d4fa6b9426e60e94a8f6c540eeee0a6d8d93e8a",
-      "id": "HeavenVR",
+      "hash": "5b893b055a478d6c09bf00efd481975662381ba3fc2dab89e66bd3f328e8a6c8",
+      "id": "HeavenVr",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVR",
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
             "source": "plugins/HeavenVr"
           },
           {
@@ -1265,12 +1265,12 @@
             "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVR.json"
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVr.json"
       },
       "paths": [
         {
           "id": "plugin",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVR",
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
           "title": "Plugin",
           "type": "Folder"
         }
@@ -1307,35 +1307,47 @@
           "383870"
         ]
       },
-      "hash": "bc5a79675868792ce6561dfbc3852a2c2222a16bfbc194d7a077d3d4b5a45bdb",
-      "id": "two-forks-vr",
+      "hash": "68f2b289cb190d9659cb409f960db5ad1c510d739761a9b497af9203843a8390",
+      "id": "TwoForksVr",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/two-forks-vr",
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
             "source": "plugins"
           },
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/two-forks-vr",
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVrAssets",
+            "source": "plugins/TwoForksVrAssets"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
             "source": "patchers"
           },
           {
-            "destination": "{{GameExecutableFolderPath}}",
-            "source": "CopyToGame"
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/LIV_Bridge.dll",
+            "source": "CopyToGame/Firewatch_Data/Plugins/LIV_Bridge.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_api.dll",
+            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_api.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_mod.cfg",
+            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_mod.cfg"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/two-forks-vr.json"
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/TwoForksVr.json"
       },
       "paths": [
         {
           "id": "plugin",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/two-forks-vr",
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
           "title": "Plugin",
           "type": "Folder"
         },
         {
           "id": "patcher",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/two-forks-vr",
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
           "title": "Patcher",
           "type": "Folder"
         }

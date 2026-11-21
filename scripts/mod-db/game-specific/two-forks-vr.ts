@@ -2,7 +2,7 @@ import type { ModBase } from "../mod.ts";
 import { bepinexModHelper } from "../bepinex/bepinex-mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-const twoForksVr = bepinexModHelper("two-forks-vr");
+const twoForksVr = bepinexModHelper("TwoForksVr");
 
 export const twoForksVrMod: ModBase = {
 	id: twoForksVr.id,
@@ -27,11 +27,19 @@ export const twoForksVrMod: ModBase = {
 		manifestPath: twoForksVr.manifestPath(),
 		extract: [
 			twoForksVr.extract.plugin(),
-			twoForksVr.extract.patch(),
 			{
-				source: "CopyToGame",
-				destination: token.GameExecutableFolderPath,
+				source: "plugins/TwoForksVrAssets",
+				destination: `${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/TwoForksVrAssets`,
 			},
+			twoForksVr.extract.patch(),
+			...[
+				"Firewatch_Data/Plugins/LIV_Bridge.dll",
+				"Firewatch_Data/Plugins/openvr_api.dll",
+				"Firewatch_Data/Plugins/openvr_mod.cfg",
+			].map((filePath) => ({
+				source: `CopyToGame/${filePath}`,
+				destination: `${token.GameExecutableFolderPath}/${filePath}`,
+			})),
 		],
 	},
 	paths: [twoForksVr.paths.plugin(), twoForksVr.paths.patcher()],

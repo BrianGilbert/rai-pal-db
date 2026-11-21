@@ -2,7 +2,7 @@ import type { ModBase } from "../mod.ts";
 import { bepinexModHelper } from "../bepinex/bepinex-mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-const heavenVr = bepinexModHelper("HeavenVR");
+const heavenVr = bepinexModHelper("HeavenVr");
 
 export const heavenVrMod: ModBase = {
 	id: heavenVr.id,
@@ -29,23 +29,15 @@ export const heavenVrMod: ModBase = {
 				source: "plugins/HeavenVr",
 				destination: heavenVr.pluginFolder(),
 			},
-			{
-				source: "CopyToGame/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
-				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll`,
-			},
-			{
-				source: "CopyToGame/Neon White_Data/Plugins/x86_64/openxr_loader.dll",
-				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/openxr_loader.dll`,
-			},
-			{
-				source: "CopyToGame/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
-				destination: `${token.GameExecutableFolderPath}/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll`,
-			},
-			{
-				source:
-					"CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
-				destination: `${token.GameExecutableFolderPath}/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json`,
-			},
+			...[
+				"Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
+				"Neon White_Data/Plugins/x86_64/openxr_loader.dll",
+				"Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
+				"Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
+			].map((filePath) => ({
+				source: `CopyToGame/${filePath}`,
+				destination: `${token.GameExecutableFolderPath}/${filePath}`,
+			})),
 		],
 	},
 	paths: [heavenVr.paths.plugin()],
