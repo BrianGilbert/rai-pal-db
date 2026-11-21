@@ -1240,12 +1240,12 @@
           "1533420"
         ]
       },
-      "hash": "84090bd0ce95a660c12fd2120f04f7f3186367855067af6ef3feb9d0768e9211",
-      "id": "heaven-vr",
+      "hash": "8ae1dea0136b95287898b8c08d4fa6b9426e60e94a8f6c540eeee0a6d8d93e8a",
+      "id": "HeavenVR",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/heaven-vr",
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVR",
             "source": "plugins/HeavenVr"
           },
           {
@@ -1265,12 +1265,12 @@
             "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/heaven-vr.json"
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVR.json"
       },
       "paths": [
         {
           "id": "plugin",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/heaven-vr",
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVR",
           "title": "Plugin",
           "type": "Folder"
         }

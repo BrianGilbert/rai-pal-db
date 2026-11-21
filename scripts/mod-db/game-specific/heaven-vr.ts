@@ -2,7 +2,7 @@ import type { ModBase } from "../mod.ts";
 import { bepinexModHelper } from "../bepinex/bepinex-mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-const heavenVr = bepinexModHelper("heaven-vr");
+const heavenVr = bepinexModHelper("HeavenVR");
 
 export const heavenVrMod: ModBase = {
 	id: heavenVr.id,
