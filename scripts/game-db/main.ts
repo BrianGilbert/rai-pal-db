@@ -159,7 +159,12 @@ async function main(pretty: boolean) {
 		}
 	}
 
-	createDatabase(join(folder, "games.db"), gamesWithEngines);
+	createDatabase(
+		join(folder, "games.db"),
+		gamesWithEngines,
+		idProviders,
+		engineBrands,
+	);
 
 	await writeFile(
 		outputPath,
