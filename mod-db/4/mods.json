@@ -8737,6 +8737,9 @@
           "1096313866",
           "1087788668"
         ],
+        "NormalizedExecutable": [
+          "140"
+        ],
         "NormalizedTitle": [
           "140"
         ],
@@ -8744,7 +8747,7 @@
           "242820"
         ]
       },
-      "hash": "3ef33a1ecfd251c0c35361c198385faf02a70ca23219abde66c45a4fd8275f30",
+      "hash": "4b589fc4623d8578c57b7f086042f85dda9de468bf224c5cd845c423d486976f",
       "hideFromGameModsList": true,
       "id": "config-140-everyone",
       "install": {
@@ -8780,16 +8783,18 @@
         "Gog": [
           "1622602219"
         ],
-        "NormalizedTitle": [
-          "abz",
+        "NormalizedExecutable": [
           "abzugamewin64shipping"
+        ],
+        "NormalizedTitle": [
+          "abz"
         ],
         "Steam": [
           "384190",
           "577450"
         ]
       },
-      "hash": "fe5d62188f7feecd4fea291188681f26530466c8c6d019e7894b4413848ed51d",
+      "hash": "9534ba254c174b9909fc71a466b3ac42ab248195240d430db87bfe7d4ee4a30f",
       "hideFromGameModsList": true,
       "id": "config-abzugame-win64-shipping-uevr",
       "install": {
@@ -8829,6 +8834,9 @@
         "Gog": [
           "2044653500"
         ],
+        "NormalizedExecutable": [
+          "ashorthike"
+        ],
         "NormalizedTitle": [
           "ashorthike"
         ],
@@ -8836,7 +8844,7 @@
           "1055540"
         ]
       },
-      "hash": "08fff1b1ccfecd735722e82a9a552acf7eaa1be26dc9308353fc6152642d212a",
+      "hash": "a8d8508e2227be9175a20f2ad888e13a7e1542a35cf75c7409a662e0e0df71ef",
       "hideFromGameModsList": true,
       "id": "config-ashorthike-everyone",
       "install": {
@@ -8875,6 +8883,9 @@
           "2048763853",
           "1999621840"
         ],
+        "NormalizedExecutable": [
+          "cuphead"
+        ],
         "NormalizedTitle": [
           "cuphead"
         ],
@@ -8885,7 +8896,7 @@
           "2072990"
         ]
       },
-      "hash": "4f374ee30d25fe9cf94dbd7cf97aeee43ed02b37e8a317f287e132d343d2f521",
+      "hash": "19b9ad69fd3289f5f9ee41b5ad99621d4396f484bf7237da224b5bf170e30c7f",
       "hideFromGameModsList": true,
       "id": "config-cuphead-everyone",
       "install": {
@@ -8921,15 +8932,17 @@
         "Gog": [
           "1207659258"
         ],
-        "NormalizedTitle": [
-          "ittledew",
+        "NormalizedExecutable": [
           "dew"
+        ],
+        "NormalizedTitle": [
+          "ittledew"
         ],
         "Steam": [
           "241320"
         ]
       },
-      "hash": "9b593b0d0ad9977883512b5af29100c9978e007b9bf7bf9694f4fe0b79e53036",
+      "hash": "769e63c0505104b90199a958644be142412088261b79a4908afd4d694ca3d1d6",
       "hideFromGameModsList": true,
       "id": "config-dew-everyone",
       "install": {
@@ -8970,10 +8983,12 @@
           "1370620137",
           "1377256194"
         ],
+        "NormalizedExecutable": [
+          "disco"
+        ],
         "NormalizedTitle": [
           "discoelysium",
-          "discoelysiumthefinalcut",
-          "disco"
+          "discoelysiumthefinalcut"
         ],
         "Steam": [
           "632470",
@@ -8983,7 +8998,7 @@
           "9NTRS771L8HL"
         ]
       },
-      "hash": "af1823a96a98123c9a8d6af02f92d3a863d3ac8da073f4862c3ea48c9cad64d7",
+      "hash": "41cb831f58ada758db0811c83f65de1a68ebc75c724e5853fa3a5c39e74fccf4",
       "hideFromGameModsList": true,
       "id": "config-disco-everyone",
       "install": {
@@ -9019,6 +9034,9 @@
         "Gog": [
           "1442485613"
         ],
+        "NormalizedExecutable": [
+          "elseheartbreak"
+        ],
         "NormalizedTitle": [
           "elseheartbreak"
         ],
@@ -9026,7 +9044,7 @@
           "400110"
         ]
       },
-      "hash": "16882df84d69d496dd20ad287d492c63ff802e6fc5844f836841ed9ccf654b1a",
+      "hash": "2b09968a769a8ed81056942f157f1fc7229d88a55ae6440558d29b7fd0e3d40e",
       "hideFromGameModsList": true,
       "id": "config-elseheartbreak-everyone",
       "install": {
@@ -9063,6 +9081,9 @@
           "2078272297",
           "1322407652"
         ],
+        "NormalizedExecutable": [
+          "gris"
+        ],
         "NormalizedTitle": [
           "gris"
         ],
@@ -9070,7 +9091,7 @@
           "683320"
         ]
       },
-      "hash": "7dcafc5e1cc80114cf4573bdf20aa141a07aa9074822f7101f54167d0389d81a",
+      "hash": "6da330dd458f4f1873b452120db7b7f64130e4b8fd038fafb4558f4fa52b3625",
       "hideFromGameModsList": true,
       "id": "config-gris-everyone",
       "install": {
@@ -9106,6 +9127,9 @@
         "Gog": [
           "1533865045"
         ],
+        "NormalizedExecutable": [
+          "growhome"
+        ],
         "NormalizedTitle": [
           "growhome"
         ],
@@ -9113,7 +9137,7 @@
           "323320"
         ]
       },
-      "hash": "fcfa5eeb1052e4e026ee97a257fcc0392c9fa847cf3ab1d273ee6905663c14c5",
+      "hash": "1eef154f4b34a58583fb63445b5e88432ec40d19a47c2b6c41ddb6063012352d",
       "hideFromGameModsList": true,
       "id": "config-growhome-everyone",
       "install": {
@@ -9149,6 +9173,9 @@
         "Gog": [
           "2032258750"
         ],
+        "NormalizedExecutable": [
+          "growup"
+        ],
         "NormalizedTitle": [
           "growup"
         ],
@@ -9156,7 +9183,7 @@
           "426790"
         ]
       },
-      "hash": "09cce038e523c4f0ad8fccfc12218d7f6db755807abf4c8e21b8dd1bf2868d21",
+      "hash": "7a52db7f53f81ef13b2d73dad2a14451c48f161db6ec82040966049c14ce6647",
       "hideFromGameModsList": true,
       "id": "config-growup-everyone",
       "install": {
@@ -9189,6 +9216,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/here%20comes%20niko!/configs/raicuparta.everyone.json?v=0-3b5057c6d242"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "herecomesniko"
+        ],
         "NormalizedTitle": [
           "herecomesniko"
         ],
@@ -9196,7 +9226,7 @@
           "925950"
         ]
       },
-      "hash": "b50a1df04a41921e136c805e21f85920a04c01588692b3c366ca731045c33964",
+      "hash": "f04aed493c4fac20a61372bfdab9dac5dac01b27474c000ccddf6ac33cd4ef67",
       "hideFromGameModsList": true,
       "id": "config-here-comes-niko-everyone",
       "install": {
@@ -9234,6 +9264,9 @@
           "1984697392",
           "2031197911"
         ],
+        "NormalizedExecutable": [
+          "hollowknight"
+        ],
         "NormalizedTitle": [
           "hollowknight"
         ],
@@ -9243,7 +9276,7 @@
           "916000"
         ]
       },
-      "hash": "b295a224f7d10b975d06269a7d7fd48f1b96fd11585edfd9030f5bae56622710",
+      "hash": "c0f4ac2ae7da5c31876ab3328f725e7a488dc226824d01a6d913736f6bec3bab",
       "hideFromGameModsList": true,
       "id": "config-hollow-knight-everyone",
       "install": {
@@ -9276,15 +9309,17 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/id2/configs/raicuparta.everyone.json?v=0-d89c773ac2b4"
       },
       "gameIds": {
-        "NormalizedTitle": [
-          "ittledew2",
+        "NormalizedExecutable": [
           "id2"
+        ],
+        "NormalizedTitle": [
+          "ittledew2"
         ],
         "Steam": [
           "395620"
         ]
       },
-      "hash": "b774b2533f4429a23134a15a0cce7e31a815d3295914b493c5d47e8f52f428f2",
+      "hash": "6ad349f893ff5dfd3bc65116d55baf0ae3e657a429106922534dda5f1d68545f",
       "hideFromGameModsList": true,
       "id": "config-id2-everyone",
       "install": {
@@ -9326,6 +9361,9 @@
           "1463130328",
           "1503102848"
         ],
+        "NormalizedExecutable": [
+          "insoundmind"
+        ],
         "NormalizedTitle": [
           "insoundmind"
         ],
@@ -9337,7 +9375,7 @@
           "1474320"
         ]
       },
-      "hash": "679cfc34cc4d11feee1a691c57e5e39badabb42dcddfea0fe9fa7aaefc5f71f8",
+      "hash": "ed2b169a5f47e137f33224a7b65312a62e5cc9cc9f80d2c89a13b6b3b3686f75",
       "hideFromGameModsList": true,
       "id": "config-in-sound-mind-everyone",
       "install": {
@@ -9376,6 +9414,9 @@
         "Gog": [
           "1916896012"
         ],
+        "NormalizedExecutable": [
+          "inside"
+        ],
         "NormalizedTitle": [
           "inside"
         ],
@@ -9383,7 +9424,7 @@
           "304430"
         ]
       },
-      "hash": "51c956c83cb0981d86aeb4be950d75c89f0b666fddb6efc453c3ba41d445a18e",
+      "hash": "a5292de03a3fe9c0af49d4bd1c86f4a0921d28897a7f6c5a15de9516b0deea32",
       "hideFromGameModsList": true,
       "id": "config-inside-everyone",
       "install": {
@@ -9419,6 +9460,9 @@
         "Gog": [
           "1207660653"
         ],
+        "NormalizedExecutable": [
+          "kentuckyroutezero"
+        ],
         "NormalizedTitle": [
           "kentuckyroutezero"
         ],
@@ -9426,7 +9470,7 @@
           "231200"
         ]
       },
-      "hash": "bddb2b561feea2031c688abc2ba9fe5487b4ce08a635769b4c4ec6c1f9836c20",
+      "hash": "12994e27e7bad0eea75d7f9eabf4f3011095994a2ce8afb9d428bc846ec5f02e",
       "hideFromGameModsList": true,
       "id": "config-kentuckyroutezero-everyone",
       "install": {
@@ -9467,16 +9511,18 @@
           "2092205632",
           "1506581192"
         ],
-        "NormalizedTitle": [
-          "kerbalspaceprogram",
+        "NormalizedExecutable": [
           "ksp_x64"
+        ],
+        "NormalizedTitle": [
+          "kerbalspaceprogram"
         ],
         "Steam": [
           "220200",
           "283740"
         ]
       },
-      "hash": "f78bef75886e67d5b3d2f10a4885650cc35f3288eda39f8ee4ba0cfd3855ba85",
+      "hash": "495f3cdcef1a18b3995256db73c464dd56d8f6d56fae6cb7bc1aa0c7c5ebf2ea",
       "hideFromGameModsList": true,
       "id": "config-ksp-x64-everyone",
       "install": {
@@ -9509,14 +9555,14 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/lake%20haven%20-%20chrysalis/configs/raicuparta.everyone.json?v=0-e7151072f873"
       },
       "gameIds": {
-        "NormalizedTitle": [
+        "NormalizedExecutable": [
           "lakehavenchrysalis"
         ],
         "Steam": [
           "1696960"
         ]
       },
-      "hash": "97373b1a8d0888f3dbccc048a0b26138f1002f2d410c28457d4e3e5af9e4e27e",
+      "hash": "2dfa3c806400de6da395b1d74f5f30d6465d6177509f26725618aad19476e147",
       "hideFromGameModsList": true,
       "id": "config-lake-haven-chrysalis-everyone",
       "install": {
@@ -9549,6 +9595,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/lil%20gator%20game/configs/raicuparta.everyone.json?v=0-9b909031d751"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "lilgatorgame"
+        ],
         "NormalizedTitle": [
           "lilgatorgame"
         ],
@@ -9556,7 +9605,7 @@
           "1586800"
         ]
       },
-      "hash": "0fe9598f495d5fac6407558b04439a896834894df15fdf1c2f2132576b3945eb",
+      "hash": "425097a4db218075881c262b91baf4a1d240170b97c2c8ecd2da5198daeab4af",
       "hideFromGameModsList": true,
       "id": "config-lil-gator-game-everyone",
       "install": {
@@ -9589,6 +9638,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/mouthwashing/configs/raicuparta.everyone.json?v=0-9059062fa758"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "mouthwashing"
+        ],
         "NormalizedTitle": [
           "mouthwashing"
         ],
@@ -9601,7 +9653,7 @@
           "9MVNCSJ14754"
         ]
       },
-      "hash": "79bc9f7c4bc14a413131bb9215ebc9c915fd7be3ece0debdbfddd4a00ff4d7ad",
+      "hash": "134ae6ab91fabf232a1bf1b0d20c9eec0911e2fb970ac0851e5bd89910b2b434",
       "hideFromGameModsList": true,
       "id": "config-mouthwashing-everyone",
       "install": {
@@ -9634,6 +9686,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/neon%20white/configs/raicuparta.everyone.json?v=0-be76bd2595c4"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "neonwhite"
+        ],
         "NormalizedTitle": [
           "neonwhite"
         ],
@@ -9641,7 +9696,7 @@
           "1533420"
         ]
       },
-      "hash": "9a224125f7efb311fc912ac14fa93d24a4f893830662f6e8fd31ad9465f919c5",
+      "hash": "93cafab11c5ae502bcf33a6bef26cc0a9306cbe4bdcd05c8369fce27f9d1a1e7",
       "hideFromGameModsList": true,
       "id": "config-neon-white-everyone",
       "install": {
@@ -9677,6 +9732,9 @@
         "Epic": [
           "c1c2d06bb0b24b7cb820e8e03ae5c3d2"
         ],
+        "NormalizedExecutable": [
+          "outerwilds"
+        ],
         "NormalizedTitle": [
           "outerwilds",
           "outerwildsechoesoftheeye"
@@ -9686,7 +9744,7 @@
           "1622100"
         ]
       },
-      "hash": "db7468b8c27f275db5f86094956e69cf40faec9e4c3eafe5aa3920b2a17f3fc1",
+      "hash": "4bfd8a43a5ad6093ebde3c3630597ae9ab036c0400ffab003b8398c8aa22a1c4",
       "hideFromGameModsList": true,
       "id": "config-outerwilds-everyone",
       "install": {
@@ -9725,6 +9783,9 @@
         "Gog": [
           "1457519353"
         ],
+        "NormalizedExecutable": [
+          "oxenfree"
+        ],
         "NormalizedTitle": [
           "oxenfree"
         ],
@@ -9733,7 +9794,7 @@
           "433430"
         ]
       },
-      "hash": "b4f1a58a41af18d329b7d9bef50709e594e3ecbe0b316f0cf0beb2c06b4c1977",
+      "hash": "54aece9b3352e72a3e4df96d98893d79cdc80ef6ef5203decc58c8be61ae6716",
       "hideFromGameModsList": true,
       "id": "config-oxenfree-everyone",
       "install": {
@@ -9766,6 +9827,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/peak/configs/raicuparta.uuvr-modern.cfg?v=0-47bef102e0f2"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "peak"
+        ],
         "NormalizedTitle": [
           "peak"
         ],
@@ -9773,7 +9837,7 @@
           "3527290"
         ]
       },
-      "hash": "fc2962d2d1b54febbc48d2dc661cb5c342a85ecf3133376256984a7202624535",
+      "hash": "dd7ab350538787d01cd2bda08c36a667911d7a8d1bc967722ec02388581dc269",
       "hideFromGameModsList": true,
       "id": "config-peak-uuvr",
       "install": {
@@ -9809,6 +9873,9 @@
         "Gog": [
           "1207660563"
         ],
+        "NormalizedExecutable": [
+          "riskofrain"
+        ],
         "NormalizedTitle": [
           "riskofrain"
         ],
@@ -9816,7 +9883,7 @@
           "248820"
         ]
       },
-      "hash": "2440b5a78f841b1c79a7df8cca486f7b2d7b56182e5711e698c852de3b861575",
+      "hash": "72a30a90ef8539952b9dc73f627dc150879845c3557cf4c4884318667c7167e1",
       "hideFromGameModsList": true,
       "id": "config-riskofrain-everyone",
       "install": {
@@ -9856,6 +9923,9 @@
           "2041744633",
           "1824726869"
         ],
+        "NormalizedExecutable": [
+          "saturnalia"
+        ],
         "NormalizedTitle": [
           "saturnalia"
         ],
@@ -9863,7 +9933,7 @@
           "916350"
         ]
       },
-      "hash": "e7bbdeef3b32ba5b10c302abd47bf5a873453f02610a41a677c11f52810ad47d",
+      "hash": "7d5f687a591bf68bd8ce74875cbba8544e0e75303878546dd44350c88d23607e",
       "hideFromGameModsList": true,
       "id": "config-saturnalia-everyone",
       "install": {
@@ -9896,6 +9966,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/the%20stanley%20parable%20ultra%20deluxe/configs/raicuparta.everyone.json?v=0-a60cba066f0d"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "thestanleyparableultradeluxe"
+        ],
         "NormalizedTitle": [
           "thestanleyparableultradeluxe"
         ],
@@ -9903,7 +9976,7 @@
           "1703340"
         ]
       },
-      "hash": "215d2bbe0fde129aab6e2d014e468800882d4a7da4b5c36ec423d2091544d116",
+      "hash": "d55ea6d2f5da9a17da7571a666e3bef2f49ca7e85fe79f9622cbab4c07f48524",
       "hideFromGameModsList": true,
       "id": "config-the-stanley-parable-ultra-deluxe-everyone",
       "install": {
@@ -9936,6 +10009,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/thelab/configs/raicuparta.everyone.json?v=0-cd995f181c9c"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "thelab"
+        ],
         "NormalizedTitle": [
           "thelab"
         ],
@@ -9943,7 +10019,7 @@
           "450390"
         ]
       },
-      "hash": "ebee68c8216ca95d7e71cdf09aa3341b65b89d79d7bb2af8114d292eeef2d1ff",
+      "hash": "66527655f90e30395634f4bab931add303069c131dd2365eb41a0807e2f0d950",
       "hideFromGameModsList": true,
       "id": "config-thelab-everyone",
       "install": {
@@ -9976,6 +10052,9 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/thomaswasalone/configs/raicuparta.everyone.json?v=0-9a283630f187"
       },
       "gameIds": {
+        "NormalizedExecutable": [
+          "thomaswasalone"
+        ],
         "NormalizedTitle": [
           "thomaswasalone"
         ],
@@ -9983,7 +10062,7 @@
           "220780"
         ]
       },
-      "hash": "e3da80607378644ca6c0f0189d296df569c92fe410a832e67b5c08205ca86b51",
+      "hash": "1acdb77aed63391809e1735a5dba0f53e8cd905eca34f3fa0aafd534a389ea45",
       "hideFromGameModsList": true,
       "id": "config-thomaswasalone-everyone",
       "install": {
@@ -10019,6 +10098,9 @@
         "Gog": [
           "1436499377"
         ],
+        "NormalizedExecutable": [
+          "toem"
+        ],
         "NormalizedTitle": [
           "toem"
         ],
@@ -10027,7 +10109,7 @@
           "1655680"
         ]
       },
-      "hash": "251cdd10a97194b70a7f17dac72e042820db661b46bc776d1891800c94797906",
+      "hash": "b343e53dd2b1aa8d3623f7f583fbd09a57bef4417bcefd84671bd24fd9586315",
       "hideFromGameModsList": true,
       "id": "config-toem-everyone",
       "install": {
@@ -10063,15 +10145,17 @@
         "Epic": [
           "a53bee4f52cc46a583d8a40217b8ab27"
         ],
-        "NormalizedTitle": [
-          "untitledgoosegame",
+        "NormalizedExecutable": [
           "untitled"
+        ],
+        "NormalizedTitle": [
+          "untitledgoosegame"
         ],
         "Steam": [
           "837470"
         ]
       },
-      "hash": "4707712aacfdcd67294481bd135787444fe42aa681c1b261e3c4177005e4f8d2",
+      "hash": "b194899b2b93859ca82846e61ee2435bca0eecba3b94f473bf98dfec65a9ca07",
       "hideFromGameModsList": true,
       "id": "config-untitled-everyone",
       "install": {
@@ -10111,6 +10195,9 @@
           "2061814323",
           "1855397386"
         ],
+        "NormalizedExecutable": [
+          "wizardoflegend"
+        ],
         "NormalizedTitle": [
           "wizardoflegend"
         ],
@@ -10119,7 +10206,7 @@
           "813840"
         ]
       },
-      "hash": "85e41c20bd8ca87e5666567b0f4038d405a00157586958257dc5caccb5648ab1",
+      "hash": "64a14b6609ec368a677ed36982ee028a4509800d2701c01a2fbbf2f9cf18d5b3",
       "hideFromGameModsList": true,
       "id": "config-wizardoflegend-everyone",
       "install": {
@@ -10152,14 +10239,14 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/ynglet/configs/raicuparta.everyone.json?v=0-ca3918565f70"
       },
       "gameIds": {
-        "NormalizedTitle": [
+        "NormalizedExecutable": [
           "ynglet"
         ],
         "Steam": [
           "1015920"
         ]
       },
-      "hash": "6b522a22a7df5e0c8a3a0e925821ec218a6d0b1355ea46b3d6e3fa72e6e3455a",
+      "hash": "1ba58b83c868e93e3f43b0f8294d05d70c9c1136ac7447d87c64bb3e2c6420dd",
       "hideFromGameModsList": true,
       "id": "config-ynglet-everyone",
       "install": {
@@ -10196,16 +10283,18 @@
           "1445853962",
           "1354053863"
         ],
-        "NormalizedTitle": [
-          "yookalaylee",
+        "NormalizedExecutable": [
           "yookalaylee64"
+        ],
+        "NormalizedTitle": [
+          "yookalaylee"
         ],
         "Steam": [
           "360830",
           "426750"
         ]
       },
-      "hash": "4036df0009d96c1f32f6d97632baf35a5ff3ad47a9c179194bd207adc21b93c9",
+      "hash": "cc581cc7aca5d4d0748e48348f5927e7bc1adaea035167fff535ed7c3cc71bfc",
       "hideFromGameModsList": true,
       "id": "config-yookalaylee64-everyone",
       "install": {
@@ -10238,14 +10327,14 @@
         "url": "https://dev.rai-pal.pages.dev/config-db/0/zerograve/configs/raicuparta.uuvr-modern.cfg?v=0-94bb12a9da59"
       },
       "gameIds": {
-        "NormalizedTitle": [
+        "NormalizedExecutable": [
           "zerograve"
         ],
         "Steam": [
           "1218580"
         ]
       },
-      "hash": "2aae2aa05d32e80bf240dcddd60aab8b1fa1632ddce22440989b91f2c6b4854b",
+      "hash": "cff3dc2e19a8c5cfb91b4ece117fbe1107a4b8c92187079d7f65d6a749c4d96d",
       "hideFromGameModsList": true,
       "id": "config-zerograve-uuvr",
       "install": {

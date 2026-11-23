@@ -8,16 +8,17 @@ import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
 import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
+import { addConfigModExecutableNames } from "./normalized-executable.ts";
 import { createDatabase } from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
 import {
-	idProviders,
+	gameIdKinds,
 	providerIds,
-	type IdProvider,
+	type GameIdKind,
 	type ProviderId,
 } from "../common/game-provider.ts";
 
-export { idProviders, providerIds, type IdProvider, type ProviderId };
+export { gameIdKinds, providerIds, type GameIdKind, type ProviderId };
 
 // These are all the engines that exist in the universe.
 export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
@@ -33,7 +34,7 @@ export type EngineBrand = (typeof engineBrands)[number];
 export type GameSubscription = (typeof gameSubscriptions)[number];
 
 export type Engine = { brand: EngineBrand; version?: string };
-export type IdMap = Partial<Record<IdProvider, Set<string>>>;
+export type IdMap = Partial<Record<GameIdKind, Set<string>>>;
 
 export type Game = {
 	title?: string;
@@ -48,7 +49,7 @@ interface GameWithUniqueIndex extends Game {
 }
 
 type GamesByIds = Partial<
-	Record<IdProvider, Record<string, GameWithUniqueIndex>>
+	Record<GameIdKind, Record<string, GameWithUniqueIndex>>
 >;
 
 // Each game source we fetch from. These are named so we can log exactly which
@@ -131,6 +132,7 @@ async function main(pretty: boolean) {
 	}
 
 	const mergedGames = mergeGames(games);
+	addConfigModExecutableNames(mergedGames);
 
 	const gamesWithEngines = mergedGames.filter(
 		(game) => game.engines && game.engines.length > 0,
@@ -162,7 +164,7 @@ async function main(pretty: boolean) {
 	createDatabase(
 		join(folder, "games.db"),
 		gamesWithEngines,
-		idProviders,
+		gameIdKinds,
 		engineBrands,
 	);
 

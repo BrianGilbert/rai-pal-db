@@ -1,9 +1,9 @@
 import { DatabaseSync } from "node:sqlite";
-import { type Engine, type Game, type IdProvider } from "./main.ts";
+import type { Engine, Game, GameIdKind } from "./main.ts";
 import { existsSync, rmSync } from "node:fs";
 
 type RemoteGameRow = {
-	providerName: IdProvider;
+	gameIdKind: GameIdKind;
 	externalId: string;
 	engines: Engine[];
 	releaseDate?: string;
@@ -73,18 +73,18 @@ function collectRows(games: Game[]): Map<string, RemoteGameRow> {
 	for (const game of games) {
 		const gameKeys = new Set<string>();
 
-		for (const [providerName, externalIds] of Object.entries(game.ids) as [
-			IdProvider,
+		for (const [gameIdKind, externalIds] of Object.entries(game.ids) as [
+			GameIdKind,
 			Set<string> | undefined,
 		][]) {
 			for (const externalId of externalIds ?? []) {
-				const key = `${providerName}\0${externalId}`;
+				const key = `${gameIdKind}\0${externalId}`;
 
 				if (gameKeys.has(key)) continue;
 				gameKeys.add(key);
 
 				const row = rows.get(key) ?? {
-					providerName,
+					gameIdKind,
 					externalId,
 					engines: [],
 					occurrences: 0,
@@ -117,12 +117,12 @@ function reportDuplicates(rows: Map<string, RemoteGameRow>) {
 	if (duplicates.length === 0) return;
 
 	console.warn(
-		`Found ${duplicates.length} duplicate (provider, external_id) pairs across multiple games. Keeping the latest-looking engine and release date for each.`,
+		`Found ${duplicates.length} duplicate (game id kind, external_id) pairs across multiple games. Keeping the latest-looking engine and release date for each.`,
 	);
 
 	for (const row of duplicates.slice(0, 20)) {
 		console.warn(
-			`- ${row.providerName}/${row.externalId}: ${row.occurrences} games (${[
+			`- ${row.gameIdKind}/${row.externalId}: ${row.occurrences} games (${[
 				...row.titles,
 			].join(" | ")})`,
 		);
@@ -132,7 +132,7 @@ function reportDuplicates(rows: Map<string, RemoteGameRow>) {
 export function createDatabase(
 	path: string,
 	games: Game[],
-	providerNames: readonly IdProvider[],
+	gameIdKinds: readonly GameIdKind[],
 	engineNames: readonly string[],
 ) {
 	if (existsSync(path)) {
@@ -142,7 +142,7 @@ export function createDatabase(
 	const db = new DatabaseSync(path);
 
 	db.exec(`
-		CREATE TABLE providers (
+		CREATE TABLE game_id_kinds (
 			id INTEGER PRIMARY KEY,
 			name TEXT NOT NULL UNIQUE
 		);
@@ -153,34 +153,34 @@ export function createDatabase(
 		);
 
 		CREATE TABLE games (
-			provider_id INTEGER NOT NULL,
+			game_id_kind_id INTEGER NOT NULL,
 			external_id TEXT NOT NULL,
 			engine_brand INTEGER,
 			engine_version_major INTEGER,
 			engine_version_minor INTEGER,
 			engine_version_patch INTEGER,
 			release_date INTEGER,
-			PRIMARY KEY (provider_id, external_id)
+			PRIMARY KEY (game_id_kind_id, external_id)
 		) WITHOUT ROWID;
 	`);
 
-	const providerIds = new Map(
-		providerNames.map((name, index) => [name, index + 1]),
+	const gameIdKindIds = new Map(
+		gameIdKinds.map((name, index) => [name, index + 1]),
 	);
 	const engineIds = new Map(
 		engineNames.map((name, index) => [name, index + 1]),
 	);
 	const engineOrder = new Map(engineNames.map((name, index) => [name, index]));
 
-	const insertProvider = db.prepare(
-		"INSERT INTO providers (id, name) VALUES (?, ?)",
+	const insertGameIdKind = db.prepare(
+		"INSERT INTO game_id_kinds (id, name) VALUES (?, ?)",
 	);
 	const insertEngine = db.prepare(
 		"INSERT INTO engines (id, name) VALUES (?, ?)",
 	);
 	const insertGame = db.prepare(`
 		INSERT INTO games (
-			provider_id,
+			game_id_kind_id,
 			external_id,
 			engine_brand,
 			engine_version_major,
@@ -195,13 +195,13 @@ export function createDatabase(
 
 	db.exec("BEGIN TRANSACTION");
 
-	for (const [name, id] of providerIds) insertProvider.run(id, name);
+	for (const [name, id] of gameIdKindIds) insertGameIdKind.run(id, name);
 	for (const [name, id] of engineIds) insertEngine.run(id, name);
 
 	for (const row of rows.values()) {
-		const providerId = providerIds.get(row.providerName);
-		if (providerId === undefined) {
-			throw new Error(`Unknown provider: ${row.providerName}`);
+		const gameIdKindId = gameIdKindIds.get(row.gameIdKind);
+		if (gameIdKindId === undefined) {
+			throw new Error(`Unknown game id kind: ${row.gameIdKind}`);
 		}
 
 		const engine = pickBestEngine(row.engines, engineOrder);
@@ -213,7 +213,7 @@ export function createDatabase(
 		const versionNumbers = parseVersionNumbers(engine?.version);
 
 		insertGame.run(
-			providerId,
+			gameIdKindId,
 			row.externalId,
 			engineId ?? null,
 			versionNumbers[0] ?? null,

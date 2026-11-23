@@ -1,4 +1,4 @@
-import type { IdProvider } from "../common/game-provider.ts";
+import type { GameIdKind } from "../common/game-provider.ts";
 import type { TagId } from "./tags.ts";
 
 export interface ModPath {
@@ -207,10 +207,10 @@ export interface Mod extends ModBase {
 }
 
 /**
- * Game IDs that a mod is made for, keyed by game provider ID.
+ * Game IDs that a mod is made for, keyed by game id kind.
  * Mirrors the `ids` format of a game in the games database.
  */
-export type GameIds = Partial<Record<IdProvider, string[]>>;
+export type GameIds = Partial<Record<GameIdKind, string[]>>;
 
 /**
  * We can defined dependencies via unique mod IDs, or via the non-unique tag IDs

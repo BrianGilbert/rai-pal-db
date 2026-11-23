@@ -8,7 +8,7 @@
 		},
 		"gameIds": {
 			"type": "object",
-			"description": "Game IDs that this mod is made for, keyed by game provider ID. If omitted, the mod is not specific to any game. Use the same IDs as the games database, and include every ID for the game across all providers.",
+			"description": "Game IDs that this mod is made for, keyed by game id kind. If omitted, the mod is not specific to any game. Use the same IDs as the games database, and include every ID for the game across all providers.",
 			"propertyNames": {
 				"enum": [
 					"Amazon",
@@ -16,7 +16,7 @@
 					"Epic",
 					"Gog",
 					"Itch",
-					"Manual",
+					"NormalizedExecutable",
 					"NormalizedTitle",
 					"Steam",
 					"Ubisoft",
