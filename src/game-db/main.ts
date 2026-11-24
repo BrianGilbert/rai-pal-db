@@ -1,6 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { publicFolder } from "../common/paths.ts";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
@@ -83,7 +84,7 @@ function getExistingGameCount(path: string): number | undefined {
 }
 
 async function main(pretty: boolean) {
-	const folder = join("..", "public", "game-db", `${GAME_DATABASE_VERSION}`);
+	const folder = join(publicFolder, "game-db", `${GAME_DATABASE_VERSION}`);
 	await mkdir(folder, { recursive: true });
 
 	const outputPath = join(folder, "games.json");

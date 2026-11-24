@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { publicFolder } from "../common/paths.ts";
 import { MOD_DATABASE_VERSION } from "../common/versions.ts";
 import stringify from "canonical-json";
 import { hash } from "canonical-json/hash";
@@ -46,12 +47,7 @@ if (!json) {
 	throw new Error("Failed to convert mods output to JSON");
 }
 
-const targetFolder = join(
-	"..",
-	"public",
-	"mod-db",
-	String(MOD_DATABASE_VERSION),
-);
+const targetFolder = join(publicFolder, "mod-db", String(MOD_DATABASE_VERSION));
 
 await mkdir(targetFolder, { recursive: true });
 
