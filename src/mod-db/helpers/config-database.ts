@@ -15,15 +15,12 @@ export type ConfigModOptions = {
 };
 
 /**
- * Builds the download info for a config file in the config database,
- * including a hash of its contents so clients know when it changed.
+ * Builds the download info for a config file in the config database.
+ * The download id is a hash of the file contents, so clients know when it changed.
  *
  * @param path Path of the file within the config database, e.g. `everyone/ksp.json`.
  */
-export async function configDownload(
-	path: string,
-	version = 0,
-): Promise<ModDownload> {
+export async function configDownload(path: string): Promise<ModDownload> {
 	const configPath = `config-db/${CONFIG_DATABASE_VERSION}/${path}`;
 	const content = await readFile(join(publicFolder, configPath));
 	const contentHash = createHash("sha256")
@@ -32,8 +29,8 @@ export async function configDownload(
 		.slice(0, 12);
 
 	return {
-		id: String(version),
-		url: `${token.DatabaseUrlBase}/${configPath}?v=${version}-${contentHash}`,
+		id: contentHash,
+		url: `${token.DatabaseUrlBase}/${configPath}`,
 	};
 }
 

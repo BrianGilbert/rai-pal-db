@@ -1594,8 +1594,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for 140.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/140.json?v=0-5e70b0f06558"
+        "id": "5e70b0f06558",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/140.json"
       },
       "gameIds": {
         "Gog": [
@@ -1609,7 +1609,7 @@
           "242820"
         ]
       },
-      "hash": "94d8221d20992eb989ec4460d6ce0a3310b82f5a7056c797de909ae45dfb0458",
+      "hash": "a866441cf4eb6ee1f47d85ebec70ddb083f6048cc56e56482238c7ddc5e4e3f1",
       "hideFromGameModsList": true,
       "id": "config-everyone-140",
       "install": {
@@ -1638,8 +1638,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for A Short Hike.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/a-short-hike.json?v=0-e69a8635aff5"
+        "id": "e69a8635aff5",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/a-short-hike.json"
       },
       "gameIds": {
         "Epic": [
@@ -1655,7 +1655,7 @@
           "1055540"
         ]
       },
-      "hash": "65f2d2e83a4c62b5f8abca3a2fb6ff7bb41bf867cc7aa1fa47ed05cb8b39c305",
+      "hash": "7c6c25acd7acc72f39d84393cf55692c9662f1fdbb8f8bb7cc8b917e13e78097",
       "hideFromGameModsList": true,
       "id": "config-everyone-a-short-hike",
       "install": {
@@ -1684,8 +1684,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Cuphead.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/cuphead.json?v=0-61264cd07bc2"
+        "id": "61264cd07bc2",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/cuphead.json"
       },
       "gameIds": {
         "Gog": [
@@ -1704,7 +1704,7 @@
           "2072990"
         ]
       },
-      "hash": "cd3797186d8d187346a0d634c50ef02d6b71579666143dd88cd3edd746be7b88",
+      "hash": "818164321d16676f4e9af832c7bb75c659e2aa9b4e2cbb8a599309c716684082",
       "hideFromGameModsList": true,
       "id": "config-everyone-cuphead",
       "install": {
@@ -1733,8 +1733,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Disco Elysium.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/disco-elysium.json?v=0-2603bf23ca89"
+        "id": "2603bf23ca89",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/disco-elysium.json"
       },
       "gameIds": {
         "Gog": [
@@ -1756,7 +1756,7 @@
           "9NTRS771L8HL"
         ]
       },
-      "hash": "ccf90fdfef53cf08f27d3edd14d47ce766563f2ebd025663b02da472a22740eb",
+      "hash": "ed028bbff24a8b8fb660b1f4c62a29a7e907099f1cea3392f0adda6961f04b07",
       "hideFromGameModsList": true,
       "id": "config-everyone-disco-elysium",
       "install": {
@@ -1785,8 +1785,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Else Heart.Break().",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/else-heart-break.json?v=0-7b978b9e5b7e"
+        "id": "7b978b9e5b7e",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/else-heart-break.json"
       },
       "gameIds": {
         "Gog": [
@@ -1799,7 +1799,7 @@
           "400110"
         ]
       },
-      "hash": "c2c27825ed7f9cc0926434aad3127010ece6af5a4403c877c3c3930aea1b22d2",
+      "hash": "51b9636c1e485dbffc9cf517a30b099ae4626043d5e5ee77cbfe9449ae8b1fa9",
       "hideFromGameModsList": true,
       "id": "config-everyone-else-heart-break",
       "install": {
@@ -1828,8 +1828,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Gris.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/gris.json?v=0-31595585471b"
+        "id": "31595585471b",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/gris.json"
       },
       "gameIds": {
         "Gog": [
@@ -1843,7 +1843,7 @@
           "683320"
         ]
       },
-      "hash": "abc5d23aa182da78ea2e18063fcf3c3b717c5ffc1fc865912b90147c9f86529d",
+      "hash": "63233872c83727ed001c84167b77dc6cb81986d818a852d6c4478e9f3d055d2a",
       "hideFromGameModsList": true,
       "id": "config-everyone-gris",
       "install": {
@@ -1872,8 +1872,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Grow Home.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/grow-home.json?v=0-c3615c895302"
+        "id": "c3615c895302",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/grow-home.json"
       },
       "gameIds": {
         "Gog": [
@@ -1886,7 +1886,7 @@
           "323320"
         ]
       },
-      "hash": "5c96b4edde313e5312b2009b09fb0b75d9e86f1560c668739ef48ed10d05dcdc",
+      "hash": "a350230c9e4a959102a2baefae6955c0c4973ada830761296e963fcf99a9ae12",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-home",
       "install": {
@@ -1915,8 +1915,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Grow Up.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/grow-up.json?v=0-bb43546009a2"
+        "id": "bb43546009a2",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/grow-up.json"
       },
       "gameIds": {
         "Gog": [
@@ -1929,7 +1929,7 @@
           "426790"
         ]
       },
-      "hash": "bb2245694c17694bb7b5acf26990dad5a8dd03b5231d58be683e6a8607898f06",
+      "hash": "b54553b32df56e6e55afa667ca575d3b668b3a273ad5b3d0428c17ec170c363f",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-up",
       "install": {
@@ -1958,8 +1958,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Here Comes Niko!.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/here-comes-niko.json?v=0-53a3fe53e64d"
+        "id": "53a3fe53e64d",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/here-comes-niko.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -1969,7 +1969,7 @@
           "925950"
         ]
       },
-      "hash": "7890925796b5c85f74653383edb484cd0fc45d0f69ee3e7d070c28d307b7d229",
+      "hash": "bf0b65f797991e1e6b432ef1485159b10238c0eba68b1b28c55b2b35575a00af",
       "hideFromGameModsList": true,
       "id": "config-everyone-here-comes-niko",
       "install": {
@@ -1998,8 +1998,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Hollow Knight.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/hollow-knight.json?v=0-537dd4538524"
+        "id": "537dd4538524",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/hollow-knight.json"
       },
       "gameIds": {
         "Gog": [
@@ -2016,7 +2016,7 @@
           "916000"
         ]
       },
-      "hash": "fd1e38dcf15d74497c2420dc6aebe38e42a6d7fc96088b75d656b49314ed58f7",
+      "hash": "bccff7175ad241dd5f580970fffc4a85bc3591812eefa2a785ed9d1704f95a09",
       "hideFromGameModsList": true,
       "id": "config-everyone-hollow-knight",
       "install": {
@@ -2045,8 +2045,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for In Sound Mind.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/in-sound-mind.json?v=0-7b00528c14d6"
+        "id": "7b00528c14d6",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/in-sound-mind.json"
       },
       "gameIds": {
         "Epic": [
@@ -2069,7 +2069,7 @@
           "1474320"
         ]
       },
-      "hash": "a88295ef2993543b63a88e84979d998ce17719c88ac32f371a65e04684b727a4",
+      "hash": "6a3bc1fc6d346db1afaf86f0dbc60f50e6b8f8e7544194ec9726a458b11813eb",
       "hideFromGameModsList": true,
       "id": "config-everyone-in-sound-mind",
       "install": {
@@ -2098,8 +2098,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Inside.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/inside.json?v=0-ff2c8d509ddf"
+        "id": "ff2c8d509ddf",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/inside.json"
       },
       "gameIds": {
         "Epic": [
@@ -2115,7 +2115,7 @@
           "304430"
         ]
       },
-      "hash": "a7dd7d4642563c45055eb4c284ad2b3372f2cffe7edcc35534492afcf11a52d1",
+      "hash": "9b08d1dc300e5e291d74776aa00233f078a4b98c460bc54c9f248b276f0cd811",
       "hideFromGameModsList": true,
       "id": "config-everyone-inside",
       "install": {
@@ -2144,8 +2144,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Ittle Dew 2.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ittle-dew-2.json?v=0-4637db2911ff"
+        "id": "4637db2911ff",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ittle-dew-2.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2155,7 +2155,7 @@
           "395620"
         ]
       },
-      "hash": "d40892f664edf88ec28ca575217cc214121a374e7e650f0c0920b66479378c9f",
+      "hash": "1addf73c9f1d466b41438d84d58837d4bae3b40225388e96873b107f0e24cdd3",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew-2",
       "install": {
@@ -2184,8 +2184,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Ittle Dew.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ittle-dew.json?v=0-06ae2e8c31ac"
+        "id": "06ae2e8c31ac",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ittle-dew.json"
       },
       "gameIds": {
         "Gog": [
@@ -2198,7 +2198,7 @@
           "241320"
         ]
       },
-      "hash": "37c4081caac78424d56e924233e8017a22b03ff4a8dcf19a83538fa46a25ccc6",
+      "hash": "fe22e7e6731c360beece0367d5d02a026d3a41a7f9fc5f6699892d043fcc1fbd",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew",
       "install": {
@@ -2227,8 +2227,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Kentucky Route Zero.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/kentucky-route-zero.json?v=0-7b601aff911d"
+        "id": "7b601aff911d",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/kentucky-route-zero.json"
       },
       "gameIds": {
         "Gog": [
@@ -2241,7 +2241,7 @@
           "231200"
         ]
       },
-      "hash": "33ce96f82003da0dea9dafbda635e2f28e1a208e1a421e873233e5dc2236ce45",
+      "hash": "5f9d09288c181f15d77c0be0fc7a0b5cdd0d87731507817299a1309a8e95a970",
       "hideFromGameModsList": true,
       "id": "config-everyone-kentucky-route-zero",
       "install": {
@@ -2270,8 +2270,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Kerbal Space Program.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ksp.json?v=0-1e83a1b56684"
+        "id": "1e83a1b56684",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ksp.json"
       },
       "gameIds": {
         "Epic": [
@@ -2290,7 +2290,7 @@
           "283740"
         ]
       },
-      "hash": "f95dee3e2380bbe6cefb52f58f71c678e28ddad0a4b4b9d50365dccb910c01be",
+      "hash": "49ef27ab3dd4083bead0dcfc15cac327ff9b5c39ec5331d15be19dbbb6989afd",
       "hideFromGameModsList": true,
       "id": "config-everyone-ksp",
       "install": {
@@ -2319,8 +2319,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Lake Haven - Chrysalis.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/lake-haven-chrysalis.json?v=0-fd53509bb099"
+        "id": "fd53509bb099",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/lake-haven-chrysalis.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2330,7 +2330,7 @@
           "1696960"
         ]
       },
-      "hash": "909233df6205aa3883286e4c1ff3ef3e95cc0abc75047bb25f32a0f8cea84eee",
+      "hash": "da200e07f2076ac65779ecf399e80ca923253913dc836955a087d1ef1427f55c",
       "hideFromGameModsList": true,
       "id": "config-everyone-lake-haven-chrysalis",
       "install": {
@@ -2359,8 +2359,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Lil Gator Game.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/lil-gator-game.json?v=0-8e3445af902c"
+        "id": "8e3445af902c",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/lil-gator-game.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2370,7 +2370,7 @@
           "1586800"
         ]
       },
-      "hash": "9520b6e7321c3deb1df878428ac99721c3b9d64636ce3d239c15eeb5e1734d46",
+      "hash": "0e8df71e2236e3c7802a7938f71516475f071dc4052f3254aa095dbfe3708678",
       "hideFromGameModsList": true,
       "id": "config-everyone-lil-gator-game",
       "install": {
@@ -2399,8 +2399,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Mouthwashing.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/mouthwashing.json?v=0-288ede01763a"
+        "id": "288ede01763a",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/mouthwashing.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2415,7 +2415,7 @@
           "9MVNCSJ14754"
         ]
       },
-      "hash": "eda1db4ec56107410ddb5a35033131dd53f61c1167ba7a3be1415aea3ad6537f",
+      "hash": "3d040079a8344e26e0d065dc68b07782db1ec98086de4e41f7a83cd08cdcb378",
       "hideFromGameModsList": true,
       "id": "config-everyone-mouthwashing",
       "install": {
@@ -2444,8 +2444,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Neon White.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/neon-white.json?v=0-e04c216ae631"
+        "id": "e04c216ae631",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/neon-white.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2455,7 +2455,7 @@
           "1533420"
         ]
       },
-      "hash": "b0f608f63fad8d16a994e07fd9a975b916618aa62b55a5f9c1df41da53e934fb",
+      "hash": "74d1689af7cc37d013a4745923b13145f0834aea73ef7057550cb02d66663c89",
       "hideFromGameModsList": true,
       "id": "config-everyone-neon-white",
       "install": {
@@ -2484,8 +2484,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Outer Wilds.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/outer-wilds.json?v=0-8f80ac1a2f97"
+        "id": "8f80ac1a2f97",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/outer-wilds.json"
       },
       "gameIds": {
         "Epic": [
@@ -2499,7 +2499,7 @@
           "1622100"
         ]
       },
-      "hash": "604418c0d8ebebd3bd3bb3951fbbe2fb62b654950d53af7c247a99323c4b72f3",
+      "hash": "72176343983af5629ed8b73d41fbbad28d0a7047302932774321bb3209f4bcf1",
       "hideFromGameModsList": true,
       "id": "config-everyone-outer-wilds",
       "install": {
@@ -2528,8 +2528,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Oxenfree.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/oxenfree.json?v=0-9ddee736bcf3"
+        "id": "9ddee736bcf3",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/oxenfree.json"
       },
       "gameIds": {
         "Epic": [
@@ -2546,7 +2546,7 @@
           "433430"
         ]
       },
-      "hash": "88de6aeb1b6077cbb949ae6e7746ed0cac5db14fab68685e2cdcbeeaa955b9d4",
+      "hash": "d6ba1fba1eff6029e7f3d8c24248112d9519b592d7f3d55aef2fa591fa9c843f",
       "hideFromGameModsList": true,
       "id": "config-everyone-oxenfree",
       "install": {
@@ -2575,8 +2575,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Risk of Rain.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/risk-of-rain.json?v=0-193b496bcfb7"
+        "id": "193b496bcfb7",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/risk-of-rain.json"
       },
       "gameIds": {
         "Gog": [
@@ -2589,7 +2589,7 @@
           "248820"
         ]
       },
-      "hash": "f0110c1bbc37685950f7b642a3138e5eb01b924ad61bb844bb46ca084dad4d9e",
+      "hash": "227f3f4e0fe9507dd2df544e94cd657568ea884171bb8028ddb1efb6ed2ea67f",
       "hideFromGameModsList": true,
       "id": "config-everyone-risk-of-rain",
       "install": {
@@ -2618,8 +2618,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Saturnalia.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/saturnalia.json?v=0-38682b2332a6"
+        "id": "38682b2332a6",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/saturnalia.json"
       },
       "gameIds": {
         "Epic": [
@@ -2636,7 +2636,7 @@
           "916350"
         ]
       },
-      "hash": "95908cccf4bd9cfb890fb996ae7889b90fcc1a385f8606f15339c13d5f63492e",
+      "hash": "e41fa551f013f54096d2360001ce60ee4d932c4deb732fd49bf56d9078d8774e",
       "hideFromGameModsList": true,
       "id": "config-everyone-saturnalia",
       "install": {
@@ -2665,8 +2665,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for The Lab.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/the-lab.json?v=0-d3717af673fe"
+        "id": "d3717af673fe",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/the-lab.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2676,7 +2676,7 @@
           "450390"
         ]
       },
-      "hash": "e70e0877e280039af0bd47c629eb3641a383d9dfae085ac218ca0cbe67e089fa",
+      "hash": "ff2d3ac79850d31a0f8cbb642f6ddd9e36e5affb402dee5620c229ca4a1d11db",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-lab",
       "install": {
@@ -2705,8 +2705,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for The Stanley Parable: Ultra Deluxe.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/the-stanley-parable-ultra-deluxe.json?v=0-16edd697a0e8"
+        "id": "16edd697a0e8",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/the-stanley-parable-ultra-deluxe.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2716,7 +2716,7 @@
           "1703340"
         ]
       },
-      "hash": "de7aaad009358d7714bb72ea1b27e5a4448707b4e1199d099490c89d7a99b71a",
+      "hash": "4a54e13e1b29d6f7283530f4334f57efe113de86062d3414c06d5779aa125286",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-stanley-parable-ultra-deluxe",
       "install": {
@@ -2745,8 +2745,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Thomas Was Alone.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/thomas-was-alone.json?v=0-7e74481c46db"
+        "id": "7e74481c46db",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/thomas-was-alone.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2756,7 +2756,7 @@
           "220780"
         ]
       },
-      "hash": "b76a6d7e26d04ece6d1add638c6139e2bc97da6e5314042f6d6408b48c3d2df1",
+      "hash": "716ad15d982b2168a5638c6401753e37fb21502adbd8c6dfaab799939d144679",
       "hideFromGameModsList": true,
       "id": "config-everyone-thomas-was-alone",
       "install": {
@@ -2785,8 +2785,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for TOEM.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/toem.json?v=0-7d461b6317f5"
+        "id": "7d461b6317f5",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/toem.json"
       },
       "gameIds": {
         "Gog": [
@@ -2800,7 +2800,7 @@
           "1655680"
         ]
       },
-      "hash": "7babccc170cc2fa9e76b144f1a902bc61a42a621799200a175ecd9b11ce54726",
+      "hash": "6bae66b3341e6c61de5122b6a0171fb37a3336f0bcf1aff5fe320ab4c889878b",
       "hideFromGameModsList": true,
       "id": "config-everyone-toem",
       "install": {
@@ -2829,8 +2829,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Untitled Goose Game.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/untitled-goose-game.json?v=0-0a76d8e616ff"
+        "id": "0a76d8e616ff",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/untitled-goose-game.json"
       },
       "gameIds": {
         "Epic": [
@@ -2843,7 +2843,7 @@
           "837470"
         ]
       },
-      "hash": "2d6192853c9208674f44f2cbb33dd9bf4d03c3578c1d972590efdb0b8196155e",
+      "hash": "3f86e938976bda7394e45d25951b361ab4354e672acc96cb496e9ed02f7d984f",
       "hideFromGameModsList": true,
       "id": "config-everyone-untitled-goose-game",
       "install": {
@@ -2872,8 +2872,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Wizard of Legend.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/wizard-of-legend.json?v=0-4939c8897faf"
+        "id": "4939c8897faf",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/wizard-of-legend.json"
       },
       "gameIds": {
         "Epic": [
@@ -2891,7 +2891,7 @@
           "813840"
         ]
       },
-      "hash": "5eaa77e058670a9dc7ef231e22b31390bf1f3da14322a6974c8353c8ea150376",
+      "hash": "09632bb4104eb35ba4178ba0294ad300eabe6360a42ff488c35b77f91878607e",
       "hideFromGameModsList": true,
       "id": "config-everyone-wizard-of-legend",
       "install": {
@@ -2920,8 +2920,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Ynglet.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ynglet.json?v=0-a9a394a0755f"
+        "id": "a9a394a0755f",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/ynglet.json"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -2931,7 +2931,7 @@
           "1015920"
         ]
       },
-      "hash": "0171f54a001c470eec64339e2ec7e2c2ccc3afd6f83d7654eee46d1e59bf532c",
+      "hash": "f39422934cfe103527783788f13f1792df8fe6ad05b9a7b7df9159204adb7d43",
       "hideFromGameModsList": true,
       "id": "config-everyone-ynglet",
       "install": {
@@ -2960,8 +2960,8 @@
       "author": "Raicuparta",
       "description": "Recommended Everyone config for Yooka-Laylee.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/yooka-laylee.json?v=0-fe20f5d53188"
+        "id": "fe20f5d53188",
+        "url": "{{DatabaseUrlBase}}/config-db/1/everyone/yooka-laylee.json"
       },
       "gameIds": {
         "Gog": [
@@ -2976,7 +2976,7 @@
           "426750"
         ]
       },
-      "hash": "db00dca7cb2a1bcf8e305ecd6a772b5d71d0a19191a5b2bbd671bc5a0eb35d52",
+      "hash": "b26f6037b3140144ceb19e10b1b23afc3966b8fc8b8993712ed5889cb0b9b01f",
       "hideFromGameModsList": true,
       "id": "config-everyone-yooka-laylee",
       "install": {
@@ -3103,8 +3103,8 @@
       "author": "praydog",
       "description": "Recommended UEVR config for Abzû.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/uevr/abzu.zip?v=0-58dea3909a6b"
+        "id": "58dea3909a6b",
+        "url": "{{DatabaseUrlBase}}/config-db/1/uevr/abzu.zip"
       },
       "gameIds": {
         "Gog": [
@@ -3118,7 +3118,7 @@
           "577450"
         ]
       },
-      "hash": "ecc9ea40579abff31c22ab5d891342ceb4f5f0d3c83edd43e350b17a6e4a9542",
+      "hash": "dc709346435059f18cd662f949712bc13faee56178e53384e74570077453a740",
       "hideFromGameModsList": true,
       "id": "config-uevr-abzu",
       "install": {
@@ -3148,8 +3148,8 @@
       "author": "Raicuparta",
       "description": "Recommended UUVR config for Peak.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/uuvr/peak.cfg?v=0-47bef102e0f2"
+        "id": "47bef102e0f2",
+        "url": "{{DatabaseUrlBase}}/config-db/1/uuvr/peak.cfg"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -3159,7 +3159,7 @@
           "3527290"
         ]
       },
-      "hash": "a6c06874f6ee244fd00fc4d0bfc5238663169b44feaa8b40dac00a9245cdeb2d",
+      "hash": "d9c251676bf4ff13392b9ab4905c2176a11eb822520092ee1ddc49f7d52738fc",
       "hideFromGameModsList": true,
       "id": "config-uuvr-peak",
       "install": {
@@ -3188,8 +3188,8 @@
       "author": "Raicuparta",
       "description": "Recommended UUVR config for Zerograve.",
       "download": {
-        "id": "0",
-        "url": "{{DatabaseUrlBase}}/config-db/1/uuvr/zerograve.cfg?v=0-94bb12a9da59"
+        "id": "94bb12a9da59",
+        "url": "{{DatabaseUrlBase}}/config-db/1/uuvr/zerograve.cfg"
       },
       "gameIds": {
         "NormalizedExecutable": [
@@ -3199,7 +3199,7 @@
           "1218580"
         ]
       },
-      "hash": "8c0ec1b67b9e9d7dd99d7f6a6328e6e55d42bc6c9a0bdefe24547ff9391ffa2b",
+      "hash": "3eb8cce9ecfa9d9ab37f272bb4c978eab13239d146861b42cace8408e299ab37",
       "hideFromGameModsList": true,
       "id": "config-uuvr-zerograve",
       "install": {
