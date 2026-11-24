@@ -286,3 +286,16 @@ export type ModRun = {
 	 */
 	os?: OperatingSystem;
 };
+
+const definedModBrand = Symbol.for("rai-pal-db.mod");
+
+export function defineMod(mod: ModBase): ModBase {
+	Object.defineProperty(mod, definedModBrand, { value: true });
+	return mod;
+}
+
+export function isDefinedMod(value: unknown): value is ModBase {
+	return (
+		typeof value === "object" && value !== null && definedModBrand in value
+	);
+}

@@ -4,34 +4,13 @@ import { publicFolder } from "../common/paths.ts";
 import { MOD_DATABASE_VERSION } from "../common/versions.ts";
 import stringify from "canonical-json";
 import { hash } from "canonical-json/hash";
-import type { Mod, ModBase } from "./mod.ts";
-import { getBepinexMods } from "./bepinex/bepinex.ts";
-import { getEveryoneMods } from "./everyone.ts";
-import { getGodotMods } from "./godot/godot.ts";
-import { getUevrMods } from "./uevr/uevr.ts";
-import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
-import { getGameSpecificMods } from "./game-specific/game-specific.ts";
-import { configMods } from "./configs/index.ts";
+import { discoverMods } from "./discover-mods.ts";
+import type { Mod } from "./mod.ts";
 import { tags } from "./tags.ts";
 
-type ModGetter = () => Promise<ModBase[]>;
-
-const modGetters: ModGetter[] = [
-	getBepinexMods,
-	getEveryoneMods,
-	getGameSpecificMods,
-	getGodotMods,
-	getUevrMods,
-	getUe4ssMods,
-];
-
-const baseMods: ModBase[] = (
-	await Promise.all(modGetters.map((getter) => getter()))
-).flat();
-
-const mods: Mod[] = [...baseMods, ...configMods].map((modBase) => ({
-	...modBase,
-	hash: hash(modBase),
+const mods: Mod[] = (await discoverMods()).map((mod) => ({
+	...mod,
+	hash: hash(mod),
 }));
 
 const json = stringify(
