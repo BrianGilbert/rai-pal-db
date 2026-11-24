@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "_Boy",
+				"ChildPath": "_BoyPreprocessed/visual/Boy/Head"
+			}
+		]
+	},
+	"Rendering": {
+		"ShaderName": "Playdead/Self Illuminate/Textured Cutout"
+	}
+}

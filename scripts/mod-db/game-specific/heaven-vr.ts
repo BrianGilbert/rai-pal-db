@@ -9,7 +9,6 @@ export const heavenVrMod: ModBase = {
 	...heavenVr.base,
 	gameIds: {
 		Steam: ["1533420"],
-		NormalizedTitle: ["neonwhite"],
 	},
 	tags: ["game-specific-vr"],
 	unityBackend: "Mono",

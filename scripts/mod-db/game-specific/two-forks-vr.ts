@@ -10,7 +10,6 @@ export const twoForksVrMod: ModBase = {
 	gameIds: {
 		Steam: ["383870"],
 		Gog: ["1459256379"],
-		NormalizedTitle: ["firewatch"],
 	},
 	tags: ["game-specific-vr"],
 	unityBackend: "Mono",

@@ -8,7 +8,6 @@ import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
 import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
-import { addConfigModExecutableNames } from "./normalized-executable.ts";
 import { createDatabase } from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
 import {
@@ -84,7 +83,7 @@ function getExistingGameCount(path: string): number | undefined {
 }
 
 async function main(pretty: boolean) {
-	const folder = join("..", "game-db", `${GAME_DATABASE_VERSION}`);
+	const folder = join("..", "public", "game-db", `${GAME_DATABASE_VERSION}`);
 	await mkdir(folder, { recursive: true });
 
 	const outputPath = join(folder, "games.json");
@@ -132,7 +131,6 @@ async function main(pretty: boolean) {
 	}
 
 	const mergedGames = mergeGames(games);
-	addConfigModExecutableNames(mergedGames);
 
 	const gamesWithEngines = mergedGames.filter(
 		(game) => game.engines && game.engines.length > 0,

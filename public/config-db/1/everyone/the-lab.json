@@ -1,0 +1,7 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"BaseScale": 0.75,
+	"Rendering": {
+		"ShaderName": "Unlit/Unlit Transparent Hybrid"
+	}
+}

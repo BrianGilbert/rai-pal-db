@@ -3,7 +3,7 @@ import type { ModBase } from "../mod.ts";
 export const linkOnlyMods: ModBase[] = [
 	{
 		id: "mafia-ii-classic-vr",
-		gameIds: { Steam: ["50130"], NormalizedTitle: ["mafiaii"] },
+		gameIds: { Steam: ["50130"] },
 		tags: ["game-specific-vr"],
 		title: "M2VR",
 		author: "josvitorkjr45",
@@ -12,7 +12,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "the-darkness-ii-vr",
-		gameIds: { Steam: ["67370"], NormalizedTitle: ["thedarknessii"] },
+		gameIds: { Steam: ["67370"] },
 		tags: ["game-specific-vr"],
 		title: "The Darkness II VR",
 		author: "Trilex",
@@ -24,7 +24,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1286680"],
 			Epic: ["4742cc98b91541499570c72f3825b893"],
-			NormalizedTitle: ["tinytinaswonderlands"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Tiny Tina's Wonderlands VR",
@@ -37,7 +36,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["39500"],
 			Gog: ["1207658986"],
-			NormalizedTitle: ["gothic3"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Gothic 3 VR",
@@ -47,7 +45,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "7-days-to-die-vr",
-		gameIds: { Steam: ["251570"], NormalizedTitle: ["7daystodie"] },
+		gameIds: { Steam: ["251570"] },
 		tags: ["game-specific-vr"],
 		title: "7 Days to Die VR",
 		author: "7DaysVR Team",
@@ -57,7 +55,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "agent-64-spies-never-die-vr",
-		gameIds: { Steam: ["1574480"], NormalizedTitle: ["agent64spiesneverdie"] },
+		gameIds: { Steam: ["1574480"] },
 		tags: ["game-specific-vr"],
 		title: "Agent 64: Spies Never Die VR",
 		author: "King-EJ",
@@ -67,7 +65,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "alan-wake-vr",
-		gameIds: { Steam: ["108710"], NormalizedTitle: ["alanwake"] },
+		gameIds: { Steam: ["108710"] },
 		tags: ["game-specific-vr"],
 		title: "Alan Wake VR",
 		author: "fholger",
@@ -76,7 +74,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "alien-isolation-vr",
-		gameIds: { Steam: ["214490"], NormalizedTitle: ["alienisolation"] },
+		gameIds: { Steam: ["214490"] },
 		tags: ["game-specific-vr"],
 		title: "Alien: Isolation VR",
 		author: "Nibre + JayP",
@@ -88,7 +86,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["3730"],
 			Gog: ["1207665883"],
-			NormalizedTitle: ["aliensversuspredatorclassic2000"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Aliens versus Predator VR",
@@ -101,7 +98,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["57300"],
 			Gog: ["1207659259"],
-			NormalizedTitle: ["amnesiathedarkdescent"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Sclerosis: an Amnesia VR remake",
@@ -114,7 +110,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["250620", "332210"],
 			Gog: ["1207664603"],
-			NormalizedTitle: ["amongthesleep"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Among the Sleep VR",
@@ -124,7 +119,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "arma-3-vr",
-		gameIds: { Steam: ["107410"], NormalizedTitle: ["arma3"] },
+		gameIds: { Steam: ["107410"] },
 		tags: ["game-specific-vr"],
 		title: "Arma 3 VR",
 		author: "gborgogno",
@@ -133,7 +128,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "arx-fatalis-vr",
-		gameIds: { Steam: ["1700"], NormalizedTitle: ["arxfatalis"] },
+		gameIds: { Steam: ["1700"] },
 		tags: ["game-specific-vr"],
 		title: "Arx Fatalis VR",
 		author: "cmpayc",
@@ -145,7 +140,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["573110"],
 			Gog: ["2049669635"],
-			NormalizedTitle: ["awayjourneytotheunexpected"],
 		},
 		tags: ["game-specific-vr"],
 		title: "AWAY VR",
@@ -155,7 +149,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "balatro-vr",
-		gameIds: { Steam: ["2379780"], NormalizedTitle: ["balatro"] },
+		gameIds: { Steam: ["2379780"] },
 		tags: ["game-specific-vr"],
 		title: "Balatro VR",
 		author: "Under the VRadar",
@@ -164,7 +158,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "beyond-two-souls-vr",
-		gameIds: { Steam: ["960990"], NormalizedTitle: ["beyondtwosouls"] },
+		gameIds: { Steam: ["960990"] },
 		tags: ["game-specific-vr"],
 		title: "Beyond: Two Souls VR",
 		author: "adore11s",
@@ -176,7 +170,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["622650", "622661", "622660", "730000"],
 			Gog: ["1351324631"],
-			NormalizedTitle: ["bendyandtheinkmachine"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Bendy VR",
@@ -189,7 +182,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1478500"],
 			Epic: ["aa9356eed764415d8dfec0b28ba59843"],
-			NormalizedTitle: ["bigwalk"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Big Walk VR",
@@ -202,7 +194,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["409710", "7670", "7710"],
 			Gog: ["1269268081"],
-			NormalizedTitle: ["bioshock", "bioshockremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "BioShock VR",
@@ -215,7 +206,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["409720", "8850", "244610", "525720"],
 			Gog: ["1111208428"],
-			NormalizedTitle: ["bioshock2", "bioshock2remastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "BioShock 2 VR",
@@ -228,7 +218,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["8870", "214930", "214931", "214932", "214933"],
 			Gog: ["1752654506"],
-			NormalizedTitle: ["bioshockinfinite"],
 		},
 		tags: ["game-specific-vr"],
 		title: "BioShock Infinite VR",
@@ -238,7 +227,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "black-mesa",
-		gameIds: { Steam: ["362890"], NormalizedTitle: ["blackmesa"] },
+		gameIds: { Steam: ["362890"] },
 		tags: ["game-specific-vr"],
 		title: "Black Mesa VR",
 		author: "Hochgeschwindigkeitsrennfahrer",
@@ -247,7 +236,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "black-mesa-source-vr",
-		gameIds: { Steam: ["2177760"], NormalizedTitle: ["blackmesasourcevr"] },
+		gameIds: { Steam: ["2177750"] },
 		tags: ["game-specific-vr"],
 		title: "Black Mesa Source VR",
 		author: "Ashok",
@@ -256,7 +245,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "blood-vr",
-		gameIds: { Steam: ["299030"], NormalizedTitle: ["oneunitwholeblood"] },
+		gameIds: { Steam: ["299030"] },
 		tags: ["game-specific-vr"],
 		title: "Blood VR",
 		author: "Game Or Die",
@@ -269,10 +258,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1587130", "3158590"],
 			Gog: ["1901494026", "1732956308", "1556560608"],
 			Epic: ["8122ff0d6f8244eda9ea0e90c464cd38"],
-			NormalizedTitle: [
-				"bloodwest",
-				"bloodwestofficialsoundtrack_digitalextraaudience",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "Blood West VR",
@@ -284,7 +269,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "borderlands-goty-enhanced",
 		gameIds: {
 			Steam: ["729040"],
-			NormalizedTitle: ["borderlandsgameoftheyearenhanced"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Borderlands GOTY Enhanced VR",
@@ -294,7 +278,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "brutal-legend-vr",
-		gameIds: { Steam: ["225260"], NormalizedTitle: ["brutallegend"] },
+		gameIds: { Steam: ["225260"] },
 		tags: ["game-specific-vr"],
 		title: "Brütal Legend VR",
 		author: "Nikami",
@@ -305,7 +289,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "c-c-generals-zero-hour",
 		gameIds: {
 			Steam: ["2732960"],
-			NormalizedTitle: ["commandconquergeneralszerohour"],
 		},
 		tags: ["game-specific-vr"],
 		title: "GeneralsVR",
@@ -315,7 +298,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "call-of-duty-black-ops-vr",
-		gameIds: { Steam: ["42700"], NormalizedTitle: ["callofdutyblackops"] },
+		gameIds: { Steam: ["42700"] },
 		tags: ["game-specific-vr"],
 		title: "Call of Duty: Black Ops VR",
 		author: "BigManLucaVR",
@@ -324,7 +307,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "call-of-duty-2003-vr",
-		gameIds: { Steam: ["2620"], NormalizedTitle: ["callofduty2003"] },
+		gameIds: { Steam: ["2620"] },
 		tags: ["game-specific-vr"],
 		title: "Call of Duty (2003) VR",
 		author: "lambda-gab",
@@ -333,7 +316,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "call-of-duty-4-vr",
-		gameIds: { Steam: ["7940"], NormalizedTitle: ["callofduty4"] },
+		gameIds: { Steam: ["7940"] },
 		tags: ["game-specific-vr"],
 		title: "Call of Duty 4 VR",
 		author: "jplakon",
@@ -344,7 +327,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "call-of-duty-united-offensive-vr",
 		gameIds: {
 			Steam: ["2640"],
-			NormalizedTitle: ["callofdutyunitedoffensive"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Call of Duty: United Offensive VR",
@@ -355,7 +337,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "call-of-duty-world-at-war-vr",
-		gameIds: { Steam: ["10090"], NormalizedTitle: ["callofdutyworldatwar"] },
+		gameIds: { Steam: ["10090"] },
 		tags: ["game-specific-vr"],
 		title: "Call of Duty: World at War VR",
 		author: "RyanCraighead",
@@ -364,7 +346,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "call-of-juarez-vr",
-		gameIds: { Steam: ["3020"], NormalizedTitle: ["callofjuarez"] },
+		gameIds: { Steam: ["3020"] },
 		tags: ["game-specific-vr"],
 		title: "Call of Juarez VR",
 		author: "rubocopter",
@@ -373,7 +355,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "content-warning-vr",
-		gameIds: { Steam: ["2881650"], NormalizedTitle: ["contentwarning"] },
+		gameIds: { Steam: ["2881650"] },
 		tags: ["game-specific-vr"],
 		title: "Content Warning VR",
 		author: "DaXcess",
@@ -382,7 +364,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "cruelty-squad-vr",
-		gameIds: { Steam: ["1388770"], NormalizedTitle: ["crueltysquad"] },
+		gameIds: { Steam: ["1388770"] },
 		tags: ["game-specific-vr"],
 		title: "Cruelty Squad VR",
 		author: "teddybear082",
@@ -394,7 +376,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1091500"],
 			Gog: ["1423049311", "2093619782"],
-			NormalizedTitle: ["cyberpunk2077"],
 		},
 		tags: ["game-specific-vr"],
 		title: "CyberpunkVR Port",
@@ -406,7 +387,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "daggerfall-vr",
 		gameIds: {
 			Steam: ["1812390"],
-			NormalizedTitle: ["theelderscrollsdaggerfall"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Daggerfall VR",
@@ -416,7 +396,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dark-souls-ii-motion-vr",
-		gameIds: { Steam: ["335300"], NormalizedTitle: ["darksoulsii"] },
+		gameIds: { Steam: ["335300"] },
 		tags: ["game-specific-vr"],
 		title: "DS2VR",
 		author: "MixtapeRomeo",
@@ -425,7 +405,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dead-space-2-vr",
-		gameIds: { Steam: ["47780"], NormalizedTitle: ["deadspace2"] },
+		gameIds: { Steam: ["47780"] },
 		tags: ["game-specific-vr"],
 		title: "Dead Space 2 VR",
 		author: "chortdev",
@@ -434,7 +414,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dementium-ii-hd-vr",
-		gameIds: { Steam: ["217100"], NormalizedTitle: ["dementiumiihd"] },
+		gameIds: { Steam: ["217100"] },
 		tags: ["game-specific-vr"],
 		title: "Dementium II HD VR",
 		author: "King-EJ",
@@ -443,7 +423,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "descent-2-vr",
-		gameIds: { Steam: ["273580"], NormalizedTitle: ["descent2"] },
+		gameIds: { Steam: ["273580"] },
 		tags: ["game-specific-vr"],
 		title: "Descent 2 VR",
 		author: "Game Or Die",
@@ -452,7 +432,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "descent-vr",
-		gameIds: { Steam: ["273570"], NormalizedTitle: ["descent"] },
+		gameIds: { Steam: ["273570"] },
 		tags: ["game-specific-vr"],
 		title: "Descent VR",
 		author: "Game Or Die",
@@ -476,7 +456,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1430610",
 				"1530640",
 			],
-			NormalizedTitle: ["deeprockgalactic"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Deep Rock Galactic VR",
@@ -488,7 +467,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "deus-ex-human-revolution-directors-cut-vr",
 		gameIds: {
 			Steam: ["238010"],
-			NormalizedTitle: ["deusexhumanrevolutiondirectorscut"],
 		},
 		tags: ["game-specific-vr"],
 		title: "DeusExHRVR",
@@ -499,7 +477,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "diablo-ii-resurrected-vr",
-		gameIds: { Steam: ["2536520"], NormalizedTitle: ["diabloiiresurrected"] },
+		gameIds: { Steam: ["2536520"] },
 		tags: ["game-specific-vr"],
 		title: "D2R VR",
 		author: "natpoh / BodyWalkVR",
@@ -522,11 +500,6 @@ export const linkOnlyMods: ModBase[] = [
 			],
 			Gog: ["1701063787", "1521801184"],
 			Xbox: ["9P1N07XDL1D4"],
-			NormalizedTitle: [
-				"dishonored",
-				"dishonoreddefinitiveeditionpc",
-				"dishonoreddefinitiveedition",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "Dishonored VR",
@@ -536,7 +509,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dishonored-2-vr",
-		gameIds: { Steam: ["403640"], NormalizedTitle: ["dishonored2"] },
+		gameIds: { Steam: ["403640"] },
 		tags: ["game-specific-vr"],
 		title: "Dishonored 2 VR",
 		author: "The Cosmic Tangerine",
@@ -545,7 +518,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dungeon-keeper-2-vr",
-		gameIds: { Steam: ["2616460"], NormalizedTitle: ["dungeonkeeper2"] },
+		gameIds: { Steam: ["2616460"] },
 		tags: ["game-specific-vr"],
 		title: "Dungeon Keeper 2 VR",
 		author: "LoVeMaKeRz",
@@ -554,7 +527,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "doom-2016-vr",
-		gameIds: { Steam: ["379720"], NormalizedTitle: ["doom2016"] },
+		gameIds: { Steam: ["379720"] },
 		tags: ["game-specific-vr"],
 		title: "DOOM (2016) VR",
 		author: "CactusVRStudios",
@@ -563,7 +536,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "doom-eternal-motion-vr",
-		gameIds: { Steam: ["782330"], NormalizedTitle: ["doometernal"] },
+		gameIds: { Steam: ["782330"] },
 		tags: ["game-specific-vr"],
 		title: "DOOM Eternal VR - Motion",
 		author: "CactusVRStudios / ArcadaLabs-Jason",
@@ -575,7 +548,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["2280"],
 			Gog: ["2015545325"],
-			NormalizedTitle: ["doomienhanced"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Doom VR",
@@ -588,7 +560,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["2300"],
 			Gog: ["1426071866"],
-			NormalizedTitle: ["doomiienhanced"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Doom 2 VR",
@@ -598,7 +569,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "doom-3-bfg-vr",
-		gameIds: { Steam: ["208200"], NormalizedTitle: ["doom3bfgedition"] },
+		gameIds: { Steam: ["208200"] },
 		tags: ["game-specific-vr"],
 		title: "Doom 3 BFG VR",
 		author: "CommanderKeen83",
@@ -619,10 +590,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1302420295",
 			],
 			Epic: ["fb396afeff004f4c9fdf628ee004ac4b"],
-			NormalizedTitle: [
-				"dredge",
-				"dredgecompleteeditionupgradebundle_seasonpassaudience",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "Dredge VR",
@@ -632,7 +599,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "duke-nukem-3d-vr",
-		gameIds: { Steam: ["434050", "225140"], NormalizedTitle: ["dukenukem3d"] },
+		gameIds: { Steam: ["434050", "225140"] },
 		tags: ["game-specific-vr"],
 		title: "Duke Nukem 3D VR",
 		author: "Game Or Die",
@@ -644,7 +611,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["519860", "994820", "994821", "1846130", "2717300"],
 			Gog: ["1150392214", "1985013742"],
-			NormalizedTitle: ["dusk"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Dusk HD (DLC) VR",
@@ -655,7 +621,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "earth-defense-force-6-vr",
-		gameIds: { Steam: ["2291060"], NormalizedTitle: ["earthdefenseforce6"] },
+		gameIds: { Steam: ["2291060"] },
 		tags: ["game-specific-vr"],
 		title: "EARTH DEFENSE FORCE 6 VR",
 		author: "momotori01",
@@ -664,7 +630,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "elden-ring-motion-controls",
-		gameIds: { Steam: ["1245620"], NormalizedTitle: ["eldenring"] },
+		gameIds: { Steam: ["1245620"] },
 		tags: ["game-specific-vr"],
 		title: "Elden Ring VR",
 		author: "Hotbite / Ilyamez",
@@ -676,7 +642,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["727850", "1176120", "1176121"],
 			Gog: ["1732383191", "1987694488"],
-			NormalizedTitle: ["elderborn"],
 		},
 		tags: ["game-specific-vr"],
 		title: "ELDERBORN VR",
@@ -687,7 +652,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "enshrouded-vr",
-		gameIds: { Steam: ["1203620"], NormalizedTitle: ["enshrouded"] },
+		gameIds: { Steam: ["1203620"] },
 		tags: ["game-specific-vr"],
 		title: "Enshrouded VR",
 		author: "momotori01",
@@ -696,7 +661,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "escape-from-tarkov-vr",
-		gameIds: { Steam: ["3932890"], NormalizedTitle: ["escapefromtarkov"] },
+		gameIds: { Steam: ["3932890"] },
 		tags: ["game-specific-vr"],
 		title: "Escape from Tarkov VR",
 		author: "cybensis",
@@ -708,7 +673,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["21090"],
 			Gog: ["1423058413"],
-			NormalizedTitle: ["fearultimateshooteredition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "F.E.A.R. VR",
@@ -718,7 +682,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "fallout-3-vr",
-		gameIds: { Steam: ["22370"], NormalizedTitle: ["fallout3"] },
+		gameIds: { Steam: ["22370"] },
 		tags: ["game-specific-vr"],
 		title: "Fallout 3 VR",
 		author: "THEwill2002",
@@ -727,7 +691,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-2-vr",
-		gameIds: { Steam: ["19900"], NormalizedTitle: ["farcry2"] },
+		gameIds: { Steam: ["19900"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry 2 VR",
 		author: "Braxus",
@@ -739,7 +703,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["22380"],
 			Gog: ["1454587428", "1312824873"],
-			NormalizedTitle: ["falloutnewvegas"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Fallout: New Vegas VR",
@@ -749,7 +712,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "a-tale-of-two-realities-vr",
-		gameIds: { Steam: ["22380"], NormalizedTitle: ["falloutnewvegas"] },
+		gameIds: { Steam: ["22380"] },
 		tags: ["game-specific-vr"],
 		title: "A Tale of Two Realities",
 		author: "KUPOkinz",
@@ -759,7 +722,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "final-fantasy-xiv-vr",
-		gameIds: { Steam: ["39210"], NormalizedTitle: ["finalfantasyxivonline"] },
+		gameIds: { Steam: ["39210"] },
 		tags: ["game-specific-vr"],
 		title: "Final Fantasy XIV VR",
 		author: "WesleyLuk90",
@@ -768,7 +731,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "flower-vr",
-		gameIds: { Steam: ["966330"], NormalizedTitle: ["flower"] },
+		gameIds: { Steam: ["966330"] },
 		tags: ["game-specific-vr"],
 		title: "Flower VR",
 		author: "jeffMeador",
@@ -780,7 +743,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["3010850", "4632450", "4637140", "4637200", "5028560"],
 			Xbox: ["9N4PT8HGCDHQ"],
-			NormalizedTitle: ["gearsofwareday"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Gears of War: E-Day VR",
@@ -794,7 +756,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["247430"],
 			Gog: ["1207660853"],
-			NormalizedTitle: ["hitman3contracts"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Hitman: Contracts VR",
@@ -808,7 +769,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["2604490", "4332390", "4354700"],
 			Gog: ["1552308959", "1208784581", "1845203179", "1227565313"],
 			Epic: ["1c2bb93b179f45f7b9a9f149f9142494"],
-			NormalizedTitle: ["ihatethisplace"],
 		},
 		tags: ["game-specific-vr"],
 		title: "I Hate This Place VR",
@@ -819,7 +779,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "journey-vr",
-		gameIds: { Steam: ["638230"], NormalizedTitle: ["journey"] },
+		gameIds: { Steam: ["638230"] },
 		tags: ["game-specific-vr"],
 		title: "Journey VR",
 		author: "jeffMeador",
@@ -831,7 +791,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["668980"],
 			Gog: ["1624591191"],
-			NormalizedTitle: ["forsakenremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Forsaken VR",
@@ -841,7 +800,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "garry-s-mod-vr",
-		gameIds: { Steam: ["4000"], NormalizedTitle: ["garrysmod"] },
+		gameIds: { Steam: ["4000"] },
 		tags: ["game-specific-vr"],
 		title: "Garry's Mod VR",
 		author: "Abyss-c0re / Doom Slayer",
@@ -855,7 +814,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["780290", "1809490"],
 			Gog: ["2102122491", "1938055224"],
 			Epic: ["92b43293e6e04a049fda8b797ea3eda9"],
-			NormalizedTitle: ["gloomhaven"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Gloomhaven VR",
@@ -868,7 +826,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["39510"],
 			Gog: ["1207658718"],
-			NormalizedTitle: ["gothicii"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Gothic II VR",
@@ -879,7 +836,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "grand-theft-auto-v-vr",
-		gameIds: { Steam: ["271590"], NormalizedTitle: ["grandtheftautov"] },
+		gameIds: { Steam: ["271590"] },
 		tags: ["game-specific-vr"],
 		title: "Grand Theft Auto V VR",
 		author: "DeployAbi / Luke Ross",
@@ -889,7 +846,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "gta-iv-vr",
-		gameIds: { Steam: ["12210"], NormalizedTitle: ["grandtheftautoiv"] },
+		gameIds: { Steam: ["12210"] },
 		tags: ["game-specific-vr"],
 		title: "GTA IV VR",
 		author: "bordplate / Hochgeschwindigkeitsrennfahrer",
@@ -898,7 +855,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "gta-vice-city-vr",
-		gameIds: { Steam: ["12110"], NormalizedTitle: ["grandtheftautovicecity"] },
+		gameIds: { Steam: ["12110"] },
 		tags: ["game-specific-vr"],
 		title: "GTA Vice City VR",
 		author: "#yevhen4817",
@@ -907,7 +864,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "gtfo-vr",
-		gameIds: { Steam: ["493520"], NormalizedTitle: ["gtfo"] },
+		gameIds: { Steam: ["493520"] },
 		tags: ["game-specific-vr"],
 		title: "GTFO VR",
 		author: "DSprtn",
@@ -916,7 +873,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "gunfire-reborn",
-		gameIds: { Steam: ["1217060"], NormalizedTitle: ["gunfirereborn"] },
+		gameIds: { Steam: ["1217060"] },
 		tags: ["game-specific-vr"],
 		title: "Gunfire Reborn VR Mod",
 		author: "PureDark + Astienth",
@@ -929,7 +886,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["976730"],
 			Xbox: ["9NTM9HXNLSZX"],
-			NormalizedTitle: ["halothemasterchiefcollection"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Halo Master Chief Collection VR",
@@ -940,7 +896,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "heretic-vr",
-		gameIds: { Steam: ["2390"], NormalizedTitle: ["heretichexen"] },
+		gameIds: { Steam: ["2390"] },
 		tags: ["game-specific-vr"],
 		title: "Heretic VR",
 		author: "hh79",
@@ -949,7 +905,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "hexen-vr",
-		gameIds: { Steam: ["2360"], NormalizedTitle: ["heretichexen"] },
+		gameIds: { Steam: ["2360"] },
 		tags: ["game-specific-vr"],
 		title: "Hexen VR",
 		author: "hh79",
@@ -958,7 +914,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "hexen-ii-vr",
-		gameIds: { Steam: ["9060"], NormalizedTitle: ["hexenii"] },
+		gameIds: { Steam: ["9060"] },
 		tags: ["game-specific-vr"],
 		title: "Hexen II VR",
 		author: "alexdnax",
@@ -967,7 +923,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "high-entropy-challenges-vr",
-		gameIds: { Steam: ["1389630"], NormalizedTitle: ["highentropychallenges"] },
+		gameIds: { Steam: ["1389630"] },
 		tags: ["game-specific-vr"],
 		title: "High Entropy: Challenges VR",
 		author: "King-EJ",
@@ -976,7 +932,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "hitman-blood-money-vr",
-		gameIds: { Steam: ["6860"], NormalizedTitle: ["hitmanbloodmoney"] },
+		gameIds: { Steam: ["6860"] },
 		tags: ["game-specific-vr"],
 		title: "Hitman: Blood Money VR",
 		author: "andreystashev",
@@ -988,7 +944,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1328670", "1393160"],
 			Xbox: ["9PKWHT7G60WQ"],
-			NormalizedTitle: ["masseffectlegendaryedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Mass Effect 1 LE VR",
@@ -999,7 +954,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "how-to-fish-xr",
-		gameIds: { Steam: ["4001890", "4539520"], NormalizedTitle: ["howtofish"] },
+		gameIds: { Steam: ["4001890", "4539520"] },
 		tags: ["game-specific-vr"],
 		title: "HowToFishXR",
 		author: "J_axon",
@@ -1011,7 +966,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1694600"],
 			Gog: ["1195723193"],
-			NormalizedTitle: ["thehouseofthedeadremake"],
 		},
 		tags: ["game-specific-vr"],
 		title: "House of the Dead Remake VR",
@@ -1025,7 +979,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["3376690"],
 			Gog: ["1372785870"],
-			NormalizedTitle: ["thehouseofthedead2remake"],
 		},
 		tags: ["game-specific-vr"],
 		title: "House of the Dead 2 Remake VR",
@@ -1036,7 +989,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "resident-evil-5-vr",
-		gameIds: { Steam: ["21690"], NormalizedTitle: ["residentevil5"] },
+		gameIds: { Steam: ["21690"] },
 		tags: ["game-specific-vr"],
 		title: "Resident Evil 5 VR",
 		author: "SpreadTheBirb",
@@ -1046,7 +999,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "idols-of-ash-vr",
-		gameIds: { Steam: ["4450800"], NormalizedTitle: ["idolsofash"] },
+		gameIds: { Steam: ["4450800"] },
 		tags: ["game-specific-vr"],
 		title: "Idols of Ash VR",
 		author: "LXE97",
@@ -1058,7 +1011,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1846170", "1877810"],
 			Gog: ["1310178756"],
-			NormalizedTitle: ["ironlung"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Iron Lung VR",
@@ -1068,7 +1020,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "judgment-vr",
-		gameIds: { Steam: ["2058180"], NormalizedTitle: ["judgment"] },
+		gameIds: { Steam: ["2058180"] },
 		tags: ["game-specific-vr"],
 		title: "Judgment VR",
 		author: "Tensai37",
@@ -1081,7 +1033,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["220200", "283740"],
 			Gog: ["1429864849", "2092205632", "1506581192"],
 			Epic: ["84686da593b24598803ffbe7f9b1bb5e"],
-			NormalizedTitle: ["kerbalspaceprogram"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Kerbal VR",
@@ -1095,7 +1046,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["232090"],
 			Epic: ["b51279fe75d841dd9a0dcb1a1b85bf4b"],
-			NormalizedTitle: ["killingfloor2"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Killing Floor 2 VR",
@@ -1105,7 +1055,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "left-4-dead-2-vr",
-		gameIds: { Steam: ["550"], NormalizedTitle: ["left4dead2"] },
+		gameIds: { Steam: ["550"] },
 		tags: ["game-specific-vr"],
 		title: "Left 4 Dead 2 VR",
 		author: "keyou91",
@@ -1114,7 +1064,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "lethal-company-vr",
-		gameIds: { Steam: ["1966720"], NormalizedTitle: ["lethalcompany"] },
+		gameIds: { Steam: ["1966720"] },
 		tags: ["game-specific-vr"],
 		title: "Lethal Company VR",
 		author: "DaXcess",
@@ -1127,7 +1077,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["554620", "1265930"],
 			Gog: ["2131041921", "1109523731", "2135294930"],
-			NormalizedTitle: ["lifeisstrangebeforethestorm"],
 		},
 		tags: ["game-specific-vr"],
 		title: "DawnVR",
@@ -1137,7 +1086,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "little-witch-nobeta-vr",
-		gameIds: { Steam: ["1049890"], NormalizedTitle: ["littlewitchnobeta"] },
+		gameIds: { Steam: ["1049890"] },
 		tags: ["game-specific-vr"],
 		title: "Little Witch Nobeta VR",
 		author: "Pk-c",
@@ -1147,7 +1096,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "lunacid-vr",
-		gameIds: { Steam: ["1745510"], NormalizedTitle: ["lunacid"] },
+		gameIds: { Steam: ["1745510"] },
 		tags: ["game-specific-vr"],
 		title: "Lunacid VR",
 		author: "Tesseract",
@@ -1156,7 +1105,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "mage-arena-vr",
-		gameIds: { Steam: ["3716600"], NormalizedTitle: ["magearena"] },
+		gameIds: { Steam: ["3716600"] },
 		tags: ["game-specific-vr"],
 		title: "Mage Arena VR",
 		author: "J_axon",
@@ -1165,7 +1114,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "max-payne-2-vr",
-		gameIds: { Steam: ["12150"], NormalizedTitle: ["maxpayne2"] },
+		gameIds: { Steam: ["12150"] },
 		tags: ["game-specific-vr"],
 		title: "Max Payne 2 VR",
 		author: "evilSheep / betotron",
@@ -1174,7 +1123,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "metal-gear-solid-v-the-phantom-pain-vr",
-		gameIds: { Steam: ["287700"], NormalizedTitle: ["mgs_tpp"] },
+		gameIds: { Steam: ["287700"] },
 		tags: ["game-specific-vr"],
 		title: "Metal Gear Solid V: The Phantom Pain VR",
 		author: "nikamigaming-create",
@@ -1193,7 +1142,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1141915110",
 				"1079168140",
 			],
-			NormalizedTitle: ["metalhellsinger"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Metal: Hellsinger VR",
@@ -1207,7 +1155,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["17410"],
 			Gog: ["1893001152"],
 			Epic: ["e942018b506d4cfc98c10d92bc9f9a53"],
-			NormalizedTitle: ["mirrorsedge"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Mirror's Edge VR",
@@ -1219,7 +1166,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "miside-vr",
 		gameIds: {
 			Steam: ["2527500", "3404450", "2527520"],
-			NormalizedTitle: ["miside"],
 		},
 		tags: ["game-specific-vr"],
 		title: "MiSide VR",
@@ -1229,7 +1175,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "bannerlord-vr",
-		gameIds: { Steam: ["261550"], NormalizedTitle: ["mountbladeiibannerlord"] },
+		gameIds: { Steam: ["261550"] },
 		tags: ["game-specific-vr"],
 		title: "Mount & Blade II: Bannerlord VR",
 		author: "NotLooky",
@@ -1242,7 +1188,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1605250"],
 			Gog: ["1999729393"],
-			NormalizedTitle: ["morosprotocol"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Moros Protocol VR",
@@ -1256,7 +1201,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["2416450", "3879460", "3879490", "3912890"],
 			Gog: ["1567378928", "2077295668"],
-			NormalizedTitle: ["mousepiforhire"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Mouse P.I. For Hire VR",
@@ -1270,7 +1214,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1574260"],
 			Epic: ["d84808f282b84dcbabf5a2600933ff60"],
-			NormalizedTitle: ["myfriendlyneighborhood"],
 		},
 		tags: ["game-specific-vr"],
 		title: "My Friendly Neighborhood VR",
@@ -1280,7 +1223,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "nam-vr",
-		gameIds: { Steam: ["329650"], NormalizedTitle: ["nam"] },
+		gameIds: { Steam: ["329650"] },
 		tags: ["game-specific-vr"],
 		title: "NAM VR",
 		author: "Game Or Die",
@@ -1292,7 +1235,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["753640", "1622100"],
 			Epic: ["c1c2d06bb0b24b7cb820e8e03ae5c3d2"],
-			NormalizedTitle: ["outerwilds", "outerwildsechoesoftheeye"],
 		},
 		tags: ["game-specific-vr"],
 		title: "NomaiVR",
@@ -1313,7 +1255,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1427038628",
 			],
 			Epic: ["b9fcb93638bc4ff4baa77cc0a71ded42"],
-			NormalizedTitle: ["outward"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Outward DE VR",
@@ -1323,7 +1264,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "painkiller-black-edition",
-		gameIds: { Steam: ["39530"], NormalizedTitle: ["painkillerblackedition"] },
+		gameIds: { Steam: ["39530"] },
 		tags: ["game-specific-vr"],
 		title: "PainKiller VR Mod",
 		author: "FluorescentHallucinogen",
@@ -1332,7 +1273,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "painkiller-overdose-vr",
-		gameIds: { Steam: ["3270"], NormalizedTitle: ["painkilleroverdose"] },
+		gameIds: { Steam: ["3270"] },
 		tags: ["game-specific-vr"],
 		title: "Painkiller: Overdose VR",
 		author: "STR_Paragor / Painkiller Russian Community",
@@ -1344,7 +1285,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1178880"],
 			Gog: ["1248489555"],
-			NormalizedTitle: ["panzerdragoonremake"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Panzer Dragoon Remake VR",
@@ -1378,10 +1318,6 @@ export const linkOnlyMods: ModBase[] = [
 			],
 			Gog: ["1127581981", "1229613329", "2113123723", "1432782902"],
 			Epic: ["9f6257d9cfa04686917b7a3980703219"],
-			NormalizedTitle: [
-				"pathfinderkingmaker",
-				"pathfinderkingmakerenhancedplusedition",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "VRMaker",
@@ -1391,7 +1327,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "peak-vr",
-		gameIds: { Steam: ["3527290"], NormalizedTitle: ["peak"] },
+		gameIds: { Steam: ["3527290"] },
 		tags: ["game-specific-vr"],
 		title: "PEAK VR",
 		author: "Andrey04o / AstienVR",
@@ -1400,7 +1336,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "penumbra-black-plague-vr",
-		gameIds: { Steam: ["22120"], NormalizedTitle: ["penumbrablackplague"] },
+		gameIds: { Steam: ["22120"] },
 		tags: ["game-specific-vr"],
 		title: "Penumbra: Black Plague VR",
 		author: "rubocopter",
@@ -1409,7 +1345,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "penumbra-overture-vr",
-		gameIds: { Steam: ["22180"], NormalizedTitle: ["penumbraoverture"] },
+		gameIds: { Steam: ["22180"] },
 		tags: ["game-specific-vr"],
 		title: "Penumbra: Overture VR",
 		author: "rubocopter / simply-jos",
@@ -1418,7 +1354,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "penumbra-requiem-vr",
-		gameIds: { Steam: ["22140"], NormalizedTitle: ["penumbrarequiem"] },
+		gameIds: { Steam: ["22140"] },
 		tags: ["game-specific-vr"],
 		title: "Penumbra: Requiem VR",
 		author: "rubocopter",
@@ -1427,7 +1363,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "portal-2-vr",
-		gameIds: { Steam: ["620"], NormalizedTitle: ["portal2"] },
+		gameIds: { Steam: ["620"] },
 		tags: ["game-specific-vr"],
 		title: "Portal 2 VR",
 		author: "Spencer0187",
@@ -1438,7 +1374,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "powerslave-exhumed-vr",
 		gameIds: {
 			Steam: ["1260020"],
-			NormalizedTitle: ["powerslavedosclassicedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "PowerSlave / Exhumed VR",
@@ -1469,7 +1404,6 @@ export const linkOnlyMods: ModBase[] = [
 				"3202500",
 				"3202510",
 			],
-			NormalizedTitle: ["powerwashsimulator"],
 		},
 		tags: ["game-specific-vr"],
 		title: "PowerWash Simulator VR",
@@ -1482,10 +1416,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["2968420", "4043170", "4173830", "4229450", "4556380"],
 			Epic: ["f6bd3733c95b47f78c7442b52d692b7a"],
-			NormalizedTitle: [
-				"powerwashsimulator2",
-				"powerwashsimulator2adventuretimepack",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "PowerWash Simulator 2 VR",
@@ -1495,7 +1425,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "prey-2006-vr",
-		gameIds: { Steam: ["3970"], NormalizedTitle: ["prey2006"] },
+		gameIds: { Steam: ["3970"] },
 		tags: ["game-specific-vr"],
 		title: "Prey (2006) VR",
 		author: "GameOrDie007 / lvonasek",
@@ -1504,7 +1434,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "project-zomboid-vr",
-		gameIds: { Steam: ["108600"], NormalizedTitle: ["projectzomboid"] },
+		gameIds: { Steam: ["108600"] },
 		tags: ["game-specific-vr"],
 		title: "Project Zomboid VR",
 		author: "axizt / GingasVR",
@@ -1514,7 +1444,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "quake-vr",
-		gameIds: { Steam: ["2310"], NormalizedTitle: ["quake"] },
+		gameIds: { Steam: ["2310"] },
 		tags: ["game-specific-vr"],
 		title: "Quake VR",
 		author: "Vittorio Romeo / GameOrDie007",
@@ -1523,7 +1453,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "quake-2-vr",
-		gameIds: { Steam: ["2320"], NormalizedTitle: ["quake2"] },
+		gameIds: { Steam: ["2320"] },
 		tags: ["game-specific-vr"],
 		title: "Quake 2 VR",
 		author: "GameOrDie007",
@@ -1532,7 +1462,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "quake-3-vr",
-		gameIds: { Steam: ["2200"], NormalizedTitle: ["quake3arena"] },
+		gameIds: { Steam: ["2200"] },
 		tags: ["game-specific-vr"],
 		title: "Quake 3 VR",
 		author: "RippeR37",
@@ -1541,7 +1471,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "r-e-p-o-vr",
-		gameIds: { Steam: ["3241660"], NormalizedTitle: ["repo"] },
+		gameIds: { Steam: ["3241660"] },
 		tags: ["game-specific-vr"],
 		title: "R.E.P.O. VR",
 		author: "DaXcess",
@@ -1550,7 +1480,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "raft-vr",
-		gameIds: { Steam: ["648800"], NormalizedTitle: ["raft"] },
+		gameIds: { Steam: ["648800"] },
 		tags: ["game-specific-vr"],
 		title: "Raft VR",
 		author: "DrBibop",
@@ -1562,7 +1492,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1144200", "840820", "888330", "3015760"],
 			Epic: ["cb63ceaaf1614190956f92ad8f3c2b63"],
-			NormalizedTitle: ["readyornot"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Ready Or Not VR",
@@ -1572,7 +1501,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "receiver-vr",
-		gameIds: { Steam: ["234190"], NormalizedTitle: ["receiver"] },
+		gameIds: { Steam: ["234190"] },
 		tags: ["game-specific-vr"],
 		title: "Receiver VR",
 		author: "ShadowBrian",
@@ -1581,7 +1510,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "red-dead-redemption-vr",
-		gameIds: { Steam: ["2668510"], NormalizedTitle: ["reddeadredemption"] },
+		gameIds: { Steam: ["2668510"] },
 		tags: ["game-specific-vr"],
 		title: "Red Dead Redemption VR",
 		author: "Disonomouss",
@@ -1590,7 +1519,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "red-faction-vr",
-		gameIds: { Steam: ["20530"], NormalizedTitle: ["redfaction"] },
+		gameIds: { Steam: ["20530"] },
 		tags: ["game-specific-vr"],
 		title: "Red Faction VR",
 		author: "CactusVRStudios",
@@ -1601,7 +1530,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "redneck-rampage-vr",
 		gameIds: {
 			Steam: ["565550", "580940"],
-			NormalizedTitle: ["redneckrampage"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Redneck Rampage VR",
@@ -1613,7 +1541,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "return-to-castle-wolfenstein-vr",
 		gameIds: {
 			Steam: ["9010"],
-			NormalizedTitle: ["returntocastlewolfenstein"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Return to Castle Wolfenstein VR",
@@ -1627,7 +1554,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["632360", "1236890", "1607890", "1905390"],
 			Epic: ["9a8a170855694da7a868190aaae9f8f9"],
-			NormalizedTitle: ["riskofrain2"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Resurrected VRMod",
@@ -1640,7 +1566,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "road-to-vostok-vr",
 		gameIds: {
 			Steam: ["1963610", "2141300"],
-			NormalizedTitle: ["roadtovostok"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Road to Vostok VR",
@@ -1653,7 +1578,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["844260"],
 			Gog: ["2058719826"],
-			NormalizedTitle: ["rustler"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Rustler VR",
@@ -1663,7 +1587,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "saints-row-the-third-vr",
-		gameIds: { Steam: ["55230"], NormalizedTitle: ["saintsrowthethird"] },
+		gameIds: { Steam: ["55230"] },
 		tags: ["game-specific-vr"],
 		title: "Saints Row: The Third VR",
 		author: "zolika1351",
@@ -1672,7 +1596,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "scrap-mechanic-vr",
-		gameIds: { Steam: ["387990"], NormalizedTitle: ["scrapmechanic"] },
+		gameIds: { Steam: ["387990"] },
 		tags: ["game-specific-vr"],
 		title: "Scrap Mechanic VR",
 		author: "21Suspect",
@@ -1681,7 +1605,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "selaco-vr",
-		gameIds: { Steam: ["1592280"], NormalizedTitle: ["selaco"] },
+		gameIds: { Steam: ["1592280"] },
 		tags: ["game-specific-vr"],
 		title: "Selaco VR",
 		author: "emawind84",
@@ -1692,7 +1616,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "shadow-warrior-vr",
 		gameIds: {
 			Steam: ["225160", "238070"],
-			NormalizedTitle: ["shadowwarriororiginal"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Shadow Warrior VR",
@@ -1702,7 +1625,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "sin-episodes-emergence",
-		gameIds: { Steam: ["1300"], NormalizedTitle: ["sinepisodesemergence"] },
+		gameIds: { Steam: ["1300"] },
 		tags: ["game-specific-vr"],
 		title: "SiN VR",
 		author: "RototRobot",
@@ -1715,7 +1638,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["42670"],
 			Gog: ["1207659239"],
 			Epic: ["e42a0921fcba428b9bff87e8c2d015a8"],
-			NormalizedTitle: ["singularity"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Singularity VR",
@@ -1729,7 +1651,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["433340"],
 			Gog: ["1459259227"],
 			Epic: ["1e38b618d106430db94b474abbfecc16"],
-			NormalizedTitle: ["slimerancher"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Slime Rancher VR",
@@ -1739,7 +1660,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "slyders-vr",
-		gameIds: { Steam: ["2607870"], NormalizedTitle: ["slyders"] },
+		gameIds: { Steam: ["2607870"] },
 		tags: ["game-specific-vr"],
 		title: "Slyders VR",
 		author: "Astienth",
@@ -1749,7 +1670,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "sons-of-the-forest",
-		gameIds: { Steam: ["1326470"], NormalizedTitle: ["sonsoftheforest"] },
+		gameIds: { Steam: ["1326470"] },
 		tags: ["game-specific-vr"],
 		title: "Sons of the Forest VR Mod",
 		author: "Anthony",
@@ -1758,7 +1679,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "soma-vr",
-		gameIds: { Steam: ["282140"], NormalizedTitle: ["soma"] },
+		gameIds: { Steam: ["282140"] },
 		tags: ["game-specific-vr"],
 		title: "SOMA VR",
 		author: "Bateau01",
@@ -1770,7 +1691,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["50300", "204980"],
 			Gog: ["1710761915"],
-			NormalizedTitle: ["specopstheline"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Spec Ops: The Line VR",
@@ -1782,7 +1702,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "spiderman-remastered-spidy-vr",
 		gameIds: {
 			Steam: ["1817070"],
-			NormalizedTitle: ["marvelsspidermanremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "SpidyVR",
@@ -1792,7 +1711,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "star-wars-episode-i-racer",
-		gameIds: { Steam: ["808910"], NormalizedTitle: ["starwarsracer"] },
+		gameIds: { Steam: ["808910"] },
 		tags: ["game-specific-vr"],
 		title: "Star Wars Episode I Racer PCVR",
 		author: "GameOrDie007",
@@ -1801,7 +1720,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "stardew-valley-vr",
-		gameIds: { Steam: ["413150"], NormalizedTitle: ["stardewvalley"] },
+		gameIds: { Steam: ["413150"] },
 		tags: ["game-specific-vr"],
 		title: "Stardew Valley VR",
 		author: "GingasVR",
@@ -1810,7 +1729,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "strife-vr",
-		gameIds: { Steam: ["317040"], NormalizedTitle: ["strifeveteranedition"] },
+		gameIds: { Steam: ["317040"] },
 		tags: ["game-specific-vr"],
 		title: "Strife VR",
 		author: "hh79",
@@ -1822,7 +1741,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["264710", "1619300"],
 			Epic: ["3257e06c28764231acd93049f3774ed6"],
-			NormalizedTitle: ["subnautica"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Subnautica VR",
@@ -1835,7 +1753,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["848450"],
 			Epic: ["a5d79a34555b4d55ac4e09b4dde35897"],
-			NormalizedTitle: ["subnauticabelowzero"],
 		},
 		tags: ["game-specific-vr"],
 		title: "SubmersedVR Below Zero",
@@ -1845,7 +1762,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "teardown-vr",
-		gameIds: { Steam: ["1167630"], NormalizedTitle: ["teardown"] },
+		gameIds: { Steam: ["1167630"] },
 		tags: ["game-specific-vr"],
 		title: "Teardown VR",
 		author: "VR Games For All / markos12900-beep",
@@ -1855,7 +1772,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "techtonica-vr",
-		gameIds: { Steam: ["1457320"], NormalizedTitle: ["techtonica"] },
+		gameIds: { Steam: ["1457320"] },
 		tags: ["game-specific-vr"],
 		title: "Techtonica VR",
 		author: "3_141 (Xenira)",
@@ -1864,7 +1781,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "the-witness",
-		gameIds: { Steam: ["210970"], NormalizedTitle: ["thewitness"] },
+		gameIds: { Steam: ["210970"] },
 		tags: ["game-specific-vr"],
 		title: "The Witness VR",
 		author: "Flat2VR community",
@@ -1874,7 +1791,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "titanfall-2-vr",
-		gameIds: { Steam: ["1237970"], NormalizedTitle: ["titanfall2"] },
+		gameIds: { Steam: ["1237970"] },
 		tags: ["game-specific-vr"],
 		title: "Titanfall 2 VR",
 		author: "CircuitLord",
@@ -1885,7 +1802,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "tomb-raider-1-vr",
 		gameIds: {
 			Steam: ["224960", "2478970"],
-			NormalizedTitle: ["tombraideriiiiremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Tomb Raider 1 VR",
@@ -1895,7 +1811,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "tomb-raider-legend-vr",
-		gameIds: { Steam: ["7000"], NormalizedTitle: ["tombraiderlegend"] },
+		gameIds: { Steam: ["7000"] },
 		tags: ["game-specific-vr"],
 		title: "Tomb Raider: Legend VR",
 		author: "RototRobot",
@@ -1907,7 +1823,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1367590", "1782240"],
 			Gog: ["1243021945"],
-			NormalizedTitle: ["tormentedsouls"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Tormented Souls VR",
@@ -1917,7 +1832,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "turok-vr",
-		gameIds: { Steam: ["405820"], NormalizedTitle: ["turok"] },
+		gameIds: { Steam: ["405820"] },
 		tags: ["game-specific-vr"],
 		title: "Turok VR",
 		author: "VinceCrusty",
@@ -1930,7 +1845,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1229490", "1230260"],
 			Gog: ["1476171749", "1096258712"],
-			NormalizedTitle: ["ultrakill"],
 		},
 		tags: ["game-specific-vr"],
 		title: "ULTRAKILL VR",
@@ -1940,7 +1854,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "valheim-vr",
-		gameIds: { Steam: ["892970", "1620250"], NormalizedTitle: ["valheim"] },
+		gameIds: { Steam: ["892970", "1620250"] },
 		tags: ["game-specific-vr"],
 		title: "Valheim VR",
 		author: "brandonmousseau",
@@ -1951,7 +1865,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "vampire-bloodlines-vr",
 		gameIds: {
 			Steam: ["2600"],
-			NormalizedTitle: ["vampirethemasqueradebloodlines"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Vampire: The Masquerade - Bloodlines VR",
@@ -1962,7 +1875,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "vampire-hunters-vr",
-		gameIds: { Steam: ["2206270"], NormalizedTitle: ["vampirehunters"] },
+		gameIds: { Steam: ["2206270"] },
 		tags: ["game-specific-vr"],
 		title: "Vampire Hunters VR",
 		author: "segadreamcat",
@@ -1973,7 +1886,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "warhammer-40k-darktide-vr",
 		gameIds: {
 			Steam: ["1361210"],
-			NormalizedTitle: ["warhammer40000darktide"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Warhammer 40K: Darktide VR",
@@ -2011,10 +1923,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1120013101",
 			],
 			Epic: ["ebedfdea4f5f4540b07e48958ceec88f"],
-			NormalizedTitle: [
-				"warhammer40000roguetrader",
-				"warhammer40000roguetraderappearancepack_addonaudience",
-			],
 		},
 		tags: ["game-specific-vr"],
 		title: "Warhammer 40K: Rogue Trader VR",
@@ -2024,7 +1932,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "white-knuckle-vr",
-		gameIds: { Steam: ["3195790"], NormalizedTitle: ["whiteknuckle"] },
+		gameIds: { Steam: ["3195790"] },
 		tags: ["game-specific-vr"],
 		title: "White Knuckle VR",
 		author: "kyanite-rock",
@@ -2033,7 +1941,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "wolfenstein-3d-vr",
-		gameIds: { Steam: ["2270"], NormalizedTitle: ["wolfenstein3d"] },
+		gameIds: { Steam: ["2270"] },
 		tags: ["game-specific-vr"],
 		title: "Wolfenstein 3D VR",
 		author: "Ben McLean",
@@ -2042,7 +1950,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "wwii-gi-vr",
-		gameIds: { Steam: ["376750"], NormalizedTitle: ["worldwariigi"] },
+		gameIds: { Steam: ["376750"] },
 		tags: ["game-specific-vr"],
 		title: "World War II GI VR",
 		author: "Game Or Die",
@@ -2055,7 +1963,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1154790"],
 			Gog: ["1169744036"],
 			Epic: ["1b42555cd38f4ec1b5e890f4017fc13f"],
-			NormalizedTitle: ["xiii2020"],
 		},
 		tags: ["game-specific-vr"],
 		title: "XIII Remake VR",
@@ -2069,7 +1976,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1337010"],
 			Gog: ["1892014768"],
 			Epic: ["3297b71137cf46e0ac5ad35683787eb6"],
-			NormalizedTitle: ["albaawildlifeadventure", "alba"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Alba VR",
@@ -2081,7 +1987,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "another-crab-s-treasure",
 		gameIds: {
 			Steam: ["1887840", "2944800"],
-			NormalizedTitle: ["anothercrabstreasure"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Another Crab's Treasure VR",
@@ -2092,7 +1997,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "apollo-justice-ace-attorney-trilogy-vr",
-		gameIds: { Steam: ["2187220"], NormalizedTitle: ["apollojustice"] },
+		gameIds: { Steam: ["2187220"] },
 		tags: ["game-specific-vr"],
 		title: "Apollo Justice: Ace Attorney Trilogy VR",
 		author: "praydog",
@@ -2111,7 +2016,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1218736487",
 				"1683179155",
 			],
-			NormalizedTitle: ["artofrally"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Art of Rally VR",
@@ -2122,7 +2026,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "assassin-s-creed-mirage-vr",
-		gameIds: { Steam: ["3035570"], NormalizedTitle: ["assassinscreedmirage"] },
+		gameIds: { Steam: ["3035570"] },
 		tags: ["game-specific-vr"],
 		title: "Assassin's Creed Mirage VR",
 		author: "mutars",
@@ -2131,7 +2035,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "assassin-s-creed-odyssey-vr",
-		gameIds: { Steam: ["812140"], NormalizedTitle: ["assassinscreedodyssey"] },
+		gameIds: { Steam: ["812140"] },
 		tags: ["game-specific-vr"],
 		title: "Assassin's Creed Odyssey VR",
 		author: "mutars",
@@ -2142,7 +2046,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "assassin-s-creed-valhalla-vr",
 		gameIds: {
 			Steam: ["2208920"],
-			NormalizedTitle: ["assassinscreedvalhalla"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Assassin's Creed Valhalla VR",
@@ -2155,7 +2058,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1301230", "1324930"],
 			Gog: ["1846677136", "1430469922"],
-			NormalizedTitle: ["astrodogs"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Astrodogs VR",
@@ -2178,7 +2080,6 @@ export const linkOnlyMods: ModBase[] = [
 				"2214830",
 				"2214824",
 			],
-			NormalizedTitle: ["atomicheart"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Atomic Heart VR",
@@ -2188,7 +2089,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "avatar-frontiers-of-pandora-vr",
-		gameIds: { Steam: ["2840770"], NormalizedTitle: ["afop"] },
+		gameIds: { Steam: ["2840770"] },
 		tags: ["game-specific-vr"],
 		title: "Avatar: Frontiers of Pandora VR",
 		author: "Luke Ross",
@@ -2197,7 +2098,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "blade-of-darkness-vr",
-		gameIds: { Steam: ["1710170"], NormalizedTitle: ["bladeofdarkness"] },
+		gameIds: { Steam: ["1710170"] },
 		tags: ["game-specific-vr"],
 		title: "Blade of Darkness VR",
 		author: "Efraim2704",
@@ -2206,7 +2107,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "blur-vr",
-		gameIds: { Steam: ["42640"], NormalizedTitle: ["blur"] },
+		gameIds: { Steam: ["42640"] },
 		tags: ["game-specific-vr"],
 		title: "Blur VR",
 		author: "TwoAyEm",
@@ -2218,7 +2119,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1353230", "2518220", "2537200"],
 			Gog: ["2113415415", "1587333905"],
-			NormalizedTitle: ["bombrushcyberfunk"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Bomb Rush Cyberfunk VR",
@@ -2228,7 +2128,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "circuit-superstars-vr",
-		gameIds: { Steam: ["1097130"], NormalizedTitle: ["circuitsuperstars"] },
+		gameIds: { Steam: ["1097130"] },
 		tags: ["game-specific-vr"],
 		title: "Circuit Superstars VR",
 		author: "Astienth",
@@ -2246,7 +2146,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1897092010",
 				"1940486602",
 			],
-			NormalizedTitle: ["cloudpunk"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Cloudpunk VR",
@@ -2265,7 +2164,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1897092010",
 				"1940486602",
 			],
-			NormalizedTitle: ["cloudpunk"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Cloudpunk: City of Ghosts VR",
@@ -2275,7 +2173,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dark-souls-ii-vr",
-		gameIds: { Steam: ["335300"], NormalizedTitle: ["darksoulsii"] },
+		gameIds: { Steam: ["335300"] },
 		tags: ["game-specific-vr"],
 		title: "Dark Souls II VR",
 		author: "Luke Ross",
@@ -2284,7 +2182,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dark-souls-iii-vr",
-		gameIds: { Steam: ["374320"], NormalizedTitle: ["darksoulsiii"] },
+		gameIds: { Steam: ["374320"] },
 		tags: ["game-specific-vr"],
 		title: "Dark Souls III VR",
 		author: "Luke Ross",
@@ -2293,7 +2191,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dark-souls-remastered",
-		gameIds: { Steam: ["570940"], NormalizedTitle: ["darksoulsremastered"] },
+		gameIds: { Steam: ["570940"] },
 		tags: ["game-specific-vr"],
 		title: "Dark Souls Remastered VR",
 		author: "Luke Ross",
@@ -2306,7 +2204,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1259420", "3238470"],
 			Gog: ["1127395101", "1183726056"],
 			Epic: ["45aac344cbfe40a5acb856999117d5fe"],
-			NormalizedTitle: ["daysgone"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Days Gone VR",
@@ -2316,7 +2213,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "death-stranding-vr",
-		gameIds: { Steam: ["1850570"], NormalizedTitle: ["deathstranding"] },
+		gameIds: { Steam: ["1850570"] },
 		tags: ["game-specific-vr"],
 		title: "Death Stranding VR",
 		author: "Luke Ross",
@@ -2325,7 +2222,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "decimate-drive-vr",
-		gameIds: { Steam: ["2427950"], NormalizedTitle: ["decimatedrive"] },
+		gameIds: { Steam: ["2427950"] },
 		tags: ["game-specific-vr"],
 		title: "Decimate Drive VR",
 		author: "Astienth",
@@ -2338,7 +2235,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["681280"],
 			Xbox: ["C37XBX7DCBZ0"],
-			NormalizedTitle: ["descenders"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Descenders VR",
@@ -2348,7 +2244,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "devil-may-cry-5-vr",
-		gameIds: { Steam: ["601150"], NormalizedTitle: ["devilmaycry5"] },
+		gameIds: { Steam: ["601150"] },
 		tags: ["game-specific-vr"],
 		title: "Devil May Cry 5 VR",
 		author: "praydog",
@@ -2357,7 +2253,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dinkum-vr",
-		gameIds: { Steam: ["1062520"], NormalizedTitle: ["dinkum"] },
+		gameIds: { Steam: ["1062520"] },
 		tags: ["game-specific-vr"],
 		title: "Dinkum VR",
 		author: "Destroyjevski",
@@ -2366,7 +2262,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dino-trauma-vr",
-		gameIds: { Steam: ["2149420"], NormalizedTitle: ["dinotrauma"] },
+		gameIds: { Steam: ["2149420"] },
 		tags: ["game-specific-vr"],
 		title: "Dino Trauma VR",
 		author: "Astienth",
@@ -2376,7 +2272,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "doom-eternal-vr",
-		gameIds: { Steam: ["782330"], NormalizedTitle: ["doometernal"] },
+		gameIds: { Steam: ["782330"] },
 		tags: ["game-specific-vr"],
 		title: "Doom Eternal VR",
 		author: "Luke Ross",
@@ -2385,7 +2281,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dragon-s-dogma-2-vr",
-		gameIds: { Steam: ["2054970"], NormalizedTitle: ["dragonsdogma2"] },
+		gameIds: { Steam: ["2054970"] },
 		tags: ["game-specific-vr"],
 		title: "Dragon's Dogma 2 VR",
 		author: "praydog",
@@ -2394,7 +2290,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "driftwood-vr",
-		gameIds: { Steam: ["2223700"], NormalizedTitle: ["driftwooddemo"] },
+		gameIds: { Steam: ["2223700"] },
 		tags: ["game-specific-vr"],
 		title: "Driftwood VR",
 		author: "Astienth",
@@ -2403,7 +2299,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "echo-generation-2-vr",
-		gameIds: { Steam: ["1115990"], NormalizedTitle: ["echogeneration2"] },
+		gameIds: { Steam: ["1115990"] },
 		tags: ["game-specific-vr"],
 		title: "Echo Generation 2 VR",
 		author: "Astienth",
@@ -2413,7 +2309,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "elden-ring-real-vr",
-		gameIds: { Steam: ["1245620"], NormalizedTitle: ["eldenring"] },
+		gameIds: { Steam: ["1245620"] },
 		tags: ["game-specific-vr"],
 		title: "Elden Ring (R.E.A.L. VR)",
 		author: "Luke Ross",
@@ -2422,7 +2318,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-4-vr",
-		gameIds: { Steam: ["298110"], NormalizedTitle: ["farcry4"] },
+		gameIds: { Steam: ["298110"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry 4 VR",
 		author: "Luke Ross",
@@ -2431,7 +2327,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-5-vr",
-		gameIds: { Steam: ["552520"], NormalizedTitle: ["farcry5"] },
+		gameIds: { Steam: ["552520"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry 5 VR",
 		author: "Luke Ross",
@@ -2440,7 +2336,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-6-vr",
-		gameIds: { Steam: ["2369390"], NormalizedTitle: ["farcry6"] },
+		gameIds: { Steam: ["2369390"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry 6 VR",
 		author: "Luke Ross",
@@ -2449,7 +2345,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-new-dawn-vr",
-		gameIds: { Steam: ["939960"], NormalizedTitle: ["farcrynewdawn"] },
+		gameIds: { Steam: ["939960"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry New Dawn VR",
 		author: "Luke Ross",
@@ -2458,7 +2354,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-primal-vr",
-		gameIds: { Steam: ["371660"], NormalizedTitle: ["farcryprimal"] },
+		gameIds: { Steam: ["371660"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry Primal VR",
 		author: "Luke Ross",
@@ -2469,7 +2365,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "ff-vii-rebirth-vr",
 		gameIds: {
 			Steam: ["2909400", "1186130", "1186125", "1186112"],
-			NormalizedTitle: ["finalfantasyviirebirth"],
 		},
 		tags: ["game-specific-vr"],
 		title: "FF VII Rebirth VR",
@@ -2482,7 +2377,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1462040"],
 			Xbox: ["9NRQVQ7ZRM7Z"],
-			NormalizedTitle: ["finalfantasyviiremakeintergrade"],
 		},
 		tags: ["game-specific-vr"],
 		title: "FF VII Remake VR",
@@ -2495,7 +2389,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1462040"],
 			Xbox: ["9NRQVQ7ZRM7Z"],
-			NormalizedTitle: ["finalfantasyviiremakeintergrade"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Final Fantasy VII Remake Intergrade VR",
@@ -2505,7 +2398,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "grid-2019-vr",
-		gameIds: { Steam: ["703860"], NormalizedTitle: ["grid2019"] },
+		gameIds: { Steam: ["703860"] },
 		tags: ["game-specific-vr"],
 		title: "GRID (2019) VR",
 		author: "drowhunter",
@@ -2514,7 +2407,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "grid-legends-vr",
-		gameIds: { Steam: ["1307710"], NormalizedTitle: ["gridlegends"] },
+		gameIds: { Steam: ["1307710"] },
 		tags: ["game-specific-vr"],
 		title: "GRID Legends VR",
 		author: "drowhunter",
@@ -2523,7 +2416,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dirt-4-vr",
-		gameIds: { Steam: ["421020"], NormalizedTitle: ["dirt4"] },
+		gameIds: { Steam: ["421020"] },
 		tags: ["game-specific-vr"],
 		title: "DiRT 4 VR",
 		author: "drowhunter",
@@ -2532,7 +2425,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "forza-horizon-4-grayhorizon-vr",
-		gameIds: { Steam: ["1293830"], NormalizedTitle: ["forzahorizon4"] },
+		gameIds: { Steam: ["1293830"] },
 		tags: ["game-specific-vr"],
 		title: "Forza Horizon 4 VR - GrayHorizon",
 		author: "GrayHorizon",
@@ -2541,7 +2434,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "forza-horizon-5-grayhorizon-vr",
-		gameIds: { Steam: ["1551360"], NormalizedTitle: ["forzahorizon5"] },
+		gameIds: { Steam: ["1551360"] },
 		tags: ["game-specific-vr"],
 		title: "Forza Horizon 5 VR - GrayHorizon",
 		author: "GrayHorizon",
@@ -2550,7 +2443,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "forza-horizon-6-grayhorizon-vr",
-		gameIds: { Steam: ["2483190"], NormalizedTitle: ["forzahorizon6"] },
+		gameIds: { Steam: ["2483190"] },
 		tags: ["game-specific-vr"],
 		title: "Forza Horizon 6 VR - GrayHorizon",
 		author: "GrayHorizon",
@@ -2559,7 +2452,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "forza-horizon-5-vr",
-		gameIds: { Steam: ["1551360"], NormalizedTitle: ["forzahorizon5"] },
+		gameIds: { Steam: ["1551360"] },
 		tags: ["game-specific-vr"],
 		title: "Forza Horizon 5 VR",
 		author: "NALULUNA · lufz",
@@ -2568,7 +2461,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "forza-horizon-6-vr",
-		gameIds: { Steam: ["2483190"], NormalizedTitle: ["forzahorizon6"] },
+		gameIds: { Steam: ["2483190"] },
 		tags: ["game-specific-vr"],
 		title: "Forza Horizon 6 VR",
 		author: "NALULUNA · lufz · Clark",
@@ -2579,7 +2472,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "ghost-of-tsushima-vr",
 		gameIds: {
 			Steam: ["2215430"],
-			NormalizedTitle: ["ghostoftsushimadirectorscut"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Ghost of Tsushima VR",
@@ -2589,7 +2481,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "ghost-recon-wildlands-vr",
-		gameIds: { Steam: ["460930"], NormalizedTitle: ["wildlands"] },
+		gameIds: { Steam: ["460930"] },
 		tags: ["game-specific-vr"],
 		title: "Ghost Recon Wildlands VR",
 		author: "Firejumper93",
@@ -2600,7 +2492,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "ghosts-n-goblins-resurrection-vr",
 		gameIds: {
 			Steam: ["1375400"],
-			NormalizedTitle: ["ghostsngoblinsresurrection"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Ghosts n Goblins Resurrection VR",
@@ -2619,7 +2510,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1203320424",
 				"1383417467",
 			],
-			NormalizedTitle: ["ghostwiretokyo"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Ghostwire: Tokyo VR",
@@ -2632,7 +2522,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["962130", "2161390"],
 			Xbox: ["9PJTHRNVH62H"],
-			NormalizedTitle: ["grounded"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Grounded VR",
@@ -2646,7 +2535,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1583230", "2447000"],
 			Gog: ["2040120327"],
 			Epic: ["e90781f75b4649068644af2be394708d"],
-			NormalizedTitle: ["highonlife"],
 		},
 		tags: ["game-specific-vr"],
 		title: "High on Life VR",
@@ -2668,7 +2556,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1880837",
 			],
 			Epic: ["864c7bc2c2394f7dbd1b534aa068ff56"],
-			NormalizedTitle: ["hogwartslegacy"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Hogwarts Legacy VR",
@@ -2682,7 +2569,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1030300"],
 			Gog: ["1558393671"],
 			Xbox: ["9N116V0599HB"],
-			NormalizedTitle: ["hollowknightsilksong"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Silksong VR",
@@ -2696,7 +2582,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["367520", "598190", "916000"],
 			Gog: ["1308320804", "1984697392", "2031197911"],
-			NormalizedTitle: ["hollowknight"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Hollow Knight VR",
@@ -2710,7 +2595,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["389140"],
 			Epic: ["832d22a0192a4c4691e23c19dfa7d075"],
-			NormalizedTitle: ["horizonchaseturbo", "horizonchaseturbosummervibes"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Horizon Chase Turbo VR",
@@ -2723,7 +2607,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "horizon-forbidden-west-vr",
 		gameIds: {
 			Steam: ["2420110"],
-			NormalizedTitle: ["horizonforbiddenwestcompleteedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Horizon Forbidden West VR",
@@ -2733,7 +2616,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "horizon-zero-dawn-vr",
-		gameIds: { Steam: ["1151640"], NormalizedTitle: ["horizonzerodawn"] },
+		gameIds: { Steam: ["1151640"] },
 		tags: ["game-specific-vr"],
 		title: "Horizon Zero Dawn VR",
 		author: "Luke Ross",
@@ -2744,7 +2627,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "horizon-zero-dawn-remastered-vr",
 		gameIds: {
 			Steam: ["2561580"],
-			NormalizedTitle: ["horizonzerodawnremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Horizon Zero Dawn Remastered VR",
@@ -2754,7 +2636,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "hypogea-vr",
-		gameIds: { Steam: ["2980260"], NormalizedTitle: ["hypogea"] },
+		gameIds: { Steam: ["2980260"] },
 		tags: ["game-specific-vr"],
 		title: "Hypogea VR",
 		author: "Astienth",
@@ -2764,7 +2646,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "indiana-jones-great-circle-vr",
-		gameIds: { Steam: ["2677660"], NormalizedTitle: ["thegreatcircle"] },
+		gameIds: { Steam: ["2677660"] },
 		tags: ["game-specific-vr"],
 		title: "Indiana Jones: Great Circle VR",
 		author: "Luke Ross",
@@ -2773,7 +2655,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "kingdom-come-deliverance-vr",
-		gameIds: { Steam: ["379430"], NormalizedTitle: ["kingdomcomedeliverance"] },
+		gameIds: { Steam: ["379430"] },
 		tags: ["game-specific-vr"],
 		title: "Kingdom Come: Deliverance VR",
 		author: "farmerarmor",
@@ -2784,7 +2666,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "kingdom-come-deliverance-ii-vr",
 		gameIds: {
 			Steam: ["1771300"],
-			NormalizedTitle: ["kingdomcomedeliverance2"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Kingdom Come: Deliverance II VR",
@@ -2794,7 +2675,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "kunitsu-gami-path-of-the-goddess-vr",
-		gameIds: { Steam: ["2510710"], NormalizedTitle: ["kunitsugami"] },
+		gameIds: { Steam: ["2510710"] },
 		tags: ["game-specific-vr"],
 		title: "Kunitsu-Gami: Path of the Goddess VR",
 		author: "praydog",
@@ -2806,7 +2687,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1701800", "1327120", "1740060", "2208660"],
 			Gog: ["1499721915"],
-			NormalizedTitle: ["lunistice"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Lunistice VR",
@@ -2820,7 +2700,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1328670", "1393160"],
 			Xbox: ["9PKWHT7G60WQ"],
-			NormalizedTitle: ["masseffectlegendaryedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Mass Effect 2 LE VR",
@@ -2833,7 +2712,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1328670", "1393160"],
 			Xbox: ["9PKWHT7G60WQ"],
-			NormalizedTitle: ["masseffectlegendaryedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Mass Effect 3 LE VR",
@@ -2843,7 +2721,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "mega-man-star-force-legacy-vr",
-		gameIds: { Steam: ["3500390"], NormalizedTitle: ["mmsflegacycollection"] },
+		gameIds: { Steam: ["3500390"] },
 		tags: ["game-specific-vr"],
 		title: "Mega Man Star Force Legacy VR",
 		author: "praydog",
@@ -2852,7 +2730,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "mirage-feathers-vr",
-		gameIds: { Steam: ["2719060"], NormalizedTitle: ["miragefeathers"] },
+		gameIds: { Steam: ["2719060"] },
 		tags: ["game-specific-vr"],
 		title: "Mirage Feathers VR",
 		author: "Astienth",
@@ -2862,7 +2740,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "mirrors-edge-catalyst-vr",
-		gameIds: { Steam: ["1233570"], NormalizedTitle: ["mirrorsedgecatalyst"] },
+		gameIds: { Steam: ["1233570"] },
 		tags: ["game-specific-vr"],
 		title: "Mirror's Edge Catalyst VR",
 		author: "sqofer",
@@ -2871,7 +2749,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "monster-hunter-rise-vr",
-		gameIds: { Steam: ["1446780"], NormalizedTitle: ["monsterhunterrise"] },
+		gameIds: { Steam: ["1446780"] },
 		tags: ["game-specific-vr"],
 		title: "Monster Hunter Rise VR",
 		author: "praydog",
@@ -2880,7 +2758,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "monster-hunter-stories-3-vr",
-		gameIds: { Steam: ["2852190"], NormalizedTitle: ["monsterhunterstories3"] },
+		gameIds: { Steam: ["2852190"] },
 		tags: ["game-specific-vr"],
 		title: "Monster Hunter Stories 3 VR",
 		author: "praydog",
@@ -2889,7 +2767,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "monster-hunter-wilds",
-		gameIds: { Steam: ["2246340"], NormalizedTitle: ["monsterhunterwilds"] },
+		gameIds: { Steam: ["2246340"] },
 		tags: ["game-specific-vr"],
 		title: "Monster Hunter Wilds VR",
 		author: "praydog",
@@ -2898,7 +2776,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "moto-rush-reborn-vr",
-		gameIds: { Steam: ["2990060"], NormalizedTitle: ["motorushreborn"] },
+		gameIds: { Steam: ["2990060"] },
 		tags: ["game-specific-vr"],
 		title: "Moto Rush Reborn VR",
 		author: "Astienth",
@@ -2908,7 +2786,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "muck-vr",
-		gameIds: { Steam: ["1625450"], NormalizedTitle: ["muck"] },
+		gameIds: { Steam: ["1625450"] },
 		tags: ["game-specific-vr"],
 		title: "Muck VR",
 		author: "Elektroney",
@@ -2917,7 +2795,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "new-star-gp-vr",
-		gameIds: { Steam: ["2217580"], NormalizedTitle: ["newstargp"] },
+		gameIds: { Steam: ["2217580"] },
 		tags: ["game-specific-vr"],
 		title: "New Star GP VR",
 		author: "Astienth",
@@ -2929,7 +2807,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "nuclear-option-vr",
 		gameIds: {
 			Steam: ["2168680", "3067700"],
-			NormalizedTitle: ["nuclearoption"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Nuclear Option VR",
@@ -2939,7 +2816,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "oblivion-2006-vr",
-		gameIds: { Steam: ["22330"], NormalizedTitle: ["oblivion"] },
+		gameIds: { Steam: ["22330"] },
 		tags: ["game-specific-vr"],
 		title: "OBVR",
 		author: "Naragorn",
@@ -2948,7 +2825,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "onimusha-2-vr",
-		gameIds: { Steam: ["3046600"], NormalizedTitle: ["onimusha2"] },
+		gameIds: { Steam: ["3046600"] },
 		tags: ["game-specific-vr"],
 		title: "Onimusha 2 VR",
 		author: "praydog",
@@ -2960,7 +2837,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["2681030"],
 			Xbox: ["9PFWZMT737GG"],
-			NormalizedTitle: ["outbound"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Outbound VR",
@@ -2973,7 +2849,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["238320"],
 			Gog: ["1207660064", "1207664463"],
-			NormalizedTitle: ["outlast"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Outlast VR",
@@ -2986,7 +2861,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["414700"],
 			Gog: ["1453301453"],
-			NormalizedTitle: ["outlast2"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Outlast 2 VR",
@@ -2997,7 +2871,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "paperklay-vr",
-		gameIds: { Steam: ["1350720"], NormalizedTitle: ["paperklay"] },
+		gameIds: { Steam: ["1350720"] },
 		tags: ["game-specific-vr"],
 		title: "Paperklay VR",
 		author: "Astienth",
@@ -3007,7 +2881,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "paranoia-place-vr",
-		gameIds: { Steam: ["1592290"], NormalizedTitle: ["paranoiaplace"] },
+		gameIds: { Steam: ["1592290"] },
 		tags: ["game-specific-vr"],
 		title: "Paranoia Place VR",
 		author: "Astienth",
@@ -3017,7 +2891,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "pragmata-vr",
-		gameIds: { Steam: ["3357650"], NormalizedTitle: ["pragmata"] },
+		gameIds: { Steam: ["3357650"] },
 		tags: ["game-specific-vr"],
 		title: "Pragmata VR",
 		author: "scubasteve / praydog",
@@ -3026,7 +2900,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "rebel-galaxy-vr",
-		gameIds: { Steam: ["290300"], NormalizedTitle: ["rebelgalaxy"] },
+		gameIds: { Steam: ["290300"] },
 		tags: ["game-specific-vr"],
 		title: "Rebel Galaxy VR",
 		author: "Destroyjevski",
@@ -3035,7 +2909,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "retrowave-2-vr",
-		gameIds: { Steam: ["3331000"], NormalizedTitle: ["retrowave2"] },
+		gameIds: { Steam: ["3331000"] },
 		tags: ["game-specific-vr"],
 		title: "Retrowave 2 VR",
 		author: "Jean-Francois",
@@ -3064,7 +2938,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1875799615",
 			],
 			Epic: ["230d479147064e2bb1199685c8bda03a"],
-			NormalizedTitle: ["roadredemption", "roadredemptionfullgame"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Road Redemption VR",
@@ -3074,7 +2947,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "rogue-flight-vr",
-		gameIds: { Steam: ["2784620"], NormalizedTitle: ["rogueflight"] },
+		gameIds: { Steam: ["2784620"] },
 		tags: ["game-specific-vr"],
 		title: "Rogue Flight VR",
 		author: "Astienth",
@@ -3086,7 +2959,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "sayonara-wild-hearts",
 		gameIds: {
 			Steam: ["1122720", "1202460"],
-			NormalizedTitle: ["sayonarawildhearts"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Sayonara Wild Hearts VR Mod",
@@ -3109,7 +2981,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["1263240", "4213570"],
 			Gog: ["1322527974", "1264697411"],
-			NormalizedTitle: ["skatestory"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Skate Story VR",
@@ -3129,7 +3000,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "spiderman-2-vr",
-		gameIds: { Steam: ["2651280"], NormalizedTitle: ["marvelsspiderman2"] },
+		gameIds: { Steam: ["2651280"] },
 		tags: ["game-specific-vr"],
 		title: "Spiderman 2 VR",
 		author: "Luke Ross",
@@ -3140,7 +3011,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "spiderman-miles-morales-vr",
 		gameIds: {
 			Steam: ["1817190"],
-			NormalizedTitle: ["marvelsspidermanmilesmorales"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Spiderman Miles Morales VR",
@@ -3152,7 +3022,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "spiderman-remastered",
 		gameIds: {
 			Steam: ["1817070"],
-			NormalizedTitle: ["marvelsspidermanremastered"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Spider-Man Remastered VR",
@@ -3162,7 +3031,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "star-racer-vr",
-		gameIds: { Steam: ["2626120"], NormalizedTitle: ["starracer"] },
+		gameIds: { Steam: ["2626120"] },
 		tags: ["game-specific-vr"],
 		title: "Star Racer VR",
 		author: "Astienth",
@@ -3184,7 +3053,6 @@ export const linkOnlyMods: ModBase[] = [
 				"1655619245",
 			],
 			Xbox: ["9MT19Q3CRMQZ"],
-			NormalizedTitle: ["startrucker"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Star Trucker VR",
@@ -3194,7 +3062,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "star-wars-outlaws-vr",
-		gameIds: { Steam: ["2842040"], NormalizedTitle: ["starwarsoutlaws"] },
+		gameIds: { Steam: ["2842040"] },
 		tags: ["game-specific-vr"],
 		title: "Star Wars Outlaws VR",
 		author: "Luke Ross",
@@ -3203,7 +3071,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "starfield-vr",
-		gameIds: { Steam: ["1716740"], NormalizedTitle: ["starfield"] },
+		gameIds: { Steam: ["1716740"] },
 		tags: ["game-specific-vr"],
 		title: "Starfield VR",
 		author: "mutars",
@@ -3212,7 +3080,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "stray-vr",
-		gameIds: { Steam: ["1332010", "2086160"], NormalizedTitle: ["stray"] },
+		gameIds: { Steam: ["1332010", "2086160"] },
 		tags: ["game-specific-vr"],
 		title: "Stray VR",
 		author: "Luke Ross",
@@ -3221,7 +3089,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "street-fighter-6-vr",
-		gameIds: { Steam: ["1364780"], NormalizedTitle: ["streetfighter6"] },
+		gameIds: { Steam: ["1364780"] },
 		tags: ["game-specific-vr"],
 		title: "Street Fighter 6 VR",
 		author: "praydog",
@@ -3230,7 +3098,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "streetdog-bmx-vr",
-		gameIds: { Steam: ["2707870"], NormalizedTitle: ["streetdogbmx"] },
+		gameIds: { Steam: ["2707870"] },
 		tags: ["game-specific-vr"],
 		title: "StreetDog BMX VR",
 		author: "Astienth",
@@ -3240,7 +3108,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "sunrise-gp-vr",
-		gameIds: { Steam: ["2670800"], NormalizedTitle: ["sunrisegp"] },
+		gameIds: { Steam: ["2670800"] },
 		tags: ["game-specific-vr"],
 		title: "Sunrise GP VR",
 		author: "Astienth",
@@ -3250,7 +3118,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "thehunter-call-of-the-wild-vr",
-		gameIds: { Steam: ["518790"], NormalizedTitle: ["thehuntercotw"] },
+		gameIds: { Steam: ["518790"] },
 		tags: ["game-specific-vr"],
 		title: "theHunter: Call of the Wild VR",
 		author: "Vaas993",
@@ -3271,7 +3139,6 @@ export const linkOnlyMods: ModBase[] = [
 			],
 			Gog: ["1446830366"],
 			Epic: ["2bc4445cab514d02a6cd0cc1ebfa5a4c"],
-			NormalizedTitle: ["thief"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Thief (2014) VR",
@@ -3285,7 +3152,6 @@ export const linkOnlyMods: ModBase[] = [
 			Steam: ["1599020", "2110960", "2110850"],
 			Gog: ["1129992472"],
 			Epic: ["426fbf6c99624636a5c54adc713dc30e"],
-			NormalizedTitle: ["tinykin"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Tinykin VR",
@@ -3296,7 +3162,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "tlou-part-i-vr",
-		gameIds: { Steam: ["1888930"], NormalizedTitle: ["thelastofusparti"] },
+		gameIds: { Steam: ["1888930"] },
 		tags: ["game-specific-vr"],
 		title: "TLOU Part I VR",
 		author: "Luke Ross",
@@ -3305,7 +3171,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "tlou-part-ii-vr",
-		gameIds: { Steam: ["2531310"], NormalizedTitle: ["thelastofuspartii"] },
+		gameIds: { Steam: ["2531310"] },
 		tags: ["game-specific-vr"],
 		title: "TLOU Part II VR",
 		author: "Luke Ross",
@@ -3316,7 +3182,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "trackmania-nations-forever",
 		gameIds: {
 			Steam: ["11020"],
-			NormalizedTitle: ["trackmanianationsforever"],
 		},
 		tags: ["game-specific-vr"],
 		title: "TrackMania Forever OpenXR",
@@ -3326,7 +3191,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "trackmania-united-forever",
-		gameIds: { Steam: ["7200"], NormalizedTitle: ["trackmaniaunited"] },
+		gameIds: { Steam: ["7200"] },
 		tags: ["game-specific-vr"],
 		title: "TrackMania Forever OpenXR",
 		author: "jiink",
@@ -3337,7 +3202,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "uncharted-legacy-of-thieves-vr",
 		gameIds: {
 			Steam: ["1659420"],
-			NormalizedTitle: ["unchartedlegacyofthievescollection"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Uncharted: Legacy of Thieves VR",
@@ -3347,7 +3211,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "unmourned-vr",
-		gameIds: { Steam: ["3528970"], NormalizedTitle: ["unmourneddemo"] },
+		gameIds: { Steam: ["3528970"] },
 		tags: ["game-specific-vr"],
 		title: "Unmourned VR",
 		author: "Astienth",
@@ -3357,7 +3221,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "watch-dogs-vr",
-		gameIds: { Steam: ["243470"], NormalizedTitle: ["watch_dogs"] },
+		gameIds: { Steam: ["243470"] },
 		tags: ["game-specific-vr"],
 		title: "Watch Dogs VR",
 		author: "Luke Ross",
@@ -3366,7 +3230,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "watch-dogs-2-vr",
-		gameIds: { Steam: ["447040"], NormalizedTitle: ["watch_dogs2"] },
+		gameIds: { Steam: ["447040"] },
 		tags: ["game-specific-vr"],
 		title: "Watch Dogs 2 VR",
 		author: "Luke Ross",
@@ -3375,7 +3239,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "watch-dogs-legion-vr",
-		gameIds: { Steam: ["2239550"], NormalizedTitle: ["watchdogs_legion"] },
+		gameIds: { Steam: ["2239550"] },
 		tags: ["game-specific-vr"],
 		title: "Watch Dogs Legion VR",
 		author: "Luke Ross",
@@ -3386,7 +3250,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "witcher-3-vr",
 		gameIds: {
 			Steam: ["292030"],
-			NormalizedTitle: ["thewitcher3gameoftheyearedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Witcher 3 VR",
@@ -3396,7 +3259,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "wreckfest-2-vr",
-		gameIds: { Steam: ["1203190"], NormalizedTitle: ["wreckfest2"] },
+		gameIds: { Steam: ["1203190"] },
 		tags: ["game-specific-vr"],
 		title: "Wreckfest 2 VR",
 		author: "MatteKarla",
@@ -3405,7 +3268,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "wreckfest-vr",
-		gameIds: { Steam: ["228380"], NormalizedTitle: ["wreckfest"] },
+		gameIds: { Steam: ["228380"] },
 		tags: ["game-specific-vr"],
 		title: "Wreckfest VR",
 		author: "SQOFER",
@@ -3414,7 +3277,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "x4-foundations-vr",
-		gameIds: { Steam: ["392160"], NormalizedTitle: ["x4foundations"] },
+		gameIds: { Steam: ["392160"] },
 		tags: ["game-specific-vr"],
 		title: "X4: Foundations VR",
 		author: "ToffelsKater",
@@ -3426,7 +3289,6 @@ export const linkOnlyMods: ModBase[] = [
 		gameIds: {
 			Steam: ["360830", "426750"],
 			Gog: ["1445853962", "1354053863"],
-			NormalizedTitle: ["yookalaylee"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Yooka-Laylee VR",
@@ -3436,7 +3298,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "crysis-vr",
-		gameIds: { Steam: ["17300"], NormalizedTitle: ["crysis"] },
+		gameIds: { Steam: ["17300"] },
 		tags: ["game-specific-vr"],
 		title: "Crysis VR",
 		author: "fholger",
@@ -3445,7 +3307,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "dead-space-2008-vr",
-		gameIds: { Steam: ["17470"], NormalizedTitle: ["deadspace2008"] },
+		gameIds: { Steam: ["17470"] },
 		tags: ["game-specific-vr"],
 		title: "Dead Space (2008) VR",
 		author: "Talemann",
@@ -3454,7 +3316,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "fallout-4-vr",
-		gameIds: { Steam: ["611660"], NormalizedTitle: ["fallout4vr"] },
+		gameIds: { Steam: ["611660"] },
 		tags: ["game-specific-vr"],
 		title: "Fallout VR Essentials Overhaul",
 		author: "Wabbajack community",
@@ -3463,7 +3325,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "far-cry-vr",
-		gameIds: { Steam: ["13520"], NormalizedTitle: ["farcry"] },
+		gameIds: { Steam: ["13520"] },
 		tags: ["game-specific-vr"],
 		title: "Far Cry VR",
 		author: "fholger",
@@ -3472,7 +3334,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "freespace-2-vr",
-		gameIds: { Steam: ["273620"], NormalizedTitle: ["freespace2"] },
+		gameIds: { Steam: ["273620"] },
 		tags: ["game-specific-vr"],
 		title: "Freespace 2 VR",
 		author: "FreeSpace Open / Knossos",
@@ -3481,7 +3343,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "half-life-vr",
-		gameIds: { Steam: ["1908720"], NormalizedTitle: ["halflifevrmod"] },
+		gameIds: { Steam: ["1908720"] },
 		tags: ["game-specific-vr"],
 		title: "Half-Life VR",
 		author: "Max Vollmer",
@@ -3490,7 +3352,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "half-life-2-vr",
-		gameIds: { Steam: ["658920"], NormalizedTitle: ["halflife2vr"] },
+		gameIds: { Steam: ["658920"] },
 		tags: ["game-specific-vr"],
 		title: "Half-Life 2 VR",
 		author: "fholger",
@@ -3519,7 +3381,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "jedi-knight-jedi-academy-vr",
 		gameIds: {
 			Steam: ["6020"],
-			NormalizedTitle: ["starwarsjediknightjediacademy"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Jedi Knight: Jedi Academy VR",
@@ -3531,7 +3392,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "jedi-knight-jedi-outcast-vr",
 		gameIds: {
 			Steam: ["6030"],
-			NormalizedTitle: ["starwarsjediknightiijedioutcast"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Jedi Knight: Jedi Outcast VR",
@@ -3543,7 +3403,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "morrowind-vr",
 		gameIds: {
 			Steam: ["22320"],
-			NormalizedTitle: ["theelderscrollsiiimorrowindgoty"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Morrowind VR",
@@ -3555,7 +3414,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "portal-2-community-edition-vr",
 		gameIds: {
 			Steam: ["440000"],
-			NormalizedTitle: ["portal2communityedition"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Portal 2: Community Edition VR",
@@ -3567,7 +3425,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "receiver-2-vr",
-		gameIds: { Steam: ["1129310"], NormalizedTitle: ["receiver2"] },
+		gameIds: { Steam: ["1129310"] },
 		tags: ["game-specific-vr"],
 		title: "Receiver 2 VR",
 		author: "Wolfire Games",
@@ -3576,7 +3434,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "resident-evil-2r-vr",
-		gameIds: { Steam: ["883710"], NormalizedTitle: ["residentevil2remake"] },
+		gameIds: { Steam: ["883710"] },
 		tags: ["game-specific-vr"],
 		title: "Resident Evil 2R VR",
 		author: "praydog",
@@ -3585,7 +3443,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "resident-evil-3r-vr",
-		gameIds: { Steam: ["952060"], NormalizedTitle: ["residentevil3remake"] },
+		gameIds: { Steam: ["952060"] },
 		tags: ["game-specific-vr"],
 		title: "Resident Evil 3R VR",
 		author: "praydog",
@@ -3594,7 +3452,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "resident-evil-4r-vr",
-		gameIds: { Steam: ["2050650"], NormalizedTitle: ["residentevil4remake"] },
+		gameIds: { Steam: ["2050650"] },
 		tags: ["game-specific-vr"],
 		title: "Resident Evil 4R VR",
 		author: "praydog + Talemann",
@@ -3605,7 +3463,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "resident-evil-7-vr",
 		gameIds: {
 			Steam: ["418370"],
-			NormalizedTitle: ["residentevil7biohazard", "residentevil7"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Resident Evil 7 VR",
@@ -3615,7 +3472,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "re-village-vr",
-		gameIds: { Steam: ["1196590"], NormalizedTitle: ["residentevilvillage"] },
+		gameIds: { Steam: ["1196590"] },
 		tags: ["game-specific-vr"],
 		title: "RE Village VR",
 		author: "praydog",
@@ -3626,7 +3483,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "re-requiem-vr",
 		gameIds: {
 			Steam: ["3764200"],
-			NormalizedTitle: ["residentevilrequiembiohazardrequiem"],
 		},
 		tags: ["game-specific-vr"],
 		title: "RE Requiem VR",
@@ -3636,7 +3492,7 @@ export const linkOnlyMods: ModBase[] = [
 	},
 	{
 		id: "skyrim-vr",
-		gameIds: { Steam: ["611670"], NormalizedTitle: ["skyrimvr"] },
+		gameIds: { Steam: ["611670"] },
 		tags: ["game-specific-vr"],
 		title: "Mad God Overhaul (SFW)",
 		author: "Wabbajack community",
@@ -3647,7 +3503,6 @@ export const linkOnlyMods: ModBase[] = [
 		id: "star-wars-x-wing-vr",
 		gameIds: {
 			Steam: ["354430"],
-			NormalizedTitle: ["starwarsxwing1998", "starwarsxwing"],
 		},
 		tags: ["game-specific-vr"],
 		title: "Star Wars: X-Wing VR",

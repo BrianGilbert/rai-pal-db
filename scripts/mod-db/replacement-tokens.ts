@@ -9,48 +9,49 @@ function makeTokens<const T extends Record<string, string>>(obj: T) {
  * Tokens used for string replacement.
  * Rai Pal replaces these tokens with values depending on current game, mod, system, etc.
  */
-export const token = makeTokens(
-	{
-		/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
-		SharedModsPath: "",
+export const token = makeTokens({
+	/** Base URL for the files in the `public` folder of this repository. */
+	DatabaseUrlBase: "",
 
-		/** Path to the folder where mods are installed for the current game. */
-		GameInstalledModsPath: "",
+	/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
+	SharedModsPath: "",
 
-		/** The folder containing the game executable. */
-		GameExecutableFolderPath: "",
+	/** Path to the folder where mods are installed for the current game. */
+	GameInstalledModsPath: "",
 
-		/** The full path to the game executable. */
-		GameExecutablePath: "",
+	/** The folder containing the game executable. */
+	GameExecutableFolderPath: "",
 
-		/** The name of the game executable, with the extension. (e.g., MyGame.exe) */
-		GameExecutableName: "",
+	/** The full path to the game executable. */
+	GameExecutablePath: "",
 
-		/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
-		GameExecutableNameWithoutExtension: "",
+	/** The name of the game executable, with the extension. (e.g., MyGame.exe) */
+	GameExecutableName: "",
 
-		/** Entire json of the game as provided by Rai Pal */
-		GameJson: "",
+	/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
+	GameExecutableNameWithoutExtension: "",
 
-		/** Command that starts the game via its provider (like steam:// etc) */
-		GameStartCommand: "",
+	/** Entire json of the game as provided by Rai Pal */
+	GameJson: "",
 
-		/** Arguments that get passed to the provider command that starts the game */
-		GameStartCommandArgs: "",
+	/** Command that starts the game via its provider (like steam:// etc) */
+	GameStartCommand: "",
 
-		/**
-		 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
-		 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config).
-		 * For Windows games running on Linux via Wine, that would be the regular Windows Appdata folder but inside the prefix.
-		 */
-		RoamingAppData: "",
+	/** Arguments that get passed to the provider command that starts the game */
+	GameStartCommandArgs: "",
 
-		/**
-		 * It might be necessary to prepend this to some of the other path tokens, depending on which context they will be used in.
-		 * Meaning, if the string will be read by a Windows process, it likely needs this prefix.
-		 * For Windows games running via Wine on Linux, this would be the virtual drive mapping that points to the Linux root ('Z:', which points to '/').
-		 * In any other scenario, this will be an empty string.
-		 */
-		MaybeWineRoot: "",
-	} as const,
-);
+	/**
+	 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
+	 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config).
+	 * For Windows games running on Linux via Wine, that would be the regular Windows Appdata folder but inside the prefix.
+	 */
+	RoamingAppData: "",
+
+	/**
+	 * It might be necessary to prepend this to some of the other path tokens, depending on which context they will be used in.
+	 * Meaning, if the string will be read by a Windows process, it likely needs this prefix.
+	 * For Windows games running via Wine on Linux, this would be the virtual drive mapping that points to the Linux root ('Z:', which points to '/').
+	 * In any other scenario, this will be an empty string.
+	 */
+	MaybeWineRoot: "",
+} as const);

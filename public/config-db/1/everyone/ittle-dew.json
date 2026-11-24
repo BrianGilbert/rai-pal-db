@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Player(Clone)"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 2,
+		"FontName": "InfoScreen"
+	},
+	"RemotePlayer": {
+		"EulerAnglesOffset": "0,180,0"
+	},
+	"Rendering": {
+		"ShaderName": "Ittle Dew/Transparent Vertex Colored"
+	}
+}

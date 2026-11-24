@@ -10,7 +10,7 @@ import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
 import { getGameSpecificMods } from "./game-specific/game-specific.ts";
-import { getConfigMods } from "./configs.ts";
+import { configMods } from "./configs/index.ts";
 import { tags } from "./tags.ts";
 
 type ModGetter = () => Promise<ModBase[]>;
@@ -27,8 +27,6 @@ const modGetters: ModGetter[] = [
 const baseMods: ModBase[] = (
 	await Promise.all(modGetters.map((getter) => getter()))
 ).flat();
-
-const configMods = await getConfigMods(baseMods);
 
 const mods: Mod[] = [...baseMods, ...configMods].map((modBase) => ({
 	...modBase,
@@ -48,7 +46,12 @@ if (!json) {
 	throw new Error("Failed to convert mods output to JSON");
 }
 
-const targetFolder = join("..", "mod-db", String(MOD_DATABASE_VERSION));
+const targetFolder = join(
+	"..",
+	"public",
+	"mod-db",
+	String(MOD_DATABASE_VERSION),
+);
 
 await mkdir(targetFolder, { recursive: true });
 
