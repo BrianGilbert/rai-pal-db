@@ -23,14 +23,13 @@ Fill in `.env` with what you need.
 - `PCGAMINGWIKI_USERNAME` and `PCGAMINGWIKI_PASSWORD`: PCGamingWiki bot credentials used by the game DB. Account with the `runcargoqueries` permission. Create a bot password at https://www.pcgamingwiki.com/wiki/Special:BotPasswords and use the bot login (e.g. `Account@Bot`) as the username.
 - `ALLOW_PARTIAL_GAME_DB=1`: write the game DB even when a source fails. Only use it if you're fine with the data loss.
 
-## Mods
-
-Mods are in `src/mod-db/mods/`, one file per mod. Each file must `export default defineMod({...})`, and the mod `id` must match the file name. `discover-mods.ts` loads and validates every file in the folder. Shared code is in `src/mod-db/helpers/`. If you wanna add your own mod to this database, make a PR that adds it in this folder.
-
-### Tasks
+Then you can do one of
 
 ```sh
 npm run update-game-db
 npm run update-mod-db
-npm run typecheck
 ```
+
+## Mods
+
+Mods are in `src/mod-db/mods/`, one file per mod. Each file must `export default defineMod({...})`, and the mod `id` must match the file name. `discover-mods.ts` loads and validates every file in the folder. Shared code is in `src/mod-db/helpers/`. If you wanna add your own mod to this database, make a PR that adds it in this folder.
