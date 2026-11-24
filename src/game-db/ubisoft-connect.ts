@@ -1,5 +1,5 @@
 import { DOMParser } from "linkedom";
-import type { Game, GameSubscription } from "./main.ts";
+import type { Game, GameSubscription } from "./game.ts";
 import { filterFalsy, normalizeReleaseDate } from "./helpers.ts";
 
 type AlgoliaResponse = {

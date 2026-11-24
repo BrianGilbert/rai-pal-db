@@ -1,4 +1,4 @@
-import type { Game } from "./main.ts";
+import type { Game } from "./game.ts";
 
 // Hey! If you're changing this, note that Rai Pal also has a very similar algo for normalizing titles,
 // and these need to be mostly in sync with each other.

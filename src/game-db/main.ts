@@ -11,46 +11,7 @@ import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
 import { createDatabase } from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
-import {
-	gameIdKinds,
-	providerIds,
-	type GameIdKind,
-	type ProviderId,
-} from "../common/game-provider.ts";
-
-export { gameIdKinds, providerIds, type GameIdKind, type ProviderId };
-
-// These are all the engines that exist in the universe.
-export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
-
-export const gameSubscriptions = [
-	"XboxGamePass",
-	"EaPlay",
-	"UbisoftClassics",
-	"UbisoftPremium",
-] as const;
-
-export type EngineBrand = (typeof engineBrands)[number];
-export type GameSubscription = (typeof gameSubscriptions)[number];
-
-export type Engine = { brand: EngineBrand; version?: string };
-export type IdMap = Partial<Record<GameIdKind, Set<string>>>;
-
-export type Game = {
-	title?: string;
-	ids: IdMap;
-	engines?: Engine[];
-	subscriptions?: GameSubscription[];
-	releaseDate?: string;
-};
-
-interface GameWithUniqueIndex extends Game {
-	uniqueIndex: number;
-}
-
-type GamesByIds = Partial<
-	Record<GameIdKind, Record<string, GameWithUniqueIndex>>
->;
+import { engineBrands } from "./game.ts";
 
 // Each game source we fetch from. These are named so we can log exactly which
 // source succeeded/failed, instead of silently producing a half-empty database.
@@ -160,12 +121,7 @@ async function main(pretty: boolean) {
 		}
 	}
 
-	createDatabase(
-		join(folder, "games.db"),
-		gamesWithEngines,
-		gameIdKinds,
-		engineBrands,
-	);
+	createDatabase(join(folder, "games.db"), gamesWithEngines);
 
 	await writeFile(
 		outputPath,

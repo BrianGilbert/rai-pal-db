@@ -1,8 +1,8 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { repoRoot } from "../common/paths.ts";
-import { engineBrands } from "./main.ts";
-import type { Game } from "./main.ts";
+import { engineBrands } from "./game.ts";
+import type { Game } from "./game.ts";
 
 export async function fetchSteamGames(): Promise<Game[]> {
 	const games: Game[] = [];

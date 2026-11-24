@@ -1,5 +1,5 @@
-import { engineBrands } from "./main.ts";
-import type { Engine, EngineBrand, Game, IdMap } from "./main.ts";
+import { engineBrands } from "./game.ts";
+import type { Engine, EngineBrand, Game, IdMap } from "./game.ts";
 import { normalizeReleaseDate } from "./helpers.ts";
 
 type PCGamingWikiGame = {
@@ -215,7 +215,7 @@ function commaSeparatedToArray(commaSeparated: string): Set<string> {
 	return new Set(commaSeparated.split(",").map((id) => id.trim()));
 }
 
-function getProviderIds(game: PCGamingWikiGame): IdMap {
+function getStoreIds(game: PCGamingWikiGame): IdMap {
 	const result: IdMap = {};
 
 	if (game.steamIds) {
@@ -305,7 +305,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 				const engine = getEngine(pcGamingWikiGame);
 				if (!engine) continue;
 
-				const ids = getProviderIds(pcGamingWikiGame);
+				const ids = getStoreIds(pcGamingWikiGame);
 				if (Object.keys(ids).length === 0) continue;
 
 				const gameBase: Game = gamesByTitle[pcGamingWikiGame.title] ?? {

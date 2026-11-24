@@ -1,5 +1,7 @@
 import { DatabaseSync } from "node:sqlite";
-import type { Engine, Game, GameIdKind } from "./main.ts";
+import type { Engine, Game } from "./game.ts";
+import { engineBrands } from "./game.ts";
+import { gameIdKinds, type GameIdKind } from "../common/game-id.ts";
 import { existsSync, rmSync } from "node:fs";
 
 type RemoteGameRow = {
@@ -129,12 +131,7 @@ function reportDuplicates(rows: Map<string, RemoteGameRow>) {
 	}
 }
 
-export function createDatabase(
-	path: string,
-	games: Game[],
-	gameIdKinds: readonly GameIdKind[],
-	engineNames: readonly string[],
-) {
+export function createDatabase(path: string, games: Game[]) {
 	if (existsSync(path)) {
 		rmSync(path, { recursive: true, force: true });
 	}
@@ -168,9 +165,9 @@ export function createDatabase(
 		gameIdKinds.map((name, index) => [name, index + 1]),
 	);
 	const engineIds = new Map(
-		engineNames.map((name, index) => [name, index + 1]),
+		engineBrands.map((name, index) => [name, index + 1]),
 	);
-	const engineOrder = new Map(engineNames.map((name, index) => [name, index]));
+	const engineOrder = new Map(engineBrands.map((name, index) => [name, index]));
 
 	const insertGameIdKind = db.prepare(
 		"INSERT INTO game_id_kinds (id, name) VALUES (?, ?)",
@@ -199,17 +196,9 @@ export function createDatabase(
 	for (const [name, id] of engineIds) insertEngine.run(id, name);
 
 	for (const row of rows.values()) {
-		const gameIdKindId = gameIdKindIds.get(row.gameIdKind);
-		if (gameIdKindId === undefined) {
-			throw new Error(`Unknown game id kind: ${row.gameIdKind}`);
-		}
-
+		const gameIdKindId = gameIdKindIds.get(row.gameIdKind)!;
 		const engine = pickBestEngine(row.engines, engineOrder);
 		const engineId = engine ? engineIds.get(engine.brand) : undefined;
-		if (engine && engineId === undefined) {
-			throw new Error(`Unknown engine: ${engine.brand}`);
-		}
-
 		const versionNumbers = parseVersionNumbers(engine?.version);
 
 		insertGame.run(

@@ -1,5 +1,7 @@
 // These IDs need to match the ones in the games database and in Rai Pal.
-export const providerIds = [
+// Stores that games can have external IDs for, plus the derived kinds that Rai Pal
+// computes locally.
+export const storeIds = [
 	"Amazon",
 	"Ea",
 	"Epic",
@@ -10,13 +12,11 @@ export const providerIds = [
 	"Xbox",
 ] as const;
 
-// Ways of identifying a game. Provider IDs identify a game within that provider,
-// while the normalized kinds identify a game by data we can derive locally.
 export const gameIdKinds = [
-	...providerIds,
+	...storeIds,
 	"NormalizedTitle",
 	"NormalizedExecutable",
 ] as const;
 
-export type ProviderId = (typeof providerIds)[number];
+export type StoreId = (typeof storeIds)[number];
 export type GameIdKind = (typeof gameIdKinds)[number];

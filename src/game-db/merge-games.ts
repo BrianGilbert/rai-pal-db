@@ -1,10 +1,5 @@
-import type {
-	Engine,
-	Game,
-	GameSubscription,
-	IdMap,
-	GameIdKind,
-} from "./main.ts";
+import type { Engine, Game, GameSubscription, IdMap } from "./game.ts";
+import type { GameIdKind } from "../common/game-id.ts";
 import { addNormalizedTitles } from "./normalized-title.ts";
 
 function findConnectedComponents(games: Game[]): Game[][] {

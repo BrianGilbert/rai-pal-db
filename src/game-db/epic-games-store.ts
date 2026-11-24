@@ -1,4 +1,4 @@
-import type { Game } from "./main.ts";
+import type { Game } from "./game.ts";
 
 // Someone was nice enough to do all the work for mapping Epic Games Store item IDs to game titles.
 const epicGamesStoreItemsUrl =
