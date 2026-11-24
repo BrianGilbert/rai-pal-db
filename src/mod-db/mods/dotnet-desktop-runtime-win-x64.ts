@@ -1,4 +1,5 @@
-import { sharedModFolder, sharedModInstall } from "../helpers/uevr.ts";
+import { sharedModFolder } from "../paths.ts";
+import { sharedModInstall } from "../helpers/uevr.ts";
 import { defineMod } from "../mod.ts";
 
 const id = "dotnet-desktop-runtime-win-x64";

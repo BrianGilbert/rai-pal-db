@@ -1,6 +1,6 @@
-import { configDownload, uevrConfigPath } from "../helpers/config-database.ts";
+import { manifestPath, uevrConfigPath } from "../paths.ts";
+import { configDownload } from "../helpers/config-database.ts";
 import { defineMod } from "../mod.ts";
-import { token } from "../replacement-tokens.ts";
 
 const id = "config-uevr-abzu";
 const destination = uevrConfigPath();
@@ -20,7 +20,7 @@ export default defineMod({
 	description: "Recommended UEVR config for Abzû.",
 	download: await configDownload("uevr/abzu.zip"),
 	install: {
-		manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+		manifestPath: manifestPath(id),
 		extract: [{ source: ".", destination }],
 	},
 	paths: [{ id: "config", title: "Config", type: "Folder", path: destination }],

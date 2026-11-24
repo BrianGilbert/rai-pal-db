@@ -1,10 +1,6 @@
 import type { ModBase, ModRun } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { uevrConfigPath } from "./config-database.ts";
-
-export function sharedModFolder(id: string): string {
-	return `${token.SharedModsPath}/${id}`;
-}
+import { sharedModFolder, uevrConfigPath } from "../paths.ts";
 
 export function sharedModInstall(
 	id: string,

@@ -3,7 +3,7 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-ksp",
+		gameSlug: "ksp",
 		gameName: "Kerbal Space Program",
 		gameIds: {
 			Epic: ["84686da593b24598803ffbe7f9b1bb5e"],
@@ -11,6 +11,5 @@ export default defineMod(
 			NormalizedExecutable: ["ksp_x64"],
 			Steam: ["220200", "283740"],
 		},
-		file: "everyone/ksp.json",
 	}),
 );

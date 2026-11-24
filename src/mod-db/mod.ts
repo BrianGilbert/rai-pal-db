@@ -1,4 +1,4 @@
-import type { GameIdKind } from "../common/game-provider.ts";
+import type { GameIdKind } from "../common/game-id.ts";
 import type { TagId } from "./tags.ts";
 
 export interface ModPath {

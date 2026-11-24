@@ -1,12 +1,9 @@
 import type { ModBase } from "../mod.ts";
-import { token } from "../replacement-tokens.ts";
+import { bepinexConfigFolder, bepinexFolder, manifestPath } from "../paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
 type ModPath = NonNullable<ModBase["paths"]>[number];
-
-const bepinexFolder = `${token.GameInstalledModsPath}/bepinex/BepInEx`;
-const configFolder = `${bepinexFolder}/config`;
 
 export function bepinexModBase(id: string) {
 	const pluginFolder = `${bepinexFolder}/plugins/${id}`;
@@ -18,7 +15,7 @@ export function bepinexModBase(id: string) {
 			engine: "Unity",
 			requiredDependencies: [{ tag: "bepinex" }],
 		} satisfies Pick<ModBase, "engine" | "requiredDependencies">,
-		manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+		manifestPath: manifestPath(id),
 		pluginFolder,
 		patcherFolder,
 		extract: {
@@ -48,7 +45,7 @@ export function bepinexModBase(id: string) {
 				id: "config",
 				title: "Config",
 				type: "File",
-				path: `${configFolder}/${fileName}`,
+				path: `${bepinexConfigFolder}/${fileName}`,
 			}),
 		},
 	};
@@ -65,7 +62,7 @@ export function bepinexConfig({
 	engineVersionRange: ModBase["engineVersionRange"];
 	content: string;
 }): ModBase {
-	const configPath = `${configFolder}/BepInEx.cfg`;
+	const configPath = `${bepinexConfigFolder}/BepInEx.cfg`;
 
 	return {
 		id,
@@ -78,7 +75,7 @@ export function bepinexConfig({
 		engineVersionRange,
 		hideFromGameModsList: true,
 		install: {
-			manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+			manifestPath: manifestPath(id),
 			write: [{ content, destination: configPath }],
 		},
 		paths: [{ id: "config", title: "Config", type: "File", path: configPath }],

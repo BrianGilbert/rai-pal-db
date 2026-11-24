@@ -3,7 +3,7 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-disco-elysium",
+		gameSlug: "disco-elysium",
 		gameName: "Disco Elysium",
 		gameIds: {
 			Gog: [
@@ -18,6 +18,5 @@ export default defineMod(
 			Steam: ["632470", "1173140"],
 			Xbox: ["9NTRS771L8HL"],
 		},
-		file: "everyone/disco-elysium.json",
 	}),
 );

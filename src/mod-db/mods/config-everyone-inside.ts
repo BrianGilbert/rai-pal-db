@@ -3,7 +3,7 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-inside",
+		gameSlug: "inside",
 		gameName: "Inside",
 		gameIds: {
 			Epic: ["6fdb5feba66846cd8623a6d15ca68080"],
@@ -11,6 +11,5 @@ export default defineMod(
 			NormalizedExecutable: ["inside"],
 			Steam: ["304430"],
 		},
-		file: "everyone/inside.json",
 	}),
 );

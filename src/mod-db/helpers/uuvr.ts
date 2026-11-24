@@ -1,10 +1,6 @@
 import type { ModBase } from "../mod.ts";
-import { token } from "../replacement-tokens.ts";
-import {
-	bepinexConfigPath,
-	configDownload,
-	type ConfigModOptions,
-} from "./config-database.ts";
+import { bepinexConfigPath, manifestPath } from "../paths.ts";
+import { configDownload, type ConfigModOptions } from "./config-database.ts";
 
 const author = "Raicuparta";
 const website = "https://github.com/Raicuparta/uuvr";
@@ -39,11 +35,11 @@ export function uuvrBase(generation: "legacy" | "modern") {
 }
 
 export async function uuvrConfig({
-	id,
+	gameSlug,
 	gameName,
 	gameIds,
-	file,
 }: ConfigModOptions): Promise<ModBase> {
+	const id = `config-uuvr-${gameSlug}`;
 	const destination = bepinexConfigPath("raicuparta.uuvr-modern.cfg");
 
 	return {
@@ -55,9 +51,9 @@ export async function uuvrConfig({
 		author,
 		website,
 		description: `Recommended UUVR config for ${gameName}.`,
-		download: await configDownload(file),
+		download: await configDownload(`uuvr/${gameSlug}.cfg`),
 		install: {
-			manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+			manifestPath: manifestPath(id),
 			copy: [{ destination }],
 		},
 		paths: [{ id: "config", title: "Config", type: "File", path: destination }],

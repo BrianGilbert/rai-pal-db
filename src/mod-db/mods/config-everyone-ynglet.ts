@@ -3,12 +3,11 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-ynglet",
+		gameSlug: "ynglet",
 		gameName: "Ynglet",
 		gameIds: {
 			NormalizedExecutable: ["ynglet"],
 			Steam: ["1015920"],
 		},
-		file: "everyone/ynglet.json",
 	}),
 );

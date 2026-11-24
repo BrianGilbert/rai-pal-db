@@ -9,6 +9,7 @@ import type {
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "./github.ts";
+import { bepinexConfigFolder, bepinexFolder, manifestPath } from "../paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
@@ -17,9 +18,6 @@ type Platform = {
 	os: OperatingSystem;
 	architecture: Architecture;
 };
-
-const bepinexFolder = `${token.GameInstalledModsPath}/bepinex/BepInEx`;
-const configFolder = `${bepinexFolder}/config`;
 
 type BackendSpec = {
 	idPart: string;
@@ -325,7 +323,7 @@ export async function bepinexLoader({
 			: pickLatest(await getIl2cppDownloads(), platform, "BepInEx IL2CPP");
 
 	const id = `bepinex-${spec.idPart}-${modIdSuffix(platform)}`;
-	const manifestPath = `${token.GameInstalledModsPath}/manifests/${id}.json`;
+	const installManifestPath = manifestPath(id);
 	const extract: ModInstallExtract[] = [
 		{ source: "BepInEx", destination: bepinexFolder },
 		...spec.extraExtract,
@@ -334,7 +332,7 @@ export async function bepinexLoader({
 	const install: ModInstall =
 		platform.os === "Windows"
 			? {
-					manifestPath,
+					manifestPath: installManifestPath,
 					extract: [
 						...extract,
 						{
@@ -351,7 +349,7 @@ export async function bepinexLoader({
 					wineDllOverrides: ["winhttp"],
 				}
 			: {
-					manifestPath,
+					manifestPath: installManifestPath,
 					extract: [
 						...extract,
 						{
@@ -388,7 +386,7 @@ export async function bepinexLoader({
 				id: "config",
 				title: "Config",
 				type: "File",
-				path: `${configFolder}/BepInEx.cfg`,
+				path: `${bepinexConfigFolder}/BepInEx.cfg`,
 			},
 		],
 		optionalDependencies: [

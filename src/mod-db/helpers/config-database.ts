@@ -8,10 +8,9 @@ import { token } from "../replacement-tokens.ts";
 const CONFIG_DATABASE_VERSION = 1;
 
 export type ConfigModOptions = {
-	id: string;
+	gameSlug: string;
 	gameName: string;
 	gameIds: GameIds;
-	file: string;
 };
 
 /**
@@ -32,18 +31,4 @@ export async function configDownload(path: string): Promise<ModDownload> {
 		id: contentHash,
 		url: `${token.DatabaseUrlBase}/${configPath}`,
 	};
-}
-
-/**
- * Path to a BepInEx config file for the current game.
- */
-export function bepinexConfigPath(fileName: string): string {
-	return `${token.GameInstalledModsPath}/bepinex/BepInEx/config/${fileName}`;
-}
-
-/**
- * Path to the UEVR config folder for the current game.
- */
-export function uevrConfigPath(): string {
-	return `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`;
 }

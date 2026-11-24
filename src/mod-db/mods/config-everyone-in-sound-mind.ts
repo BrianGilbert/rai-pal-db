@@ -3,7 +3,7 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-in-sound-mind",
+		gameSlug: "in-sound-mind",
 		gameName: "In Sound Mind",
 		gameIds: {
 			Epic: ["929a84bff8a34d80b490f71550ec782f"],
@@ -11,6 +11,5 @@ export default defineMod(
 			NormalizedExecutable: ["insoundmind"],
 			Steam: ["1119980", "1309180", "1749910", "1756610", "1474320"],
 		},
-		file: "everyone/in-sound-mind.json",
 	}),
 );

@@ -3,13 +3,12 @@ import { everyoneConfig } from "../helpers/everyone.ts";
 
 export default defineMod(
 	await everyoneConfig({
-		id: "config-everyone-toem",
+		gameSlug: "toem",
 		gameName: "TOEM",
 		gameIds: {
 			Gog: ["1436499377"],
 			NormalizedExecutable: ["toem"],
 			Steam: ["1307580", "1655680"],
 		},
-		file: "everyone/toem.json",
 	}),
 );

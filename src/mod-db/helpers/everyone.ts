@@ -1,10 +1,6 @@
 import type { ModBase } from "../mod.ts";
-import { token } from "../replacement-tokens.ts";
-import {
-	bepinexConfigPath,
-	configDownload,
-	type ConfigModOptions,
-} from "./config-database.ts";
+import { bepinexConfigPath, manifestPath } from "../paths.ts";
+import { configDownload, type ConfigModOptions } from "./config-database.ts";
 
 export const everyoneBase = {
 	tags: ["everyone"],
@@ -19,11 +15,11 @@ export const everyoneBase = {
 >;
 
 export async function everyoneConfig({
-	id,
+	gameSlug,
 	gameName,
 	gameIds,
-	file,
 }: ConfigModOptions): Promise<ModBase> {
+	const id = `config-everyone-${gameSlug}`;
 	const destination = bepinexConfigPath("raicuparta.everyone.json");
 
 	return {
@@ -34,9 +30,9 @@ export async function everyoneConfig({
 		hideFromGameModsList: true,
 		title: `Everyone Config for ${gameName}`,
 		description: `Recommended Everyone config for ${gameName}.`,
-		download: await configDownload(file),
+		download: await configDownload(`everyone/${gameSlug}.json`),
 		install: {
-			manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
+			manifestPath: manifestPath(id),
 			copy: [{ destination }],
 		},
 		paths: [{ id: "config", title: "Config", type: "File", path: destination }],
