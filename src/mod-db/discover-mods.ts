@@ -50,6 +50,7 @@ export async function discoverMods(): Promise<ModBase[]> {
 
 	const fileNames = entries.map((entry) => entry.name).sort();
 	const mods: ModBase[] = [];
+	const modIds = new Map<string, string>();
 
 	for (const fileName of fileNames) {
 		const modUrl = pathToFileURL(join(modsFolder, fileName));
@@ -75,14 +76,16 @@ export async function discoverMods(): Promise<ModBase[]> {
 			);
 		}
 
-		const expectedId = fileName.slice(0, -".ts".length);
-		if (mod.id !== expectedId) {
+		validateMod(mod, fileName);
+
+		const existingFile = modIds.get(mod.id);
+		if (existingFile) {
 			throw new Error(
-				`${fileName}: mod id "${mod.id}" must match the file name "${expectedId}"`,
+				`${fileName}: mod id "${mod.id}" is already used by ${existingFile}`,
 			);
 		}
 
-		validateMod(mod, fileName);
+		modIds.set(mod.id, fileName);
 		mods.push(mod);
 	}
 

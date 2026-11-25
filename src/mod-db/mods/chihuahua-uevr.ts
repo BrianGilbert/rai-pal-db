@@ -25,8 +25,6 @@ export default defineMod({
 	install: sharedModInstall(id),
 	paths: [
 		{
-			id: "mod",
-			title: "Mod",
 			type: "Folder",
 			path: folder,
 		},

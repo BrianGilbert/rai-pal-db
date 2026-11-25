@@ -56,6 +56,6 @@ export async function uuvrConfig({
 			manifestPath: manifestPath(id),
 			copy: [{ destination }],
 		},
-		paths: [{ id: "config", title: "Config", type: "File", path: destination }],
+		paths: [{ path: destination, type: "File" }],
 	};
 }

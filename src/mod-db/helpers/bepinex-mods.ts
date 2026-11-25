@@ -30,22 +30,16 @@ export function bepinexModBase(id: string) {
 		},
 		paths: {
 			plugin: (): ModPath => ({
-				id: "plugin",
-				title: "Plugin",
-				type: "Folder",
 				path: pluginFolder,
+				type: "Folder",
 			}),
 			patcher: (): ModPath => ({
-				id: "patcher",
-				title: "Patcher",
-				type: "Folder",
 				path: patcherFolder,
+				type: "Folder",
 			}),
 			config: (fileName: string): ModPath => ({
-				id: "config",
-				title: "Config",
-				type: "File",
 				path: `${bepinexConfigFolder}/${fileName}`,
+				type: "File",
 			}),
 		},
 	};
@@ -78,6 +72,6 @@ export function bepinexConfig({
 			manifestPath: manifestPath(id),
 			write: [{ content, destination: configPath }],
 		},
-		paths: [{ id: "config", title: "Config", type: "File", path: configPath }],
+		paths: [{ path: configPath, type: "File" }],
 	};
 }

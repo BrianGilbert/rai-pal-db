@@ -19,8 +19,6 @@ export default defineMod({
 	install: sharedModInstall(id),
 	paths: [
 		{
-			id: "runtime",
-			title: "Runtime",
 			type: "Folder",
 			path: sharedModFolder(id),
 		},

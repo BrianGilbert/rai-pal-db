@@ -377,14 +377,10 @@ export async function bepinexLoader({
 			: {}),
 		paths: [
 			{
-				id: "bepinex",
-				title: "BepInEx",
 				type: "Folder",
 				path: bepinexFolder,
 			},
 			{
-				id: "config",
-				title: "Config",
 				type: "File",
 				path: `${bepinexConfigFolder}/BepInEx.cfg`,
 			},

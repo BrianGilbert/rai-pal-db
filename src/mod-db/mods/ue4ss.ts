@@ -86,8 +86,6 @@ export default defineMod({
 	},
 	paths: [
 		{
-			id: "ue4ss",
-			title: "UE4SS",
 			type: "Folder",
 			path: `${token.GameInstalledModsPath}/ue4ss`,
 		},

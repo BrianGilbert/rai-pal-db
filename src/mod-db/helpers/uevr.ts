@@ -50,14 +50,10 @@ export function uevrBase(
 		install: sharedModInstall(id, zipRoot),
 		paths: [
 			{
-				id: "mod",
-				title: "Mod",
 				type: "Folder",
 				path: folder,
 			},
 			{
-				id: "config",
-				title: "Config",
 				type: "Folder",
 				path: uevrConfigPath(),
 			},

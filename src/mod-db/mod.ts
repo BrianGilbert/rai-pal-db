@@ -1,17 +1,7 @@
-import type { GameIdKind } from "../common/game-id.ts";
+import type { GameIdKind } from "../common/game-provider.ts";
 import type { TagId } from "./tags.ts";
 
 export interface ModPath {
-	/**
-	 * Unique identifier for this path within the mod.
-	 */
-	id: string;
-
-	/**
-	 * Display name for this path.
-	 */
-	title: string;
-
 	/**
 	 * Supports replacement tokens. Path to a file or folder that Rai Pal can open.
 	 */

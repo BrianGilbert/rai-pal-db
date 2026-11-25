@@ -26,5 +26,5 @@ export default defineMod({
 		manifestPath: manifestPath(id),
 		extract: [{ source: ".", destination: modFolder }],
 	},
-	paths: [{ id: "mod", title: "Mod", type: "Folder", path: modFolder }],
+	paths: [{ path: modFolder, type: "Folder" }],
 });

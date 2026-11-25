@@ -23,5 +23,5 @@ export default defineMod({
 		extract: [{ source: "dlls", destination: `${modFolder}/dlls` }],
 		write: [{ content: "", destination: `${modFolder}/enabled.txt` }],
 	},
-	paths: [{ id: "mod", title: "Mod", type: "Folder", path: modFolder }],
+	paths: [{ path: modFolder, type: "Folder" }],
 });

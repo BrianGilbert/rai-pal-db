@@ -49,8 +49,6 @@ ModLoaderStore="${token.MaybeWineRoot}${scriptLoaderGdPath}"
 		},
 		paths: [
 			{
-				id: "loader",
-				title: "Loader",
 				type: "Folder",
 				path: modFolder,
 			},
