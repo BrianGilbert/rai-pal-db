@@ -61,6 +61,11 @@ export const tags = {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",
 	},
+	ogs: {
+		title: "OGS Telemetry",
+		description:
+			"Motion telemetry (OGS Telemetry Standard) for motion rigs, haptics and dashboards.",
+	},
 	"game-specific-vr": {
 		title: "Game-Specific VR",
 		description: "Mods made for specific games",
