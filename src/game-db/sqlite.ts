@@ -131,6 +131,29 @@ function reportDuplicates(rows: Map<string, RemoteGameRow>) {
 	}
 }
 
+export function countGameRows(games: Game[]): number {
+	return collectRows(games).size;
+}
+
+export function getExistingGameCount(path: string): number | undefined {
+	if (!existsSync(path)) return undefined;
+
+	try {
+		const db = new DatabaseSync(path, { readOnly: true });
+
+		try {
+			const row = db.prepare("SELECT COUNT(*) AS count FROM games").get() as
+				{ count: number } | undefined;
+			return row?.count;
+		} finally {
+			db.close();
+		}
+	} catch (error) {
+		console.warn(`Could not read existing database at ${path}: ${error}`);
+		return undefined;
+	}
+}
+
 export function createDatabase(path: string, games: Game[]) {
 	if (existsSync(path)) {
 		rmSync(path, { recursive: true, force: true });

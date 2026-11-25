@@ -1,14 +1,16 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { readFileSync } from "node:fs";
+import { mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { publicFolder } from "../common/paths.ts";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchPCGamePassGames } from "./xbox-gamepass.ts";
 import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
-import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
-import { createDatabase } from "./sqlite.ts";
+import {
+	countGameRows,
+	createDatabase,
+	getExistingGameCount,
+} from "./sqlite.ts";
 import { GAME_DATABASE_VERSION } from "../common/versions.ts";
 import { engineBrands } from "./game.ts";
 
@@ -30,22 +32,11 @@ const minimumRetainedGameRatio = 0.5;
 // Not recommended, since it publishes a database missing that source's data.
 const allowPartialDatabase = process.env.ALLOW_PARTIAL_GAME_DB === "1";
 
-function getExistingGameCount(path: string): number | undefined {
-	try {
-		const existing = JSON.parse(readFileSync(path, "utf8")) as unknown[];
-		return existing.length;
-	} catch (error) {
-		if ((error as NodeJS.ErrnoException).code === "ENOENT") return undefined;
-		console.warn(`Could not read existing database at ${path}: ${error}`);
-		return undefined;
-	}
-}
-
-async function main(pretty: boolean) {
+async function main() {
 	const folder = join(publicFolder, "game-db", `${GAME_DATABASE_VERSION}`);
 	await mkdir(folder, { recursive: true });
 
-	const outputPath = join(folder, "games.json");
+	const outputPath = join(folder, "games.db");
 
 	const results = await Promise.allSettled(
 		gameSources.map((source) => source.fetch()),
@@ -101,9 +92,10 @@ async function main(pretty: boolean) {
 
 	const existingGameCount = getExistingGameCount(outputPath);
 	if (existingGameCount !== undefined) {
-		const ratio = gamesWithEngines.length / existingGameCount;
+		const newGameCount = countGameRows(gamesWithEngines);
+		const ratio = newGameCount / existingGameCount;
 		console.log(
-			`Existing database has ${existingGameCount} games; new database would have ${gamesWithEngines.length} (${(
+			`Existing database has ${existingGameCount} game entries; new database would have ${newGameCount} (${(
 				ratio * 100
 			).toFixed(1)}%).`,
 		);
@@ -118,15 +110,10 @@ async function main(pretty: boolean) {
 		}
 	}
 
-	createDatabase(join(folder, "games.db"), gamesWithEngines);
-
-	await writeFile(
-		outputPath,
-		JSON.stringify(gamesWithEngines, jsonReplacer, pretty ? 2 : undefined),
-	);
+	createDatabase(outputPath, gamesWithEngines);
 }
 
-main(false).catch((error) => {
+main().catch((error) => {
 	console.error(error);
 	process.exit(1);
 });
