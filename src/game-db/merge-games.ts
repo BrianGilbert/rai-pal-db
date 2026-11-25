@@ -1,5 +1,5 @@
-import type { Engine, Game, GameSubscription, IdMap } from "./game.ts";
-import type { GameIdKind } from "../common/game-id.ts";
+import type { Engine, Game, IdMap } from "./game.ts";
+import type { GameIdKind } from "../common/game-provider.ts";
 import { addNormalizedTitles } from "./normalized-title.ts";
 
 function findConnectedComponents(games: Game[]): Game[][] {
@@ -101,20 +101,9 @@ function mergeAllEngines(
 	return mergedEngines;
 }
 
-export function mergeSubscriptions(
-	subscriptionsA?: GameSubscription[],
-	subscriptionsB?: GameSubscription[],
-): GameSubscription[] | undefined {
-	if (!subscriptionsA) return subscriptionsB;
-	if (!subscriptionsB) return subscriptionsA;
-
-	return Array.from(new Set([...subscriptionsA, ...subscriptionsB]));
-}
-
 export function mergeGames(games: Game[]): Game[] {
 	games.forEach(addNormalizedTitles);
 
-	let biggestMerge = 0;
 	return findConnectedComponents(games).map((connectedGames) => {
 		let mergedGame: Game = connectedGames[0];
 		for (const game of connectedGames.slice(1)) {
@@ -122,16 +111,8 @@ export function mergeGames(games: Game[]): Game[] {
 				ids: mergeIds(mergedGame.ids, game.ids),
 				title: mergedGame.title || game.title,
 				engines: mergeAllEngines(mergedGame.engines, game.engines),
-				subscriptions: mergeSubscriptions(
-					mergedGame.subscriptions,
-					game.subscriptions,
-				),
 				releaseDate: mergedGame.releaseDate ?? game.releaseDate,
 			};
-		}
-		if (connectedGames.length > biggestMerge) {
-			biggestMerge = connectedGames.length;
-			console.log(`Biggest merge: ${biggestMerge}, ${mergedGame.title}`);
 		}
 		return mergedGame;
 	});

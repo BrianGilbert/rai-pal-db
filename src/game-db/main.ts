@@ -4,9 +4,8 @@ import { join } from "node:path";
 import { publicFolder } from "../common/paths.ts";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
-import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
+import { fetchPCGamePassGames } from "./xbox-gamepass.ts";
 import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
-import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
 import { createDatabase } from "./sqlite.ts";
@@ -19,9 +18,7 @@ const gameSources = [
 	{ name: "PCGamingWiki", fetch: fetchPcGamingWikiGames },
 	{ name: "Steam", fetch: fetchSteamGames },
 	{ name: "PC Game Pass", fetch: fetchPCGamePassGames },
-	{ name: "EA Game Pass", fetch: fetchEAGamePassGames },
 	{ name: "Epic Games Store", fetch: fetchEpicGamesStoreGames },
-	{ name: "Ubisoft Connect", fetch: fetchUbisoftGames },
 ] as const;
 
 // The DB is not much use if a whole source disappears, and a run that loses most

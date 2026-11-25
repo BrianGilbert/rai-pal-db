@@ -1,7 +1,3 @@
-export function filterFalsy<T>(arr: (T | null | undefined)[]): T[] {
-	return arr.filter(Boolean) as T[];
-}
-
 // Sources give us dates in a bunch of formats ("2013-07-05", "July 5, 2013",
 // full ISO timestamps), so normalize everything to RFC 3339 for Rai Pal.
 export function normalizeReleaseDate(

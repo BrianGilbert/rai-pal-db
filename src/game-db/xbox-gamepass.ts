@@ -1,9 +1,8 @@
-import type { Game, GameSubscription } from "./game.ts";
+import type { Game } from "./game.ts";
 import { normalizeReleaseDate } from "./helpers.ts";
 
 const APIIds = {
 	pc: "fdd9e2a7-0fee-49f6-ad69-4354098401ff",
-	eaPlay: "b8900d09-a491-44cc-916e-32b5acae621b",
 } as const;
 
 type PassType = keyof typeof APIIds;
@@ -67,10 +66,7 @@ async function fetchGameProperties(gameIds: string[], passType: PassType) {
 		});
 }
 
-async function fetchGames(
-	passType: PassType,
-	subscription: GameSubscription,
-): Promise<Game[]> {
+async function fetchGames(passType: PassType): Promise<Game[]> {
 	const ids = await fetchGameIDs(passType);
 	const properties = await fetchGameProperties(ids, passType);
 	return properties.map((product): Game => ({
@@ -78,7 +74,6 @@ async function fetchGames(
 		ids: {
 			Xbox: new Set([product.ProductId]),
 		},
-		subscriptions: [subscription],
 		releaseDate: normalizeReleaseDate(
 			product.MarketProperties[0]?.OriginalReleaseDate,
 		),
@@ -86,9 +81,5 @@ async function fetchGames(
 }
 
 export async function fetchPCGamePassGames(): Promise<Game[]> {
-	return await fetchGames("pc", "XboxGamePass");
-}
-
-export async function fetchEAGamePassGames(): Promise<Game[]> {
-	return await fetchGames("eaPlay", "EaPlay");
+	return await fetchGames("pc");
 }

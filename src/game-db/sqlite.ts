@@ -1,7 +1,7 @@
 import { DatabaseSync } from "node:sqlite";
 import type { Engine, Game } from "./game.ts";
 import { engineBrands } from "./game.ts";
-import { gameIdKinds, type GameIdKind } from "../common/game-id.ts";
+import { gameIdKinds, type GameIdKind } from "../common/game-provider.ts";
 import { existsSync, rmSync } from "node:fs";
 
 type RemoteGameRow = {

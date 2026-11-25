@@ -215,7 +215,7 @@ function commaSeparatedToArray(commaSeparated: string): Set<string> {
 	return new Set(commaSeparated.split(",").map((id) => id.trim()));
 }
 
-function getStoreIds(game: PCGamingWikiGame): IdMap {
+function getProviderIds(game: PCGamingWikiGame): IdMap {
 	const result: IdMap = {};
 
 	if (game.steamIds) {
@@ -305,7 +305,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 				const engine = getEngine(pcGamingWikiGame);
 				if (!engine) continue;
 
-				const ids = getStoreIds(pcGamingWikiGame);
+				const ids = getProviderIds(pcGamingWikiGame);
 				if (Object.keys(ids).length === 0) continue;
 
 				const gameBase: Game = gamesByTitle[pcGamingWikiGame.title] ?? {
