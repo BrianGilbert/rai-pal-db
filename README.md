@@ -32,4 +32,4 @@ npm run update-mod-db
 
 ## Mods
 
-Mods are in `src/mod-db/mods/`, one file per mod. Each file must `export default defineMod({...})`, and the mod `id` must match the file name. `discover-mods.ts` loads and validates every file in the folder. Shared code is in `src/mod-db/helpers/`. If you wanna add your own mod to this database, make a PR that adds it in this folder.
+Mods are in `src/mod-db/mods/`, one file per mod. Shared code is in `src/mod-db/helpers/`. If you wanna add your own mod to this database, make a PR that adds it in this folder.
