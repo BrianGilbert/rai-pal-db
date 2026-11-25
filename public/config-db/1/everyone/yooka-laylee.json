@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+  "BaseScale": 2,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "Tag": "Player",
+        "ChildPath": "YookaLaylee_combined/ALL_BASE/BASE/BACK/BACK_A/NECK/HEAD"
+      }
+    ]
+  }
+}

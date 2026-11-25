@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"BaseScale": 1.5,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "PlayerCharacter",
+				"ChildPath": "CharacterController/LookDirection/Image Carry"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 2
+	}
+}

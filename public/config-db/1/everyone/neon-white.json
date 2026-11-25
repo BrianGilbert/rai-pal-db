@@ -1,0 +1,10 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"BaseScale": 3,
+	"Text": {
+		"TextScale": 1.5
+	},
+	"Rendering": {
+		"RenderQueue": 5000
+	}
+}

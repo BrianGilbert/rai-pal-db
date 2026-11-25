@@ -1,0 +1,92 @@
+import { createOctokit } from "../helpers/github.ts";
+import type { ModDownload } from "../mod.ts";
+import { defineMod } from "../mod.ts";
+import { token } from "../replacement-tokens.ts";
+
+const id = "ue4ss";
+const octokit = createOctokit();
+const VERSION_PATTERN = /^UE4SS_(v[\d.]+\-\d+)[\-\w]*\.zip$/;
+
+async function getLatestUe4ss(): Promise<ModDownload> {
+	const response = await octokit.rest.repos.getReleaseByTag({
+		owner: "UE4SS-RE",
+		repo: "RE-UE4SS",
+		tag: "experimental",
+	});
+
+	const gitHubRelease = response.data;
+
+	if (!gitHubRelease.assets || gitHubRelease.assets.length === 0) {
+		throw new Error("No assets found for UE4SS experimental release");
+	}
+
+	let latest: {
+		version: string;
+		timestamp: number;
+		downloadUrl: string;
+	} | null = null;
+
+	for (const asset of gitHubRelease.assets) {
+		const match = asset.name.match(VERSION_PATTERN);
+		if (!match) {
+			continue;
+		}
+
+		const version = match[1];
+		const timestamp = new Date(asset.updated_at).getTime();
+
+		if (!latest || timestamp > latest.timestamp) {
+			latest = {
+				version,
+				timestamp,
+				downloadUrl: asset.browser_download_url,
+			};
+		}
+	}
+
+	if (!latest) {
+		throw new Error("No matching UE4SS release assets found");
+	}
+
+	return {
+		id: latest.version,
+		url: latest.downloadUrl,
+	};
+}
+
+export default defineMod({
+	id,
+	tags: ["ue4ss"],
+	engine: "Unreal",
+	title: "UE4SS",
+	author: "UE4SS-RE",
+	website: "https://github.com/UE4SS-RE/RE-UE4SS",
+	description: "Scripting and modding framework for Unreal Engine games.",
+	download: await getLatestUe4ss(),
+	install: {
+		installKind: "PerGame",
+		extract: [
+			{
+				source: "ue4ss",
+				destination: `${token.GameInstalledModsPath}/ue4ss`,
+			},
+			{
+				source: "dwmapi.dll",
+				destination: `${token.GameExecutableFolderPath}/dwmapi.dll`,
+			},
+		],
+		write: [
+			{
+				content: `${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
+				destination: `${token.GameExecutableFolderPath}/override.txt`,
+			},
+		],
+		wineDllOverrides: ["dwmapi"],
+	},
+	paths: [
+		{
+			type: "Folder",
+			path: `${token.GameInstalledModsPath}/ue4ss`,
+		},
+	],
+});

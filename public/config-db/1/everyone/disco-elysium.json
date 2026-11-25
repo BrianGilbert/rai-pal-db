@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Tequila Sunset",
+				"ChildPath": "char/char_SHJntGrp/char_body_ROOTSHJnt/char_body_Spine_01SHJnt/char_body_Spine_02SHJnt/char_body_Spine_TopSHJnt/char_body_Neck_01SHJnt/char_body_Neck_02SHJnt/char_body_Neck_TopSHJnt/char_body_head_TopSHJnt"
+			}
+		]
+	},
+	"RemotePlayer": {
+		"PositionOffset": "0,-0.2,0"
+	}
+}

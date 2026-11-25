@@ -1,0 +1,18 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"BaseScale": 2,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Knight"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 1.5
+	},
+	"RemotePlayer": {
+		"PositionOffset": "0.0,-0.5,0.0",
+		"EulerAnglesOffset": "0.0,-130,0.0"
+	}
+}

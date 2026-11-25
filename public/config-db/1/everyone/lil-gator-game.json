@@ -1,0 +1,11 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/public/config-db/1/everyone/0-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"Component": "PlayerMovement",
+				"ChildPath": "Heroboy/Heroboy/Hips/LowerSpine/Chest/Neck/Head"
+			}
+		]
+	}
+}
