@@ -36,12 +36,6 @@ export interface ModBase {
 	deprecated?: boolean;
 
 	/**
-	 * Hide mod from the per-game mod list where users install mods.
-	 * USeful for stuff that needs to be installed as dependencies but would otherwise clutter the UI.
-	 */
-	hideFromGameModsList?: boolean;
-
-	/**
 	 * Game engine that this mod supports.
 	 */
 	engine?: Engine;
@@ -118,6 +112,12 @@ export interface ModBase {
 		 * PerGame manifests go in the game's installed mods folder, Shared manifests go in the shared mods folder.
 		 */
 		installKind: "Shared" | "PerGame";
+
+		/**
+		 * Whether this mod is only meant to be installed as a dependency of another mod, not by itself.
+		 * These mods are listed separately in the per-game mod list so they don't clutter the main list.
+		 */
+		dependencyOnly?: boolean;
 
 		/**
 		 * Files and folders to extract from the downloaded mod zip

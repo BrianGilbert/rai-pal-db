@@ -46,7 +46,6 @@ export async function uuvrConfig({
 		id,
 		tags: ["uuvr-config"],
 		gameIds,
-		hideFromGameModsList: true,
 		title: `UUVR Config for ${gameName}`,
 		author,
 		website,
@@ -54,6 +53,7 @@ export async function uuvrConfig({
 		download: await configDownload(`uuvr/${gameSlug}.cfg`),
 		install: {
 			installKind: "PerGame",
+			dependencyOnly: true,
 			copy: [{ destination }],
 		},
 		paths: [{ path: destination, type: "File" }],

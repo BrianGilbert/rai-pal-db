@@ -67,9 +67,9 @@ export function bepinexConfig({
 		description: "Default BepInEx config",
 		engine: "Unity",
 		engineVersionRange,
-		hideFromGameModsList: true,
 		install: {
 			installKind: "PerGame" as const,
+			dependencyOnly: true,
 			write: [{ content, destination: configPath }],
 		},
 		paths: [{ path: configPath, type: "File" }],

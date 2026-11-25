@@ -13,7 +13,6 @@ export default defineMod({
 		NormalizedExecutable: ["abzugamewin64shipping"],
 		Steam: ["384190", "577450"],
 	},
-	hideFromGameModsList: true,
 	title: "UEVR Config for Abzû",
 	author: "praydog",
 	website: "https://github.com/praydog/UEVR",
@@ -21,6 +20,7 @@ export default defineMod({
 	download: await configDownload("uevr/abzu.zip"),
 	install: {
 		installKind: "PerGame",
+		dependencyOnly: true,
 		extract: [{ source: ".", destination }],
 	},
 	paths: [{ path: destination, type: "Folder" }],

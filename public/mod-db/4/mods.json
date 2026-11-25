@@ -445,10 +445,10 @@
           "minor": 4
         }
       },
-      "hash": "abd909859a0a57be7cb11f74c8788dfa39f4424dfcd4d64b2da057b8fc402cf7",
-      "hideFromGameModsList": true,
+      "hash": "328a95e37ccdecf4df145a1b508b328a9857baa456e99f364710085affc383ca",
       "id": "bepinex-config-legacy",
       "install": {
+        "dependencyOnly": true,
         "installKind": "PerGame",
         "write": [
           {
@@ -479,10 +479,10 @@
           "minor": 5
         }
       },
-      "hash": "35be6282195b326553552b60f81f2d05acd66298b0505828a47461f5779eccc8",
-      "hideFromGameModsList": true,
+      "hash": "a591bcf0970ba8f36dea4b4e88adf873f2e28964c8909bcea6a331c030a62711",
       "id": "bepinex-config-modern",
       "install": {
+        "dependencyOnly": true,
         "installKind": "PerGame",
         "write": [
           {
@@ -1440,8 +1440,7 @@
           "242820"
         ]
       },
-      "hash": "0cd0c7bb2983697868cc13e121fc5b0e88d39f5b90f3230596d3538473811cd3",
-      "hideFromGameModsList": true,
+      "hash": "81f5d83cd1cbda8ef08c12169d59694ce9f075b1bcd8903ee063e0602e9410f3",
       "id": "config-everyone-140",
       "install": {
         "copy": [
@@ -1449,6 +1448,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1484,8 +1484,7 @@
           "1055540"
         ]
       },
-      "hash": "92db4d96039d7243fbd9573bde69bc7a31723a5d4e104f2e540b07ed5a7258b7",
-      "hideFromGameModsList": true,
+      "hash": "2b324aac7af6430efe1887aaeff6da75b7d8ceb44d10d9da842c84399ffc8ef3",
       "id": "config-everyone-a-short-hike",
       "install": {
         "copy": [
@@ -1493,6 +1492,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1531,8 +1531,7 @@
           "2072990"
         ]
       },
-      "hash": "b9b563acbaded24a9ebe49c83b0d6c725f23d1edf76628bb3ff3197cc2c40292",
-      "hideFromGameModsList": true,
+      "hash": "0f490e7d48eba03c4677ba41bd642efb7792e04985d29450dc8cfa2e60328166",
       "id": "config-everyone-cuphead",
       "install": {
         "copy": [
@@ -1540,6 +1539,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1581,8 +1581,7 @@
           "9NTRS771L8HL"
         ]
       },
-      "hash": "cb56486325111d9d8fdf10d51c82a89b3af0c46751340ac1ae77b84e5ccd0fb5",
-      "hideFromGameModsList": true,
+      "hash": "e880b115b231813add12cf79ccb458d48ba92fbdf8f93fd5203124f617a0f309",
       "id": "config-everyone-disco-elysium",
       "install": {
         "copy": [
@@ -1590,6 +1589,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1622,8 +1622,7 @@
           "400110"
         ]
       },
-      "hash": "24fec8e3cd0f36a0f463805363bbc99668ae4c0edf31f5b6e464cdd1362409c0",
-      "hideFromGameModsList": true,
+      "hash": "5a2d6a950c872848b8b04405274510d8dc267380ba72e140a535d10dbe8a1b48",
       "id": "config-everyone-else-heart-break",
       "install": {
         "copy": [
@@ -1631,6 +1630,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1664,8 +1664,7 @@
           "683320"
         ]
       },
-      "hash": "c6fa7578902ef986c24274676eb836c901dc455b3db9d4c3a97934475aae9415",
-      "hideFromGameModsList": true,
+      "hash": "79d09edef1ca83cbae92e28e8053e542158c9d1097d34fa7f35e199e8ebfcfc0",
       "id": "config-everyone-gris",
       "install": {
         "copy": [
@@ -1673,6 +1672,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1705,8 +1705,7 @@
           "323320"
         ]
       },
-      "hash": "49af471dfac440425c1c9fe4b936af44fa5faf72c9f247095530b5b433ab225c",
-      "hideFromGameModsList": true,
+      "hash": "3423b36eed9218fc836d3590e888b9989bbe02eda04b58823f8f6b6aa695e241",
       "id": "config-everyone-grow-home",
       "install": {
         "copy": [
@@ -1714,6 +1713,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1746,8 +1746,7 @@
           "426790"
         ]
       },
-      "hash": "d7c1f3502f59e47357231ff9ea603350f112b2b90dc29857829ebfa81d529513",
-      "hideFromGameModsList": true,
+      "hash": "aeb035d1588d083764564a0fca11953ce28a9f5ec185b1fb9aad6480617214f9",
       "id": "config-everyone-grow-up",
       "install": {
         "copy": [
@@ -1755,6 +1754,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1784,8 +1784,7 @@
           "925950"
         ]
       },
-      "hash": "a95fbf4f44738416d3861721527ed524946a0a38d36b2913d6af4ba0487d819e",
-      "hideFromGameModsList": true,
+      "hash": "c33b133d0ece93ae8747685c535dff602db60bbf984f295f33813e41115bef99",
       "id": "config-everyone-here-comes-niko",
       "install": {
         "copy": [
@@ -1793,6 +1792,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1829,8 +1829,7 @@
           "916000"
         ]
       },
-      "hash": "4e7bc38960ebdf846db1284b462d06aedea37f3bc8a371679e14c710d138fd67",
-      "hideFromGameModsList": true,
+      "hash": "67eef6f977e475f4765d2b7c25fcd2fba99428a5d1fddbc635b3955109ca155e",
       "id": "config-everyone-hollow-knight",
       "install": {
         "copy": [
@@ -1838,6 +1837,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1880,8 +1880,7 @@
           "1474320"
         ]
       },
-      "hash": "89119b9cd98f40b01a7c4a4008c10ab96e7d90f24e70bba36672445b1e5b8cec",
-      "hideFromGameModsList": true,
+      "hash": "d1e6ca3fbe26c7b95bbfa3d1a91c4597a53ba583131a352f3f04f1c0ef355f21",
       "id": "config-everyone-in-sound-mind",
       "install": {
         "copy": [
@@ -1889,6 +1888,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1924,8 +1924,7 @@
           "304430"
         ]
       },
-      "hash": "6ce9bc89b934c73c6713ca997bfff0538e361c81048d2b8c3ac245249255a858",
-      "hideFromGameModsList": true,
+      "hash": "55fab1facb14ec7fc6f25d2256e30d3043dc96047e7bed672b106cf680f384b4",
       "id": "config-everyone-inside",
       "install": {
         "copy": [
@@ -1933,6 +1932,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -1962,8 +1962,7 @@
           "395620"
         ]
       },
-      "hash": "f78270b44d04c8cca311fcb299023fd53bbb9da54963fd3e3fffab1aa5f00aba",
-      "hideFromGameModsList": true,
+      "hash": "c18a3321c93ea42678529b5d10cea777c9fe41572ab1e009322ed9abce45c425",
       "id": "config-everyone-ittle-dew-2",
       "install": {
         "copy": [
@@ -1971,6 +1970,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2003,8 +2003,7 @@
           "241320"
         ]
       },
-      "hash": "fd37c68f2fd12eae2d1e2ab7aa2c378cbeae3424636eb8e5ff84a86c85a388c1",
-      "hideFromGameModsList": true,
+      "hash": "e77eb3388e5480bf45490bc297a2b3d104e8fd6f1b09a08bfe69fd83d2048561",
       "id": "config-everyone-ittle-dew",
       "install": {
         "copy": [
@@ -2012,6 +2011,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2044,8 +2044,7 @@
           "231200"
         ]
       },
-      "hash": "278531c7567898ab779ca65bffb28ec4091f951f1fafbfdb3f7720da85f8bede",
-      "hideFromGameModsList": true,
+      "hash": "f78ba4ba705f722cad4799d17abb6f80962d6b78fc93ddcebadb9545dbeb4acb",
       "id": "config-everyone-kentucky-route-zero",
       "install": {
         "copy": [
@@ -2053,6 +2052,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2091,8 +2091,7 @@
           "283740"
         ]
       },
-      "hash": "aba2c786f63f024e7ce6d0346ae2336305a557f04ac25d58dba93a11dba0ffef",
-      "hideFromGameModsList": true,
+      "hash": "0de525eb11d7052c575f0b49f4a94cbaacc1fa3ca0970710cb08167e3f49edde",
       "id": "config-everyone-ksp",
       "install": {
         "copy": [
@@ -2100,6 +2099,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2129,8 +2129,7 @@
           "1696960"
         ]
       },
-      "hash": "51405cb8186b05f83f5ad54e12368d57ccc234a136999624fd9a0b00b97cf329",
-      "hideFromGameModsList": true,
+      "hash": "d49f4f0e346952196ae4487875254376dae35a48cb75851a58c4309a953f68e2",
       "id": "config-everyone-lake-haven-chrysalis",
       "install": {
         "copy": [
@@ -2138,6 +2137,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2167,8 +2167,7 @@
           "1586800"
         ]
       },
-      "hash": "fd344107af243675d4cab35eec335e4a05296ced91b0dc12a115af6a85a152a2",
-      "hideFromGameModsList": true,
+      "hash": "07687c3f3d4207433364e350e7258aea49ff38cd2e74c91e4ffb9cbd3a87faa9",
       "id": "config-everyone-lil-gator-game",
       "install": {
         "copy": [
@@ -2176,6 +2175,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2210,8 +2210,7 @@
           "9MVNCSJ14754"
         ]
       },
-      "hash": "9c7abb5b12bfed98780cd3ba7732c166ef974e988884db8964a994d0eaf28fa5",
-      "hideFromGameModsList": true,
+      "hash": "84008921102b546e7e58d5a56476c8c672b1999dd82bc673c86fa54745b9f309",
       "id": "config-everyone-mouthwashing",
       "install": {
         "copy": [
@@ -2219,6 +2218,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2248,8 +2248,7 @@
           "1533420"
         ]
       },
-      "hash": "2007c66172355944b0e96f8f3841be3c2635bd81b5941fb48e7b029a32149460",
-      "hideFromGameModsList": true,
+      "hash": "b519b87f1a6714713b24c84bcb2664a98307cd70cd08534d02dfaafd25a72443",
       "id": "config-everyone-neon-white",
       "install": {
         "copy": [
@@ -2257,6 +2256,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2290,8 +2290,7 @@
           "1622100"
         ]
       },
-      "hash": "6650767a97c8d98803f32f0337afd522773bda2ca90ca1fe0ba003cd80b3e10a",
-      "hideFromGameModsList": true,
+      "hash": "8761431a0a8178dc2a54be10c09c3ea1bbd5d5c19e92a282c55d314ed32ea4fd",
       "id": "config-everyone-outer-wilds",
       "install": {
         "copy": [
@@ -2299,6 +2298,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2335,8 +2335,7 @@
           "433430"
         ]
       },
-      "hash": "8a10cca2b645c9747000ea3abaa8a5aee09a7afe3b1b72e37b59c081b0e6f0bd",
-      "hideFromGameModsList": true,
+      "hash": "f236f30c3121cd39a37df112d7ee13728d057b5a3e0ad6bff2206ee527b643c9",
       "id": "config-everyone-oxenfree",
       "install": {
         "copy": [
@@ -2344,6 +2343,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2376,8 +2376,7 @@
           "248820"
         ]
       },
-      "hash": "66357962b8cb57e247c41835d4c665c3ec0fe8ee37dcb8f08a38818a22ba1a07",
-      "hideFromGameModsList": true,
+      "hash": "dce2fad3ca79557812438bced63e4a55a2d330266193d8fe725b03ce56af3878",
       "id": "config-everyone-risk-of-rain",
       "install": {
         "copy": [
@@ -2385,6 +2384,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2421,8 +2421,7 @@
           "916350"
         ]
       },
-      "hash": "3ec8d2f0dc359488f60dfd11ed87504218d333fd1967e58ed2471af47c85c6a4",
-      "hideFromGameModsList": true,
+      "hash": "b14433fa236f3bb1fff57b33c13fa0aa9c5e00bd9961c5343573053d7834aca0",
       "id": "config-everyone-saturnalia",
       "install": {
         "copy": [
@@ -2430,6 +2429,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2459,8 +2459,7 @@
           "450390"
         ]
       },
-      "hash": "ba9e43998e23e4551e2c111598bb4ff12db55d00241d48f93913ebf3965371fc",
-      "hideFromGameModsList": true,
+      "hash": "afbc7c0fd60d059ae02d45c69ecfb2de2fa768a01b9efbf82fd5c5b0094745ba",
       "id": "config-everyone-the-lab",
       "install": {
         "copy": [
@@ -2468,6 +2467,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2497,8 +2497,7 @@
           "1703340"
         ]
       },
-      "hash": "1cf397c090a1b5ae22ac92643550dc6e4d5696d8aa0f2ef2d51d3865d2de43b3",
-      "hideFromGameModsList": true,
+      "hash": "7e4fdf5f43aad145617fb5d298481f2672d790cf59b7aaca740375dc4556356c",
       "id": "config-everyone-the-stanley-parable-ultra-deluxe",
       "install": {
         "copy": [
@@ -2506,6 +2505,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2535,8 +2535,7 @@
           "220780"
         ]
       },
-      "hash": "5199e8321a8dad48fd1b0264742bfd963f738fed40664eabcf4e56f292697548",
-      "hideFromGameModsList": true,
+      "hash": "1803b022aa2376bb5041087350e46854a781802e264cd05081c821690600c3b1",
       "id": "config-everyone-thomas-was-alone",
       "install": {
         "copy": [
@@ -2544,6 +2543,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2577,8 +2577,7 @@
           "1655680"
         ]
       },
-      "hash": "5cc46a5d29b6aca89e32ba70ecdd0c724242a755810bed425c8cead87464caba",
-      "hideFromGameModsList": true,
+      "hash": "3f10e1841ded4667cf8fd1e95eb0460bad372e5a05f53c1babdfcb7437fd1834",
       "id": "config-everyone-toem",
       "install": {
         "copy": [
@@ -2586,6 +2585,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2618,8 +2618,7 @@
           "837470"
         ]
       },
-      "hash": "7b1cd548cde61663a2d00f511a025a98ea849a3baf9b6caa9c3dac57d0b9c326",
-      "hideFromGameModsList": true,
+      "hash": "eeaa7a0ca6e6783238e7ef938035d34b21851af6a123baafb7d444b905b53e6b",
       "id": "config-everyone-untitled-goose-game",
       "install": {
         "copy": [
@@ -2627,6 +2626,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2664,8 +2664,7 @@
           "813840"
         ]
       },
-      "hash": "c1ea160f4a856a788ff98755d8349406298b5aea96e2a7c4256877328bfcbd81",
-      "hideFromGameModsList": true,
+      "hash": "e899596fe01ec40e75460d9937b22c87c74d775b7cbae52b9ae39ebc23c60b05",
       "id": "config-everyone-wizard-of-legend",
       "install": {
         "copy": [
@@ -2673,6 +2672,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2702,8 +2702,7 @@
           "1015920"
         ]
       },
-      "hash": "54cb289eb78daa7ee20c32f3f7e69b03f5c12a2de26a46e485d391e26a45e28b",
-      "hideFromGameModsList": true,
+      "hash": "86d9c20d7fb611be002acbfb186dcf90bc4ab04a5cc105cc667282087e07094f",
       "id": "config-everyone-ynglet",
       "install": {
         "copy": [
@@ -2711,6 +2710,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2745,8 +2745,7 @@
           "426750"
         ]
       },
-      "hash": "eb5876ed92f2fcd92ef7bddef4ed970977d6426f58cd569c3ffae297ceebf027",
-      "hideFromGameModsList": true,
+      "hash": "514053de50de9844e0386330fcede654865510ec423f6f8a8dd16596dd98c23a",
       "id": "config-everyone-yooka-laylee",
       "install": {
         "copy": [
@@ -2754,6 +2753,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2877,10 +2877,10 @@
           "577450"
         ]
       },
-      "hash": "8eb4d7863b30a6a33712fec80803175433c6ffd3bb337362167534a5a84b70c9",
-      "hideFromGameModsList": true,
+      "hash": "8452496d8f5b8aeebea1679ee739829b0d5acce33b879b3e78df2b2f880bb874",
       "id": "config-uevr-abzu",
       "install": {
+        "dependencyOnly": true,
         "extract": [
           {
             "destination": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
@@ -2916,8 +2916,7 @@
           "3527290"
         ]
       },
-      "hash": "8e959ffd5d750cc377fcce7371bcdf29db1da3d67c663291058669bda2de408c",
-      "hideFromGameModsList": true,
+      "hash": "e795543849c3b115f84044bee948280544a160fe75e120945d95864fdb4e4053",
       "id": "config-uuvr-peak",
       "install": {
         "copy": [
@@ -2925,6 +2924,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -2954,8 +2954,7 @@
           "1218580"
         ]
       },
-      "hash": "337aae2c4c2feba9916eed4bee26c23e919308095376cf256428e2ee2b97e8fe",
-      "hideFromGameModsList": true,
+      "hash": "8efcf7545b30c7cf175c7ccb7ad0e9fa646b29256ad2c5c2204405788093403f",
       "id": "config-uuvr-zerograve",
       "install": {
         "copy": [
@@ -2963,6 +2962,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
           }
         ],
+        "dependencyOnly": true,
         "installKind": "PerGame"
       },
       "paths": [
@@ -3561,11 +3561,11 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b0cad3cba5d4fed4fe2bca5dfe920b9f9e22317f5f4413e4dccfa9484faa3bb4",
-      "hideFromGameModsList": true,
+      "hash": "8ed700125227dd812f96984a2fd927d5758c5433a85f2f523d57e80afc3ed477",
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
       "install": {
+        "dependencyOnly": true,
         "extract": [
           {
             "destination": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64",

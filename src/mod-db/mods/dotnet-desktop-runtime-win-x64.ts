@@ -1,13 +1,12 @@
 import { sharedModFolder } from "../paths.ts";
-import { sharedModInstall } from "../helpers/uevr.ts";
 import { defineMod } from "../mod.ts";
 
 const id = "dotnet-desktop-runtime-win-x64";
+const folder = sharedModFolder(id);
 
 export default defineMod({
 	id,
 	title: ".NET Desktop Runtime",
-	hideFromGameModsList: true,
 	engine: "Unreal",
 	author: "bill gates himself",
 	description: "Required for running UEVR via Wine",
@@ -16,11 +15,15 @@ export default defineMod({
 		id: "6.0.36",
 		url: "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
 	},
-	install: sharedModInstall(id),
+	install: {
+		installKind: "Shared",
+		dependencyOnly: true,
+		extract: [{ source: ".", destination: folder }],
+	},
 	paths: [
 		{
 			type: "Folder",
-			path: sharedModFolder(id),
+			path: folder,
 		},
 	],
 	gameOs: "Windows",

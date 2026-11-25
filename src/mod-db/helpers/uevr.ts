@@ -2,18 +2,6 @@ import type { ModBase, ModRun } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { sharedModFolder, uevrConfigPath } from "../paths.ts";
 
-export function sharedModInstall(
-	id: string,
-	source = ".",
-): NonNullable<ModBase["install"]> {
-	const folder = sharedModFolder(id);
-
-	return {
-		installKind: "Shared",
-		extract: [{ source, destination: folder }],
-	};
-}
-
 export function uevrBase(
 	id: string,
 	zipRoot = ".",
@@ -47,7 +35,10 @@ export function uevrBase(
 			args: [`--attach=${token.GameExecutableName}`],
 		},
 		runStandalone: runBase,
-		install: sharedModInstall(id, zipRoot),
+		install: {
+			installKind: "Shared",
+			extract: [{ source: zipRoot, destination: folder }],
+		},
 		paths: [
 			{
 				type: "Folder",

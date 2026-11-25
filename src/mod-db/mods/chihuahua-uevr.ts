@@ -1,6 +1,5 @@
 import { getLatestFromGitHub } from "../helpers/github.ts";
 import { sharedModFolder } from "../paths.ts";
-import { sharedModInstall } from "../helpers/uevr.ts";
 import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
@@ -22,7 +21,10 @@ export default defineMod({
 	description: "Simple injector/game launcher for UEVR",
 	website: "https://github.com/keton/chihuahua",
 	download: chihuahua,
-	install: sharedModInstall(id),
+	install: {
+		installKind: "Shared",
+		extract: [{ source: ".", destination: folder }],
+	},
 	paths: [
 		{
 			type: "Folder",

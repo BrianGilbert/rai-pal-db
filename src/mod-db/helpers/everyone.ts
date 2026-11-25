@@ -27,12 +27,12 @@ export async function everyoneConfig({
 		...everyoneBase,
 		tags: ["everyone-config"],
 		gameIds,
-		hideFromGameModsList: true,
 		title: `Everyone Config for ${gameName}`,
 		description: `Recommended Everyone config for ${gameName}.`,
 		download: await configDownload(`everyone/${gameSlug}.json`),
 		install: {
 			installKind: "PerGame",
+			dependencyOnly: true,
 			copy: [{ destination }],
 		},
 		paths: [{ path: destination, type: "File" }],
