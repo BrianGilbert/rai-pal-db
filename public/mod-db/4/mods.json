@@ -17,141 +17,6 @@
       "website": "https://docs.google.com/document/d/1gI9_EpF7ACiZu3bndAj1A5uGy0TKVUnfVfvTbHtWsPM/view?tab=t.0"
     },
     {
-      "architecture": "X64",
-      "author": "Raicuparta",
-      "description": "VR mod for Neon White, with full motion control support.",
-      "download": {
-        "id": "1.0.0",
-        "url": "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip"
-      },
-      "engine": "Unity",
-      "gameIds": {
-        "Steam": [
-          "1533420"
-        ]
-      },
-      "hash": "67c3a4714eacd4a9227add866eabba37c5d48aeb7fa306d4cd6d1aca377c7257",
-      "id": "HeavenVr",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
-            "source": "plugins/HeavenVr"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
-            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/openxr_loader.dll",
-            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/openxr_loader.dll"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
-            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
-            "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
-          }
-        ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVr.json"
-      },
-      "paths": [
-        {
-          "id": "plugin",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
-          "title": "Plugin",
-          "type": "Folder"
-        }
-      ],
-      "requiredDependencies": [
-        {
-          "tag": "bepinex"
-        }
-      ],
-      "tags": [
-        "game-specific-vr"
-      ],
-      "title": "HeavenVR",
-      "unityBackend": "Mono",
-      "website": "https://github.com/Raicuparta/heaven-vr"
-    },
-    {
-      "architecture": "X64",
-      "author": "Raicuparta",
-      "description": "VR mod for Firewatch.",
-      "download": {
-        "id": "2.1.0",
-        "url": "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip"
-      },
-      "engine": "Unity",
-      "gameIds": {
-        "Gog": [
-          "1459256379"
-        ],
-        "Steam": [
-          "383870"
-        ]
-      },
-      "hash": "5dbf8ca2b4370e872fe73b3f564d3e93894451622ab3ab1849c0dff0b2d7fd4d",
-      "id": "TwoForksVr",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
-            "source": "plugins"
-          },
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVrAssets",
-            "source": "plugins/TwoForksVrAssets"
-          },
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
-            "source": "patchers"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/LIV_Bridge.dll",
-            "source": "CopyToGame/Firewatch_Data/Plugins/LIV_Bridge.dll"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_api.dll",
-            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_api.dll"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_mod.cfg",
-            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_mod.cfg"
-          }
-        ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/TwoForksVr.json"
-      },
-      "paths": [
-        {
-          "id": "plugin",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
-          "title": "Plugin",
-          "type": "Folder"
-        },
-        {
-          "id": "patcher",
-          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
-          "title": "Patcher",
-          "type": "Folder"
-        }
-      ],
-      "requiredDependencies": [
-        {
-          "tag": "bepinex"
-        }
-      ],
-      "tags": [
-        "game-specific-vr"
-      ],
-      "title": "Two Forks VR",
-      "unityBackend": "Mono",
-      "website": "https://github.com/Raicuparta/two-forks-vr"
-    },
-    {
       "author": "KUPOkinz",
       "description": "A Tale of Two Realities VR mod with full motion controls.",
       "gameIds": {
@@ -580,7 +445,7 @@
           "minor": 4
         }
       },
-      "hash": "7369f7024c0ad30d3f4b0df53c65139572679741fdb2b539ee1420a8c736093e",
+      "hash": "ff163afb7944a8a431e0642d72de38cb2c53d123da2fd01c956d613169cc0f59",
       "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
@@ -594,9 +459,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -616,7 +479,7 @@
           "minor": 5
         }
       },
-      "hash": "5e597d6c08d922375fe967ef4fc4142ebde31c5ca1036bfc2bbcc4245c9ec16f",
+      "hash": "27b7754b815ab6149ef3a4ebf0f289f7348a47b7a3979a857fe64305edcc81a0",
       "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
@@ -630,9 +493,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -662,7 +523,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "db8cbe9f1f0cc50e31d15240e908f91a9904206bcc9bf4747b45ee933177563e",
+      "hash": "417abdb1325ca613490e3fc8b8d68e37cbd7c0b797586ac6f4f4021dfa9166b5",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -691,15 +552,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -721,7 +578,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "13924ba7d5f639204b1068d54161654e6d191137da50c0dd3bcc212a23d2d4ce",
+      "hash": "1ecf9f70c20a94f87240c365e8d1f4d74cca67d64c639b69024d45ec79606fe6",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -759,15 +616,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -789,7 +642,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "e2cd54d226627e5534d9e8483a081fe0c7bf0b15fbbf823eac54afade741d22b",
+      "hash": "d0f7b70c2d5686ebf1fbecc3c672f2eeea6383c903d9b331b8f0b7122a83cf47",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -827,15 +680,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -864,7 +713,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "f2d8cbdb27c4dbe6c2e7e5a8aecba3d4be6fe3e080b15d96c1cf963013e01d6a",
+      "hash": "b877d89c8ab21898521e209758072fa529db49d412d1cb3abc5d9d11796a30bc",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -889,15 +738,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -926,7 +771,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "aa78bc7f3f239039e49359d116cc779d075b3b72c2c3200f4c2ecb56ed82fc49",
+      "hash": "05dc31e28e6d694b01ea09aea232c7196ab81b7d68ee7d5a3fa6fb7914f7aef4",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -951,15 +796,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -981,7 +822,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "359fcaa92470135005de1fb34ab7a0ecfd39313aa1c21a09d3579c61a8699329",
+      "hash": "f203f06ce4f90d925135c45c0441457b99a7abac189d73749e26e5f83dac711f",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -1015,15 +856,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1045,7 +882,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "b082f8194b8e1cf73e6765342167c6ec621364a5106395653a8ef1b5d1287142",
+      "hash": "9bcc08118af0a2296fc461b7a8b4e828611ffd7512c42e6cf63c29978ba35263",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -1079,15 +916,11 @@
       ],
       "paths": [
         {
-          "id": "bepinex",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-          "title": "BepInEx",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1480,7 +1313,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b80c3d0a2cf816ca3f276229c897fac6bcfe4561dbe72f515cd8e2c443ad0ff6",
+      "hash": "6de062ae1e71bc1876cfb6f826af28debaa9a915589e012f17cd678fccc5c483",
       "id": "chihuahua-uevr",
       "install": {
         "extract": [
@@ -1493,9 +1326,7 @@
       },
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/chihuahua-uevr",
-          "title": "Mod",
           "type": "Folder"
         }
       ],
@@ -1609,7 +1440,7 @@
           "242820"
         ]
       },
-      "hash": "a866441cf4eb6ee1f47d85ebec70ddb083f6048cc56e56482238c7ddc5e4e3f1",
+      "hash": "fba781af8b6fbb28c97d48157cea51b6f9fb3530e245e4fe5a772d51fc00365f",
       "hideFromGameModsList": true,
       "id": "config-everyone-140",
       "install": {
@@ -1622,9 +1453,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1655,7 +1484,7 @@
           "1055540"
         ]
       },
-      "hash": "7c6c25acd7acc72f39d84393cf55692c9662f1fdbb8f8bb7cc8b917e13e78097",
+      "hash": "42a36cc9ef960747139f63173c5a57c295100575113ec982e57a1c8060f2b6b2",
       "hideFromGameModsList": true,
       "id": "config-everyone-a-short-hike",
       "install": {
@@ -1668,9 +1497,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1704,7 +1531,7 @@
           "2072990"
         ]
       },
-      "hash": "818164321d16676f4e9af832c7bb75c659e2aa9b4e2cbb8a599309c716684082",
+      "hash": "00cd476d5c2bd61d12a58b48e0b4159936e2e7cf642da0b2a7ed751ec9cebfe3",
       "hideFromGameModsList": true,
       "id": "config-everyone-cuphead",
       "install": {
@@ -1717,9 +1544,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1756,7 +1581,7 @@
           "9NTRS771L8HL"
         ]
       },
-      "hash": "ed028bbff24a8b8fb660b1f4c62a29a7e907099f1cea3392f0adda6961f04b07",
+      "hash": "53cb7d0e25e142e7a335a6f92723e248db18bfbf9174f49d5e574663aff18bc2",
       "hideFromGameModsList": true,
       "id": "config-everyone-disco-elysium",
       "install": {
@@ -1769,9 +1594,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1799,7 +1622,7 @@
           "400110"
         ]
       },
-      "hash": "51b9636c1e485dbffc9cf517a30b099ae4626043d5e5ee77cbfe9449ae8b1fa9",
+      "hash": "567dad99a9df02f65567aa9a9dc64868cfa70be33ac4faa9014ea8da05feae9a",
       "hideFromGameModsList": true,
       "id": "config-everyone-else-heart-break",
       "install": {
@@ -1812,9 +1635,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1843,7 +1664,7 @@
           "683320"
         ]
       },
-      "hash": "63233872c83727ed001c84167b77dc6cb81986d818a852d6c4478e9f3d055d2a",
+      "hash": "06f21cab0dcb8323d8a5572b1abe3191ee68ff5c1e53eb0526ac44ef04da6aed",
       "hideFromGameModsList": true,
       "id": "config-everyone-gris",
       "install": {
@@ -1856,9 +1677,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1886,7 +1705,7 @@
           "323320"
         ]
       },
-      "hash": "a350230c9e4a959102a2baefae6955c0c4973ada830761296e963fcf99a9ae12",
+      "hash": "0a5eba31adc948eeedc74f791082d3f4b77fc8e00f2e070e492b27b3cb2601dd",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-home",
       "install": {
@@ -1899,9 +1718,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1929,7 +1746,7 @@
           "426790"
         ]
       },
-      "hash": "b54553b32df56e6e55afa667ca575d3b668b3a273ad5b3d0428c17ec170c363f",
+      "hash": "63d34294aff54974a10a8564f6fdff303138b98c53d9ed2bf4164861aa2c0a82",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-up",
       "install": {
@@ -1942,9 +1759,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -1969,7 +1784,7 @@
           "925950"
         ]
       },
-      "hash": "bf0b65f797991e1e6b432ef1485159b10238c0eba68b1b28c55b2b35575a00af",
+      "hash": "eaba76bd411fadc60f8d148490d36bb33292a8cb5e01c991f2fac053b85a1d35",
       "hideFromGameModsList": true,
       "id": "config-everyone-here-comes-niko",
       "install": {
@@ -1982,9 +1797,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2016,7 +1829,7 @@
           "916000"
         ]
       },
-      "hash": "bccff7175ad241dd5f580970fffc4a85bc3591812eefa2a785ed9d1704f95a09",
+      "hash": "2dbd85149118c13f5f6017934ef70cdfee75fa426abe8f88eb8e636e073006d9",
       "hideFromGameModsList": true,
       "id": "config-everyone-hollow-knight",
       "install": {
@@ -2029,9 +1842,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2069,7 +1880,7 @@
           "1474320"
         ]
       },
-      "hash": "6a3bc1fc6d346db1afaf86f0dbc60f50e6b8f8e7544194ec9726a458b11813eb",
+      "hash": "12f5a740a0b0b1e36abfe31e99a6196150d913c5f2d2f900cefa16cf14cd3634",
       "hideFromGameModsList": true,
       "id": "config-everyone-in-sound-mind",
       "install": {
@@ -2082,9 +1893,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2115,7 +1924,7 @@
           "304430"
         ]
       },
-      "hash": "9b08d1dc300e5e291d74776aa00233f078a4b98c460bc54c9f248b276f0cd811",
+      "hash": "6ec9d3f781a5c9111c50ee8b74663ad976b516768e6b79a7f2d00e38b8ecfebf",
       "hideFromGameModsList": true,
       "id": "config-everyone-inside",
       "install": {
@@ -2128,9 +1937,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2155,7 +1962,7 @@
           "395620"
         ]
       },
-      "hash": "1addf73c9f1d466b41438d84d58837d4bae3b40225388e96873b107f0e24cdd3",
+      "hash": "4c58ca4dc51575ae593614ef9e3086bf0e007cf4cf3baf83d50c00d5afa31a48",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew-2",
       "install": {
@@ -2168,9 +1975,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2198,7 +2003,7 @@
           "241320"
         ]
       },
-      "hash": "fe22e7e6731c360beece0367d5d02a026d3a41a7f9fc5f6699892d043fcc1fbd",
+      "hash": "529204d9f8c9707fa4353ef09a8d5dbaeed1913e18c195129082f5cf0e10263a",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew",
       "install": {
@@ -2211,9 +2016,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2241,7 +2044,7 @@
           "231200"
         ]
       },
-      "hash": "5f9d09288c181f15d77c0be0fc7a0b5cdd0d87731507817299a1309a8e95a970",
+      "hash": "0e7162f1a834d9a39b0440c39fed357d8020357c7b18a7569996c03b60e99f20",
       "hideFromGameModsList": true,
       "id": "config-everyone-kentucky-route-zero",
       "install": {
@@ -2254,9 +2057,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2290,7 +2091,7 @@
           "283740"
         ]
       },
-      "hash": "49ef27ab3dd4083bead0dcfc15cac327ff9b5c39ec5331d15be19dbbb6989afd",
+      "hash": "147d767ec409ca5c21f3083b213f449757c1f5f191078fbcb5e73d96d1c95757",
       "hideFromGameModsList": true,
       "id": "config-everyone-ksp",
       "install": {
@@ -2303,9 +2104,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2330,7 +2129,7 @@
           "1696960"
         ]
       },
-      "hash": "da200e07f2076ac65779ecf399e80ca923253913dc836955a087d1ef1427f55c",
+      "hash": "80358862a0a0ba741b9b897e2e782181db5a1823509e8405edcbff78ccd97f4d",
       "hideFromGameModsList": true,
       "id": "config-everyone-lake-haven-chrysalis",
       "install": {
@@ -2343,9 +2142,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2370,7 +2167,7 @@
           "1586800"
         ]
       },
-      "hash": "0e8df71e2236e3c7802a7938f71516475f071dc4052f3254aa095dbfe3708678",
+      "hash": "1a045686c1424a5217a99107cef5c297123033e841172ba31f285f8c936671a5",
       "hideFromGameModsList": true,
       "id": "config-everyone-lil-gator-game",
       "install": {
@@ -2383,9 +2180,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2415,7 +2210,7 @@
           "9MVNCSJ14754"
         ]
       },
-      "hash": "3d040079a8344e26e0d065dc68b07782db1ec98086de4e41f7a83cd08cdcb378",
+      "hash": "5dccc4c032a7b43d01d7a95ad37dc800f8600f89698467ae3d119baf73e980e4",
       "hideFromGameModsList": true,
       "id": "config-everyone-mouthwashing",
       "install": {
@@ -2428,9 +2223,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2455,7 +2248,7 @@
           "1533420"
         ]
       },
-      "hash": "74d1689af7cc37d013a4745923b13145f0834aea73ef7057550cb02d66663c89",
+      "hash": "8e764545327fec65594e04c51114a0b0fa18edac47d9d49a324fcdfb148f51c8",
       "hideFromGameModsList": true,
       "id": "config-everyone-neon-white",
       "install": {
@@ -2468,9 +2261,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2499,7 +2290,7 @@
           "1622100"
         ]
       },
-      "hash": "72176343983af5629ed8b73d41fbbad28d0a7047302932774321bb3209f4bcf1",
+      "hash": "4a08223d95aa5a82b3395eafa352b38473f46db3dc8a998fa914216cf0fc57dc",
       "hideFromGameModsList": true,
       "id": "config-everyone-outer-wilds",
       "install": {
@@ -2512,9 +2303,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2546,7 +2335,7 @@
           "433430"
         ]
       },
-      "hash": "d6ba1fba1eff6029e7f3d8c24248112d9519b592d7f3d55aef2fa591fa9c843f",
+      "hash": "6ef9251713c64c225936575300166606982c5b4592d81cb82e312269e9afe5f3",
       "hideFromGameModsList": true,
       "id": "config-everyone-oxenfree",
       "install": {
@@ -2559,9 +2348,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2589,7 +2376,7 @@
           "248820"
         ]
       },
-      "hash": "227f3f4e0fe9507dd2df544e94cd657568ea884171bb8028ddb1efb6ed2ea67f",
+      "hash": "bf90c0f92f74d0e7cb778d1710e113251f83019e8812006089c4d752b6fba328",
       "hideFromGameModsList": true,
       "id": "config-everyone-risk-of-rain",
       "install": {
@@ -2602,9 +2389,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2636,7 +2421,7 @@
           "916350"
         ]
       },
-      "hash": "e41fa551f013f54096d2360001ce60ee4d932c4deb732fd49bf56d9078d8774e",
+      "hash": "4c3a61ba16c17b26f242cd0e4a88e55671b99c2e66ae4c53877e9b3a5523be3b",
       "hideFromGameModsList": true,
       "id": "config-everyone-saturnalia",
       "install": {
@@ -2649,9 +2434,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2676,7 +2459,7 @@
           "450390"
         ]
       },
-      "hash": "ff2d3ac79850d31a0f8cbb642f6ddd9e36e5affb402dee5620c229ca4a1d11db",
+      "hash": "f000647540b3b5b0ab4454a949a09e3284fa6e426a33c25d2b31f26de95916bc",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-lab",
       "install": {
@@ -2689,9 +2472,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2716,7 +2497,7 @@
           "1703340"
         ]
       },
-      "hash": "4a54e13e1b29d6f7283530f4334f57efe113de86062d3414c06d5779aa125286",
+      "hash": "7fa86e41cdfa27cb232fd4cb0686558902807573e0bd980c05ded2d60992f5f3",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-stanley-parable-ultra-deluxe",
       "install": {
@@ -2729,9 +2510,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2756,7 +2535,7 @@
           "220780"
         ]
       },
-      "hash": "716ad15d982b2168a5638c6401753e37fb21502adbd8c6dfaab799939d144679",
+      "hash": "0ea80a9c328601c6e04e623407168cddf93314beb5a7b743f9242061558bdabb",
       "hideFromGameModsList": true,
       "id": "config-everyone-thomas-was-alone",
       "install": {
@@ -2769,9 +2548,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2800,7 +2577,7 @@
           "1655680"
         ]
       },
-      "hash": "6bae66b3341e6c61de5122b6a0171fb37a3336f0bcf1aff5fe320ab4c889878b",
+      "hash": "c1b5a5efcc313bb56998cee37e44b5f0bbfeb8bc2931f4ca921db32f62c77200",
       "hideFromGameModsList": true,
       "id": "config-everyone-toem",
       "install": {
@@ -2813,9 +2590,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2843,7 +2618,7 @@
           "837470"
         ]
       },
-      "hash": "3f86e938976bda7394e45d25951b361ab4354e672acc96cb496e9ed02f7d984f",
+      "hash": "289c7c19befb9dd1fef19b8560a69fd5c916151ba0dc98332498e7a48f67db67",
       "hideFromGameModsList": true,
       "id": "config-everyone-untitled-goose-game",
       "install": {
@@ -2856,9 +2631,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2891,7 +2664,7 @@
           "813840"
         ]
       },
-      "hash": "09632bb4104eb35ba4178ba0294ad300eabe6360a42ff488c35b77f91878607e",
+      "hash": "caf813d5a3c119678253f848591a5b1baf12947b206e2ae18f003f3b1f68a4bc",
       "hideFromGameModsList": true,
       "id": "config-everyone-wizard-of-legend",
       "install": {
@@ -2904,9 +2677,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2931,7 +2702,7 @@
           "1015920"
         ]
       },
-      "hash": "f39422934cfe103527783788f13f1792df8fe6ad05b9a7b7df9159204adb7d43",
+      "hash": "8878a4e381de595735145107c5dd1f3165b1efd88421b311f3e16bb3bb66e270",
       "hideFromGameModsList": true,
       "id": "config-everyone-ynglet",
       "install": {
@@ -2944,9 +2715,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -2976,7 +2745,7 @@
           "426750"
         ]
       },
-      "hash": "b26f6037b3140144ceb19e10b1b23afc3966b8fc8b8993712ed5889cb0b9b01f",
+      "hash": "b268970c217f56c8eb3fb84071de87c1900e8b9c51039f1f52dc984340709b92",
       "hideFromGameModsList": true,
       "id": "config-everyone-yooka-laylee",
       "install": {
@@ -2989,9 +2758,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -3009,7 +2776,7 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "98c367e2f3e97a94b66fca27d99f2b42e4cee278f875583f74688c9dd9b64850",
+      "hash": "67d85039b7fa5c13a9c91ae689a6e7222b48aa5d43da66fb8aa5eaa8498fba52",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -3026,15 +2793,11 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "patcher",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-il2cpp",
-          "title": "Patcher",
           "type": "Folder"
         }
       ],
@@ -3058,7 +2821,7 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "3e7e8202817d7655cbf9dc1be257f215acf325eb5060df97b27851c7b60a8452",
+      "hash": "c5f2ffd775be76984b797a273900421e4803f4894e0ddec975fde9f8bb88690a",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -3075,15 +2838,11 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "patcher",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-mono",
-          "title": "Patcher",
           "type": "Folder"
         }
       ],
@@ -3118,7 +2877,7 @@
           "577450"
         ]
       },
-      "hash": "dc709346435059f18cd662f949712bc13faee56178e53384e74570077453a740",
+      "hash": "13cc890826df8c05e8a9aeffa8c2bbbe9773aefaf720826e28003afe9ea585ad",
       "hideFromGameModsList": true,
       "id": "config-uevr-abzu",
       "install": {
@@ -3132,9 +2891,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -3159,7 +2916,7 @@
           "3527290"
         ]
       },
-      "hash": "d9c251676bf4ff13392b9ab4905c2176a11eb822520092ee1ddc49f7d52738fc",
+      "hash": "497c4d4a61a4f237924cf3f103f76b8fac016f1dcff4f51b347192ba47e00598",
       "hideFromGameModsList": true,
       "id": "config-uuvr-peak",
       "install": {
@@ -3172,9 +2929,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -3199,7 +2954,7 @@
           "1218580"
         ]
       },
-      "hash": "3eb8cce9ecfa9d9ab37f272bb4c978eab13239d146861b42cace8408e299ab37",
+      "hash": "ded277cdfb871919354c8c30877d5448e92c39837a74428517c9b5430757ba7f",
       "hideFromGameModsList": true,
       "id": "config-uuvr-zerograve",
       "install": {
@@ -3212,9 +2967,7 @@
       },
       "paths": [
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -3808,7 +3561,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "08fef455a482f84f4d44b3c16b4ab1d1b9c2dab91b6a1344520a584cbd5c3022",
+      "hash": "a0fa3fbf7ec4015d271126da121a648b527ad95c47be6ec99bd58c8caba07934",
       "hideFromGameModsList": true,
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
@@ -3823,9 +3576,7 @@
       },
       "paths": [
         {
-          "id": "runtime",
           "path": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64",
-          "title": "Runtime",
           "type": "Folder"
         }
       ],
@@ -4089,7 +3840,7 @@
           "major": 3
         }
       },
-      "hash": "7e2c56230bfa3e722c034610504328f8e1ee337a3666dd3a3f3383475d175e6c",
+      "hash": "bafae04e541357a398c67e0373678bd371f52546a18a36c205158afb477abb59",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -4102,9 +3853,7 @@
       },
       "paths": [
         {
-          "id": "mod",
           "path": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
-          "title": "Mod",
           "type": "Folder"
         }
       ],
@@ -4133,7 +3882,7 @@
           "major": 4
         }
       },
-      "hash": "c661a1e4d8178315516ab386a15bc6144cfefe6805620d67bd4cf9fac5ba8edf",
+      "hash": "253f34755cadc342e5be4718d83e3f153fd6f1819cb47162d361f096951b6448",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -4146,9 +3895,7 @@
       },
       "paths": [
         {
-          "id": "mod",
           "path": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
-          "title": "Mod",
           "type": "Folder"
         }
       ],
@@ -4172,7 +3919,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
-      "hash": "28fb0f23d9d2fd4488768bf6b29152e5d3044838d64a0a1e92b212ebc6c61ff9",
+      "hash": "0a2ee1bbb2d62b167ec232dfc25112b4b90151f82793d53a253657e05634155c",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -4190,15 +3937,11 @@
       ],
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -4223,7 +3966,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
-      "hash": "51dfa7a8d788bb84eca55cf2810d708c593c4cdb39583b343d78d1f27bbf34e1",
+      "hash": "b979801ea67ec84421580cdfa307e634e2a04155abf905914ef75ec399a4a6d9",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -4241,15 +3984,11 @@
       ],
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -4274,7 +4013,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unreal.zip"
       },
       "engine": "Unreal",
-      "hash": "9e7cd0b0eec1051acae2a5ed464c1398dbd4a924b38391bceea1588e8ce4bb42",
+      "hash": "90b5fc59b68255e006926bf02d661ed998e17acf51d61d2d861cf47cb69f7c10",
       "id": "everyone-ue",
       "install": {
         "extract": [
@@ -4293,9 +4032,7 @@
       },
       "paths": [
         {
-          "id": "mod",
           "path": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue",
-          "title": "Mod",
           "type": "Folder"
         }
       ],
@@ -4851,7 +4588,7 @@
           "major": 3
         }
       },
-      "hash": "efee20a5569ee752c18bcca08d791f90237f89972f380ce693a37e0ec5588bf8",
+      "hash": "dadb6d1b565102e2612a5b490c8d0752b10c23f0aed996277aa96e29b64afa2a",
       "id": "godot-loader-3",
       "install": {
         "extract": [
@@ -4870,9 +4607,7 @@
       },
       "paths": [
         {
-          "id": "loader",
           "path": "{{GameInstalledModsPath}}/godot-loader-3",
-          "title": "Loader",
           "type": "Folder"
         }
       ],
@@ -4895,7 +4630,7 @@
           "major": 4
         }
       },
-      "hash": "4ffdf10bc6994c09ff40be24afc6e6eae63366d40573f60b9a2d095c23b7c51c",
+      "hash": "1558c21f2bf3343e7584e4453f496d4629e85f4ddbc772b0ccf657426a96cd3c",
       "id": "godot-loader-4",
       "install": {
         "extract": [
@@ -4914,9 +4649,7 @@
       },
       "paths": [
         {
-          "id": "loader",
           "path": "{{GameInstalledModsPath}}/godot-loader-4",
-          "title": "Loader",
           "type": "Folder"
         }
       ],
@@ -5146,6 +4879,65 @@
       ],
       "title": "Halo Master Chief Collection VR",
       "website": "https://github.com/moistman42069/MCCVR-Halo-Build"
+    },
+    {
+      "architecture": "X64",
+      "author": "Raicuparta",
+      "description": "VR mod for Neon White, with full motion control support.",
+      "download": {
+        "id": "1.0.0",
+        "url": "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip"
+      },
+      "engine": "Unity",
+      "gameIds": {
+        "Steam": [
+          "1533420"
+        ]
+      },
+      "hash": "4887220775e99b2650ec7dca0f1c471bae85ea352e61a19cf91c9a4794b44150",
+      "id": "HeavenVr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
+            "source": "plugins/HeavenVr"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/LIV_Bridge.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/openxr_loader.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/openxr_loader.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll",
+            "source": "CopyToGame/Neon White_Data/Plugins/x86_64/UnityOpenXR.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json",
+            "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVr.json"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
+          "type": "Folder"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "tag": "bepinex"
+        }
+      ],
+      "tags": [
+        "game-specific-vr"
+      ],
+      "title": "HeavenVR",
+      "unityBackend": "Mono",
+      "website": "https://github.com/Raicuparta/heaven-vr"
     },
     {
       "author": "hh79",
@@ -7217,7 +7009,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "ce3a6f1c9303ac317d2d1d0a55242178da714f986a81e214b894adaa8d50a03b",
+      "hash": "c183ebd58312cb06a6fcee7deafb9f3a4336f9180c07d9e871c5c20ac7d4740a",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -7230,9 +7022,7 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
-          "title": "Plugin",
           "type": "Folder"
         }
       ],
@@ -7257,7 +7047,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin5_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "3b7edc7ac6cd14840ec2b4cbc55df8c038fefa2a796dd6c48791f6c2bb25ab5c",
+      "hash": "5c8c7637afa0164bf7b94bfa4565a8d142197a5823118b85e51ebdcd2219b9ac",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -7270,9 +7060,7 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
-          "title": "Plugin",
           "type": "Folder"
         }
       ],
@@ -8200,6 +7988,76 @@
       "website": "https://discord.com/channels/747967102895390741/1103720023379410974/threads/1552423429104345108"
     },
     {
+      "architecture": "X64",
+      "author": "Raicuparta",
+      "description": "VR mod for Firewatch.",
+      "download": {
+        "id": "2.1.0",
+        "url": "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip"
+      },
+      "engine": "Unity",
+      "gameIds": {
+        "Gog": [
+          "1459256379"
+        ],
+        "Steam": [
+          "383870"
+        ]
+      },
+      "hash": "761d10411e6015e48d0581bb96ab8ef7098b05f7ad16b0105357649d75a02f3c",
+      "id": "TwoForksVr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
+            "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVrAssets",
+            "source": "plugins/TwoForksVrAssets"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
+            "source": "patchers"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/LIV_Bridge.dll",
+            "source": "CopyToGame/Firewatch_Data/Plugins/LIV_Bridge.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_api.dll",
+            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_api.dll"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/Firewatch_Data/Plugins/openvr_mod.cfg",
+            "source": "CopyToGame/Firewatch_Data/Plugins/openvr_mod.cfg"
+          }
+        ],
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/TwoForksVr.json"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/TwoForksVr",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
+          "type": "Folder"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "tag": "bepinex"
+        }
+      ],
+      "tags": [
+        "game-specific-vr"
+      ],
+      "title": "Two Forks VR",
+      "unityBackend": "Mono",
+      "website": "https://github.com/Raicuparta/two-forks-vr"
+    },
+    {
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
@@ -8207,7 +8065,7 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1208-g6f8dc3cc.zip"
       },
       "engine": "Unreal",
-      "hash": "1919b57fefbfd2ed5af9cd614d85595fff08f9d1585ffb00c7978cf8fc362679",
+      "hash": "120bb508cf068fd1eec57d740aecc7441cad158e7952349bc303039b3acc56cf",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -8233,9 +8091,7 @@
       },
       "paths": [
         {
-          "id": "ue4ss",
           "path": "{{GameInstalledModsPath}}/ue4ss",
-          "title": "UE4SS",
           "type": "Folder"
         }
       ],
@@ -8255,7 +8111,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b14a11d194b29d308d20874bcb9b85199a730e3c22f64605f5de5a10d34f8c70",
+      "hash": "d5114fff75e175f0370390cb9fa687525bf4cb20f371c2483230123e68ca7e06",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -8276,15 +8132,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr-joeyhodge-afw",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8321,7 +8173,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "4219095f810d8208b8d14311c7a975c5071a234ee1d87aac04da28153f22d1e9",
+      "hash": "d7831461f7457de6dab0d952e2102a2604094adf64e5128e392fa97a87086b6e",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -8342,15 +8194,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8387,7 +8235,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "333babe5fc141999bc7d4eba40b93e1ece218e1acf8bcb91b9994d674fd8626e",
+      "hash": "0fafb88d16b326b58c1f13c8a1bc6f5d58e00f75ad9ce8463eb7ef8b5495910c",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -8408,15 +8256,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr-joeyhodge",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8453,7 +8297,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b3c31667503392f95f8e940664a6533c4fce2d4fc79d33763662a1eb14668883",
+      "hash": "511bf022df1dd425d85061c6d710b44738af6fc95cbaa999472acf0728949ba0",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -8474,15 +8318,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr-nightly-afw",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8519,7 +8359,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "58f89a3c0c822bcc19d6d69602360c8eb2717227a7c355a3f8e8d93ccd14cf06",
+      "hash": "59c4a5bae52c22d58a3a41f2267f34c818ebb1eeef028086ce61fe28466c2fa8",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -8540,15 +8380,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr-nightly",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8585,7 +8421,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "664a5d4c5a17827929329f32fa9c030eae197447f256cf4ebd97c6581f105eae",
+      "hash": "1e99273752cf27e3f52c1fccf84d6f6c33e7afae76d4183c8ae190fdb4218921",
       "id": "uevr",
       "install": {
         "extract": [
@@ -8606,15 +8442,11 @@
       ],
       "paths": [
         {
-          "id": "mod",
           "path": "{{SharedModsPath}}/uevr",
-          "title": "Mod",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-          "title": "Config",
           "type": "Folder"
         }
       ],
@@ -8687,7 +8519,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "36c90b4415e2db9f59498b481ecaa36fe69bd8696ffc008f0242f6dadbb24281",
+      "hash": "d53cba4444de31c69fbc1d74ad41e7ed422a76d9fc74bba123ea4fab92aa6a4d",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -8700,9 +8532,7 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp",
-          "title": "Plugin",
           "type": "Folder"
         }
       ],
@@ -8727,7 +8557,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "79647169c42ba8ada65b3b15e8c513caa9c5e0ad76b9eefc656c21965b00f901",
+      "hash": "71fdd8a45ce66faedf91491143d69d44eed6b0f7d9e12db5853ba8db6e79e60f",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -8740,9 +8570,7 @@
       },
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono",
-          "title": "Plugin",
           "type": "Folder"
         }
       ],
@@ -8788,7 +8616,7 @@
           "major": 2019
         }
       },
-      "hash": "fbd17ad7bdc2b12a53e974393b74a673245f047477699a947e9389997ad7bfe9",
+      "hash": "21a991c016d2da58c0387194225602f6030e1982c7a807c8c2cc17bffdc1f800",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -8810,21 +8638,15 @@
       ],
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "patcher",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-il2cpp-legacy",
-          "title": "Patcher",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -8854,7 +8676,7 @@
           "major": 2019
         }
       },
-      "hash": "084aca6f48eecd554d0d1502d37ea67a6a65ed3072d2a3254297130da5efebcc",
+      "hash": "3e3d308a30169de9813645c62f256c0499537bcb222244bc9bd15ca8c4e21ea2",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -8876,21 +8698,15 @@
       ],
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "patcher",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-legacy",
-          "title": "Patcher",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
@@ -8921,7 +8737,7 @@
           "minor": 4
         }
       },
-      "hash": "565d2b12d941bfe416594853d7825127625d111a0f60ec2d3286564ed006122c",
+      "hash": "755067968a057fd1eaa564125556961aee878bbed2305ce34e17b9fe8cfe0e6f",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -8943,21 +8759,15 @@
       ],
       "paths": [
         {
-          "id": "plugin",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
-          "title": "Plugin",
           "type": "Folder"
         },
         {
-          "id": "patcher",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-modern",
-          "title": "Patcher",
           "type": "Folder"
         },
         {
-          "id": "config",
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
-          "title": "Config",
           "type": "File"
         }
       ],
