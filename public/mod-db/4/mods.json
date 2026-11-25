@@ -6106,6 +6106,180 @@
       "website": "https://github.com/Naragorn/OBVR"
     },
     {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (IL2CPP / BepInEx 6).",
+      "download": {
+        "id": "v2026.11.12.24",
+        "releaseDate": "2026-11-12T13:27:27Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.12.24/bepinex_ogs_telemetry-2026.11.12.24-win64.zip"
+      },
+      "engine": "Unity",
+      "gameOs": "Windows",
+      "hash": "90fcce0299067388d870bab79befdff08561fc0f93982a3de634aaf2daf28f18",
+      "id": "ogs-bepinex-il2cpp",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogs-bepinex-il2cpp",
+            "source": "il2cpp"
+          }
+        ],
+        "installKind": "PerGame"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogs-bepinex-il2cpp",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogs.telemetry.cfg",
+          "type": "File"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "tag": "bepinex"
+        }
+      ],
+      "tags": [
+        "ogs"
+      ],
+      "title": "OGS Telemetry (BepInEx)",
+      "unityBackend": "Il2Cpp",
+      "website": "https://github.com/BrianGilbert/bepinex-ogs-ts"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (Mono / BepInEx 5).",
+      "download": {
+        "id": "v2026.11.12.24",
+        "releaseDate": "2026-11-12T13:27:27Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.12.24/bepinex_ogs_telemetry-2026.11.12.24-win64.zip"
+      },
+      "engine": "Unity",
+      "gameOs": "Windows",
+      "hash": "2282cfb188381b0867d86cfddfee219197482d3d4cc313bca87f398c95aa7907",
+      "id": "ogs-bepinex-mono",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogs-bepinex-mono",
+            "source": "mono"
+          }
+        ],
+        "installKind": "PerGame"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogs-bepinex-mono",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogs.telemetry.cfg",
+          "type": "File"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "tag": "bepinex"
+        }
+      ],
+      "tags": [
+        "ogs"
+      ],
+      "title": "OGS Telemetry (BepInEx)",
+      "unityBackend": "Mono",
+      "website": "https://github.com/BrianGilbert/bepinex-ogs-ts"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UE4SS injects. Requires UE4SS experimental (the runtime Rai Pal installs).",
+      "download": {
+        "id": "v2026.11.04",
+        "releaseDate": "2026-11-04T23:57:02Z",
+        "url": "https://github.com/BrianGilbert/ue4ss-ogs-ts/releases/download/v2026.11.04/ue4ss_ogs_telemetry-2026.11.04-win64.zip"
+      },
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "f7eac6d84769e5d7edbf3c6639faa94e2b4eb43bf70f12f03820c91dc58251cd",
+      "id": "ogs-ue4ss",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/ogs_telemetry",
+            "source": "experimental/ogs_telemetry"
+          }
+        ],
+        "installKind": "PerGame"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/ue4ss/Mods/ogs_telemetry",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/ue4ss/Mods/ogs_telemetry/ogs_telemetry.ini",
+          "type": "File"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "modId": "ue4ss"
+        }
+      ],
+      "tags": [
+        "ogs"
+      ],
+      "title": "OGS Telemetry (UE4SS)",
+      "website": "https://github.com/BrianGilbert/ue4ss-ogs-ts"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UEVR injects.",
+      "download": {
+        "id": "v2026.11.12",
+        "releaseDate": "2026-11-12T12:39:46Z",
+        "url": "https://github.com/BrianGilbert/uevr-ogs-ts/releases/download/v2026.11.12/uevr_ogs_telemetry-2026.11.12-win64.zip"
+      },
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "84bafad525b9651b65bb2b5dc7772435e829a654f9122da611e778b7766564df",
+      "id": "ogs-uevr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr/plugins/ogs_telemetry.dll",
+            "source": "ogs_telemetry.dll"
+          }
+        ],
+        "installKind": "Shared"
+      },
+      "paths": [
+        {
+          "path": "{{SharedModsPath}}/uevr/plugins",
+          "type": "Folder"
+        },
+        {
+          "path": "{{SharedModsPath}}/uevr/plugins/ogs_telemetry.ini",
+          "type": "File"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "modId": "uevr"
+        }
+      ],
+      "tags": [
+        "ogs"
+      ],
+      "title": "OGS Telemetry (UEVR)",
+      "website": "https://github.com/BrianGilbert/uevr-ogs-ts"
+    },
+    {
       "author": "praydog",
       "description": "Onimusha 2 VR mod.",
       "gameIds": {
@@ -9120,6 +9294,10 @@
     "godot-loader": {
       "description": "Basic mod loader for Godot games.",
       "title": "Godot Mod Loader"
+    },
+    "ogs": {
+      "description": "Motion telemetry (OGS Telemetry Standard) for motion rigs, haptics and dashboards.",
+      "title": "OGS Telemetry"
     },
     "runtime-unity-editor": {
       "description": "In-game inspector and debugging tools.",
