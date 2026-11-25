@@ -1,6 +1,5 @@
 import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { manifestPath } from "../paths.ts";
 
 const website = "https://github.com/Raicuparta/gdscript-loader";
 
@@ -31,7 +30,7 @@ export function godotLoader(major: 3 | 4): ModBase {
 			url: `${downloadBase}/godot-${major}.zip`,
 		},
 		install: {
-			manifestPath: manifestPath(id),
+			installKind: "PerGame",
 			extract: [
 				{
 					source: "script-loader.gd",

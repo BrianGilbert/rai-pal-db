@@ -2,7 +2,6 @@ import { everyoneBase } from "../helpers/everyone.ts";
 import { getLatestFromGitHub } from "../helpers/github.ts";
 import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { manifestPath } from "../paths.ts";
 
 const id = "everyone-ue";
 const modFolder = `${token.GameInstalledModsPath}/ue4ss/Mods/${id}`;
@@ -19,7 +18,7 @@ export default defineMod({
 	download: unreal,
 	requiredDependencies: [{ modId: "ue4ss" }],
 	install: {
-		manifestPath: manifestPath(id),
+		installKind: "PerGame",
 		extract: [{ source: "dlls", destination: `${modFolder}/dlls` }],
 		write: [{ content: "", destination: `${modFolder}/enabled.txt` }],
 	},

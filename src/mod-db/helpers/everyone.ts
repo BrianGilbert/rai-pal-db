@@ -1,5 +1,5 @@
 import type { ModBase } from "../mod.ts";
-import { bepinexConfigPath, manifestPath } from "../paths.ts";
+import { bepinexConfigPath } from "../paths.ts";
 import { configDownload, type ConfigModOptions } from "./config-database.ts";
 
 export const everyoneBase = {
@@ -32,7 +32,7 @@ export async function everyoneConfig({
 		description: `Recommended Everyone config for ${gameName}.`,
 		download: await configDownload(`everyone/${gameSlug}.json`),
 		install: {
-			manifestPath: manifestPath(id),
+			installKind: "PerGame",
 			copy: [{ destination }],
 		},
 		paths: [{ path: destination, type: "File" }],

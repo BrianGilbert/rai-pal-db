@@ -18,7 +18,7 @@ export default defineMod({
 		url: "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",
 	},
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin(), base.extract.patcher()],
 	},
 	paths: [base.paths.plugin(), base.paths.patcher()],

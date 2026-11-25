@@ -9,7 +9,7 @@ export function sharedModInstall(
 	const folder = sharedModFolder(id);
 
 	return {
-		manifestPath: `${folder}/rai-pal-manifest.json`,
+		installKind: "Shared",
 		extract: [{ source, destination: folder }],
 	};
 }

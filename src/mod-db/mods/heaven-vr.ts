@@ -29,7 +29,7 @@ export default defineMod({
 		url: "https://github.com/Raicuparta/heaven-vr/releases/download/v1.0.0/heaven-vr.zip",
 	},
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [
 			{ source: "plugins/HeavenVr", destination: base.pluginFolder },
 			...copyToGameFiles.map((filePath) => ({

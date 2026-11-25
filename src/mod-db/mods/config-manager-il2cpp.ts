@@ -18,7 +18,7 @@ export default defineMod({
 		url: "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
 	},
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin(), base.extract.patcher()],
 	},
 	paths: [base.paths.plugin(), base.paths.patcher()],

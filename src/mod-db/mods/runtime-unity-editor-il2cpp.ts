@@ -25,7 +25,7 @@ export default defineMod({
 		"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 	download: il2cpp,
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin("BepInEx/plugins")],
 	},
 	paths: [base.paths.plugin()],

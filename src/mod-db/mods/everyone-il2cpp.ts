@@ -18,7 +18,7 @@ export default defineMod({
 	optionalDependencies: [{ tag: "everyone-config" }],
 	download: il2cpp,
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin()],
 	},
 	paths: [base.paths.plugin(), base.paths.config("raicuparta.everyone.json")],

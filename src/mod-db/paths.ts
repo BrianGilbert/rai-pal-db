@@ -7,10 +7,6 @@ export function bepinexConfigPath(fileName: string): string {
 	return `${bepinexConfigFolder}/${fileName}`;
 }
 
-export function manifestPath(id: string): string {
-	return `${token.GameInstalledModsPath}/manifests/${id}.json`;
-}
-
 export function sharedModFolder(id: string): string {
 	return `${token.SharedModsPath}/${id}`;
 }

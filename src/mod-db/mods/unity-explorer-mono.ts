@@ -21,7 +21,7 @@ export default defineMod({
 		"An in-game UI for exploring, debugging and modifying Unity games.",
 	download: mono,
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin()],
 	},
 	paths: [base.paths.plugin()],

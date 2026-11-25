@@ -114,9 +114,10 @@ export interface ModBase {
 
 	install?: {
 		/**
-		 * Supports replacement tokens. Path to the json where this mod's manifest will be installed. Can be per-game or shared, depending on replacement tokens used.
+		 * Where this mod's installed manifest is stored. Rai Pal uses this to detect whether the mod is installed.
+		 * PerGame manifests go in the game's installed mods folder, Shared manifests go in the shared mods folder.
 		 */
-		manifestPath: string;
+		installKind: "Shared" | "PerGame";
 
 		/**
 		 * Files and folders to extract from the downloaded mod zip

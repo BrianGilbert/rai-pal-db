@@ -29,7 +29,7 @@ export default defineMod({
 		url: "https://github.com/Raicuparta/two-forks-vr/releases/download/v2.1.0/two-forks-vr.zip",
 	},
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [
 			base.extract.plugin(),
 			{

@@ -17,7 +17,7 @@ export default defineMod({
 	unityBackend: "Mono",
 	download,
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin(), base.extract.patcher()],
 	},
 	paths: [

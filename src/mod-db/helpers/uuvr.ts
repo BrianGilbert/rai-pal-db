@@ -1,5 +1,5 @@
 import type { ModBase } from "../mod.ts";
-import { bepinexConfigPath, manifestPath } from "../paths.ts";
+import { bepinexConfigPath } from "../paths.ts";
 import { configDownload, type ConfigModOptions } from "./config-database.ts";
 
 const author = "Raicuparta";
@@ -53,7 +53,7 @@ export async function uuvrConfig({
 		description: `Recommended UUVR config for ${gameName}.`,
 		download: await configDownload(`uuvr/${gameSlug}.cfg`),
 		install: {
-			manifestPath: manifestPath(id),
+			installKind: "PerGame",
 			copy: [{ destination }],
 		},
 		paths: [{ path: destination, type: "File" }],

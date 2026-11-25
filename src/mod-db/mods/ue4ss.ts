@@ -2,7 +2,6 @@ import { createOctokit } from "../helpers/github.ts";
 import type { ModDownload } from "../mod.ts";
 import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { manifestPath } from "../paths.ts";
 
 const id = "ue4ss";
 const octokit = createOctokit();
@@ -65,7 +64,7 @@ export default defineMod({
 	description: "Scripting and modding framework for Unreal Engine games.",
 	download: await getLatestUe4ss(),
 	install: {
-		manifestPath: manifestPath(id),
+		installKind: "PerGame",
 		extract: [
 			{
 				source: "ue4ss",

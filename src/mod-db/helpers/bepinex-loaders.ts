@@ -9,7 +9,7 @@ import type {
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "./github.ts";
-import { bepinexConfigFolder, bepinexFolder, manifestPath } from "../paths.ts";
+import { bepinexConfigFolder, bepinexFolder } from "../paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
@@ -323,7 +323,6 @@ export async function bepinexLoader({
 			: pickLatest(await getIl2cppDownloads(), platform, "BepInEx IL2CPP");
 
 	const id = `bepinex-${spec.idPart}-${modIdSuffix(platform)}`;
-	const installManifestPath = manifestPath(id);
 	const extract: ModInstallExtract[] = [
 		{ source: "BepInEx", destination: bepinexFolder },
 		...spec.extraExtract,
@@ -332,7 +331,7 @@ export async function bepinexLoader({
 	const install: ModInstall =
 		platform.os === "Windows"
 			? {
-					manifestPath: installManifestPath,
+					installKind: "PerGame",
 					extract: [
 						...extract,
 						{
@@ -349,7 +348,7 @@ export async function bepinexLoader({
 					wineDllOverrides: ["winhttp"],
 				}
 			: {
-					manifestPath: installManifestPath,
+					installKind: "PerGame",
 					extract: [
 						...extract,
 						{

@@ -24,7 +24,7 @@ export default defineMod({
 		"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
 	download: il2cpp,
 	install: {
-		manifestPath: base.manifestPath,
+		installKind: base.installKind,
 		extract: [base.extract.plugin()],
 	},
 	paths: [base.paths.plugin()],

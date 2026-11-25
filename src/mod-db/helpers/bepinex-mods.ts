@@ -1,5 +1,5 @@
 import type { ModBase } from "../mod.ts";
-import { bepinexConfigFolder, bepinexFolder, manifestPath } from "../paths.ts";
+import { bepinexConfigFolder, bepinexFolder } from "../paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
@@ -15,7 +15,7 @@ export function bepinexModBase(id: string) {
 			engine: "Unity",
 			requiredDependencies: [{ tag: "bepinex" }],
 		} satisfies Pick<ModBase, "engine" | "requiredDependencies">,
-		manifestPath: manifestPath(id),
+		installKind: "PerGame" as const,
 		pluginFolder,
 		patcherFolder,
 		extract: {
@@ -69,7 +69,7 @@ export function bepinexConfig({
 		engineVersionRange,
 		hideFromGameModsList: true,
 		install: {
-			manifestPath: manifestPath(id),
+			installKind: "PerGame" as const,
 			write: [{ content, destination: configPath }],
 		},
 		paths: [{ path: configPath, type: "File" }],

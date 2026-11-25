@@ -2,7 +2,6 @@ import { everyoneBase } from "../helpers/everyone.ts";
 import { getLatestFromGitHub } from "../helpers/github.ts";
 import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { manifestPath } from "../paths.ts";
 
 const id = "everyone-godot-4";
 const modFolder = `${token.GameInstalledModsPath}/godot-loader-4/mods/everyone`;
@@ -22,7 +21,7 @@ export default defineMod({
 	download: godot4,
 	requiredDependencies: [{ tag: "godot-loader" }],
 	install: {
-		manifestPath: manifestPath(id),
+		installKind: "PerGame",
 		extract: [{ source: ".", destination: modFolder }],
 	},
 	paths: [{ path: modFolder, type: "Folder" }],

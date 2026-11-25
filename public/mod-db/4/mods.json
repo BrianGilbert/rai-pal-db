@@ -445,11 +445,11 @@
           "minor": 4
         }
       },
-      "hash": "ff163afb7944a8a431e0642d72de38cb2c53d123da2fd01c956d613169cc0f59",
+      "hash": "abd909859a0a57be7cb11f74c8788dfa39f4424dfcd4d64b2da057b8fc402cf7",
       "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-legacy.json",
+        "installKind": "PerGame",
         "write": [
           {
             "content": "[Logging.Console]\nEnabled = true\nForceBepInExTTYDriver = true\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
@@ -479,11 +479,11 @@
           "minor": 5
         }
       },
-      "hash": "27b7754b815ab6149ef3a4ebf0f289f7348a47b7a3979a857fe64305edcc81a0",
+      "hash": "35be6282195b326553552b60f81f2d05acd66298b0505828a47461f5779eccc8",
       "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-modern.json",
+        "installKind": "PerGame",
         "write": [
           {
             "content": "[Logging.Console]\nEnabled = true\nForceBepInExTTYDriver = true",
@@ -523,7 +523,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "417abdb1325ca613490e3fc8b8d68e37cbd7c0b797586ac6f4f4021dfa9166b5",
+      "hash": "4e130b848d4a7e787cfc55dfc76822039b64b39a40d6616f3cfb5842814778aa",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -540,7 +540,7 @@
             "source": "libdoorstop.so"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-linux-x64.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -578,7 +578,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "1ecf9f70c20a94f87240c365e8d1f4d74cca67d64c639b69024d45ec79606fe6",
+      "hash": "4d6c258825cd233214ea22cd5f4c2c89ec7937ce951375c14ce7382f906997d9",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -595,7 +595,7 @@
             "source": "winhttp.dll"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-x64.json",
+        "installKind": "PerGame",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -642,7 +642,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "d0f7b70c2d5686ebf1fbecc3c672f2eeea6383c903d9b331b8f0b7122a83cf47",
+      "hash": "effd22194f5106f8e550d031ae45ac0d8aa2776cf9cfff694812bae2a07fbaed",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -659,7 +659,7 @@
             "source": "winhttp.dll"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-x86.json",
+        "installKind": "PerGame",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -713,7 +713,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "b877d89c8ab21898521e209758072fa529db49d412d1cb3abc5d9d11796a30bc",
+      "hash": "aedb8e9dfb8ea5b26501d6f72ced9e43c35248965b52dd43632aedbd1202b73f",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -726,7 +726,7 @@
             "source": "libdoorstop.so"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-linux-x64.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -771,7 +771,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "05dc31e28e6d694b01ea09aea232c7196ab81b7d68ee7d5a3fa6fb7914f7aef4",
+      "hash": "db0ad94b1018c975658292af4072564d924b7025b4844f040969f921e72a4376",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -784,7 +784,7 @@
             "source": "libdoorstop.so"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-linux-x86.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -822,7 +822,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "f203f06ce4f90d925135c45c0441457b99a7abac189d73749e26e5f83dac711f",
+      "hash": "595016160db3b8f31e8db655d4caedda1798585cd0ffde1bbb173d1e3d8ee70b",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -835,7 +835,7 @@
             "source": "winhttp.dll"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-x64.json",
+        "installKind": "PerGame",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -882,7 +882,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "9bcc08118af0a2296fc461b7a8b4e828611ffd7512c42e6cf63c29978ba35263",
+      "hash": "40b8d43f20f05ea8996d97f399d1572673ee182e7b040cca0f8fd06fa883cac1",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -895,7 +895,7 @@
             "source": "winhttp.dll"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-x86.json",
+        "installKind": "PerGame",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -1313,7 +1313,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "6de062ae1e71bc1876cfb6f826af28debaa9a915589e012f17cd678fccc5c483",
+      "hash": "1f0eaedef83594105a4c11cc0152be23d043b0cd7b14496a90891232a7296395",
       "id": "chihuahua-uevr",
       "install": {
         "extract": [
@@ -1322,7 +1322,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/chihuahua-uevr/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "paths": [
         {
@@ -1440,7 +1440,7 @@
           "242820"
         ]
       },
-      "hash": "fba781af8b6fbb28c97d48157cea51b6f9fb3530e245e4fe5a772d51fc00365f",
+      "hash": "0cd0c7bb2983697868cc13e121fc5b0e88d39f5b90f3230596d3538473811cd3",
       "hideFromGameModsList": true,
       "id": "config-everyone-140",
       "install": {
@@ -1449,7 +1449,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-140.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1484,7 +1484,7 @@
           "1055540"
         ]
       },
-      "hash": "42a36cc9ef960747139f63173c5a57c295100575113ec982e57a1c8060f2b6b2",
+      "hash": "92db4d96039d7243fbd9573bde69bc7a31723a5d4e104f2e540b07ed5a7258b7",
       "hideFromGameModsList": true,
       "id": "config-everyone-a-short-hike",
       "install": {
@@ -1493,7 +1493,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-a-short-hike.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1531,7 +1531,7 @@
           "2072990"
         ]
       },
-      "hash": "00cd476d5c2bd61d12a58b48e0b4159936e2e7cf642da0b2a7ed751ec9cebfe3",
+      "hash": "b9b563acbaded24a9ebe49c83b0d6c725f23d1edf76628bb3ff3197cc2c40292",
       "hideFromGameModsList": true,
       "id": "config-everyone-cuphead",
       "install": {
@@ -1540,7 +1540,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-cuphead.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1581,7 +1581,7 @@
           "9NTRS771L8HL"
         ]
       },
-      "hash": "53cb7d0e25e142e7a335a6f92723e248db18bfbf9174f49d5e574663aff18bc2",
+      "hash": "cb56486325111d9d8fdf10d51c82a89b3af0c46751340ac1ae77b84e5ccd0fb5",
       "hideFromGameModsList": true,
       "id": "config-everyone-disco-elysium",
       "install": {
@@ -1590,7 +1590,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-disco-elysium.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1622,7 +1622,7 @@
           "400110"
         ]
       },
-      "hash": "567dad99a9df02f65567aa9a9dc64868cfa70be33ac4faa9014ea8da05feae9a",
+      "hash": "24fec8e3cd0f36a0f463805363bbc99668ae4c0edf31f5b6e464cdd1362409c0",
       "hideFromGameModsList": true,
       "id": "config-everyone-else-heart-break",
       "install": {
@@ -1631,7 +1631,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-else-heart-break.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1664,7 +1664,7 @@
           "683320"
         ]
       },
-      "hash": "06f21cab0dcb8323d8a5572b1abe3191ee68ff5c1e53eb0526ac44ef04da6aed",
+      "hash": "c6fa7578902ef986c24274676eb836c901dc455b3db9d4c3a97934475aae9415",
       "hideFromGameModsList": true,
       "id": "config-everyone-gris",
       "install": {
@@ -1673,7 +1673,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-gris.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1705,7 +1705,7 @@
           "323320"
         ]
       },
-      "hash": "0a5eba31adc948eeedc74f791082d3f4b77fc8e00f2e070e492b27b3cb2601dd",
+      "hash": "49af471dfac440425c1c9fe4b936af44fa5faf72c9f247095530b5b433ab225c",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-home",
       "install": {
@@ -1714,7 +1714,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-grow-home.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1746,7 +1746,7 @@
           "426790"
         ]
       },
-      "hash": "63d34294aff54974a10a8564f6fdff303138b98c53d9ed2bf4164861aa2c0a82",
+      "hash": "d7c1f3502f59e47357231ff9ea603350f112b2b90dc29857829ebfa81d529513",
       "hideFromGameModsList": true,
       "id": "config-everyone-grow-up",
       "install": {
@@ -1755,7 +1755,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-grow-up.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1784,7 +1784,7 @@
           "925950"
         ]
       },
-      "hash": "eaba76bd411fadc60f8d148490d36bb33292a8cb5e01c991f2fac053b85a1d35",
+      "hash": "a95fbf4f44738416d3861721527ed524946a0a38d36b2913d6af4ba0487d819e",
       "hideFromGameModsList": true,
       "id": "config-everyone-here-comes-niko",
       "install": {
@@ -1793,7 +1793,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-here-comes-niko.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1829,7 +1829,7 @@
           "916000"
         ]
       },
-      "hash": "2dbd85149118c13f5f6017934ef70cdfee75fa426abe8f88eb8e636e073006d9",
+      "hash": "4e7bc38960ebdf846db1284b462d06aedea37f3bc8a371679e14c710d138fd67",
       "hideFromGameModsList": true,
       "id": "config-everyone-hollow-knight",
       "install": {
@@ -1838,7 +1838,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-hollow-knight.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1880,7 +1880,7 @@
           "1474320"
         ]
       },
-      "hash": "12f5a740a0b0b1e36abfe31e99a6196150d913c5f2d2f900cefa16cf14cd3634",
+      "hash": "89119b9cd98f40b01a7c4a4008c10ab96e7d90f24e70bba36672445b1e5b8cec",
       "hideFromGameModsList": true,
       "id": "config-everyone-in-sound-mind",
       "install": {
@@ -1889,7 +1889,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-in-sound-mind.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1924,7 +1924,7 @@
           "304430"
         ]
       },
-      "hash": "6ec9d3f781a5c9111c50ee8b74663ad976b516768e6b79a7f2d00e38b8ecfebf",
+      "hash": "6ce9bc89b934c73c6713ca997bfff0538e361c81048d2b8c3ac245249255a858",
       "hideFromGameModsList": true,
       "id": "config-everyone-inside",
       "install": {
@@ -1933,7 +1933,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-inside.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -1962,7 +1962,7 @@
           "395620"
         ]
       },
-      "hash": "4c58ca4dc51575ae593614ef9e3086bf0e007cf4cf3baf83d50c00d5afa31a48",
+      "hash": "f78270b44d04c8cca311fcb299023fd53bbb9da54963fd3e3fffab1aa5f00aba",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew-2",
       "install": {
@@ -1971,7 +1971,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-ittle-dew-2.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2003,7 +2003,7 @@
           "241320"
         ]
       },
-      "hash": "529204d9f8c9707fa4353ef09a8d5dbaeed1913e18c195129082f5cf0e10263a",
+      "hash": "fd37c68f2fd12eae2d1e2ab7aa2c378cbeae3424636eb8e5ff84a86c85a388c1",
       "hideFromGameModsList": true,
       "id": "config-everyone-ittle-dew",
       "install": {
@@ -2012,7 +2012,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-ittle-dew.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2044,7 +2044,7 @@
           "231200"
         ]
       },
-      "hash": "0e7162f1a834d9a39b0440c39fed357d8020357c7b18a7569996c03b60e99f20",
+      "hash": "278531c7567898ab779ca65bffb28ec4091f951f1fafbfdb3f7720da85f8bede",
       "hideFromGameModsList": true,
       "id": "config-everyone-kentucky-route-zero",
       "install": {
@@ -2053,7 +2053,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-kentucky-route-zero.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2091,7 +2091,7 @@
           "283740"
         ]
       },
-      "hash": "147d767ec409ca5c21f3083b213f449757c1f5f191078fbcb5e73d96d1c95757",
+      "hash": "aba2c786f63f024e7ce6d0346ae2336305a557f04ac25d58dba93a11dba0ffef",
       "hideFromGameModsList": true,
       "id": "config-everyone-ksp",
       "install": {
@@ -2100,7 +2100,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-ksp.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2129,7 +2129,7 @@
           "1696960"
         ]
       },
-      "hash": "80358862a0a0ba741b9b897e2e782181db5a1823509e8405edcbff78ccd97f4d",
+      "hash": "51405cb8186b05f83f5ad54e12368d57ccc234a136999624fd9a0b00b97cf329",
       "hideFromGameModsList": true,
       "id": "config-everyone-lake-haven-chrysalis",
       "install": {
@@ -2138,7 +2138,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-lake-haven-chrysalis.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2167,7 +2167,7 @@
           "1586800"
         ]
       },
-      "hash": "1a045686c1424a5217a99107cef5c297123033e841172ba31f285f8c936671a5",
+      "hash": "fd344107af243675d4cab35eec335e4a05296ced91b0dc12a115af6a85a152a2",
       "hideFromGameModsList": true,
       "id": "config-everyone-lil-gator-game",
       "install": {
@@ -2176,7 +2176,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-lil-gator-game.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2210,7 +2210,7 @@
           "9MVNCSJ14754"
         ]
       },
-      "hash": "5dccc4c032a7b43d01d7a95ad37dc800f8600f89698467ae3d119baf73e980e4",
+      "hash": "9c7abb5b12bfed98780cd3ba7732c166ef974e988884db8964a994d0eaf28fa5",
       "hideFromGameModsList": true,
       "id": "config-everyone-mouthwashing",
       "install": {
@@ -2219,7 +2219,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-mouthwashing.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2248,7 +2248,7 @@
           "1533420"
         ]
       },
-      "hash": "8e764545327fec65594e04c51114a0b0fa18edac47d9d49a324fcdfb148f51c8",
+      "hash": "2007c66172355944b0e96f8f3841be3c2635bd81b5941fb48e7b029a32149460",
       "hideFromGameModsList": true,
       "id": "config-everyone-neon-white",
       "install": {
@@ -2257,7 +2257,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-neon-white.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2290,7 +2290,7 @@
           "1622100"
         ]
       },
-      "hash": "4a08223d95aa5a82b3395eafa352b38473f46db3dc8a998fa914216cf0fc57dc",
+      "hash": "6650767a97c8d98803f32f0337afd522773bda2ca90ca1fe0ba003cd80b3e10a",
       "hideFromGameModsList": true,
       "id": "config-everyone-outer-wilds",
       "install": {
@@ -2299,7 +2299,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-outer-wilds.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2335,7 +2335,7 @@
           "433430"
         ]
       },
-      "hash": "6ef9251713c64c225936575300166606982c5b4592d81cb82e312269e9afe5f3",
+      "hash": "8a10cca2b645c9747000ea3abaa8a5aee09a7afe3b1b72e37b59c081b0e6f0bd",
       "hideFromGameModsList": true,
       "id": "config-everyone-oxenfree",
       "install": {
@@ -2344,7 +2344,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-oxenfree.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2376,7 +2376,7 @@
           "248820"
         ]
       },
-      "hash": "bf90c0f92f74d0e7cb778d1710e113251f83019e8812006089c4d752b6fba328",
+      "hash": "66357962b8cb57e247c41835d4c665c3ec0fe8ee37dcb8f08a38818a22ba1a07",
       "hideFromGameModsList": true,
       "id": "config-everyone-risk-of-rain",
       "install": {
@@ -2385,7 +2385,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-risk-of-rain.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2421,7 +2421,7 @@
           "916350"
         ]
       },
-      "hash": "4c3a61ba16c17b26f242cd0e4a88e55671b99c2e66ae4c53877e9b3a5523be3b",
+      "hash": "3ec8d2f0dc359488f60dfd11ed87504218d333fd1967e58ed2471af47c85c6a4",
       "hideFromGameModsList": true,
       "id": "config-everyone-saturnalia",
       "install": {
@@ -2430,7 +2430,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-saturnalia.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2459,7 +2459,7 @@
           "450390"
         ]
       },
-      "hash": "f000647540b3b5b0ab4454a949a09e3284fa6e426a33c25d2b31f26de95916bc",
+      "hash": "ba9e43998e23e4551e2c111598bb4ff12db55d00241d48f93913ebf3965371fc",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-lab",
       "install": {
@@ -2468,7 +2468,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-the-lab.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2497,7 +2497,7 @@
           "1703340"
         ]
       },
-      "hash": "7fa86e41cdfa27cb232fd4cb0686558902807573e0bd980c05ded2d60992f5f3",
+      "hash": "1cf397c090a1b5ae22ac92643550dc6e4d5696d8aa0f2ef2d51d3865d2de43b3",
       "hideFromGameModsList": true,
       "id": "config-everyone-the-stanley-parable-ultra-deluxe",
       "install": {
@@ -2506,7 +2506,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-the-stanley-parable-ultra-deluxe.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2535,7 +2535,7 @@
           "220780"
         ]
       },
-      "hash": "0ea80a9c328601c6e04e623407168cddf93314beb5a7b743f9242061558bdabb",
+      "hash": "5199e8321a8dad48fd1b0264742bfd963f738fed40664eabcf4e56f292697548",
       "hideFromGameModsList": true,
       "id": "config-everyone-thomas-was-alone",
       "install": {
@@ -2544,7 +2544,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-thomas-was-alone.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2577,7 +2577,7 @@
           "1655680"
         ]
       },
-      "hash": "c1b5a5efcc313bb56998cee37e44b5f0bbfeb8bc2931f4ca921db32f62c77200",
+      "hash": "5cc46a5d29b6aca89e32ba70ecdd0c724242a755810bed425c8cead87464caba",
       "hideFromGameModsList": true,
       "id": "config-everyone-toem",
       "install": {
@@ -2586,7 +2586,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-toem.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2618,7 +2618,7 @@
           "837470"
         ]
       },
-      "hash": "289c7c19befb9dd1fef19b8560a69fd5c916151ba0dc98332498e7a48f67db67",
+      "hash": "7b1cd548cde61663a2d00f511a025a98ea849a3baf9b6caa9c3dac57d0b9c326",
       "hideFromGameModsList": true,
       "id": "config-everyone-untitled-goose-game",
       "install": {
@@ -2627,7 +2627,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-untitled-goose-game.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2664,7 +2664,7 @@
           "813840"
         ]
       },
-      "hash": "caf813d5a3c119678253f848591a5b1baf12947b206e2ae18f003f3b1f68a4bc",
+      "hash": "c1ea160f4a856a788ff98755d8349406298b5aea96e2a7c4256877328bfcbd81",
       "hideFromGameModsList": true,
       "id": "config-everyone-wizard-of-legend",
       "install": {
@@ -2673,7 +2673,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-wizard-of-legend.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2702,7 +2702,7 @@
           "1015920"
         ]
       },
-      "hash": "8878a4e381de595735145107c5dd1f3165b1efd88421b311f3e16bb3bb66e270",
+      "hash": "54cb289eb78daa7ee20c32f3f7e69b03f5c12a2de26a46e485d391e26a45e28b",
       "hideFromGameModsList": true,
       "id": "config-everyone-ynglet",
       "install": {
@@ -2711,7 +2711,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-ynglet.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2745,7 +2745,7 @@
           "426750"
         ]
       },
-      "hash": "b268970c217f56c8eb3fb84071de87c1900e8b9c51039f1f52dc984340709b92",
+      "hash": "eb5876ed92f2fcd92ef7bddef4ed970977d6426f58cd569c3ffae297ceebf027",
       "hideFromGameModsList": true,
       "id": "config-everyone-yooka-laylee",
       "install": {
@@ -2754,7 +2754,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-everyone-yooka-laylee.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2776,7 +2776,7 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "67d85039b7fa5c13a9c91ae689a6e7222b48aa5d43da66fb8aa5eaa8498fba52",
+      "hash": "5fb6c2fcd95dc033966743960b811455299f981eae9ed860056c1689be56ebb1",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -2789,7 +2789,7 @@
             "source": "patchers"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-il2cpp.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2821,7 +2821,7 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "c5f2ffd775be76984b797a273900421e4803f4894e0ddec975fde9f8bb88690a",
+      "hash": "ee6bcabb66720bd4f6a11864a06444c0b6354006c37ce737acf3c43e43a35416",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -2834,7 +2834,7 @@
             "source": "patchers"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-mono.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2877,7 +2877,7 @@
           "577450"
         ]
       },
-      "hash": "13cc890826df8c05e8a9aeffa8c2bbbe9773aefaf720826e28003afe9ea585ad",
+      "hash": "8eb4d7863b30a6a33712fec80803175433c6ffd3bb337362167534a5a84b70c9",
       "hideFromGameModsList": true,
       "id": "config-uevr-abzu",
       "install": {
@@ -2887,7 +2887,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-uevr-abzu.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2916,7 +2916,7 @@
           "3527290"
         ]
       },
-      "hash": "497c4d4a61a4f237924cf3f103f76b8fac016f1dcff4f51b347192ba47e00598",
+      "hash": "8e959ffd5d750cc377fcce7371bcdf29db1da3d67c663291058669bda2de408c",
       "hideFromGameModsList": true,
       "id": "config-uuvr-peak",
       "install": {
@@ -2925,7 +2925,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-uuvr-peak.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -2954,7 +2954,7 @@
           "1218580"
         ]
       },
-      "hash": "ded277cdfb871919354c8c30877d5448e92c39837a74428517c9b5430757ba7f",
+      "hash": "337aae2c4c2feba9916eed4bee26c23e919308095376cf256428e2ee2b97e8fe",
       "hideFromGameModsList": true,
       "id": "config-uuvr-zerograve",
       "install": {
@@ -2963,7 +2963,7 @@
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-uuvr-zerograve.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -3561,7 +3561,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "a0fa3fbf7ec4015d271126da121a648b527ad95c47be6ec99bd58c8caba07934",
+      "hash": "b0cad3cba5d4fed4fe2bca5dfe920b9f9e22317f5f4413e4dccfa9484faa3bb4",
       "hideFromGameModsList": true,
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
@@ -3572,7 +3572,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "paths": [
         {
@@ -3840,7 +3840,7 @@
           "major": 3
         }
       },
-      "hash": "bafae04e541357a398c67e0373678bd371f52546a18a36c205158afb477abb59",
+      "hash": "16b71e2107141f79ac77d8afebbc073d8fdbf6552b14cefffa8a45d848230923",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -3849,7 +3849,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-3.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -3882,7 +3882,7 @@
           "major": 4
         }
       },
-      "hash": "253f34755cadc342e5be4718d83e3f153fd6f1819cb47162d361f096951b6448",
+      "hash": "96086152afefff3e699d9f51c02684fc0cb07a408eb6c8d4b67c138c4e1debf2",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -3891,7 +3891,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-4.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -3919,7 +3919,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
-      "hash": "0a2ee1bbb2d62b167ec232dfc25112b4b90151f82793d53a253657e05634155c",
+      "hash": "5848d5da393692285d885361ba2eaadf2bf2dd44375c37e91a508607db5bb699",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -3928,7 +3928,7 @@
             "source": "plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -3966,7 +3966,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
-      "hash": "b979801ea67ec84421580cdfa307e634e2a04155abf905914ef75ec399a4a6d9",
+      "hash": "8b08c6fb6d367096cf7c7e415f808dfa08ed57deacb4a7bb9373cb21687164dc",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -3975,7 +3975,7 @@
             "source": "plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -4013,7 +4013,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unreal.zip"
       },
       "engine": "Unreal",
-      "hash": "90b5fc59b68255e006926bf02d661ed998e17acf51d61d2d861cf47cb69f7c10",
+      "hash": "72078add9ea9d84f148c637c9fee56c05503aa391c9e0b6664bb7222ab1fcf2d",
       "id": "everyone-ue",
       "install": {
         "extract": [
@@ -4022,7 +4022,7 @@
             "source": "dlls"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-ue.json",
+        "installKind": "PerGame",
         "write": [
           {
             "content": "",
@@ -4588,7 +4588,7 @@
           "major": 3
         }
       },
-      "hash": "dadb6d1b565102e2612a5b490c8d0752b10c23f0aed996277aa96e29b64afa2a",
+      "hash": "ef679ae3ef0bb434e87eb9b837b07cff68ee4ead4519948578ff7a2f94c95987",
       "id": "godot-loader-3",
       "install": {
         "extract": [
@@ -4597,7 +4597,7 @@
             "source": "script-loader.gd"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/godot-loader-3.json",
+        "installKind": "PerGame",
         "write": [
           {
             "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd\"\n",
@@ -4630,7 +4630,7 @@
           "major": 4
         }
       },
-      "hash": "1558c21f2bf3343e7584e4453f496d4629e85f4ddbc772b0ccf657426a96cd3c",
+      "hash": "7ccf31c90bac33b9a527895c1c1077501bc5b5c7fbd9e9599d9fcb3265a72bc6",
       "id": "godot-loader-4",
       "install": {
         "extract": [
@@ -4639,7 +4639,7 @@
             "source": "script-loader.gd"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/godot-loader-4.json",
+        "installKind": "PerGame",
         "write": [
           {
             "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd\"\n",
@@ -4894,7 +4894,7 @@
           "1533420"
         ]
       },
-      "hash": "4887220775e99b2650ec7dca0f1c471bae85ea352e61a19cf91c9a4794b44150",
+      "hash": "4166e8f1267b2d313094cebd61f42f586ea5bb4b0fbc69062196cf87b83a28cc",
       "id": "HeavenVr",
       "install": {
         "extract": [
@@ -4919,7 +4919,7 @@
             "source": "CopyToGame/Neon White_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/HeavenVr.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -7009,7 +7009,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "c183ebd58312cb06a6fcee7deafb9f3a4336f9180c07d9e871c5c20ac7d4740a",
+      "hash": "5b87f13667113c269ba36e79f742aa7e693152b2eab39404693593b11413c427",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -7018,7 +7018,7 @@
             "source": "BepInEx/plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-il2cpp.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -7047,7 +7047,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin5_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "5c8c7637afa0164bf7b94bfa4565a8d142197a5823118b85e51ebdcd2219b9ac",
+      "hash": "d5647f06b29779d966a5ec3d9922819eece34d1bf1a52a5ceefe4d726a3187ef",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -7056,7 +7056,7 @@
             "source": "BepInEx/plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-mono.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -8004,7 +8004,7 @@
           "383870"
         ]
       },
-      "hash": "761d10411e6015e48d0581bb96ab8ef7098b05f7ad16b0105357649d75a02f3c",
+      "hash": "112150c464f85ee1ee659f370d6e8961986449f54a5fe4d1094791bf4f0634bc",
       "id": "TwoForksVr",
       "install": {
         "extract": [
@@ -8033,7 +8033,7 @@
             "source": "CopyToGame/Firewatch_Data/Plugins/openvr_mod.cfg"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/TwoForksVr.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -8065,7 +8065,7 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1208-g6f8dc3cc.zip"
       },
       "engine": "Unreal",
-      "hash": "120bb508cf068fd1eec57d740aecc7441cad158e7952349bc303039b3acc56cf",
+      "hash": "8f8216cf1d13f4383cb7585136d0dc4732805ba5c88ef7ae1b336fb595730459",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -8078,7 +8078,7 @@
             "source": "dwmapi.dll"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/ue4ss.json",
+        "installKind": "PerGame",
         "wineDllOverrides": [
           "dwmapi"
         ],
@@ -8111,7 +8111,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "d5114fff75e175f0370390cb9fa687525bf4cb20f371c2483230123e68ca7e06",
+      "hash": "3e6f11c330162741113aa3f67a407441ce301eca38ab2315ed82b65a6e8cffa0",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -8120,7 +8120,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge-afw/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8173,7 +8173,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "d7831461f7457de6dab0d952e2102a2604094adf64e5128e392fa97a87086b6e",
+      "hash": "93e1f730c24081510c57134dcbb6e806351d8313dee97982b712bcba732e3682",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -8182,7 +8182,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge-dibr/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8235,7 +8235,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "0fafb88d16b326b58c1f13c8a1bc6f5d58e00f75ad9ce8463eb7ef8b5495910c",
+      "hash": "f4d2b35c3eeff66939d72209ad016a894b6d54799959e17fae6a4abd6c49f48a",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -8244,7 +8244,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8297,7 +8297,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "511bf022df1dd425d85061c6d710b44738af6fc95cbaa999472acf0728949ba0",
+      "hash": "918f067bdd7fc142c47a48fbf927cb96f80d0d333070559ef36d1d5ffc58b41e",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -8306,7 +8306,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr-nightly-afw/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8359,7 +8359,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "59c4a5bae52c22d58a3a41f2267f34c818ebb1eeef028086ce61fe28466c2fa8",
+      "hash": "ba4ad3fca114ab735285ca93638da644593bd2dc7ab029284b98914521a6adc7",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -8368,7 +8368,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr-nightly/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8421,7 +8421,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "1e99273752cf27e3f52c1fccf84d6f6c33e7afae76d4183c8ae190fdb4218921",
+      "hash": "3d32d3ef760b33289d6333a2b4bfeb0a15f6494d12fe34718235aed5b0f911d2",
       "id": "uevr",
       "install": {
         "extract": [
@@ -8430,7 +8430,7 @@
             "source": "."
           }
         ],
-        "manifestPath": "{{SharedModsPath}}/uevr/rai-pal-manifest.json"
+        "installKind": "Shared"
       },
       "optionalDependencies": [
         {
@@ -8519,7 +8519,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "d53cba4444de31c69fbc1d74ad41e7ed422a76d9fc74bba123ea4fab92aa6a4d",
+      "hash": "4f6d76d3e35026932c47244161f75bd6c05dc1455774e397b0ed0983c79f26ea",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -8528,7 +8528,7 @@
             "source": "plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-il2cpp.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -8557,7 +8557,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "71fdd8a45ce66faedf91491143d69d44eed6b0f7d9e12db5853ba8db6e79e60f",
+      "hash": "e598bfc66d61b499ad516916d51d2bbc5c15ad77f59cd6926c8347a9833b732d",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -8566,7 +8566,7 @@
             "source": "plugins"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-mono.json"
+        "installKind": "PerGame"
       },
       "paths": [
         {
@@ -8616,7 +8616,7 @@
           "major": 2019
         }
       },
-      "hash": "21a991c016d2da58c0387194225602f6030e1982c7a807c8c2cc17bffdc1f800",
+      "hash": "4612c3f02c4db12defc9fe797685c47308714773f5ecc6f8f4e3155d41a54cfc",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -8629,7 +8629,7 @@
             "source": "patchers"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-il2cpp-legacy.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -8676,7 +8676,7 @@
           "major": 2019
         }
       },
-      "hash": "3e3d308a30169de9813645c62f256c0499537bcb222244bc9bd15ca8c4e21ea2",
+      "hash": "d672f812426b923ad6b5b20804f8623dc3550d78bdcb67737c8667ae361d35e3",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -8689,7 +8689,7 @@
             "source": "patchers"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-legacy.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
@@ -8737,7 +8737,7 @@
           "minor": 4
         }
       },
-      "hash": "755067968a057fd1eaa564125556961aee878bbed2305ce34e17b9fe8cfe0e6f",
+      "hash": "1cb7912b4ca8c0ee4f7f7310b5d94e29093cfc178772e3c901df859b99b895e1",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -8750,7 +8750,7 @@
             "source": "patchers"
           }
         ],
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-modern.json"
+        "installKind": "PerGame"
       },
       "optionalDependencies": [
         {
